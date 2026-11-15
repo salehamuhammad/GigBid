@@ -12,6 +12,7 @@ artifacts
 **/.npm-cache
 **/.next
 **/playwright-report
+**/playwright-final-report
 **/test-results
 data/processed
 data/raw

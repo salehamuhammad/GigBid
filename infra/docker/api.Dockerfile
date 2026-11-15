@@ -10,7 +10,7 @@ RUN pip install --upgrade pip && pip install "fastapi==0.162.7" "uvicorn[standar
     "pypdf==6.17.0" "python-multipart==0.0.32" "PyJWT==2.15.0" cryptography reportlab "fastembed==0.9.1" "qdrant-client==1.15.1" langsmith
 COPY . .
 RUN pip install --no-deps -e . && python -m scripts.generate_data
-RUN useradd -m app && chown -R app /app
+RUN useradd -m app && mkdir -p /app/data/processed && chown -R app:app /app
 USER app
 EXPOSE 8000
 HEALTHCHECK --interval=20s --timeout=5s --retries=5 CMD curl -fs http://localhost:${PORT:-8000}/api/healthz || exit 1

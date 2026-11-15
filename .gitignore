@@ -15,5 +15,6 @@ artifacts/
 apps/web/.next/
 apps/web/test-results/
 apps/web/playwright-report/
+apps/web/playwright-final-report/
 *.egg-info/
 gigsim/state/

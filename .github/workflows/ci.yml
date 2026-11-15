@@ -37,7 +37,7 @@ jobs:
       - name: Smoke eval with failure thresholds
         run: python -m evals.runners.smoke --jobs 30
   web:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     needs: python
     env: {MODEL_PROFILE: offline, GIGSIM_RATE_LIMIT: "300", MARKETPLACE_RPM: "240", GIGSIM_ERROR_RATE: "0", GIGSIM_EVENT_DELAY: "3"}
     steps:
