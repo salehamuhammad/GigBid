@@ -1,5 +1,5 @@
 ---
-version: 1.0
+version: 1.1
 node: verifier
 ---
 ## SYSTEM
@@ -9,6 +9,7 @@ For each claim return a label:
 - partly_supported: the activity is in the evidence but a detail is not.
 - unsupported: the evidence does not show it, or it states a number, employer or tenure found in no item.
 Give the id of the best evidence item and a reason of at most 15 words. Judge only against the evidence text, never against general knowledge. Return one entry per claim with the same `index`.
+Keep results scoped to the exact metric, audience and project stated in the evidence. A live reporting metric does not establish that every dashboard metric updates in real time.
 
 ## USER
 CLAIMS:

@@ -1,6 +1,6 @@
 # GigBid assignment evidence
 
-The assignment PDF defines the rubric. The handoff and execution notes provided historical context. This checkout contains source files under `D:\Projects\GigBid` and has no local Git history, so it cannot establish which files were committed by the 12 November 2026 deadline.
+The assignment PDF defines the rubric. The student confirmed that the deadline was extended and that no November 2 policy update was issued. The [policy ADR](adr/0006-change-request.md) describes the simulator's synthetic example.
 
 ## A. MCP tool layer
 

@@ -27,6 +27,8 @@ _FUTURE = re.compile(r"^\W*(i (can|could|will|would|'d|'ll)|i am happy|happy to|
 _NEG = re.compile(r"\b(have not|haven't|has not|did not|didn't|not yet|no (client |production )?experience|never (used|built|shipped)|would not claim)\b", re.I)
 _NUM = re.compile(r"(?<![\w.])\$?\d[\d,]*(?:\.\d+)?\s?(?:%|x|k|ms|m)?(?![\w])")
 _YEARS = re.compile(r"\b(\d+)\+?\s*years?\b", re.I)
+_REAL_TIME = re.compile(r"\breal[- ]time\b", re.I)
+_NEAR_REAL_TIME = re.compile(r"\bnear[- ]real[- ]time\b", re.I)
 _ENTITY = re.compile(r"(?<!^)(?<![.!?]\s)\b([A-Z][a-zA-Z0-9]+(?:\s[A-Z][a-zA-Z0-9]+)*)\b")
 _COMMON = {"I", "The", "A", "An", "In", "For", "My", "We", "It", "This", "That", "Your", "You", "RAG", "API", "SQL", "CI", "CD", "ML", "AI", "LLM", "KPI", "ETL", "UI", "UX", "SaaS", "CRM", "CV", "PDF", "USD"}
 
@@ -71,7 +73,8 @@ def check_claim(sentence: str, evidence: list[dict], cited: list[str] | None = N
     if not is_claim(sentence) and not (cited and (_NUM.search(sentence) or extract_skills(sentence)) and not _NEG.search(sentence)):
         return {"text": sentence, "label": "not_a_claim", "evidence_ids": [], "reason": ""}
     f = facts(normalized)
-    total = len(f["skills"]) + len(f["numbers"]) + len(f["entities"]) + len(f["years"])
+    requires_real_time = bool(_REAL_TIME.search(normalized) and not _NEAR_REAL_TIME.search(normalized))
+    total = len(f["skills"]) + len(f["numbers"]) + len(f["entities"]) + len(f["years"]) + requires_real_time
     order = sorted(evidence, key=lambda e: (e["id"] not in (cited or []),))
     best = (0.0, None, [])
     for e in order:
@@ -82,6 +85,8 @@ def check_claim(sentence: str, evidence: list[dict], cited: list[str] | None = N
         missing += [n for n in f["numbers"] if n not in _numbers(evidence_text)]
         missing += [x for x in f["entities"] if x.lower() not in text]
         missing += [f"{y} years" for y in f["years"] if not re.search(rf"\b{y}\+?\s*years?\b", text)]
+        if requires_real_time and not _REAL_TIME.search(_NEAR_REAL_TIME.sub("", text)):
+            missing.append("real-time operation")
         cov = 1 - len(missing) / total if total else 0.0
         if cov > best[0] or best[1] is None: best = (cov, e["id"], missing)
     cov, eid, missing = best

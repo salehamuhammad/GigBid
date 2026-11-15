@@ -1,0 +1,228 @@
+{
+  "profile": "open",
+  "variant": "v9_skill_graph",
+  "rows": [
+    {
+      "persona": "ai_engineer",
+      "job_id": "dev-ai-01567",
+      "reached_approval": true,
+      "status": "drafting",
+      "cited_evidence_ids": [
+        "ai_engineer-case-012",
+        "ai_engineer-case-007",
+        "ai_engineer-case-010",
+        "ai_engineer-case-018",
+        "ai_engineer-case-015"
+      ],
+      "graph_verification": {
+        "claims": [
+          {
+            "text": "In a recent project I processed camera feeds to extract fields from scanned invoices, achieving 97\u202f% accuracy on 5,000 invoices.",
+            "evidence_ids": [
+              "ai_engineer-case-012"
+            ],
+            "label": "supported",
+            "reason": "all stated facts found in evidence"
+          },
+          {
+            "text": "I have extensive PyTorch experience, having fine\u2011tuned a clinical\u2011note model that outperformed the baseline by 9\u202fROUGE\u2011L points on a thousand clinician\u2011rated notes.",
+            "evidence_ids": [
+              "ai_engineer-case-007"
+            ],
+            "label": "supported",
+            "reason": "all stated facts found in evidence"
+          },
+          {
+            "text": "For another client I built a model\u2011release pipeline that packaged every service into reproducible Docker images, cutting release time from three weeks to two days.",
+            "evidence_ids": [
+              "ai_engineer-case-010"
+            ],
+            "label": "supported",
+            "reason": "all stated facts found in evidence"
+          },
+          {
+            "text": "I also delivered a sensor\u2011anomaly detection system where all components were containerised in reproducible images, demonstrating reliable Docker packaging.",
+            "evidence_ids": [
+              "ai_engineer-case-018"
+            ],
+            "label": "supported",
+            "reason": "all stated facts found in evidence"
+          },
+          {
+            "text": "All my data\u2011science scripts are written in Python, as shown in a regression\u2011harness project that caught fourteen prompt regressions before release.",
+            "evidence_ids": [
+              "ai_engineer-case-015"
+            ],
+            "label": "partly_supported",
+            "reason": "Catches 14 regressions, Python not specified."
+          },
+          {
+            "text": "I prioritize clear, regular communication and will align milestones with the eight\u2011week, 120\u2011hour schedule you outlined.",
+            "evidence_ids": [],
+            "label": "unsupported",
+            "reason": "not found in evidence: 120"
+          }
+        ],
+        "total_claims": 6,
+        "unsupported_before": 1,
+        "unsupported_after": 0,
+        "removed": [
+          "I prioritize clear, regular communication and will align milestones with the eight\u2011week, 120\u2011hour schedule you outlined."
+        ]
+      },
+      "independent": {
+        "total_claims": 5,
+        "unsupported": 0,
+        "partly": 0,
+        "supported": 5
+      },
+      "cover_letter_checks": [
+        {
+          "text": "In a recent project I processed camera feeds to extract fields from scanned invoices, achieving 97\u202f% accuracy on 5,000 invoices.",
+          "label": "supported",
+          "evidence_ids": [
+            "ai_engineer-case-012"
+          ],
+          "reason": "all stated facts found in evidence"
+        },
+        {
+          "text": "I have extensive PyTorch experience, having fine\u2011tuned a clinical\u2011note model that outperformed the baseline by 9\u202fROUGE\u2011L points on a thousand clinician\u2011rated notes.",
+          "label": "supported",
+          "evidence_ids": [
+            "ai_engineer-case-007"
+          ],
+          "reason": "all stated facts found in evidence"
+        },
+        {
+          "text": "For another client I built a model\u2011release pipeline that packaged every service into reproducible Docker images, cutting release time from three weeks to two days.",
+          "label": "supported",
+          "evidence_ids": [
+            "ai_engineer-case-010"
+          ],
+          "reason": "all stated facts found in evidence"
+        },
+        {
+          "text": "I also delivered a sensor\u2011anomaly detection system where all components were containerised in reproducible images, demonstrating reliable Docker packaging.",
+          "label": "supported",
+          "evidence_ids": [
+            "ai_engineer-case-010"
+          ],
+          "reason": "all stated facts found in evidence"
+        },
+        {
+          "text": "All my data\u2011science scripts are written in Python, as shown in a regression\u2011harness project that caught fourteen prompt regressions before release.",
+          "label": "supported",
+          "evidence_ids": [
+            "ai_engineer-case-018"
+          ],
+          "reason": "all stated facts found in evidence"
+        },
+        {
+          "text": "While I have not yet deployed an HR\u2011tech object\u2011detection service, I will design the solution to scale across multiple camera feeds and incorporate data\u2011privacy safeguards required for production use.",
+          "label": "not_a_claim",
+          "evidence_ids": [],
+          "reason": ""
+        }
+      ]
+    },
+    {
+      "persona": "data_analyst",
+      "job_id": "dev-da-01922",
+      "reached_approval": true,
+      "status": "drafting",
+      "cited_evidence_ids": [
+        "data_analyst-case-001",
+        "data_analyst-case-006",
+        "data_analyst-case-014"
+      ],
+      "graph_verification": {
+        "claims": [
+          {
+            "text": "In a recent executive revenue dashboard project I built the solution with hand\u2011written SQL joins and window functions, delivering a visual report that replaced a six\u2011hour manual process and is now used weekly by 40 managers.",
+            "evidence_ids": [
+              "data_analyst-case-001"
+            ],
+            "label": "supported",
+            "reason": "all stated facts found in evidence"
+          },
+          {
+            "text": "For a manufacturing client I created a quarterly sales forecast using pivot tables and Excel formulas that the finance team can update themselves, cutting forecast error from 21% to 9%.",
+            "evidence_ids": [
+              "data_analyst-case-006"
+            ],
+            "label": "partly_supported",
+            "reason": "Pivot tables and error reduction present; Excel formulas not mentioned."
+          },
+          {
+            "text": "I also delivered a people\u2011analytics dashboard with drag\u2011and\u2011drop visual components that let executives monitor attrition and hiring in real time.",
+            "evidence_ids": [
+              "data_analyst-case-014"
+            ],
+            "label": "supported",
+            "reason": "Drag\u2011and\u2011drop, attrition/hiring, live monitoring all stated."
+          },
+          {
+            "text": "I do not have prior evidence of charts limited to a single question, but I am ready to design each visual to answer one specific metric as required.",
+            "evidence_ids": [],
+            "label": "unsupported",
+            "reason": "No evidence provided for this claim."
+          }
+        ],
+        "total_claims": 4,
+        "unsupported_before": 1,
+        "unsupported_after": 0,
+        "removed": [
+          "I do not have prior evidence of charts limited to a single question, but I am ready to design each visual to answer one specific metric as required."
+        ]
+      },
+      "independent": {
+        "total_claims": 3,
+        "unsupported": 1,
+        "partly": 0,
+        "supported": 2
+      },
+      "cover_letter_checks": [
+        {
+          "text": "In a recent executive revenue dashboard project I built the solution with hand\u2011written SQL joins and window functions, delivering a visual report that replaced a six\u2011hour manual process and is now used weekly by 40 managers.",
+          "label": "supported",
+          "evidence_ids": [
+            "data_analyst-case-001"
+          ],
+          "reason": "all stated facts found in evidence"
+        },
+        {
+          "text": "For a manufacturing client I created a quarterly sales forecast using pivot tables and Excel formulas that the finance team can update themselves, cutting forecast error from 21% to 9%.",
+          "label": "supported",
+          "evidence_ids": [
+            "data_analyst-case-006"
+          ],
+          "reason": "all stated facts found in evidence"
+        },
+        {
+          "text": "I also delivered a people\u2011analytics dashboard with drag\u2011and\u2011drop visual components that let executives monitor attrition and hiring in real time.",
+          "label": "unsupported",
+          "evidence_ids": [],
+          "reason": "experience claim with no evidence behind it"
+        },
+        {
+          "text": "I can align my work to the schedule you outlined and keep the effort within the planned timeframe.",
+          "label": "not_a_claim",
+          "evidence_ids": [],
+          "reason": ""
+        },
+        {
+          "text": "I will provide clear, step\u2011by\u2011step documentation so the finance team can maintain pivot tables, lookup formulas and dashboard elements without external help.",
+          "label": "not_a_claim",
+          "evidence_ids": [],
+          "reason": ""
+        },
+        {
+          "text": "To ensure fast performance on large retail datasets I will apply query\u2011tuning techniques, appropriate indexing and incremental refresh strategies.",
+          "label": "not_a_claim",
+          "evidence_ids": [],
+          "reason": ""
+        }
+      ]
+    }
+  ]
+}

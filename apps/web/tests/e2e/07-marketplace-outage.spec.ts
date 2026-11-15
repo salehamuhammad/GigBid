@@ -12,7 +12,7 @@ function compose(...args: string[]) {
   ], { cwd: root, encoding: "utf8", timeout: 40_000, windowsHide: true }).trim();
 }
 
-test("a real Marketplace MCP outage parks a bid run and recovers one proposal", async ({ page }) => {
+test("a real Marketplace MCP outage parks a bid run and recovers one proposal", async ({ page }, testInfo) => {
   test.skip(!override || !root, "Requires the disposable GigBid verification stack");
   test.setTimeout(240_000);
   const email = await onboard(page);
@@ -56,6 +56,7 @@ asyncio.run(prepare())
     await page.reload();
     await expect(page.getByRole("status").filter({ hasText: "Marketplace unavailable." }))
       .toContainText("1 job queued");
+    await testInfo.attach("Marketplace offline and job queued", { body: await page.screenshot(), contentType: "image/png" });
   } finally {
     compose("start", "mcp-marketplace");
   }
@@ -68,7 +69,7 @@ asyncio.run(prepare())
   await expect.poll(async () => (await readJob()).status).toBe("submitted");
   expect((await page.request.post(decisionUrl, { headers, data: { action: "approve" } })).status()).toBe(409);
   const readCount = `
-import sys, httpx
+import json, sys, httpx
 from sqlalchemy import select
 from agent.settings import get_settings
 from apps.api.db import User, session
@@ -77,7 +78,15 @@ with session() as db:
 settings = get_settings()
 headers = {"Authorization": "Bearer " + settings.gigsim_token, "X-Account": user_id}
 proposals = httpx.get(settings.gigsim_url + "/proposals", headers=headers).raise_for_status().json()["proposals"]
-print(sum(p["job_id"] == sys.argv[2] for p in proposals))
+matches = [p for p in proposals if p["job_id"] == sys.argv[2]]
+connects = httpx.get(settings.gigsim_url + "/connects", headers=headers).raise_for_status().json()
+print(json.dumps({"job_id": sys.argv[2], "submissions": len(matches),
+                  "connects_spent": sum(p["connects_spent"] for p in matches),
+                  "balance": connects["balance"], "allowance": connects["weekly_allowance"]}))
 `;
-  expect(compose("exec", "-T", "api", "python", "-c", readCount, email, jobId!)).toBe("1");
+  const proof = JSON.parse(compose("exec", "-T", "api", "python", "-c", readCount, email, jobId!));
+  expect(proof.submissions).toBe(1);
+  expect(proof.connects_spent).toBeGreaterThan(0);
+  expect(proof.balance).toBe(proof.allowance - proof.connects_spent);
+  await testInfo.attach("GigSim recovery counters", { body: JSON.stringify(proof), contentType: "application/json" });
 });
