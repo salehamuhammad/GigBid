@@ -1,0 +1,35 @@
+projects:
+  - name: GigBid Free Preview
+    environments:
+      - name: Preview
+        services:
+          - type: web
+            name: gigbid-preview-api
+            runtime: docker
+            region: singapore
+            plan: free
+            dockerfilePath: infra/docker/api.Dockerfile
+            dockerContext: .
+            dockerCommand: python -m scripts.free_preview_start
+            healthCheckPath: /api/healthz
+            envVars:
+              - {key: MODEL_PROFILE, value: offline}
+              - {key: OPENBLAS_NUM_THREADS, value: "1"}
+              - {key: OMP_NUM_THREADS, value: "1"}
+              - {key: APP_SECRET_KEY, generateValue: true}
+              - {key: GIGSIM_API_TOKEN, generateValue: true}
+          - type: web
+            name: gigbid-preview-web
+            runtime: docker
+            region: singapore
+            plan: free
+            dockerfilePath: infra/docker/web.Dockerfile
+            dockerContext: .
+            healthCheckPath: /signin
+            envVars:
+              - key: API_URL
+                fromService:
+                  name: gigbid-preview-api
+                  type: web
+                  envVarKey: RENDER_EXTERNAL_URL
+              - {key: NEXT_PUBLIC_FREE_PREVIEW, value: "true"}

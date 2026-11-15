@@ -1,4 +1,4 @@
-"""Render the local R&D evidence draft with ReportLab."""
+"""Render the submission R&D report with ReportLab."""
 from html import escape
 from pathlib import Path
 
@@ -23,7 +23,7 @@ def page_footer(canvas, document):
 
 def main():
     source = ROOT / "docs" / "RD_REPORT.md"
-    target = source.with_name("GigBid-RD-report-draft.pdf")
+    target = source.with_name("GigBid-RD-Report.pdf")
     body = ParagraphStyle("Body", fontName="Helvetica", fontSize=10.6, leading=16,
                           textColor=HexColor("#1D2731"), spaceAfter=10)
     title = ParagraphStyle("Title", fontName="Helvetica-Bold", fontSize=32, leading=36,

@@ -45,13 +45,13 @@ The assignment PDF defines the rubric. The student confirmed that the deadline w
 - The pin for Qdrant client 1.15.1 was tested against Qdrant 1.15.4 with a read-only 384-dimensional search. Concurrent cross-encoder runs caused a memory kill. The live API returned HTTP 200 after the benchmark processes were stopped.
 - API, worker and web images built successfully from a working snapshot. The rebuilt API image was checked directly for the supervisor dependency and exclusion of `.env`. The final source includes additional fixes made while that build was running. The live API, worker and all dependencies passed the final service status check.
 - The [hosted verification branch](https://github.com/salehamuhammad/GigBid/tree/codex/final-verification) places the workflows at the repo root. Both jobs in the [final hosted run](https://github.com/salehamuhammad/GigBid/actions/runs/43732420219) passed. Hosted Python ran 35 tests, PostgreSQL crash recovery and the 30-job smoke gate. Bid-or-skip F1 was 1.000 against a 0.60 floor.
-- Public deployment, reviewer login, public traces, the public write-up and the instructor's hidden test require an external environment or account.
+- The free preview and published write-up are linked in the README. Reviewer credentials are provided privately. Full open-model hosting, public traces and the instructor's hidden evaluation are separate from the preview.
 
 ## Portfolio extension
 
 The [paired reply reanalysis](../evals/results/opening_strategy_paired_reply.json) uses 74 historical offline GigSim pairs. No pair changed its observed reply outcome between evidence-first and question-first. The exact paired test gave p = 1.0. See [the extension description](EXTENSION.md) and [the original observations](../evals/results/gigsim_outcomes.json).
 
-The [engineering review](RD_REPORT.md), [technical write-up draft](TECHNICAL_WRITEUP.md), [blinded review pilot](BLIND_REVIEW_PILOT.md) and [dev failure taxonomy](../evals/results/failure_cases_dev.csv) accompany the raw results. The technical write-up includes the résumé bullet. The README includes a verified 30-second GIF from the isolated GigSim approval flow.
+The [engineering review](RD_REPORT.md), [technical write-up draft](TECHNICAL_WRITEUP.md) and [dev failure taxonomy](../evals/results/failure_cases_dev.csv) accompany the raw results. The technical write-up includes the résumé bullet. The README includes a verified 30-second GIF from the isolated GigSim approval flow.
 
 ## Reproduction
 
@@ -70,3 +70,6 @@ Run `python -m evals.runners.ai_review` to reproduce the scoring agreement and p
 For the matched retrieval-to-proposal run, set `MODEL_PROFILE=open`, `MARKETPLACE_MODE=gigsim`, and `MCP_TRANSPORT=inprocess`. Point `QDRANT_URL` at the BGE development indexes and supply the model provider credential privately. Run `python -m evals.runners.retrieval_outcomes --arms v0_naive v9_skill_graph` followed by `python -m evals.runners.results_table`. The benchmark checkpoints each job and arm and resumes with the same plan. GigSim scores the final draft through its evaluation endpoint. To reproduce the BGE runtime pilot, use `python -m evals.runners.retrieval_outcomes --output retrieval_bge_runtime_pilot --max-new-rows 3` with a fresh output name.
 
 The ZIP contains the synthetic corpus, evaluation evidence, and the final Playwright report at `docs/playwright-report/index.html`. The local Kaggle CSV and derived historical job records were excluded from the archive. If using that data in a reproducibility run, regenerate the local historical records with `scripts/prepare_kaggle.py` and record the import audit. The final report is under `apps/web/playwright-final-report` locally. The archive excludes traces and runtime environment files.
+
+
+The Portfolio MCP Docker stdio installation check passed initialization, tool listing and evidence retrieval; see [installation evidence](../evals/results/portfolio_installation_verification.json). The public Render preview uses deterministic offline models and temporary data, with an onboarded reviewer account reseeded on restart.

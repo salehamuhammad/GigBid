@@ -9,8 +9,9 @@ replies. **It never submits, sends or spends without the human's approval.**
 
 Technical write-up: [Building GigBid: What Better Retrieval Actually Changed](https://medium.com/@salehamuhammad77/building-gigbid-what-better-retrieval-actually-changed-54f1a159619b).
 
-> Live URL: _add after deploying_ · Reviewer login: in the private GCR comment ·
-> Public traces: _add three LangSmith links (skipped scam, approved proposal, critic loop) after a run with `LANGSMITH_TRACING=true`_
+Free UI preview: https://gigbid-preview-web-v8m9.onrender.com (deterministic offline models and temporary data; it may sleep). Reviewer login is provided in the private GCR comment. Full-stack open-model deployment instructions are in [the runbook](docs/RUNBOOK.md). Public LangSmith trace links are not supplied.
+
+Three-minute silent demo: [download or play the MP4](https://raw.githubusercontent.com/salehamuhammad/GigBid/main/docs/images/GigBid-demo.mp4).
 
 ## Run it
 

@@ -22,6 +22,11 @@ export default function SignIn() {
     <main className="center" id="main">
       <h1>GigBid</h1>
       <p className="muted">Finds freelance jobs, drafts bids grounded in your real portfolio, and asks before it sends anything.</p>
+      {process.env.NEXT_PUBLIC_FREE_PREVIEW === "true" && (
+        <div className="banner warn" role="note">
+          Free preview · Explore with the sample personas and simulated clients. Uses deterministic demo models. Accounts and data reset when the server restarts.
+        </div>
+      )}
       <form className="card" onSubmit={submit}>
         <h2>{mode === "login" ? "Sign in" : "Create your account"}</h2>
         {err && <div className="banner bad" role="alert">{err}</div>}

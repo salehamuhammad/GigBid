@@ -34,6 +34,11 @@ export default function Shell({ title, sub, actions, children }: { title: string
         </div>
       </nav>
       <main className="main" id="main">
+        {process.env.NEXT_PUBLIC_FREE_PREVIEW === "true" && (
+          <div className="banner warn" role="note">
+            Free preview · Deterministic demo models and simulated clients. Accounts, uploads and progress reset when the server restarts.
+          </div>
+        )}
         <div role="status" aria-live="polite">
           {health.error && <div className="banner bad">The GigBid API is not reachable. Your data is safe; this page will recover on its own.</div>}
           {h && h.status === "degraded" && (

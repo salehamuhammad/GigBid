@@ -2,7 +2,7 @@
 
 AI-4016 R&D engineering review · 15 November 2026
 
-Engineering evidence for the verified implementation. The instructor's hidden evaluation and public deployment are pending.
+Engineering evidence for the verified implementation. The public deployment is a limited free preview; the instructor's hidden evaluation is separate.
 
 ## 1. Workflow and constraints
 
@@ -69,4 +69,8 @@ The final V9 Compose verification passed all eight browser tests with offline mo
 
 ## 10. Hidden evaluation and reproducibility
 
-Hidden test evidence comes from the instructor's evaluation. The local tests and benchmark runs are indexed in docs/TECHNICAL_COMPLETION_STATUS.md. Historical pricing uses Asaniczka's Upwork Job Postings Dataset 2024, version 1, under ODC-By. The local CSV matches the official Kaggle download by SHA-256. Dev and simulator labels are synthetic. The public reviewer environment and submission links are pending.
+Hidden test evidence comes from the instructor's evaluation. The local tests and benchmark runs are indexed in docs/TECHNICAL_COMPLETION_STATUS.md. Historical pricing uses Asaniczka's Upwork Job Postings Dataset 2024, version 1, under ODC-By. The local CSV matches the official Kaggle download by SHA-256. Dev and simulator labels are synthetic.
+
+The public UI is https://gigbid-preview-web-v8m9.onrender.com. This free preview uses deterministic offline models, embedded GigSim and temporary local storage, rather than the full open-model PostgreSQL/Redis/Qdrant deployment used in the documented engineering tests. It may sleep and lose activity after restart. Reviewer credentials are supplied privately. The full deployment remains reproducible using infra/docker-compose.yml. Public LangSmith trace links have not been supplied.
+
+Source code: https://github.com/salehamuhammad/GigBid. Portfolio MCP installation: https://github.com/salehamuhammad/GigBid/tree/main/mcp_servers/portfolio. The documented Docker stdio installation was checked with the MCP SDK: initialization, tool listing and evidence retrieval passed. See evals/results/portfolio_installation_verification.json. The published technical article is linked in the project README.

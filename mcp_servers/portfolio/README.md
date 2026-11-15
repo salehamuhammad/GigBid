@@ -31,18 +31,19 @@ gigbid-portfolio-mcp --owner ai_engineer                         # stdio
 gigbid-portfolio-mcp --owner ai_engineer --transport http --port 8101   # Streamable HTTP (needs a bearer token)
 ```
 
-With `uvx` (no install, straight from the repository):
-
-```bash
-uvx --from "git+https://github.com/<you>/gigbid" gigbid-portfolio-mcp --owner ai_engineer
-```
-
 With Docker:
 
 ```bash
+git clone https://github.com/salehamuhammad/GigBid.git
+cd GigBid
 docker build -f infra/docker/api.Dockerfile -t gigbid .
-docker run -i --rm gigbid python -m mcp_servers.portfolio.server --owner ai_engineer
+docker run -i --rm -e MODEL_PROFILE=offline gigbid python -m mcp_servers.portfolio.server --owner ai_engineer
 ```
+
+The Docker build generates the bundled synthetic portfolios. The command starts a stdio MCP
+server for a host such as Claude Desktop or Cursor. The offline profile needs no provider key.
+For BGE embeddings, set `MODEL_PROFILE=open` and provide the configured model-provider
+environment privately. The real embedding dependencies are included in the Docker image.
 
 ### Claude Desktop
 
@@ -58,7 +59,7 @@ optional (`title`, `skills`, `date`, `client_industry`, `outcome`); skills are d
 text when missing. Then:
 
 ```bash
-gigbid-portfolio-mcp --owner me --data-dir ./my-data
+GIGBID_DATA_DIR=./my-data gigbid-portfolio-mcp --owner me
 ```
 
 The first call builds the index; the embedding cache makes later rebuilds incremental.
