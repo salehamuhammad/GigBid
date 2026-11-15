@@ -43,7 +43,7 @@ The assignment PDF defines the rubric. The student confirmed that the deadline w
 - Trace redaction now permits non-negative numeric counters and masks other token-like fields, including a string written into a counter field. Redacted historical events cannot recover their original counters.
 - The pin for Qdrant client 1.15.1 was tested against Qdrant 1.15.4 with a read-only 384-dimensional search. Concurrent cross-encoder runs caused a memory kill. The live API returned HTTP 200 after the benchmark processes were stopped.
 - API, worker and web images built successfully from a working snapshot. The rebuilt API image was checked directly for the supervisor dependency and exclusion of `.env`. The final source includes additional fixes made while that build was running. The live API, worker and all dependencies passed the final service status check.
-- Local checks exercise the source in isolation. The CI workflow includes the PostgreSQL recovery check against a disposable service. Hosted Actions remains pending because GigBid is still local.
+- The [hosted verification branch](https://github.com/salehamuhammad/GigBid/tree/codex/final-verification) places the workflows at the repo root. The [hosted Python job](https://github.com/salehamuhammad/GigBid/actions/runs/43718675553) passed 35 tests, PostgreSQL crash recovery and the 30-job smoke gate. Bid-or-skip F1 was 1.000 against a 0.60 floor.
 - GitHub Actions, public deployment, reviewer login, public traces, the public write-up and the instructor's hidden test require an external environment or account.
 
 ## Portfolio extension

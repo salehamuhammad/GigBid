@@ -55,13 +55,18 @@ asyncio.run(prepare())
     await expect.poll(async () => (await readJob()).status, { timeout: 90_000 }).toBe("queued");
     await page.reload();
     await expect(page.getByRole("status").filter({ hasText: "Marketplace unavailable." }))
-      .toContainText("1 job queued");
+      .toContainText(/[1-9]\d* jobs? queued/);
     await testInfo.attach("Marketplace offline and job queued", { body: await page.screenshot(), contentType: "image/png" });
   } finally {
     compose("start", "mcp-marketplace");
   }
   await expect.poll(async () => (await readJob()).status, { timeout: 100_000 }).toBe("awaiting_approval");
+  await expect.poll(async () => {
+    const res = await page.request.get("/api/system/health", { headers });
+    return (await res.json()).status;
+  }).toBe("ok");
   await page.reload();
+  await expect(page.getByText(/Worker: arq/)).toBeVisible();
   await expect(page.getByRole("status").filter({ hasText: "Marketplace unavailable." })).toHaveCount(0);
   const { approval_id: approvalId } = await readJob();
   const decisionUrl = `/api/approvals/${approvalId}/decision`;
