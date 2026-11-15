@@ -34,7 +34,6 @@ projects:
             dockerfilePath: infra/docker/render.Dockerfile
             dockerContext: .
             healthCheckPath: /api/healthz
-            maxShutdownDelaySeconds: 60
             disk:
               name: gigbid-data
               mountPath: /app/data/processed
