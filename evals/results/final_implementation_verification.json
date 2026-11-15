@@ -1,0 +1,41 @@
+{
+  "release_image_sha256": "a501619456379df46dcce3b5f851070b3fcfa7d9b80b84edbd2c87fc3282a2b1",
+  "release_image_checks": [
+    "no .env file",
+    "V9 default",
+    "writable non-root processed directory",
+    "strict real-time grounding"
+  ],
+  "local": {
+    "model_profile": "offline",
+    "marketplace": "GigSim",
+    "playwright_passed": 8,
+    "real_mcp_outage": {
+      "queued_job": true,
+      "warning_visible": true,
+      "healthy_after_restart": true,
+      "duplicate_approval_http": 409,
+      "job_id": "dev-ai-01586",
+      "submissions": 1,
+      "connects_spent": 12,
+      "balance": 108,
+      "allowance": 120
+    }
+  },
+  "github": {
+    "branch": "codex/final-verification",
+    "sha": "c2d6171cadb72ccf7e0f8a05685cc2915b108644",
+    "actions_run": "https://github.com/salehamuhammad/GigBid/actions/runs/43732420219",
+    "conclusion": "success",
+    "python_tests": 35
+  },
+  "smoke": {
+    "jobs": 30,
+    "bid_f1": 1.0,
+    "bid_f1_floor": 0.6,
+    "unsupported_after": 0,
+    "recall_at_5": 0.644,
+    "scam_recall": 1.0,
+    "bid_precision": 1.0
+  }
+}

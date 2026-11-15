@@ -2,7 +2,7 @@
 
 AI-4016 R&D engineering review · 15 November 2026
 
-Evidence draft for the local checkout. The student reported that the instructor accepts AI-only proposal evaluation. The instructor's hidden evaluation and external deployment are pending.
+Engineering evidence for the verified implementation. The student reported that the instructor accepts AI-only proposal evaluation. The instructor's hidden evaluation and public deployment are pending.
 
 ## 1. Workflow and constraints
 
@@ -64,6 +64,8 @@ Provider rejections affected the first coarse tools. A simplified argument envel
 ## 9. Safety and platform respect
 
 The worker runs GigSim by default. Live Upwork writes are draft actions behind a separate approval flow. User-scoped tools, idempotent writes, the policy guard and a prompt-injection quarantine limit inappropriate action. The trace redactor preserves numeric usage metrics and masks credential fields. Docker build contexts exclude local runtime credentials. Seven browser cases passed across the isolated main run and targeted retries. A disposable PostgreSQL worker recovered after two deliberate crashes and produced one GigSim proposal with a single Connects debit from 120 to 108. OAuth draft-only behavior passed local contract tests and Upwork metadata was reachable. The live account-authorized draft check was unavailable because GigBid had no connected Upwork account. Authenticated GitHub MCP ingestion fetched and indexed Requests README and source files.
+
+The final V9 Compose verification passed all eight browser tests with offline models and the real GigSim service. Stopping Marketplace MCP queued a job and surfaced the warning. Restarting Marketplace allowed the same job to reach approval. GigSim recorded one submission and one Connects debit after approval, and the API rejected a duplicate approval with HTTP 409. The separate release image contains the final verifier and excludes the runtime environment file. On hosted GitHub Actions, both jobs passed and the 30-job bid-or-skip smoke F1 was 1.000 against a 0.60 threshold. See evals/results/final_implementation_verification.json.
 
 ## 10. Hidden evaluation and reproducibility
 
