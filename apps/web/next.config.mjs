@@ -1,5 +1,6 @@
 
-const apiUrl = process.env.API_URL || "http://localhost:8000";
+const address = process.env.API_URL || "http://localhost:8000";
+const apiUrl = /^https?:\/\//.test(address) ? address : `http://${address}`;
 
 /** Proxy browser API requests to the FastAPI service. */
 export default {

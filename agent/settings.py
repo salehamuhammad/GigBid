@@ -38,11 +38,20 @@ class Settings:
     @property
     def secret(self) -> str: return os.getenv("APP_SECRET_KEY") or "dev-only-secret-change-me-32-bytes-min"
     @property
-    def database_url(self) -> str: return os.getenv("DATABASE_URL") or f"sqlite:///{self.processed / 'gigbid.db'}"
+    def database_url(self) -> str:
+        url = os.getenv("DATABASE_URL") or f"sqlite:///{self.processed / 'gigbid.db'}"
+        for prefix in ("postgres://", "postgresql://"):
+            if url.startswith(prefix):
+                return "postgresql+psycopg://" + url[len(prefix):]
+        return url
     @property
     def redis_url(self) -> str | None: return os.getenv("REDIS_URL") or None
     @property
-    def qdrant_url(self) -> str | None: return os.getenv("QDRANT_URL") or None
+    def qdrant_url(self) -> str | None:
+        url = os.getenv("QDRANT_URL")
+        if url and not url.startswith(("http://", "https://")):
+            return "http://" + url
+        return url or None
     @property
     def marketplace_mode(self) -> str: return os.getenv("MARKETPLACE_MODE") or self.cfg["marketplace"]["mode"]
     @property

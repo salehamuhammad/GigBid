@@ -1,29 +1,76 @@
-# Render.com blueprint: the smallest deployment that satisfies "deployed web application".
-# One Python service (API + in-process worker + GigSim mounted at /gigsim), one web service,
-# one managed Postgres. Set GROQ_API_KEY in the dashboard to run the `open` profile.
-databases:
-  - name: gigbid-db
-    plan: free
-services:
-  - type: web
-    name: gigbid-api
-    runtime: docker
-    dockerfilePath: infra/docker/api.Dockerfile
-    healthCheckPath: /api/healthz
-    envVars:
-      - {key: DATABASE_URL, fromDatabase: {name: gigbid-db, property: connectionString}}
-      - {key: GIGBID_EMBED_GIGSIM, value: "1"}
-      - {key: GIGSIM_BASE_URL, value: "http://gigsim.internal"}
-      - {key: MCP_TRANSPORT, value: inprocess}
-      - {key: MODEL_PROFILE, value: open}
-      - {key: APP_SECRET_KEY, generateValue: true}
-      - {key: TOKEN_ENCRYPTION_KEY, sync: false}
-      - {key: GROQ_API_KEY, sync: false}
-      - {key: REVIEWER_PASSWORD, sync: false}
-      - {key: CORS_ORIGINS, value: "https://gigbid-web.onrender.com"}
-  - type: web
-    name: gigbid-web
-    runtime: docker
-    dockerfilePath: infra/docker/web.Dockerfile
-    envVars:
-      - {key: API_URL, value: "https://gigbid-api.onrender.com"}
+projects:
+  - name: GigBid
+    environments:
+      - name: Production
+        databases:
+          - name: gigbid-db
+            region: singapore
+            plan: 0.1c-256mb
+            diskSizeGB: 5
+            ipAllowList: []
+        services:
+          - type: pserv
+            name: gigbid-vectors
+            runtime: docker
+            region: singapore
+            plan: 0.5c-512mb
+            dockerfilePath: infra/docker/qdrant.Dockerfile
+            dockerContext: .
+            disk:
+              name: gigbid-vectors-data
+              mountPath: /qdrant/storage
+              sizeGB: 1
+          - type: keyvalue
+            name: gigbid-queue
+            region: singapore
+            plan: 256mb
+            maxmemoryPolicy: noeviction
+            ipAllowList: []
+          - type: web
+            name: gigbid-api
+            runtime: docker
+            region: singapore
+            plan: 1c-2g
+            dockerfilePath: infra/docker/render.Dockerfile
+            dockerContext: .
+            healthCheckPath: /api/healthz
+            maxShutdownDelaySeconds: 60
+            disk:
+              name: gigbid-data
+              mountPath: /app/data/processed
+              sizeGB: 5
+            envVars:
+              - key: DATABASE_URL
+                fromDatabase: {name: gigbid-db, property: connectionString}
+              - key: REDIS_URL
+                fromService: {name: gigbid-queue, type: keyvalue, property: connectionString}
+              - key: QDRANT_URL
+                fromService: {name: gigbid-vectors, type: pserv, property: hostport}
+              - {key: MODEL_PROFILE, value: open}
+              - {key: MARKETPLACE_MODE, value: gigsim}
+              - {key: MCP_TRANSPORT, value: http}
+              - {key: MCP_PORTFOLIO_URL, value: "http://127.0.0.1:8101/mcp"}
+              - {key: MCP_MARKETPLACE_URL, value: "http://127.0.0.1:8102/mcp"}
+              - {key: MCP_WORKSPACE_URL, value: "http://127.0.0.1:8103/mcp"}
+              - {key: GIGSIM_BASE_URL, value: "http://127.0.0.1:8081"}
+              - {key: GIGSIM_STATE, value: /app/data/processed/gigsim_state.json}
+              - {key: FASTEMBED_CACHE_PATH, value: /app/data/processed/model-cache}
+              - {key: OMP_NUM_THREADS, value: "1"}
+              - {key: OPENBLAS_NUM_THREADS, value: "1"}
+              - {key: TOKENIZERS_PARALLELISM, value: "false"}
+              - {key: APP_SECRET_KEY, generateValue: true}
+              - {key: GIGSIM_API_TOKEN, generateValue: true}
+              - {key: REVIEWER_EMAIL, value: reviewer@gigbid.dev}
+              - {key: GROQ_API_KEY, sync: false}
+              - {key: REVIEWER_PASSWORD, sync: false}
+          - type: web
+            name: gigbid-web
+            runtime: docker
+            region: singapore
+            plan: 0.5c-512mb
+            dockerfilePath: infra/docker/web.Dockerfile
+            dockerContext: .
+            healthCheckPath: /signin
+            envVars:
+              - key: API_URL
+                fromService: {name: gigbid-api, type: web, property: hostport}
