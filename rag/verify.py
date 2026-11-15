@@ -13,6 +13,7 @@ reported before and after. Two checkers share this module:
 from __future__ import annotations
 
 import re
+import unicodedata
 
 from agent.settings import get_settings
 from rag.skills import extract_skills, lexicon
@@ -45,34 +46,40 @@ def is_claim(sentence: str) -> bool:
     return bool(_PAST.search(s) or _NUM.search(s) or extract_skills(s))
 
 
+def _numbers(text: str) -> set[str]:
+    return {re.sub(r"[\s,]", "", n).lower() for n in _NUM.findall(text)}
+
+
 def facts(sentence: str) -> dict:
     skills = extract_skills(sentence)
-    nums = [re.sub(r"[\s,]", "", n).lower() for n in _NUM.findall(sentence)]
+    nums = sorted(_numbers(sentence))
     nums = [n for n in nums if n.strip("$%xkm.") not in ("", "1", "2", "3")]          # ignore "2 weeks"-style small counts
     known = {w.lower() for s in lexicon() for w in [s, *lexicon()[s]]}
     ents = [e for e in _ENTITY.findall(sentence) if e not in _COMMON and e.lower() not in known and not any(e.lower() in k for k in known)]
     return {"skills": skills, "numbers": nums, "entities": ents, "years": _YEARS.findall(sentence)}
 
 
-def _norm(text: str) -> str:
-    return re.sub(r"[\s,]", "", (text or "").lower())
+def _canonical(text: str) -> str:
+    return unicodedata.normalize("NFKC", text or "").translate(str.maketrans("‐‑‒–—", "-----"))
 
 
 def check_claim(sentence: str, evidence: list[dict], cited: list[str] | None = None) -> dict:
     """evidence: [{id, text, skills}]. Returns {text, label, evidence_ids, reason}."""
     th = get_settings().get("rag", "verify")
+    normalized = _canonical(sentence)
     # a sentence the writer attached evidence to is a claim by construction, whatever its grammar
     if not is_claim(sentence) and not (cited and (_NUM.search(sentence) or extract_skills(sentence)) and not _NEG.search(sentence)):
         return {"text": sentence, "label": "not_a_claim", "evidence_ids": [], "reason": ""}
-    f = facts(sentence)
+    f = facts(normalized)
     total = len(f["skills"]) + len(f["numbers"]) + len(f["entities"]) + len(f["years"])
     order = sorted(evidence, key=lambda e: (e["id"] not in (cited or []),))
     best = (0.0, None, [])
     for e in order:
-        text, compact = (e.get("text") or "").lower(), _norm(e.get("text"))
-        have = set(e.get("skills") or []) | set(extract_skills(e.get("text") or ""))
+        evidence_text = _canonical(e.get("text"))
+        text = evidence_text.lower()
+        have = set(e.get("skills") or []) | set(extract_skills(evidence_text))
         missing = [s for s in f["skills"] if s not in have]
-        missing += [n for n in f["numbers"] if n not in compact]
+        missing += [n for n in f["numbers"] if n not in _numbers(evidence_text)]
         missing += [x for x in f["entities"] if x.lower() not in text]
         missing += [f"{y} years" for y in f["years"] if not re.search(rf"\b{y}\+?\s*years?\b", text)]
         cov = 1 - len(missing) / total if total else 0.0
@@ -81,15 +88,15 @@ def check_claim(sentence: str, evidence: list[dict], cited: list[str] | None = N
     if total == 0:
         # no checkable fact: accept as partly supported only if it cites evidence or clearly paraphrases one item
         from rag.skills import tokenize
-        toks = set(tokenize(sentence))
+        toks = set(tokenize(normalized))
         cited_ok = [c for c in (cited or []) if any(e["id"] == c for e in evidence)]
-        ov = max(((len(toks & set(tokenize(e.get("text") or ""))) / max(len(toks), 1), e["id"]) for e in evidence), default=(0.0, None))
+        ov = max(((len(toks & set(tokenize(_canonical(e.get("text"))))) / max(len(toks), 1), e["id"]) for e in evidence), default=(0.0, None))
         if cited_ok or ov[0] >= 0.6:
             return {"text": sentence, "label": "partly_supported", "evidence_ids": cited_ok[:2] or [ov[1]], "reason": "general experience claim; no checkable fact stated"}
         return {"text": sentence, "label": "unsupported", "evidence_ids": [], "reason": "experience claim with no evidence behind it"}
     # a number, employer or tenure that appears in no evidence item is invented, whatever else matches
-    hard = any(m for m in missing if m not in f["skills"])
-    label = "supported" if cov >= th["supported"] and not hard else "partly_supported" if cov >= th["partial"] and not (hard and cov < 0.6) else "unsupported"
+    hard = not eid or any(m for m in missing if m not in f["skills"])
+    label = "unsupported" if hard else "supported" if cov >= th["supported"] else "partly_supported" if cov >= th["partial"] else "unsupported"
     return {"text": sentence, "label": label, "evidence_ids": [eid] if eid and label != "unsupported" else [],
             "reason": "all stated facts found in evidence" if not missing else "not found in evidence: " + ", ".join(map(str, missing[:4]))}
 

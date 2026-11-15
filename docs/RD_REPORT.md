@@ -51,7 +51,7 @@ On 15 matched proposal-quality jobs per arm, independent claim checking found 2 
 
 ## 6. Policy change
 
-The policy pack is data-driven. ADR 0006 documents a policy update example and its effect on the dry-run preview. An observed change-request turnaround time and deployment-history diff are pending. The local checkout has no Git history.
+The policy pack is data-driven. The student confirmed that the prospective November 2 update was never issued. ADR 0006 documents the synthetic simulator example used in development and its effect on the dry-run preview. Pricing and Compliance read live policy values through the Marketplace port.
 
 ## 7. Signature extension
 
