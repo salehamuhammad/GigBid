@@ -22,7 +22,7 @@ class Preference(BaseModel):
 async def run():
     llm = get_llm()
     if llm.offline:
-        raise SystemExit("AI review requires a configured model provider.")
+        raise SystemExit("Proposal evaluation requires a configured model provider.")
     reference_model = llm.model_for("analyst")
     original = json.loads((RESULTS / "judge_ai_only.json").read_text(encoding="utf-8-sig"))
     with (ROOT / "evals/datasets/judge_labels.csv").open(encoding="utf-8-sig", newline="") as f:
@@ -76,7 +76,7 @@ async def run():
     matched = [item for item in ratings if item["original"] and item["second_rater"]["rating"]]
     a = [item["original"]["overall"] for item in matched]
     b = [item["second_rater"]["rating"]["overall"] for item in matched]
-    result = {"protocol": "AI-to-AI agreement and blinded AI pairwise comparison",
+    result = {"protocol": "Agreement between model judges and blinded pairwise comparison",
               "second_rater_model": reference_model, "items": len(items), "matched_ratings": len(matched),
               "cohens_kappa": kappa(a, b, False), "quadratic_weighted_kappa": kappa(a, b, True),
               "pairs": len(pairs), "pair_status": dict(Counter(item["status"] for item in preferences)),

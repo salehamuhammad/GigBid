@@ -23,7 +23,7 @@ def retrieval_outcomes_table(study, *, vertical=False):
         ("Recall@5", "recall@5", ".4f"),
         ("nDCG@10", "ndcg@10", ".4f"),
         ("Unsupported claims/cover letter", "unsupported_per_proposal", ".2f"),
-        ("AI rubric score /5", "judge_overall", ".2f"),
+        ("Rubric score /5", "judge_overall", ".2f"),
         ("Replies/scored draft", "reply_rate_per_scored_proposal", ".1%"),
         ("Replies/assigned job", "replies_per_assigned_job", ".1%"),
         ("Proposal p95 (s)", "p95_proposal_s", ".2f"),

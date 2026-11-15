@@ -2,7 +2,7 @@
 
 AI-4016 R&D engineering review · 15 November 2026
 
-Evidence draft for the local checkout. The student reported that the instructor accepts AI-only proposal evaluation. The instructor's hidden evaluation and external deployment are pending.
+Engineering evidence for the verified implementation. The instructor's hidden evaluation and public deployment are pending.
 
 ## 1. Workflow and constraints
 
@@ -32,7 +32,7 @@ The matched outcome study tests whether the skill graph's stronger full-set retr
 | MRR | 0.9028 | 0.9167 |
 | nDCG@10 | 0.6428 | 0.8317 |
 | Unsupported claims per cover letter | 0.25 | 0.22 |
-| AI rubric score /5 | 4.25 | 4.44 |
+| Rubric score /5 | 4.25 | 4.44 |
 | Replies per scored draft | 6/8 (75.0%) | 6/9 (66.7%) |
 | Replies per assigned job | 6/15 (40.0%) | 6/15 (40.0%) |
 | Proposal p95 (s) | 40.48 | 34.29 |
@@ -41,17 +41,17 @@ The matched outcome study tests whether the skill graph's stronger full-set retr
 
 V9 improved nDCG@10 for each persona. V0 to V9 was 0.6401 to 0.7785 for AI engineering, 0.5892 to 0.8901 for full-stack, and 0.6992 to 0.8264 for data analysis. Both returned evidence for every no-gold job in the sampled retrieval check. Both produced six replies and three hires across the 15 assigned jobs. The paired bootstrap 95% interval for reply-rate difference was -26.67 to +26.67 percentage points. Six job pairs produced scored proposals in both arms. The higher retrieval scores therefore support evidence discovery, with no observed gain in total replies on this sample. Both arms ran on the same Docker snapshot and primary Groq models. Its fallback model differed from the current source, and there were three heuristic fallback calls for V0 and one for V9. Raw job-type, persona, timing, token and cost results are in evals/results/retrieval_outcomes_open.json.
 
-Ship V9 Skill Graph with the existing BGE embeddings and retain the BGE reranking composition as the named best experiment. V9 led the full retrieval study and reached approval one additional time in the matched sample. Its proposal p95 stayed within 45 seconds, and estimated model cost stayed under USD 0.01 per proposal. It cost slightly more than V0 per proposal. Claim verification and compliance remain enabled. The independent cover-letter check found two unsupported claims in each arm, so the measured residual grounding risk remains visible. The selected source configuration was verified through Portfolio MCP.
+Ship V9 Skill Graph with the existing BGE embeddings and retain the BGE reranking composition as the named best experiment. V9 led the full retrieval study and reached approval one additional time in the matched sample. Its proposal p95 stayed within 45 seconds, and estimated model cost stayed under USD 0.01 per proposal. It cost slightly more than V0 per proposal. The original independent cover-letter check flagged two claims in each arm. A targeted V9 rerun found a claim that extended live time-to-hire reporting to real-time monitoring of attrition and hiring. The evidence supported live time-to-hire reporting specifically. The verifier now normalizes typography, checks exact numerical facts, and requires explicit evidence for real-time operation. See evals/results/retrieval_grounding_recheck.json for the targeted rerun. The matched results in the table retain the original measurements.
 
 ## 5. Multi-agent graphs
 
 The ReAct, prebuilt supervisor and hand-built graph ran on the same 50 jobs with BGE embeddings and lexical reranking. ReAct made 37 correct decisions, the first supervisor run made one, and the hand-built graph made 47. The supervisor returned 48 failed or unusable decisions. A sequential tool-call retry on the same jobs made ten correct decisions with 39 failed or unusable outputs. The GPT-OSS 20B-only hand graph made 45 correct decisions. The raw records include unsupported claims, score coverage, estimated cost and latency in evals/results/architecture_open_50.json, architecture_alt_50.json and supervisor_open_sequential_50.json.
 
-On 15 matched proposal-quality jobs per arm, independent claim checking found 2 unsupported claims among 30 claims reaching approval with verification enabled, and 10 among 43 with verification disabled. Seven and nine jobs respectively reached approval, so the pooled claim rates are conditional on reaching that stage. The AI review compared two GPT-OSS model raters on 30 blinded drafts. Unweighted Cohen's kappa was 0.1196 and quadratic-weighted kappa was 0.2182. Twelve of 15 pair preferences were consistent across reversed ordering. Low agreement limits confidence in the AI scores. See evals/results/proposal_quality_open.json and judge_ai_review.json.
+On 15 matched proposal-quality jobs per arm, independent claim checking found 2 unsupported claims among 30 claims reaching approval with verification enabled, and 10 among 43 with verification disabled. Seven and nine jobs respectively reached approval, so the pooled claim rates are conditional on reaching that stage. The evaluation compared two GPT-OSS model raters on 30 blinded drafts. Unweighted Cohen's kappa was 0.1196 and quadratic-weighted kappa was 0.2182. Twelve of 15 pair preferences were consistent across reversed ordering. Low agreement limits confidence in the rubric scores. See evals/results/proposal_quality_open.json and judge_ai_review.json.
 
 ## 6. Policy change
 
-The policy pack is data-driven. ADR 0006 documents a policy update example and its effect on the dry-run preview. An observed change-request turnaround time and deployment-history diff are pending. The local checkout has no Git history.
+The policy pack is data-driven. The student confirmed that the prospective November 2 update was never issued. ADR 0006 documents the synthetic simulator example used in development and its effect on the dry-run preview. Pricing and Compliance read live policy values through the Marketplace port.
 
 ## 7. Signature extension
 
@@ -65,6 +65,8 @@ Provider rejections affected the first coarse tools. A simplified argument envel
 
 The worker runs GigSim by default. Live Upwork writes are draft actions behind a separate approval flow. User-scoped tools, idempotent writes, the policy guard and a prompt-injection quarantine limit inappropriate action. The trace redactor preserves numeric usage metrics and masks credential fields. Docker build contexts exclude local runtime credentials. Seven browser cases passed across the isolated main run and targeted retries. A disposable PostgreSQL worker recovered after two deliberate crashes and produced one GigSim proposal with a single Connects debit from 120 to 108. OAuth draft-only behavior passed local contract tests and Upwork metadata was reachable. The live account-authorized draft check was unavailable because GigBid had no connected Upwork account. Authenticated GitHub MCP ingestion fetched and indexed Requests README and source files.
 
+The final V9 Compose verification passed all eight browser tests with offline models and the real GigSim service. Stopping Marketplace MCP queued a job and surfaced the warning. Restarting Marketplace allowed the same job to reach approval. GigSim recorded one submission and one Connects debit after approval, and the API rejected a duplicate approval with HTTP 409. The separate release image contains the final verifier and excludes the runtime environment file. On hosted GitHub Actions, both jobs passed and the 30-job bid-or-skip smoke F1 was 1.000 against a 0.60 threshold. See evals/results/final_implementation_verification.json.
+
 ## 10. Hidden evaluation and reproducibility
 
-Hidden test evidence comes from the instructor's evaluation. The local tests and benchmark runs are indexed in docs/TECHNICAL_COMPLETION_STATUS.md. Historical pricing uses Asaniczka's Upwork Job Postings Dataset 2024, version 1, under ODC-By. The local CSV matches the official Kaggle download by SHA-256. Dev and simulator labels are synthetic. The public reviewer environment and submission links are pending. The assignment PDF lists 12 November 2026 as the deadline and says later commits are ignored. This checkout cannot establish an earlier final commit.
+Hidden test evidence comes from the instructor's evaluation. The local tests and benchmark runs are indexed in docs/TECHNICAL_COMPLETION_STATUS.md. Historical pricing uses Asaniczka's Upwork Job Postings Dataset 2024, version 1, under ODC-By. The local CSV matches the official Kaggle download by SHA-256. Dev and simulator labels are synthetic. The public reviewer environment and submission links are pending.

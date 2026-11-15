@@ -99,7 +99,7 @@ nDCG@10 was 0.0617 lower than hybrid on the 461 jobs with labeled evidence.
 It led the full 570-job BGE-embedding retrieval comparison. The previous BGE reranking
 composition exceeded the Matcher's 90-second timeout in the
 [runtime pilot](evals/results/retrieval_bge_runtime_pilot.json). The matched table below
-compares V9 and V0 on the same 15 jobs, with AI rubric scores and GigSim simulated outcomes.
+compares V9 and V0 on the same 15 jobs, with rubric scores and GigSim simulated outcomes.
 The reply rate per scored draft and replies per assigned job use different denominators.
 
 <!-- RESULTS:START -->
@@ -166,7 +166,7 @@ The reply rate per scored draft and replies per assigned job use different denom
 
 **Matched open-model retrieval and proposal outcomes** ([raw results](evals/results/retrieval_outcomes_open.json))
 
-| Variant | Recall@5 | nDCG@10 | Unsupported claims/cover letter | AI rubric score /5 | Replies/scored draft | Replies/assigned job | Proposal p95 (s) | USD/proposal | Drafts/jobs |
+| Variant | Recall@5 | nDCG@10 | Unsupported claims/cover letter | Rubric score /5 | Replies/scored draft | Replies/assigned job | Proposal p95 (s) | USD/proposal | Drafts/jobs |
 |---|---|---|---|---|---|---|---|---|---|
 | v0_naive | 0.6500 | 0.6428 | 0.25 | 4.25 | 75.0% | 40.0% | 40.48 | 0.008217 | 8/15 |
 | v9_skill_graph | 0.8000 | 0.8317 | 0.22 | 4.44 | 66.7% | 40.0% | 34.29 | 0.008533 | 9/15 |

@@ -12,7 +12,7 @@
   "deployed_variant": "best",
   "at": "2026-11-15 11:13:59"
  },
- "protocol": "AI-to-AI agreement and blinded AI pairwise comparison",
+ "protocol": "Agreement between model judges and blinded pairwise comparison",
  "second_rater_model": "openai/gpt-oss-20b",
  "items": 30,
  "matched_ratings": 30,
