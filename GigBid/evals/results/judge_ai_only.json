@@ -1,0 +1,770 @@
+{
+ "env": {
+  "model_profile": "open",
+  "embeddings": {
+   "provider": "fastembed",
+   "model": "BAAI/bge-small-en-v1.5"
+  },
+  "reranker": {
+   "provider": "fastembed",
+   "model": "BAAI/bge-reranker-base"
+  },
+  "deployed_variant": "best",
+  "at": "2026-11-15 10:03:55"
+ },
+ "n": 30,
+ "model_scored": 30,
+ "mean_judge": 4.633333333333334,
+ "rows": [
+  {
+   "proposal_id": "P001",
+   "job_post": "Detect objects in Accounting camera footage\nWe are a accounting company and need help with the following: detect objects in accounting camera footage.\n\nWhat we need:\n- You will be responsible for work like this: scripted in the usual data-science language.\n- You will be responsible for work like this: a real-time detector that draws boxes around objects.\n- You will be responsible for work like this: packaged every service into reproducible images.\n- You will be responsible for work like this: frame-level preprocessing of camera feeds.\n\nEstimated effort: about 60 hours over 4 weeks. Please include relevant past work.",
+   "proposal": "Your project, detect objects in accounting camera footage, is close to work I delivered for a manufacturing client: a camera-based inspector for weld seams on a production line. That project caught 94% of defects at 30 frames per second on an edge box.\n\nI have not used WebSockets on a client project yet, so I would not claim it; I would plan extra time for that part.\n\nFor your project I would begin with a short, fixed-scope first milestone so you can judge the approach before committing to the rest. Could you share a sample of the data or the current setup so I can confirm the scope?",
+   "human_overall": "",
+   "judge": {
+    "relevance": 4,
+    "evidence": 3,
+    "clarity": 5,
+    "professionalism": 5,
+    "overall": 4,
+    "reason": "Relevant experience with real-time detection, concrete past project, clear and concise, professional tone; evidence limited to one example."
+   },
+   "usage": {
+    "node": "judge",
+    "model": "openai/gpt-oss-120b",
+    "input_tokens": 666,
+    "output_tokens": 326,
+    "cost_usd": 0.000296,
+    "latency_ms": 5562,
+    "estimated": false,
+    "fallback": false,
+    "prompt_version": "1.0"
+   }
+  },
+  {
+   "proposal_id": "P002",
+   "job_post": "Cross-platform mobile app for Travel\nWe are a travel company and need help with the following: cross-platform mobile app for travel.\n\nWhat we need:\n- Experience with TypeScript is essential.\n- You will be responsible for work like this: one codebase shipped to both app stores.\n- Experience with NoSQL is essential.\n- Please show past work using Node.js.\n\nEstimated effort: about 40 hours over 2 weeks. Looking for clear communication.",
+   "proposal": "For a travel client I built a typed GraphQL gateway in Node.js that cut front\u2011end API calls per page by 50\u202f%. I also delivered a React Native mobile app with a single TypeScript codebase that was shipped to both iOS and Android stores, earning a 4.7\u2011star rating from over 2,100 users. That project used MongoDB as the NoSQL backend, satisfying the data\u2011store requirement. My work routinely includes end\u2011to\u2011end Playwright test suites written in TypeScript, which previously reduced production bugs from nine per month to two. I don\u2019t have a specific public example of my Git workflow to reference. Across multiple projects I have leveraged Node.js to build scalable back\u2011ends, as demonstrated in the GraphQL gateway for a travel client. My TypeScript expertise is evident in both the GraphQL gateway and the mobile app codebases. Using MongoDB in the mobile app and the event ticketing site shows my ability to work with NoSQL databases at scale. The CI/CD pipeline I set up for the end\u2011to\u2011end test suite ensured every push was automatically validated.",
+   "human_overall": "",
+   "judge": {
+    "relevance": 5,
+    "evidence": 5,
+    "clarity": 5,
+    "professionalism": 5,
+    "overall": 5,
+    "reason": "Strong relevant experience, concrete metrics, clear concise, professional tone\u2014highly compelling."
+   },
+   "usage": {
+    "node": "judge",
+    "model": "openai/gpt-oss-120b",
+    "input_tokens": 737,
+    "output_tokens": 345,
+    "cost_usd": 0.000318,
+    "latency_ms": 1067,
+    "estimated": false,
+    "fallback": false,
+    "prompt_version": "1.0"
+   }
+  },
+  {
+   "proposal_id": "P003",
+   "job_post": "Back-end API for Media platform\nWe are a media company and need help with the following: back-end api for media platform.\n\nWhat we need:\n- You will be responsible for work like this: moved slow work to background workers.\n- Must have hands-on experience with Docker.\n- Please show past work using PostgreSQL.\n- You will be responsible for work like this: a JavaScript back end with middleware routing.\n- We need someone strong in Apollo.\n\nEstimated effort: about 30 hours over 2 weeks. Please include relevant past work.",
+   "proposal": "Hi, I\u2019m excited to build the back\u2011end API for your media platform. In a recent cloud\u2011migration project (case study fullstack_dev-case-019) I used Docker to containerize services and set up CI/CD pipelines, delivering zero\u2011downtime deployments. I also designed a PostgreSQL\u2011backed clinic booking system (fullstack_dev-case-003), demonstrating robust schema design and performance tuning. For JavaScript back\u2011ends, I created a live\u2011support chat widget (fullstack_dev-case-004) that employed Node.js middleware routing to handle real\u2011time requests efficiently. Additionally, I built a GraphQL gateway (fullstack_dev-case-009) that unified multiple REST services, showcasing deep GraphQL expertise that translates directly to Apollo implementations. I can start by setting up Docker containers, migrating slow tasks to background workers, and integrating PostgreSQL with your Apollo GraphQL layer. Let me know what access you need for the first week, and I\u2019ll hit the ground running.",
+   "human_overall": "",
+   "judge": {
+    "relevance": 5,
+    "evidence": 5,
+    "clarity": 5,
+    "professionalism": 4,
+    "overall": 5,
+    "reason": "Strong alignment with required tech, concrete project examples, clear plan; minor generic greeting but overall compelling."
+   },
+   "usage": {
+    "node": "judge",
+    "model": "openai/gpt-oss-120b",
+    "input_tokens": 729,
+    "output_tokens": 310,
+    "cost_usd": 0.000295,
+    "latency_ms": 1109,
+    "estimated": false,
+    "fallback": false,
+    "prompt_version": "1.0"
+   }
+  },
+  {
+   "proposal_id": "P004",
+   "job_post": "Analyse Insurance customer data\nWe are a insurance company and need help with the following: analyse insurance customer data.\n\nWhat we need:\n- Python is required.\n- Data visualization is required.\n- We need someone strong in Cohort analysis.\n- Experience with SQL is essential.\n\nEstimated effort: about 40 hours over 2 weeks. Long-term collaboration possible.",
+   "proposal": "Your project, analyse insurance customer data, is close to work I delivered for a telecom client: regression analysis of what predicts cancellation. That project two contract terms explained 38% of churn variance.\n\nI built it with Python, SQL, which you also list. For Data visualization, a second reference is Customer survey analysis, which pinpointed check-in wait as the top satisfaction driver. For SQL, a second reference is Inventory turnover reporting, which freed $240k of working capital in slow stock.\n\nFor your project I would begin with a short, fixed-scope first milestone so you can judge the approach before committing to the rest. Could you share a sample of the data or the current setup so I can confirm the scope?",
+   "human_overall": "",
+   "judge": {
+    "relevance": 3,
+    "evidence": 5,
+    "clarity": 5,
+    "professionalism": 5,
+    "overall": 4,
+    "reason": "Concrete relevant experience and clear proposal, though cohort analysis not explicitly highlighted."
+   },
+   "usage": {
+    "node": "judge",
+    "model": "openai/gpt-oss-120b",
+    "input_tokens": 634,
+    "output_tokens": 275,
+    "cost_usd": 0.00026,
+    "latency_ms": 1155,
+    "estimated": false,
+    "fallback": false,
+    "prompt_version": "1.0"
+   }
+  },
+  {
+   "proposal_id": "P005",
+   "job_post": "Computer vision system for Energy\nWe are a energy company and need help with the following: computer vision system for energy.\n\nWhat we need:\n- Experience with Docker is essential.\n- You will be responsible for work like this: a custom training loop with automatic differentiation.\n- You will be responsible for work like this: a real-time detector that draws boxes around objects.\n\nEstimated effort: about 30 hours over 2 weeks. Looking for clear communication.",
+   "proposal": "Hi, I\u2019m an AI engineer with proven experience building Docker\u2011based computer\u2011vision pipelines for industrial inspection. In my weld\u2011defect detection project (case study ai_engineer-case-004) I containerized the entire solution with Docker, ensuring reproducible deployment on edge hardware. I also designed a custom training loop using PyTorch\u2019s automatic differentiation, which let us fine\u2011tune the detector on proprietary data. The final system runs in real time, drawing bounding boxes around defects at 30\u202ffps, meeting the same performance expectations you described. I\u2019m comfortable delivering a 30\u2011hour solution within two weeks and will keep communication clear and frequent. I look forward to discussing how we can adapt this expertise to your energy\u2011focused use case.",
+   "human_overall": "",
+   "judge": {
+    "relevance": 5,
+    "evidence": 5,
+    "clarity": 5,
+    "professionalism": 4,
+    "overall": 5,
+    "reason": "Directly matches requirements, cites concrete Docker CV project, clear and concise."
+   },
+   "usage": {
+    "node": "judge",
+    "model": "openai/gpt-oss-120b",
+    "input_tokens": 659,
+    "output_tokens": 312,
+    "cost_usd": 0.000286,
+    "latency_ms": 1455,
+    "estimated": false,
+    "fallback": false,
+    "prompt_version": "1.0"
+   }
+  },
+  {
+   "proposal_id": "P006",
+   "job_post": "Accounting KPI dashboard\nWe are a accounting company and need help with the following: accounting kpi dashboard.\n\nWhat we need:\n- You will be responsible for work like this: free Google dashboards the marketing team could edit.\n- Please show past work using Data visualization.\n- We need someone strong in PowerBI.\n\nEstimated effort: about 40 hours over 2 weeks. Start as soon as possible.",
+   "proposal": "Your project, accounting kpi dashboard, is close to work I delivered for a saas client: a weekly revenue and pipeline dashboard for the leadership team. That project replaced a 6-hour manual report and is opened by 40 managers weekly.\n\nI built it with Power BI, Data visualization, which you also list. For Data visualization, a second reference is SEO performance dashboard, which content team doubled output on pages that convert. For Data visualization, a second reference is Subscriber retention study, which identified a channel with 2x churn, saving $180k in ad spend.\n\nFor your project I would begin with a short, fixed-scope first milestone so you can judge the approach before committing to the rest. Could you share a sample of the data or the current setup so I can confirm the scope?",
+   "human_overall": "",
+   "judge": {
+    "relevance": 4,
+    "evidence": 4,
+    "clarity": 4,
+    "professionalism": 5,
+    "overall": 4,
+    "reason": "Strong PowerBI focus, concrete examples, clear proposal; minor redundancy but overall compelling."
+   },
+   "usage": {
+    "node": "judge",
+    "model": "openai/gpt-oss-120b",
+    "input_tokens": 660,
+    "output_tokens": 314,
+    "cost_usd": 0.000287,
+    "latency_ms": 1722,
+    "estimated": false,
+    "fallback": false,
+    "prompt_version": "1.0"
+   }
+  },
+  {
+   "proposal_id": "P007",
+   "job_post": "CI/CD and cloud setup for Logistics product\nWe are a logistics company and need help with the following: ci/cd and cloud setup for logistics product.\n\nWhat we need:\n- You will be responsible for work like this: every push ran tests and shipped automatically.\n- You will be responsible for work like this: deployed on Amazon's cloud.\n- You will be responsible for work like this: typed the whole front end end-to-end.\n\nEstimated effort: about 30 hours over 2 weeks. Please include relevant past work.",
+   "proposal": "Your project, ci/cd and cloud setup for logistics product, is close to work I delivered for a hr tech client: 120 browser tests covering signup to payroll. That project escaped production bugs down from 9 a month to 2.\n\nI built it with CI/CD, which you also list. For CI/CD, a second reference is Cloud migration, which hosting cost down 30% and zero-downtime deploys.\n\nFor your project I would begin with a short, fixed-scope first milestone so you can judge the approach before committing to the rest. Could you share a sample of the data or the current setup so I can confirm the scope?",
+   "human_overall": "",
+   "judge": {
+    "relevance": 4,
+    "evidence": 4,
+    "clarity": 5,
+    "professionalism": 5,
+    "overall": 4,
+    "reason": "Shows relevant CI/CD/cloud work, concrete results, clear ask; minor missing front\u2011end detail but strong enough to merit reply."
+   },
+   "usage": {
+    "node": "judge",
+    "model": "openai/gpt-oss-120b",
+    "input_tokens": 657,
+    "output_tokens": 268,
+    "cost_usd": 0.000259,
+    "latency_ms": 1119,
+    "estimated": false,
+    "fallback": false,
+    "prompt_version": "1.0"
+   }
+  },
+  {
+   "proposal_id": "P008",
+   "job_post": "Deploy and monitor ML models on AWS\nWe are a marketing company and need help with the following: deploy and monitor ml models on aws.\n\nWhat we need:\n- GitHub Actions is required.\n- Must have hands-on experience with Python REST API.\n- We need someone strong in AWS.\n- You will be responsible for work like this: packaged every service into reproducible images.\n- Please show past work using SageMaker.\n- Must have hands-on experience with experiment tracking.\n\nEstimated effort: about 20 hours over 1 weeks. Long-term collaboration possible.",
+   "proposal": "Your project, deploy and monitor ml models on aws, is close to work I delivered for an insurance client: moved on-prem training jobs to managed spot instances. That project cut training cost by 58% with no accuracy loss.\n\nI built it with SageMaker, AWS, which you also list. For FastAPI, Python, a second reference is Support knowledge assistant, which cut median first-response time from 11 minutes to 4 and deflected 31% of tickets. For Python, a second reference is Sensor anomaly detection, which flagged 7 of 8 failures at least 36 hours early.\n\nFor your project I would begin with a short, fixed-scope first milestone so you can judge the approach before committing to the rest. Could you share a sample of the data or the current setup so I can confirm the scope?",
+   "human_overall": "",
+   "judge": {
+    "relevance": 3,
+    "evidence": 4,
+    "clarity": 4,
+    "professionalism": 5,
+    "overall": 4,
+    "reason": "Shows relevant AWS/SageMaker experience and concrete examples, but omits GitHub Actions and experiment tracking details."
+   },
+   "usage": {
+    "node": "judge",
+    "model": "openai/gpt-oss-120b",
+    "input_tokens": 698,
+    "output_tokens": 258,
+    "cost_usd": 0.00026,
+    "latency_ms": 1085,
+    "estimated": false,
+    "fallback": false,
+    "prompt_version": "1.0"
+   }
+  },
+  {
+   "proposal_id": "P009",
+   "job_post": "CI/CD and cloud setup for Accounting product\nWe are a accounting company and need help with the following: ci/cd and cloud setup for accounting product.\n\nWhat we need:\n- You will be responsible for work like this: typed the whole front end end-to-end.\n- Experience with CI/CD is essential.\n- You will be responsible for work like this: browser-driven regression tests.\n- Must have hands-on experience with containerization.\n- AWS is required.\n\nEstimated effort: about 120 hours over 8 weeks. Looking for clear communication.",
+   "proposal": "In a fintech project, I overhauled the monorepo CI, packaging services into reproducible Docker images, adding Playwright browser regression tests, and reduced pipeline time from 38 minutes to 9 minutes. How does your current accounting product handle transaction reconciliation across multiple ledgers? I have built AWS\u2011hosted back\u2011ends with FastAPI, PostgreSQL, and Docker, achieving 85\u202fms p95 latency at 400 requests per second. I have containerized applications using Docker, as demonstrated in a marketplace API project where each service was packaged into reproducible images. My front\u2011end work in a travel client\u2019s GraphQL gateway cut API calls per page in half, and in a developer portal I reduced support questions by 35\u202f% through typed, end\u2011to\u2011end TypeScript code.",
+   "human_overall": "",
+   "judge": {
+    "relevance": 4,
+    "evidence": 5,
+    "clarity": 4,
+    "professionalism": 5,
+    "overall": 4,
+    "reason": "Strong relevant experience with CI/CD, Docker, AWS and regression tests; concrete metrics boost confidence."
+   },
+   "usage": {
+    "node": "judge",
+    "model": "openai/gpt-oss-120b",
+    "input_tokens": 691,
+    "output_tokens": 314,
+    "cost_usd": 0.000292,
+    "latency_ms": 1659,
+    "estimated": false,
+    "fallback": false,
+    "prompt_version": "1.0"
+   }
+  },
+  {
+   "proposal_id": "P010",
+   "job_post": "Forecasting model for our Consulting business\nWe are a consulting company and need help with the following: forecasting model for our consulting business.\n\nWhat we need:\n- You will be responsible for work like this: scripted in the usual data-science language.\n- Must have hands-on experience with pandas.\n- You will be responsible for work like this: predicted next quarter's demand from seasonal history.\n\nEstimated effort: about 80 hours over 5 weeks. Long-term collaboration possible.",
+   "proposal": "In a recent project, I reduced stock\u2011outs by 18% and cut forecast error from 27% to 14% by building a demand\u2011forecasting model for a retail client using pandas and Python. How do you currently capture and analyze seasonal demand patterns for your consulting projects? I can replicate that success by developing a Python script that forecasts next quarter\u2019s demand from your seasonal history, leveraging pandas and standard forecasting techniques. The script will be fully documented, version\u2011controlled, and ready for integration into your existing data pipeline. I\u2019m also prepared for long\u2011term collaboration, ensuring continuous improvement and model monitoring.",
+   "human_overall": "",
+   "judge": {
+    "relevance": 5,
+    "evidence": 5,
+    "clarity": 5,
+    "professionalism": 5,
+    "overall": 5,
+    "reason": "Directly matches requirements, cites concrete results, concise, and maintains professional tone."
+   },
+   "usage": {
+    "node": "judge",
+    "model": "openai/gpt-oss-120b",
+    "input_tokens": 637,
+    "output_tokens": 244,
+    "cost_usd": 0.000242,
+    "latency_ms": 1473,
+    "estimated": false,
+    "fallback": false,
+    "prompt_version": "1.0"
+   }
+  },
+  {
+   "proposal_id": "P011",
+   "job_post": "dbt models for Hospitality analytics\nWe are a hospitality company and need help with the following: dbt models for hospitality analytics.\n\nWhat we need:\n- You will be responsible for work like this: scheduled pipelines as dependency graphs.\n- Experience with data build tool is essential.\n- Please show past work using queries.\n- Must have hands-on experience with PostgreSQL.\n- We need someone strong in Snowflake.\n- You will be responsible for work like this: scripted in the usual data-science language.\n\nEstimated effort: about 20 hours over 1 weeks. Start as soon as possible.",
+   "proposal": "Hi, I\u2019m excited to help you build robust dbt models for your hospitality analytics. In a recent Snowflake cost\u2011audit project (case\u2011study 015) I used dbt to refactor models, delivering a 35% reduction in warehouse spend, which proves my expertise with both dbt and Snowflake. I also designed and scheduled end\u2011to\u2011end ETL pipelines as dependency graphs for a retail client (case\u2011study 010), writing complex PostgreSQL queries and scripting the workflow in Python\u2014exactly the data\u2011science language you mentioned. These projects showcase my ability to deliver clean, query\u2011driven analytics on PostgreSQL and Snowflake within tight timelines. I can start immediately and complete the 20\u2011hour scope within one week, ensuring reliable pipelines and clear documentation. Looking forward to discussing how we can tailor the solution to your hospitality data needs.",
+   "human_overall": "",
+   "judge": {
+    "relevance": 5,
+    "evidence": 5,
+    "clarity": 5,
+    "professionalism": 5,
+    "overall": 5,
+    "reason": "Strong relevant experience, concrete examples, clear and professional."
+   },
+   "usage": {
+    "node": "judge",
+    "model": "openai/gpt-oss-120b",
+    "input_tokens": 714,
+    "output_tokens": 363,
+    "cost_usd": 0.000325,
+    "latency_ms": 1310,
+    "estimated": false,
+    "fallback": false,
+    "prompt_version": "1.0"
+   }
+  },
+  {
+   "proposal_id": "P012",
+   "job_post": "Forecasting model for our Pharma business\nWe are a pharma company and need help with the following: forecasting model for our pharma business.\n\nWhat we need:\n- You will be responsible for work like this: gradient-boosted decision trees.\n- Python is required.\n- Please show past work using Model evaluation.\n- You will be responsible for work like this: predicted next quarter's demand from seasonal history.\n\nEstimated effort: about 80 hours over 5 weeks. Long-term collaboration possible.",
+   "proposal": "For a retail client I built a weekly demand forecasting pipeline that predicted next quarter\u2019s demand from seasonal history, using Python and pandas, and reduced stock\u2011outs by 18% while cutting forecast MAPE from 27% to 14%. In an edtech project I created a repeatable model\u2011evaluation harness in Python that caught 14 regressions before release, demonstrating rigorous validation of predictive models. I can implement the requested model in Python, applying the time\u2011series forecasting approach I used for store demand and the rigorous evaluation framework I built for the edtech client. By the end of week one I will deliver a cleaned dataset, a baseline forecast, and a plan for model development and validation to keep the project on schedule.",
+   "human_overall": "",
+   "judge": {
+    "relevance": 5,
+    "evidence": 5,
+    "clarity": 5,
+    "professionalism": 5,
+    "overall": 5,
+    "reason": "Strong relevant experience, concrete results, clear plan; highly likely to engage."
+   },
+   "usage": {
+    "node": "judge",
+    "model": "openai/gpt-oss-120b",
+    "input_tokens": 662,
+    "output_tokens": 297,
+    "cost_usd": 0.000278,
+    "latency_ms": 1553,
+    "estimated": false,
+    "fallback": false,
+    "prompt_version": "1.0"
+   }
+  },
+  {
+   "proposal_id": "P013",
+   "job_post": "Computer vision system for Energy\nWe are a energy company and need help with the following: computer vision system for energy.\n\nWhat we need:\n- Experience with Docker is essential.\n- You will be responsible for work like this: a custom training loop with automatic differentiation.\n- You will be responsible for work like this: a real-time detector that draws boxes around objects.\n\nEstimated effort: about 30 hours over 2 weeks. Looking for clear communication.",
+   "proposal": "For a recent manufacturing client I built a weld\u2011defect inspection system that achieved 94\u202f% detection accuracy while running at 30\u202fframes per second on an edge device, using Docker containers and a custom training loop with automatic differentiation. The solution leveraged PyTorch and YOLO within a containerized workflow, ensuring reproducible builds and easy deployment to the production line. My prior work demonstrates that I can deliver similar performance for your energy\u2011sector use case. Do you have an annotated image dataset and the target hardware specifications ready for integration?",
+   "human_overall": "",
+   "judge": {
+    "relevance": 5,
+    "evidence": 5,
+    "clarity": 5,
+    "professionalism": 5,
+    "overall": 5,
+    "reason": "Directly matches required tech, cites concrete results, concise and professional\u2014strong fit for the 30\u2011hour CV task."
+   },
+   "usage": {
+    "node": "judge",
+    "model": "openai/gpt-oss-120b",
+    "input_tokens": 616,
+    "output_tokens": 308,
+    "cost_usd": 0.000277,
+    "latency_ms": 964,
+    "estimated": false,
+    "fallback": false,
+    "prompt_version": "1.0"
+   }
+  },
+  {
+   "proposal_id": "P014",
+   "job_post": "Forecasting model for our Consulting business\nWe are a consulting company and need help with the following: forecasting model for our consulting business.\n\nWhat we need:\n- You will be responsible for work like this: scripted in the usual data-science language.\n- Must have hands-on experience with pandas.\n- You will be responsible for work like this: predicted next quarter's demand from seasonal history.\n\nEstimated effort: about 80 hours over 5 weeks. Long-term collaboration possible.",
+   "proposal": "I recently delivered a store demand\u2011forecasting project (case study ai_engineer-case-006) where I built a time\u2011series model with Prophet and pandas to predict next quarter\u2019s demand from seasonal history, cutting stock\u2011outs by 18%. The same repository (ai_engineer-repo-006) demonstrates the full Python pipeline I used for data manipulation, cleaning, and feature engineering with pandas. All work was scripted in Python, the standard data\u2011science language you require. I can apply this proven approach to your consulting business, delivering a robust forecasting model within the 80\u2011hour, 5\u2011week timeline you outlined. My proposed fixed price of $3,000 fits comfortably within your budget while reflecting the quality and experience I bring.",
+   "human_overall": "",
+   "judge": {
+    "relevance": 5,
+    "evidence": 5,
+    "clarity": 5,
+    "professionalism": 5,
+    "overall": 5,
+    "reason": "Strong fit: clear pandas forecasting experience, concrete past project, concise proposal\u2014high likelihood to engage."
+   },
+   "usage": {
+    "node": "judge",
+    "model": "openai/gpt-oss-120b",
+    "input_tokens": 664,
+    "output_tokens": 333,
+    "cost_usd": 0.000299,
+    "latency_ms": 1993,
+    "estimated": false,
+    "fallback": false,
+    "prompt_version": "1.0"
+   }
+  },
+  {
+   "proposal_id": "P015",
+   "job_post": "Real-time features for Fintech app\nWe are a fintech company and need help with the following: real-time features for fintech app.\n\nWhat we need:\n- Must have hands-on experience with WebSockets.\n- Experience with Node.js is essential.\n- Please show past work using Celery.\n\nEstimated effort: about 20 hours over 1 weeks. Please include relevant past work.",
+   "proposal": "In a recent live support chat widget project, the system handled 3,000 concurrent sessions in load tests. That experience demonstrates my ability to deliver high\u2011throughput WebSocket solutions with Node.js. I also built a restaurant ordering app using WebSockets and Node.js, where average order placement time dropped below 40 seconds. For asynchronous background processing, I integrated Celery into a clinic booking platform, cutting no\u2011shows by 27% through automated reminders. These projects align closely with the real\u2011time, low\u2011latency requirements of a fintech application. My approach includes thorough testing and performance monitoring to ensure reliability under peak loads. I will also provide clear documentation of the integration points for your backend services. Do you have existing authentication mechanisms that the real\u2011time layer should integrate with?",
+   "human_overall": "",
+   "judge": {
+    "relevance": 5,
+    "evidence": 5,
+    "clarity": 5,
+    "professionalism": 5,
+    "overall": 5,
+    "reason": "Strong relevant experience, concrete examples, clear and professional; likely to engage."
+   },
+   "usage": {
+    "node": "judge",
+    "model": "openai/gpt-oss-120b",
+    "input_tokens": 652,
+    "output_tokens": 310,
+    "cost_usd": 0.000284,
+    "latency_ms": 1222,
+    "estimated": false,
+    "fallback": false,
+    "prompt_version": "1.0"
+   }
+  },
+  {
+   "proposal_id": "P016",
+   "job_post": "CI/CD and cloud setup for Logistics product\nWe are a logistics company and need help with the following: ci/cd and cloud setup for logistics product.\n\nWhat we need:\n- You will be responsible for work like this: every push ran tests and shipped automatically.\n- You will be responsible for work like this: deployed on Amazon's cloud.\n- You will be responsible for work like this: typed the whole front end end-to-end.\n\nEstimated effort: about 30 hours over 2 weeks. Please include relevant past work.",
+   "proposal": "Hi,\n\nI\u2019m excited to help set up a robust CI/CD pipeline for your logistics product. In a recent project (case\u2011020) I built an end\u2011to\u2011end test suite where every push automatically ran tests and shipped the build, cutting production bugs dramatically. I also migrated a monolithic app to AWS (case\u2011019), delivering zero\u2011downtime deployments and autoscaled containers that reduced hosting costs by 30%. Finally, I typed the entire front\u2011end using TypeScript (case\u2011018), creating a fully typed Next.js portal that lowered support queries by 35%. With 30\u202fhours estimated, my rate of $48/h totals $1,440, comfortably within your budget. I look forward to delivering a reliable, automated workflow for your team.\n\nBest regards,\n[Your Name]",
+   "human_overall": "",
+   "judge": {
+    "relevance": 5,
+    "evidence": 4,
+    "clarity": 5,
+    "professionalism": 4,
+    "overall": 5,
+    "reason": "Strong relevant experience, concrete examples, clear proposal, reasonable rate\u2014makes me want to engage."
+   },
+   "usage": {
+    "node": "judge",
+    "model": "openai/gpt-oss-120b",
+    "input_tokens": 687,
+    "output_tokens": 270,
+    "cost_usd": 0.000265,
+    "latency_ms": 1500,
+    "estimated": false,
+    "fallback": false,
+    "prompt_version": "1.0"
+   }
+  },
+  {
+   "proposal_id": "P017",
+   "job_post": "Executive dashboard for Healthcare metrics\nWe are a healthcare company and need help with the following: executive dashboard for healthcare metrics.\n\nWhat we need:\n- Must have hands-on experience with Data visualization.\n- Must have hands-on experience with Power BI.\n- You will be responsible for work like this: free Google dashboards the marketing team could edit.\n- Experience with SQL is essential.\n- You will be responsible for work like this: drag-and-drop visual dashboards for executives.\n\nEstimated effort: about 80 hours over 5 weeks. Start as soon as possible.",
+   "proposal": "I\u2019m excited to build your executive healthcare dashboard. In a recent project (case\u202f001) I delivered a Power\u202fBI revenue dashboard for a SaaS leadership team, writing all SQL joins and creating visualisations that replaced a six\u2011hour manual report. For a healthcare client (case\u202f017) I built a Power\u202fBI KPI suite that let clinic managers edit metrics themselves, demonstrating the drag\u2011and\u2011drop experience you need. My work on an inventory\u2011turnover dashboard (case\u202f012) shows deep SQL expertise, optimizing queries that freed $240\u202fk in working capital. Across these projects I consistently produced executive\u2011ready visualisations that senior stakeholders could explore and update without developer assistance. I estimate 80\u202fhours over five weeks and propose a fixed price of $3,200, aligning with your budget while delivering the high\u2011impact, editable dashboards your team requires.",
+   "human_overall": "",
+   "judge": {
+    "relevance": 5,
+    "evidence": 5,
+    "clarity": 5,
+    "professionalism": 4,
+    "overall": 5,
+    "reason": "Highly relevant, concrete examples, clear and concise; only minor generic opening reduces professionalism slightly."
+   },
+   "usage": {
+    "node": "judge",
+    "model": "openai/gpt-oss-120b",
+    "input_tokens": 705,
+    "output_tokens": 243,
+    "cost_usd": 0.000252,
+    "latency_ms": 1276,
+    "estimated": false,
+    "fallback": false,
+    "prompt_version": "1.0"
+   }
+  },
+  {
+   "proposal_id": "P018",
+   "job_post": "Back-end API for Media platform\nWe are a media company and need help with the following: back-end api for media platform.\n\nWhat we need:\n- You will be responsible for work like this: moved slow work to background workers.\n- Must have hands-on experience with Docker.\n- Please show past work using PostgreSQL.\n- You will be responsible for work like this: a JavaScript back end with middleware routing.\n- We need someone strong in Apollo.\n\nEstimated effort: about 30 hours over 2 weeks. Please include relevant past work.",
+   "proposal": "Your project, back-end api for media platform, is close to work I delivered for an insurance client: moved a monolith from a single VPS to autoscaled containers. That project hosting cost down 30% and zero-downtime deploys.\n\nI built it with Docker, PostgreSQL, which you also list. For PostgreSQL, Docker, a second reference is Clinic booking platform, which cut no-shows by 27% through automated reminders. For PostgreSQL, a second reference is Subscription billing portal, which cut billing support tickets by 44%.\n\nFor your project I would begin with a short, fixed-scope first milestone so you can judge the approach before committing to the rest. Could you share a sample of the data or the current setup so I can confirm the scope?",
+   "human_overall": "",
+   "judge": {
+    "relevance": 3,
+    "evidence": 4,
+    "clarity": 4,
+    "professionalism": 5,
+    "overall": 4,
+    "reason": "Shows relevant Docker/PostgreSQL experience and concrete examples, but lacks explicit Apollo/JS backend mention; overall strong and professional."
+   },
+   "usage": {
+    "node": "judge",
+    "model": "openai/gpt-oss-120b",
+    "input_tokens": 686,
+    "output_tokens": 259,
+    "cost_usd": 0.000258,
+    "latency_ms": 1011,
+    "estimated": false,
+    "fallback": false,
+    "prompt_version": "1.0"
+   }
+  },
+  {
+   "proposal_id": "P019",
+   "job_post": "Real-time features for Healthcare app\nWe are a healthcare company and need help with the following: real-time features for healthcare app.\n\nWhat we need:\n- You will be responsible for work like this: moved slow work to background workers.\n- Must have hands-on experience with Postgres.\n- containerization is required.\n- You will be responsible for work like this: a single typed query endpoint for the front end.\n- Please show past work using Redis.\n\nEstimated effort: about 60 hours over 4 weeks. Long-term collaboration possible.",
+   "proposal": "Hi, I\u2019m an AI\u2011engineer with solid backend experience that matches your needs. In my WhatsApp\u2011free order\u2011assistant project (case\u2011017) I built a FastAPI service backed by PostgreSQL for reliable data storage and used Redis for real\u2011time caching, all packaged in Docker containers \u2013 exactly the stack you described. For moving heavy processing to the background, I delivered a sales\u2011call summariser (case\u2011005) where Celery workers handled transcription and summarisation, freeing the API to stay responsive. My training\u2011migration work (case\u2011016) demonstrates end\u2011to\u2011end containerisation using Docker, ensuring reproducible deployments. Together, these projects show I can create typed query endpoints, shift slow tasks to background workers, and maintain high\u2011throughput real\u2011time features in a healthcare\u2011grade environment. I\u2019m ready to start immediately and can commit to the 60\u2011hour timeline while keeping communication clear and progress transparent. Looking forward to collaborating long\u2011term.",
+   "human_overall": "",
+   "judge": {
+    "relevance": 5,
+    "evidence": 4,
+    "clarity": 5,
+    "professionalism": 5,
+    "overall": 4,
+    "reason": "Strong relevant experience and concrete examples; clear and professional, though not healthcare\u2011specific, making it a promising candidate."
+   },
+   "usage": {
+    "node": "judge",
+    "model": "openai/gpt-oss-120b",
+    "input_tokens": 726,
+    "output_tokens": 264,
+    "cost_usd": 0.000267,
+    "latency_ms": 1020,
+    "estimated": false,
+    "fallback": false,
+    "prompt_version": "1.0"
+   }
+  },
+  {
+   "proposal_id": "P020",
+   "job_post": "Real-time features for Fintech app\nWe are a fintech company and need help with the following: real-time features for fintech app.\n\nWhat we need:\n- Must have hands-on experience with WebSockets.\n- Experience with Node.js is essential.\n- Please show past work using Celery.\n\nEstimated effort: about 20 hours over 1 weeks. Please include relevant past work.",
+   "proposal": "Hello,\n\nI\u2019m excited to add real\u2011time capabilities to your fintech app. In a recent restaurant\u2011ordering project (fullstack_dev-case-017) I built a Node.js backend that used WebSockets to push live courier locations, delivering sub\u201140\u2011second order times. A similar live\u2011chat widget (fullstack_dev-case-004) also leveraged Node.js and WebSockets for instant messaging and typing indicators. For background processing, I implemented Celery in a clinic\u2011booking platform (fullstack_dev-case-003) to send automated appointment reminders, cutting no\u2011shows by 27%, and in a warehouse inventory system (fullstack_dev-case-015) to run nightly reconciliations. These experiences give me the exact skill set you need: real\u2011time communication, robust Node.js services, and reliable Celery task queues. I can start immediately, set up the WebSocket endpoints, integrate Celery workers, and ensure secure, scalable deployment within the one\u2011week timeline. Looking forward to discussing details.\n\nBest regards,\n[Your Name]",
+   "human_overall": "",
+   "judge": {
+    "relevance": 5,
+    "evidence": 5,
+    "clarity": 5,
+    "professionalism": 4,
+    "overall": 5,
+    "reason": "Strong relevant experience, concrete examples, clear and professional."
+   },
+   "usage": {
+    "node": "judge",
+    "model": "openai/gpt-oss-120b",
+    "input_tokens": 706,
+    "output_tokens": 276,
+    "cost_usd": 0.000271,
+    "latency_ms": 1561,
+    "estimated": false,
+    "fallback": false,
+    "prompt_version": "1.0"
+   }
+  },
+  {
+   "proposal_id": "P021",
+   "job_post": "Detect objects in Accounting camera footage\nWe are a accounting company and need help with the following: detect objects in accounting camera footage.\n\nWhat we need:\n- You will be responsible for work like this: scripted in the usual data-science language.\n- You will be responsible for work like this: a real-time detector that draws boxes around objects.\n- You will be responsible for work like this: packaged every service into reproducible images.\n- You will be responsible for work like this: frame-level preprocessing of camera feeds.\n\nEstimated effort: about 60 hours over 4 weeks. Please include relevant past work.",
+   "proposal": "In a recent weld\u2011defect detection project for a manufacturing line, I built a YOLO\u2011based real\u2011time detector that achieved 94\u202f% defect capture at 30\u202ffps on an edge device. All code was written in Python, the standard data\u2011science language used for model development and pipeline orchestration. Each component, from the preprocessing step to the inference service, was packaged into reproducible Docker images, enabling consistent deployment across environments. How many simultaneous camera feeds do you expect the solution to handle? I will provide comprehensive documentation and example scripts to help your team integrate and maintain the system.",
+   "human_overall": "",
+   "judge": {
+    "relevance": 4,
+    "evidence": 5,
+    "clarity": 5,
+    "professionalism": 5,
+    "overall": 4,
+    "reason": "Strong relevant experience with real-time YOLO detection and Docker packaging; concrete results make me interested despite different domain."
+   },
+   "usage": {
+    "node": "judge",
+    "model": "openai/gpt-oss-120b",
+    "input_tokens": 662,
+    "output_tokens": 293,
+    "cost_usd": 0.000275,
+    "latency_ms": 1181,
+    "estimated": false,
+    "fallback": false,
+    "prompt_version": "1.0"
+   }
+  },
+  {
+   "proposal_id": "P022",
+   "job_post": "Deploy and monitor ML models on AWS\nWe are a marketing company and need help with the following: deploy and monitor ml models on aws.\n\nWhat we need:\n- GitHub Actions is required.\n- Must have hands-on experience with Python REST API.\n- We need someone strong in AWS.\n- You will be responsible for work like this: packaged every service into reproducible images.\n- Please show past work using SageMaker.\n- Must have hands-on experience with experiment tracking.\n\nEstimated effort: about 20 hours over 1 weeks. Long-term collaboration possible.",
+   "proposal": "I\u2019m excited to help your marketing team deploy and monitor ML models on AWS. In my case study \u201cTraining migration to managed cloud\u201d (ai_engineer-case-016) I moved on\u2011prem training jobs to SageMaker, set up automated monitoring, and cut costs by 58%. I built the CI/CD pipeline using GitHub Actions (ai_engineer-case-015), ensuring every push triggers tests, builds reproducible Docker images, and deploys safely. My Python REST API work with FastAPI (ai_engineer-case-001) demonstrates the hands\u2011on experience you need for robust service endpoints. Across multiple projects (ai_engineer-case-010) I leveraged AWS services, packaged each component into reproducible containers, and used MLflow for experiment tracking, delivering end\u2011to\u2011end MLOps solutions. I can start immediately, deliver the 20\u2011hour scope within a week, and aim for a long\u2011term partnership. Looking forward to discussing details.",
+   "human_overall": "",
+   "judge": {
+    "relevance": 5,
+    "evidence": 4,
+    "clarity": 4,
+    "professionalism": 5,
+    "overall": 5,
+    "reason": "Strong alignment with requirements, concrete project references, clear and professional tone; likely to engage."
+   },
+   "usage": {
+    "node": "judge",
+    "model": "openai/gpt-oss-120b",
+    "input_tokens": 726,
+    "output_tokens": 256,
+    "cost_usd": 0.000262,
+    "latency_ms": 1805,
+    "estimated": false,
+    "fallback": false,
+    "prompt_version": "1.0"
+   }
+  },
+  {
+   "proposal_id": "P023",
+   "job_post": "Cross-platform mobile app for Pharma\nWe are a pharma company and need help with the following: cross-platform mobile app for pharma.\n\nWhat we need:\n- TypeScript is required.\n- Must have hands-on experience with React Native.\n- We need someone strong in Express.\n\nEstimated effort: about 30 hours over 2 weeks. Please include relevant past work.",
+   "proposal": "For a recent food\u2011delivery client I built a React Native restaurant ordering app that achieved an average order placement time of under 40 seconds. In a separate HR\u2011tech project I delivered a full TypeScript test suite that cut production bugs from nine per month to two. My solid Node.js background, demonstrated in the same React Native app, equips me to handle the server\u2011side logic efficiently. I am aware of the strict regulatory environment in pharma and will apply secure coding practices and thorough validation to meet compliance. I can share relevant work samples, including the TypeScript test suite and the React Native app, to illustrate my capabilities. I look forward to discussing how I can deliver your cross\u2011platform solution within the two\u2011week schedule. My experience with TypeScript and React Native aligns directly with your core technology stack, ensuring a smooth development process. Given the modest effort estimate, I can allocate focused time each day to stay on track and provide regular updates.",
+   "human_overall": "",
+   "judge": {
+    "relevance": 4,
+    "evidence": 4,
+    "clarity": 4,
+    "professionalism": 5,
+    "overall": 4,
+    "reason": "Strong tech match and concrete examples, but lacks explicit Express experience; overall compelling enough to consider replying."
+   },
+   "usage": {
+    "node": "judge",
+    "model": "openai/gpt-oss-120b",
+    "input_tokens": 681,
+    "output_tokens": 289,
+    "cost_usd": 0.000276,
+    "latency_ms": 1043,
+    "estimated": false,
+    "fallback": false,
+    "prompt_version": "1.0"
+   }
+  },
+  {
+   "proposal_id": "P024",
+   "job_post": "Fine-tune a language model on Marketing text\nWe are a marketing company and need help with the following: fine-tune a language model on marketing text.\n\nWhat we need:\n- Experience with NLP is essential.\n- Experience with evaluation harness is essential.\n- We need someone strong in LoRA.\n\nEstimated effort: about 40 hours over 2 weeks. Start as soon as possible.",
+   "proposal": "In a recent project, I fine\u2011tuned a medical note summarization model using LoRA, improving ROUGE\u2011L by 9 points on 1,000 clinician\u2011rated notes. I have built evaluation harnesses that caught 14 prompt regressions in the first month for an edtech client. I will use a similar harness to produce a detailed evaluation report for your marketing content. I can start immediately and will complete the fine\u2011tuning and evaluation within a 40\u2011hour window. Could you provide a sample of your marketing data or describe your current preprocessing pipeline? I do not have documented evidence of NLP experience beyond the LoRA fine\u2011tuning and evaluation harness work.",
+   "human_overall": "",
+   "judge": {
+    "relevance": 4,
+    "evidence": 5,
+    "clarity": 5,
+    "professionalism": 5,
+    "overall": 4,
+    "reason": "Strong LoRA and evaluation experience, concrete results; minor mismatch in domain but skills align well."
+   },
+   "usage": {
+    "node": "judge",
+    "model": "openai/gpt-oss-120b",
+    "input_tokens": 635,
+    "output_tokens": 262,
+    "cost_usd": 0.000252,
+    "latency_ms": 1368,
+    "estimated": false,
+    "fallback": false,
+    "prompt_version": "1.0"
+   }
+  },
+  {
+   "proposal_id": "P025",
+   "job_post": "Clean and reconcile Travel data\nWe are a travel company and need help with the following: clean and reconcile travel data.\n\nWhat we need:\n- Must have hands-on experience with queries.\n- You will be responsible for work like this: cleaned and reshaped the tables in notebooks.\n- R is required.\n- Please show past work using Excel.\n\nEstimated effort: about 30 hours over 2 weeks. Please include relevant past work.",
+   "proposal": "Hello,\n\nI have solid experience delivering data\u2011cleaning projects that match your needs. In a recent finance reconciliation case (ID data_analyst-case-008) I used SQL queries and Excel to reshape tables, cutting month\u2011end close time by three days. I also completed a customer\u2011survey analysis (ID data_analyst-case-007) where I leveraged R for extensive data cleaning and transformation, ensuring accurate statistical results. Additionally, I cleaned and standardized a large CRM dataset in Excel (ID data_analyst-case-019), reducing duplicate records from 18% to under 1% and providing a maintainable workbook for the client.\n\nI can apply these same techniques to your travel data, delivering clean, reconciled tables within the 30\u2011hour estimate. My rate is $40 per hour, which fits within your budget range. I look forward to discussing how I can help streamline your data.\n\nBest regards,\n[Your Name]",
+   "human_overall": "",
+   "judge": {
+    "relevance": 5,
+    "evidence": 5,
+    "clarity": 5,
+    "professionalism": 4,
+    "overall": 5,
+    "reason": "Clear, relevant experience with R, SQL, Excel; concrete examples; concise and professional, prompting a response."
+   },
+   "usage": {
+    "node": "judge",
+    "model": "openai/gpt-oss-120b",
+    "input_tokens": 696,
+    "output_tokens": 284,
+    "cost_usd": 0.000275,
+    "latency_ms": 3781,
+    "estimated": false,
+    "fallback": false,
+    "prompt_version": "1.0"
+   }
+  },
+  {
+   "proposal_id": "P026",
+   "job_post": "Fine-tune a language model on Marketing text\nWe are a marketing company and need help with the following: fine-tune a language model on marketing text.\n\nWhat we need:\n- Experience with NLP is essential.\n- Experience with evaluation harness is essential.\n- We need someone strong in LoRA.\n\nEstimated effort: about 40 hours over 2 weeks. Start as soon as possible.",
+   "proposal": "Hello,\n\nI\u2019m excited to help fine\u2011tune a language model on your marketing text. I have recently delivered a transformer\u2011based text\u2011classification system for a legal client, where I fine\u2011tuned a pretrained encoder on domain\u2011specific documents (see case\u2011002). For that project I also built a repeatable model\u2011evaluation harness that automated scoring on held\u2011out data (see case\u2011015), ensuring reliable performance metrics. Additionally, I adapted an open\u2011weight model using LoRA low\u2011rank adapters, achieving a 9\u2011point ROUGE\u2011L improvement on a clinical\u2011note summarisation task (see case\u2011019). These experiences give me the exact mix of NLP expertise, evaluation pipeline development, and LoRA\u2011based fine\u2011tuning you need. I can start immediately and deliver high\u2011quality results within the two\u2011week timeline. My rate aligns with the budget at $55\u202f/h, totaling $2,100 for the 40\u2011hour effort.\n\nBest regards,\n[Your Name]",
+   "human_overall": "",
+   "judge": {
+    "relevance": 5,
+    "evidence": 5,
+    "clarity": 5,
+    "professionalism": 4,
+    "overall": 5,
+    "reason": "Strong fit, concrete examples, clear proposal; minor generic greeting but otherwise professional."
+   },
+   "usage": {
+    "node": "judge",
+    "model": "openai/gpt-oss-120b",
+    "input_tokens": 702,
+    "output_tokens": 234,
+    "cost_usd": 0.000246,
+    "latency_ms": 1125,
+    "estimated": false,
+    "fallback": false,
+    "prompt_version": "1.0"
+   }
+  },
+  {
+   "proposal_id": "P027",
+   "job_post": "Solidity smart contract for HR tech token\nWe are a hr tech company and need help with the following: solidity smart contract for hr tech token.\n\nWhat we need:\n- Experience with Rust is essential.\n- Please show past work using Web3.\n- Must have hands-on experience with Smart contracts.\n- We need someone strong in Solidity.\n\nEstimated effort: about 20 hours over 1 weeks. Please include relevant past work.",
+   "proposal": "Hi,\n\nI\u2019m excited about building the HR\u2011tech token smart contract for your platform. I have 4+ years of experience writing production\u2011grade Solidity contracts and have integrated them with Rust\u2011based back\u2011ends for Web3 applications. In my recent projects I:\n\n- Designed and deployed ERC\u201120 token contracts with custom vesting and role\u2011based access controls.\n- Built Rust modules that interact with Ethereum nodes via `ethers\u2011rs`, enabling off\u2011chain logic and secure key management.\n- Delivered end\u2011to\u2011end token solutions within tight timelines (typically 1\u20112 weeks for a 20\u2011hour scope).\n\n**Screening question:** I have used Solidity, Rust, and Web3 libraries (ethers.js, ethers\u2011rs, Hardhat) in production for token launches and DAO tooling.\n\nI can share the relevant repositories and case studies (GitHub, private repo access) right away. I propose a fixed price of **$1,400 USD**, which covers the full 20\u2011hour effort, testing, and documentation, and I\u2019ll split the work into two milestones (50% upfront, 50% on final delivery). I\u2019m ready to start immediately and will have the initial contract draft within 3\u20114 days.\n\nLooking forward to collaborating!\n\nBest regards,\n[Your Name]\nSolidity & Rust Smart\u2011Contract Engineer",
+   "human_overall": "",
+   "judge": {
+    "relevance": 5,
+    "evidence": 4,
+    "clarity": 5,
+    "professionalism": 5,
+    "overall": 5,
+    "reason": "Clear, relevant proposal with solid Solidity/Rust experience; provides concrete work details though lacking explicit project links."
+   },
+   "usage": {
+    "node": "judge",
+    "model": "openai/gpt-oss-120b",
+    "input_tokens": 775,
+    "output_tokens": 283,
+    "cost_usd": 0.000286,
+    "latency_ms": 1306,
+    "estimated": false,
+    "fallback": false,
+    "prompt_version": "1.0"
+   }
+  },
+  {
+   "proposal_id": "P028",
+   "job_post": "MLOps pipeline for Events models\nWe are a events company and need help with the following: mlops pipeline for events models.\n\nWhat we need:\n- Experience with FastAPI is essential.\n- You will be responsible for work like this: deployed on Amazon's cloud.\n- Must have hands-on experience with containers.\n- You will be responsible for work like this: managed training jobs and endpoints in Amazon's ML service.\n\nEstimated effort: about 30 hours over 2 weeks. Please include relevant past work.",
+   "proposal": "Your project, mlops pipeline for events models, is close to work I delivered for a logistics client: an automated train-evaluate-deploy pipeline for route-time models. That project cut model release time from 3 weeks to 2 days.\n\n For FastAPI, a second reference is Candidate-job matcher, which recruiters shortlisted 2.3x more candidates per hour. For Docker, a second reference is Weld defect detection, which caught 94% of defects at 30 frames per second on an edge box.\n\nFor your project I would begin with a short, fixed-scope first milestone so you can judge the approach before committing to the rest. Could you share a sample of the data or the current setup so I can confirm the scope?",
+   "human_overall": "",
+   "judge": {
+    "relevance": 5,
+    "evidence": 5,
+    "clarity": 5,
+    "professionalism": 5,
+    "overall": 5,
+    "reason": "Highly relevant, concrete examples, clear and professional; shows exact FastAPI and container experience, making me eager to respond."
+   },
+   "usage": {
+    "node": "judge",
+    "model": "openai/gpt-oss-120b",
+    "input_tokens": 670,
+    "output_tokens": 366,
+    "cost_usd": 0.00032,
+    "latency_ms": 1368,
+    "estimated": false,
+    "fallback": false,
+    "prompt_version": "1.0"
+   }
+  },
+  {
+   "proposal_id": "P029",
+   "job_post": "Cross-platform mobile app for Travel\nWe are a travel company and need help with the following: cross-platform mobile app for travel.\n\nWhat we need:\n- Experience with TypeScript is essential.\n- You will be responsible for work like this: one codebase shipped to both app stores.\n- Experience with NoSQL is essential.\n- Please show past work using Node.js.\n\nEstimated effort: about 40 hours over 2 weeks. Looking for clear communication.",
+   "proposal": "Hello,\n\nI\u2019m excited to build your travel app. In my recent mobile\u2011fitness project (case study ID\u202ffullstack_dev-case-006) I delivered a React\u202fNative app written entirely in TypeScript, sharing a single codebase that was published to both iOS and Android stores. The backend was built with Node.js and used MongoDB, giving me solid experience with NoSQL databases. The app was shipped on schedule and earned a 4.7\u2011star rating from over 2,100 users, demonstrating clear communication and reliable delivery. I can apply the same cross\u2011platform approach to your travel solution, ensuring a consistent experience across platforms while keeping development efficient. My rate aligns with your budget, and I\u2019m ready to start immediately.\n\nThank you for considering my proposal.\n\nBest regards,\n[Your Name]",
+   "human_overall": "",
+   "judge": {
+    "relevance": 5,
+    "evidence": 5,
+    "clarity": 5,
+    "professionalism": 4,
+    "overall": 5,
+    "reason": "Strong match, concrete example, clear, professional; likely to engage."
+   },
+   "usage": {
+    "node": "judge",
+    "model": "openai/gpt-oss-120b",
+    "input_tokens": 674,
+    "output_tokens": 329,
+    "cost_usd": 0.000298,
+    "latency_ms": 1333,
+    "estimated": false,
+    "fallback": false,
+    "prompt_version": "1.0"
+   }
+  },
+  {
+   "proposal_id": "P030",
+   "job_post": "CI/CD and cloud setup for Accounting product\nWe are a accounting company and need help with the following: ci/cd and cloud setup for accounting product.\n\nWhat we need:\n- You will be responsible for work like this: typed the whole front end end-to-end.\n- Experience with CI/CD is essential.\n- You will be responsible for work like this: browser-driven regression tests.\n- Must have hands-on experience with containerization.\n- AWS is required.\n\nEstimated effort: about 120 hours over 8 weeks. Looking for clear communication.",
+   "proposal": "Hi, I\u2019m excited to help modernize your accounting product\u2019s delivery pipeline. In a recent fintech project (case\u2011011) I designed a full CI/CD pipeline using GitHub Actions, integrated Playwright browser\u2011driven regression tests, and cut pipeline runtime from 38\u202fminutes to 9\u202fminutes. For containerization, I migrated a monolithic insurance app to Docker\u2011based services on AWS (case\u2011019), achieving zero\u2011downtime deployments and a 30\u202f% reduction in hosting costs. I also built a fully typed front\u2011end with TypeScript and Next.js for a developer docs portal (case\u2011018), delivering a robust UI with end\u2011to\u2011end type safety. My experience aligns perfectly with your needs for CI/CD, containerization, automated regression testing, typed front\u2011end work, and AWS cloud setup. I\u2019m a clear communicator and can deliver the 120\u202fhours over the 8\u2011week timeline you outlined. I look forward to discussing how we can ensure a smooth, reliable release process for your product.",
+   "human_overall": "",
+   "judge": {
+    "relevance": 5,
+    "evidence": 5,
+    "clarity": 5,
+    "professionalism": 4,
+    "overall": 5,
+    "reason": "Strong alignment, concrete examples, clear and concise; minor generic greeting reduces professionalism slightly."
+   },
+   "usage": {
+    "node": "judge",
+    "model": "openai/gpt-oss-120b",
+    "input_tokens": 739,
+    "output_tokens": 259,
+    "cost_usd": 0.000266,
+    "latency_ms": 1508,
+    "estimated": false,
+    "fallback": false,
+    "prompt_version": "1.0"
+   }
+  }
+ ]
+}

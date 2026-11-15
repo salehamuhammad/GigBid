@@ -1,0 +1,12 @@
+{
+  "positive_jobs": 461,
+  "hybrid_ndcg": 0.7145497371137152,
+  "tinybert_v3_ndcg": 0.6528348653052617,
+  "mean_paired_ndcg_delta": -0.061714871808453406,
+  "bootstrap_ci95": [
+    -0.07546417696466147,
+    -0.04728403878276965
+  ],
+  "bootstrap_samples": 2000,
+  "seed": 4016
+}

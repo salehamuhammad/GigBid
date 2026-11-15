@@ -1,0 +1,29 @@
+# Render.com blueprint: the smallest deployment that satisfies "deployed web application".
+# One Python service (API + in-process worker + GigSim mounted at /gigsim), one web service,
+# one managed Postgres. Set GROQ_API_KEY in the dashboard to run the `open` profile.
+databases:
+  - name: gigbid-db
+    plan: free
+services:
+  - type: web
+    name: gigbid-api
+    runtime: docker
+    dockerfilePath: infra/docker/api.Dockerfile
+    healthCheckPath: /api/healthz
+    envVars:
+      - {key: DATABASE_URL, fromDatabase: {name: gigbid-db, property: connectionString}}
+      - {key: GIGBID_EMBED_GIGSIM, value: "1"}
+      - {key: GIGSIM_BASE_URL, value: "http://gigsim.internal"}
+      - {key: MCP_TRANSPORT, value: inprocess}
+      - {key: MODEL_PROFILE, value: open}
+      - {key: APP_SECRET_KEY, generateValue: true}
+      - {key: TOKEN_ENCRYPTION_KEY, sync: false}
+      - {key: GROQ_API_KEY, sync: false}
+      - {key: REVIEWER_PASSWORD, sync: false}
+      - {key: CORS_ORIGINS, value: "https://gigbid-web.onrender.com"}
+  - type: web
+    name: gigbid-web
+    runtime: docker
+    dockerfilePath: infra/docker/web.Dockerfile
+    envVars:
+      - {key: API_URL, value: "https://gigbid-api.onrender.com"}

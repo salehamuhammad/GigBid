@@ -1,0 +1,7212 @@
+{
+ "env": {
+  "model_profile": "open_alt",
+  "embeddings": {
+   "provider": "fastembed",
+   "model": "BAAI/bge-small-en-v1.5"
+  },
+  "reranker": "lexical",
+  "provider": "openai_compatible",
+  "deployed_variant": "best",
+  "vector_store": "qdrant",
+  "at": "2026-11-15T09:55:22.036907+00:00",
+  "dataset_sha256": {
+   "dev_ai_engineer.json": "2be36bf0dc427448c4607bcc0fe016ceb845f50b0fe298d715a98834b9e86fb6",
+   "dev_data_analyst.json": "e4217b93442ffdaa1fa36143f6f2629e915b81f2170c9019ebd52accbce6aeac",
+   "dev_fullstack_dev.json": "a1cff12d20e65eec7ea656173673c87d6af273deb8074e86c62ad1bad7225ede",
+   "tool_tasks.json": "d295a9d0be26d7efbd3d57c2ceafe65a00e3c05f25d0c48a1682516a67b575b6"
+  },
+  "packages": {
+   "langgraph": "1.2.21",
+   "langgraph-supervisor": "0.0.31",
+   "fastembed": "0.9.1",
+   "qdrant-client": "1.20.0"
+  }
+ },
+ "plan": [
+  [
+   "ai_engineer",
+   "dev-ai-01504"
+  ],
+  [
+   "ai_engineer",
+   "dev-ai-01637"
+  ],
+  [
+   "ai_engineer",
+   "dev-ai-01524"
+  ],
+  [
+   "ai_engineer",
+   "dev-ai-01660"
+  ],
+  [
+   "ai_engineer",
+   "dev-ai-01582"
+  ],
+  [
+   "ai_engineer",
+   "dev-ai-01642"
+  ],
+  [
+   "ai_engineer",
+   "dev-ai-01568"
+  ],
+  [
+   "ai_engineer",
+   "dev-ai-01545"
+  ],
+  [
+   "ai_engineer",
+   "dev-ai-01615"
+  ],
+  [
+   "ai_engineer",
+   "dev-ai-01561"
+  ],
+  [
+   "ai_engineer",
+   "dev-ai-01518"
+  ],
+  [
+   "ai_engineer",
+   "dev-ai-01597"
+  ],
+  [
+   "ai_engineer",
+   "dev-ai-01626"
+  ],
+  [
+   "ai_engineer",
+   "dev-ai-01574"
+  ],
+  [
+   "ai_engineer",
+   "dev-ai-01528"
+  ],
+  [
+   "ai_engineer",
+   "dev-ai-01514"
+  ],
+  [
+   "ai_engineer",
+   "dev-ai-01648"
+  ],
+  [
+   "fullstack_dev",
+   "dev-fu-01796"
+  ],
+  [
+   "fullstack_dev",
+   "dev-fu-01834"
+  ],
+  [
+   "fullstack_dev",
+   "dev-fu-01807"
+  ],
+  [
+   "fullstack_dev",
+   "dev-fu-01840"
+  ],
+  [
+   "fullstack_dev",
+   "dev-fu-01888"
+  ],
+  [
+   "fullstack_dev",
+   "dev-fu-01758"
+  ],
+  [
+   "fullstack_dev",
+   "dev-fu-01727"
+  ],
+  [
+   "fullstack_dev",
+   "dev-fu-01837"
+  ],
+  [
+   "fullstack_dev",
+   "dev-fu-01714"
+  ],
+  [
+   "fullstack_dev",
+   "dev-fu-01737"
+  ],
+  [
+   "fullstack_dev",
+   "dev-fu-01776"
+  ],
+  [
+   "fullstack_dev",
+   "dev-fu-01750"
+  ],
+  [
+   "fullstack_dev",
+   "dev-fu-01735"
+  ],
+  [
+   "fullstack_dev",
+   "dev-fu-01828"
+  ],
+  [
+   "fullstack_dev",
+   "dev-fu-01853"
+  ],
+  [
+   "fullstack_dev",
+   "dev-fu-01755"
+  ],
+  [
+   "fullstack_dev",
+   "dev-fu-01889"
+  ],
+  [
+   "data_analyst",
+   "dev-da-01918"
+  ],
+  [
+   "data_analyst",
+   "dev-da-02073"
+  ],
+  [
+   "data_analyst",
+   "dev-da-01902"
+  ],
+  [
+   "data_analyst",
+   "dev-da-01977"
+  ],
+  [
+   "data_analyst",
+   "dev-da-02077"
+  ],
+  [
+   "data_analyst",
+   "dev-da-02065"
+  ],
+  [
+   "data_analyst",
+   "dev-da-01913"
+  ],
+  [
+   "data_analyst",
+   "dev-da-02023"
+  ],
+  [
+   "data_analyst",
+   "dev-da-02001"
+  ],
+  [
+   "data_analyst",
+   "dev-da-02049"
+  ],
+  [
+   "data_analyst",
+   "dev-da-01982"
+  ],
+  [
+   "data_analyst",
+   "dev-da-01961"
+  ],
+  [
+   "data_analyst",
+   "dev-da-02009"
+  ],
+  [
+   "data_analyst",
+   "dev-da-02020"
+  ],
+  [
+   "data_analyst",
+   "dev-da-02058"
+  ],
+  [
+   "data_analyst",
+   "dev-da-02024"
+  ]
+ ],
+ "planned_jobs_per_system": 50,
+ "planned_systems": [
+  "graph"
+ ],
+ "complete": true,
+ "graph": {
+  "n": 50,
+  "errors": 1,
+  "bid_skip_accuracy": 0.9,
+  "scam_accuracy": 1.0,
+  "unsupported_per_proposal": 0.0556,
+  "violations_in_output": 0,
+  "mean_p_reply": 0.5358,
+  "simulator_reply_rate": 0.3889,
+  "simulator_scored_n": 18,
+  "mean_estimated_cost_usd": 0.003,
+  "cost_samples": 50,
+  "tokens_per_job": 16570.24,
+  "latency_p95_s": 21.89,
+  "rows": [
+   {
+    "persona": "ai_engineer",
+    "job_id": "dev-ai-01504",
+    "kind": "normal",
+    "action": "bid",
+    "graph_decision": "bid",
+    "letter": "In a recent project, I fine\u2011tuned a medical note summarization model using LoRA, improving ROUGE\u2011L by 9 points on 1,000 clinician\u2011rated notes. I have built evaluation harnesses that caught 14 prompt regressions in the first month for an edtech client. I will use a similar harness to produce a detailed evaluation report for your marketing content. I can start immediately and will complete the fine\u2011tuning and evaluation within a 40\u2011hour window. Could you provide a sample of your marketing data or describe your current preprocessing pipeline? I do not have documented evidence of NLP experience beyond the LoRA fine\u2011tuning and evaluation harness work.",
+    "bid": 2200.0,
+    "ids": [
+     "ai_engineer-case-007",
+     "ai_engineer-case-015"
+    ],
+    "tokens": 26718,
+    "latency": 24.669613095000386,
+    "caught": 0,
+    "usage": [
+     {
+      "node": "intake",
+      "model": "none",
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "cost_usd": 0.0,
+      "latency_ms": 0,
+      "node_ms": 0
+     },
+     {
+      "node": "analyst",
+      "model": "openai/gpt-oss-20b",
+      "input_tokens": 742,
+      "output_tokens": 534,
+      "cost_usd": 0.000216,
+      "latency_ms": 1806,
+      "estimated": false,
+      "fallback": false,
+      "prompt_version": "1.0",
+      "node_ms": 1808
+     },
+     {
+      "node": "risk",
+      "model": "openai/gpt-oss-20b",
+      "input_tokens": 792,
+      "output_tokens": 193,
+      "cost_usd": 0.000117,
+      "latency_ms": 968,
+      "estimated": false,
+      "fallback": false,
+      "prompt_version": "1.0",
+      "node_ms": 1093
+     },
+     {
+      "node": "matcher",
+      "model": "openai/gpt-oss-20b",
+      "input_tokens": 962,
+      "output_tokens": 550,
+      "cost_usd": 0.000237,
+      "latency_ms": 787,
+      "estimated": false,
+      "fallback": false,
+      "prompt_version": "1.0",
+      "node_ms": 7957
+     },
+     {
+      "node": "decide",
+      "model": "none",
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "cost_usd": 0.0,
+      "latency_ms": 0,
+      "node_ms": 0
+     },
+     {
+      "node": "pricing",
+      "model": "none",
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "cost_usd": 0.0,
+      "latency_ms": 26,
+      "node_ms": 26
+     },
+     {
+      "node": "writer",
+      "model": "openai/gpt-oss-20b",
+      "input_tokens": 1561,
+      "output_tokens": 1457,
+      "cost_usd": 0.000554,
+      "latency_ms": 1848,
+      "estimated": false,
+      "fallback": false,
+      "prompt_version": "1.2",
+      "node_ms": 1897
+     },
+     {
+      "node": "verifier",
+      "model": "openai/gpt-oss-20b",
+      "input_tokens": 941,
+      "output_tokens": 1215,
+      "cost_usd": 0.000435,
+      "latency_ms": 1690,
+      "estimated": false,
+      "fallback": false,
+      "prompt_version": "1.0",
+      "node_ms": 1703
+     },
+     {
+      "node": "critic",
+      "model": "openai/gpt-oss-20b",
+      "input_tokens": 960,
+      "output_tokens": 576,
+      "cost_usd": 0.000245,
+      "latency_ms": 764,
+      "estimated": false,
+      "fallback": false,
+      "prompt_version": "1.1",
+      "node_ms": 767
+     },
+     {
+      "node": "writer",
+      "model": "heuristic-fallback",
+      "input_tokens": 1693,
+      "output_tokens": 2048,
+      "cost_usd": 0.000741,
+      "latency_ms": 3176,
+      "estimated": true,
+      "fallback": true,
+      "errors": [
+       "openai/gpt-oss-20b: invalid output (JSONDecodeError)"
+      ],
+      "prompt_version": "1.2",
+      "node_ms": 3178
+     },
+     {
+      "node": "verifier",
+      "model": "openai/gpt-oss-20b",
+      "input_tokens": 986,
+      "output_tokens": 862,
+      "cost_usd": 0.000333,
+      "latency_ms": 1077,
+      "estimated": false,
+      "fallback": false,
+      "prompt_version": "1.0",
+      "node_ms": 1092
+     },
+     {
+      "node": "critic",
+      "model": "openai/gpt-oss-20b",
+      "input_tokens": 1061,
+      "output_tokens": 573,
+      "cost_usd": 0.000251,
+      "latency_ms": 978,
+      "estimated": false,
+      "fallback": false,
+      "prompt_version": "1.1",
+      "node_ms": 979
+     },
+     {
+      "node": "writer",
+      "model": "openai/gpt-oss-20b",
+      "input_tokens": 1639,
+      "output_tokens": 1894,
+      "cost_usd": 0.000691,
+      "latency_ms": 2252,
+      "estimated": false,
+      "fallback": false,
+      "prompt_version": "1.2",
+      "node_ms": 2255
+     },
+     {
+      "node": "verifier",
+      "model": "openai/gpt-oss-20b",
+      "input_tokens": 958,
+      "output_tokens": 925,
+      "cost_usd": 0.000349,
+      "latency_ms": 1376,
+      "estimated": false,
+      "fallback": false,
+      "prompt_version": "1.0",
+      "node_ms": 1391
+     },
+     {
+      "node": "critic",
+      "model": "openai/gpt-oss-20b",
+      "input_tokens": 969,
+      "output_tokens": 1106,
+      "cost_usd": 0.000404,
+      "latency_ms": 1588,
+      "estimated": false,
+      "fallback": false,
+      "prompt_version": "1.1",
+      "node_ms": 1589
+     },
+     {
+      "node": "compliance",
+      "model": "openai/gpt-oss-20b",
+      "input_tokens": 818,
+      "output_tokens": 703,
+      "cost_usd": 0.000272,
+      "latency_ms": 930,
+      "estimated": false,
+      "fallback": false,
+      "prompt_version": "1.0",
+      "node_ms": 939
+     }
+    ],
+    "estimated_cost_usd": 0.004845,
+    "correct": true,
+    "claims": {
+     "total_claims": 3,
+     "unsupported": 0,
+     "partly": 1,
+     "supported": 2
+    },
+    "violations": 0,
+    "p_reply": 0.6932,
+    "replied": true,
+    "simulator_http_status": 200
+   },
+   {
+    "persona": "ai_engineer",
+    "job_id": "dev-ai-01637",
+    "kind": "normal",
+    "action": "skip",
+    "graph_decision": "skip",
+    "letter": "",
+    "bid": null,
+    "ids": [],
+    "tokens": 2747,
+    "latency": 8.495060092995118,
+    "caught": 0,
+    "usage": [
+     {
+      "node": "intake",
+      "model": "none",
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "cost_usd": 0.0,
+      "latency_ms": 0,
+      "node_ms": 0
+     },
+     {
+      "node": "analyst",
+      "model": "openai/gpt-oss-20b",
+      "input_tokens": 734,
+      "output_tokens": 503,
+      "cost_usd": 0.000206,
+      "latency_ms": 967,
+      "estimated": false,
+      "fallback": false,
+      "prompt_version": "1.0",
+      "node_ms": 967
+     },
+     {
+      "node": "risk",
+      "model": "openai/gpt-oss-20b",
+      "input_tokens": 783,
+      "output_tokens": 235,
+      "cost_usd": 0.000129,
+      "latency_ms": 879,
+      "estimated": false,
+      "fallback": false,
+      "prompt_version": "1.0",
+      "node_ms": 966
+     },
+     {
+      "node": "matcher",
+      "model": "openai/gpt-oss-20b",
+      "input_tokens": 409,
+      "output_tokens": 83,
+      "cost_usd": 5.6e-05,
+      "latency_ms": 510,
+      "estimated": false,
+      "fallback": false,
+      "prompt_version": "1.0",
+      "node_ms": 7639
+     },
+     {
+      "node": "decide",
+      "model": "none",
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "cost_usd": 0.0,
+      "latency_ms": 0,
+      "node_ms": 0
+     }
+    ],
+    "estimated_cost_usd": 0.00039099999999999996,
+    "correct": true
+   },
+   {
+    "persona": "ai_engineer",
+    "job_id": "dev-ai-01524",
+    "kind": "normal",
+    "action": "bid",
+    "graph_decision": "bid",
+    "letter": "Your project, deploy and monitor ml models on aws, is close to work I delivered for an insurance client: moved on-prem training jobs to managed spot instances. That project cut training cost by 58% with no accuracy loss.\n\nI built it with SageMaker, AWS, which you also list. For FastAPI, Python, a second reference is Support knowledge assistant, which cut median first-response time from 11 minutes to 4 and deflected 31% of tickets. For Python, a second reference is Sensor anomaly detection, which flagged 7 of 8 failures at least 36 hours early.\n\nFor your project I would begin with a short, fixed-scope first milestone so you can judge the approach before committing to the rest. Could you share a sample of the data or the current setup so I can confirm the scope?",
+    "bid": 35.0,
+    "ids": [
+     "ai_engineer-case-016",
+     "ai_engineer-case-001",
+     "ai_engineer-case-018"
+    ],
+    "tokens": 31676,
+    "latency": 18.55852114400477,
+    "caught": 0,
+    "usage": [
+     {
+      "node": "intake",
+      "model": "none",
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "cost_usd": 0.0,
+      "latency_ms": 0,
+      "node_ms": 0
+     },
+     {
+      "node": "analyst",
+      "model": "openai/gpt-oss-20b",
+      "input_tokens": 767,
+      "output_tokens": 728,
+      "cost_usd": 0.000276,
+      "latency_ms": 976,
+      "estimated": false,
+      "fallback": false,
+      "prompt_version": "1.0",
+      "node_ms": 977
+     },
+     {
+      "node": "risk",
+      "model": "openai/gpt-oss-20b",
+      "input_tokens": 820,
+      "output_tokens": 192,
+      "cost_usd": 0.000119,
+      "latency_ms": 577,
+      "estimated": false,
+      "fallback": false,
+      "prompt_version": "1.0",
+      "node_ms": 691
+     },
+     {
+      "node": "matcher",
+      "model": "openai/gpt-oss-20b",
+      "input_tokens": 2029,
+      "output_tokens": 919,
+      "cost_usd": 0.000428,
+      "latency_ms": 1869,
+      "estimated": false,
+      "fallback": false,
+      "prompt_version": "1.0",
+      "node_ms": 2390
+     },
+     {
+      "node": "decide",
+      "model": "none",
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "cost_usd": 0.0,
+      "latency_ms": 0,
+      "node_ms": 0
+     },
+     {
+      "node": "pricing",
+      "model": "none",
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "cost_usd": 0.0,
+      "latency_ms": 14,
+      "node_ms": 14
+     },
+     {
+      "node": "writer",
+      "model": "heuristic-fallback",
+      "input_tokens": 2016,
+      "output_tokens": 2048,
+      "cost_usd": 0.000766,
+      "latency_ms": 2696,
+      "estimated": true,
+      "fallback": true,
+      "errors": [
+       "openai/gpt-oss-20b: invalid output (JSONDecodeError)"
+      ],
+      "prompt_version": "1.2",
+      "node_ms": 2763
+     },
+     {
+      "node": "verifier",
+      "model": "openai/gpt-oss-20b",
+      "input_tokens": 1201,
+      "output_tokens": 825,
+      "cost_usd": 0.000338,
+      "latency_ms": 1216,
+      "estimated": false,
+      "fallback": false,
+      "prompt_version": "1.0",
+      "node_ms": 1242
+     },
+     {
+      "node": "critic",
+      "model": "openai/gpt-oss-20b",
+      "input_tokens": 1180,
+      "output_tokens": 615,
+      "cost_usd": 0.000273,
+      "latency_ms": 957,
+      "estimated": false,
+      "fallback": false,
+      "prompt_version": "1.1",
+      "node_ms": 958
+     },
+     {
+      "node": "writer",
+      "model": "heuristic-fallback",
+      "input_tokens": 2086,
+      "output_tokens": 2048,
+      "cost_usd": 0.000771,
+      "latency_ms": 2478,
+      "estimated": true,
+      "fallback": true,
+      "errors": [
+       "openai/gpt-oss-20b: invalid output (JSONDecodeError)"
+      ],
+      "prompt_version": "1.2",
+      "node_ms": 2480
+     },
+     {
+      "node": "verifier",
+      "model": "openai/gpt-oss-20b",
+      "input_tokens": 1188,
+      "output_tokens": 592,
+      "cost_usd": 0.000267,
+      "latency_ms": 815,
+      "estimated": false,
+      "fallback": false,
+      "prompt_version": "1.0",
+      "node_ms": 840
+     },
+     {
+      "node": "critic",
+      "model": "openai/gpt-oss-20b",
+      "input_tokens": 1152,
+      "output_tokens": 321,
+      "cost_usd": 0.000183,
+      "latency_ms": 532,
+      "estimated": false,
+      "fallback": false,
+      "prompt_version": "1.1",
+      "node_ms": 533
+     },
+     {
+      "node": "writer",
+      "model": "heuristic-fallback",
+      "input_tokens": 2014,
+      "output_tokens": 2048,
+      "cost_usd": 0.000765,
+      "latency_ms": 2477,
+      "estimated": true,
+      "fallback": true,
+      "errors": [
+       "openai/gpt-oss-20b: invalid output (JSONDecodeError)"
+      ],
+      "prompt_version": "1.2",
+      "node_ms": 2478
+     },
+     {
+      "node": "verifier",
+      "model": "openai/gpt-oss-20b",
+      "input_tokens": 1188,
+      "output_tokens": 679,
+      "cost_usd": 0.000293,
+      "latency_ms": 1100,
+      "estimated": false,
+      "fallback": false,
+      "prompt_version": "1.0",
+      "node_ms": 1123
+     },
+     {
+      "node": "critic",
+      "model": "heuristic-fallback",
+      "input_tokens": 1152,
+      "output_tokens": 2048,
+      "cost_usd": 0.000701,
+      "latency_ms": 2441,
+      "estimated": true,
+      "fallback": true,
+      "errors": [
+       "openai/gpt-oss-20b: invalid output (JSONDecodeError)"
+      ],
+      "prompt_version": "1.1",
+      "node_ms": 2443
+     },
+     {
+      "node": "compliance",
+      "model": "openai/gpt-oss-20b",
+      "input_tokens": 847,
+      "output_tokens": 973,
+      "cost_usd": 0.000355,
+      "latency_ms": 1196,
+      "estimated": false,
+      "fallback": false,
+      "prompt_version": "1.0",
+      "node_ms": 1202
+     }
+    ],
+    "estimated_cost_usd": 0.005535,
+    "correct": true,
+    "claims": {
+     "total_claims": 3,
+     "unsupported": 0,
+     "partly": 0,
+     "supported": 3
+    },
+    "violations": 0,
+    "p_reply": 0.5903,
+    "replied": false,
+    "simulator_http_status": 200
+   },
+   {
+    "persona": "ai_engineer",
+    "job_id": "dev-ai-01660",
+    "kind": "scam",
+    "action": "skip",
+    "graph_decision": "skip",
+    "letter": "",
+    "bid": null,
+    "ids": [],
+    "tokens": 5346,
+    "latency": 1.8024789049959509,
+    "caught": 0,
+    "usage": [
+     {
+      "node": "intake",
+      "model": "none",
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "cost_usd": 0.0,
+      "latency_ms": 0,
+      "node_ms": 0
+     },
+     {
+      "node": "analyst",
+      "model": "openai/gpt-oss-20b",
+      "input_tokens": 781,
+      "output_tokens": 1117,
+      "cost_usd": 0.000394,
+      "latency_ms": 1487,
+      "estimated": false,
+      "fallback": false,
+      "prompt_version": "1.0",
+      "node_ms": 1488
+     },
+     {
+      "node": "risk",
+      "model": "openai/gpt-oss-20b",
+      "input_tokens": 930,
+      "output_tokens": 528,
+      "cost_usd": 0.000228,
+      "latency_ms": 1021,
+      "estimated": false,
+      "fallback": false,
+      "prompt_version": "1.0",
+      "node_ms": 1230
+     },
+     {
+      "node": "matcher",
+      "model": "openai/gpt-oss-20b",
+      "input_tokens": 1512,
+      "output_tokens": 478,
+      "cost_usd": 0.000257,
+      "latency_ms": 1261,
+      "estimated": false,
+      "fallback": false,
+      "prompt_version": "1.0",
+      "node_ms": 1748
+     },
+     {
+      "node": "decide",
+      "model": "none",
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "cost_usd": 0.0,
+      "latency_ms": 0,
+      "node_ms": 0
+     }
+    ],
+    "estimated_cost_usd": 0.000879,
+    "correct": true
+   },
+   {
+    "persona": "ai_engineer",
+    "job_id": "dev-ai-01582",
+    "kind": "normal",
+    "action": "bid",
+    "graph_decision": "bid",
+    "letter": "Your project, mlops pipeline for events models, is close to work I delivered for a logistics client: an automated train-evaluate-deploy pipeline for route-time models. That project cut model release time from 3 weeks to 2 days.\n\n For FastAPI, a second reference is Candidate-job matcher, which recruiters shortlisted 2.3x more candidates per hour. For Docker, a second reference is Weld defect detection, which caught 94% of defects at 30 frames per second on an edge box.\n\nFor your project I would begin with a short, fixed-scope first milestone so you can judge the approach before committing to the rest. Could you share a sample of the data or the current setup so I can confirm the scope?",
+    "bid": 35.0,
+    "ids": [
+     "ai_engineer-case-010",
+     "ai_engineer-case-011",
+     "ai_engineer-case-004"
+    ],
+    "tokens": 31070,
+    "latency": 20.982275938004022,
+    "caught": 0,
+    "usage": [
+     {
+      "node": "intake",
+      "model": "none",
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "cost_usd": 0.0,
+      "latency_ms": 0,
+      "node_ms": 0
+     },
+     {
+      "node": "analyst",
+      "model": "openai/gpt-oss-20b",
+      "input_tokens": 784,
+      "output_tokens": 699,
+      "cost_usd": 0.000269,
+      "latency_ms": 952,
+      "estimated": false,
+      "fallback": false,
+      "prompt_version": "1.0",
+      "node_ms": 953
+     },
+     {
+      "node": "risk",
+      "model": "openai/gpt-oss-20b",
+      "input_tokens": 813,
+      "output_tokens": 247,
+      "cost_usd": 0.000135,
+      "latency_ms": 562,
+      "estimated": false,
+      "fallback": false,
+      "prompt_version": "1.0",
+      "node_ms": 662
+     },
+     {
+      "node": "matcher",
+      "model": "openai/gpt-oss-20b",
+      "input_tokens": 1524,
+      "output_tokens": 899,
+      "cost_usd": 0.000384,
+      "latency_ms": 1210,
+      "estimated": false,
+      "fallback": false,
+      "prompt_version": "1.0",
+      "node_ms": 1501
+     },
+     {
+      "node": "decide",
+      "model": "none",
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "cost_usd": 0.0,
+      "latency_ms": 0,
+      "node_ms": 0
+     },
+     {
+      "node": "pricing",
+      "model": "none",
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "cost_usd": 0.0,
+      "latency_ms": 14,
+      "node_ms": 14
+     },
+     {
+      "node": "writer",
+      "model": "heuristic-fallback",
+      "input_tokens": 1797,
+      "output_tokens": 2048,
+      "cost_usd": 0.000749,
+      "latency_ms": 3084,
+      "estimated": true,
+      "fallback": true,
+      "errors": [
+       "openai/gpt-oss-20b: invalid output (JSONDecodeError)"
+      ],
+      "prompt_version": "1.2",
+      "node_ms": 3147
+     },
+     {
+      "node": "verifier",
+      "model": "openai/gpt-oss-20b",
+      "input_tokens": 1067,
+      "output_tokens": 1011,
+      "cost_usd": 0.000383,
+      "latency_ms": 1763,
+      "estimated": false,
+      "fallback": false,
+      "prompt_version": "1.0",
+      "node_ms": 1813
+     },
+     {
+      "node": "critic",
+      "model": "openai/gpt-oss-20b",
+      "input_tokens": 1233,
+      "output_tokens": 708,
+      "cost_usd": 0.000305,
+      "latency_ms": 1022,
+      "estimated": false,
+      "fallback": false,
+      "prompt_version": "1.1",
+      "node_ms": 1023
+     },
+     {
+      "node": "writer",
+      "model": "heuristic-fallback",
+      "input_tokens": 1797,
+      "output_tokens": 2048,
+      "cost_usd": 0.000749,
+      "latency_ms": 2810,
+      "estimated": true,
+      "fallback": true,
+      "errors": [
+       "openai/gpt-oss-20b: invalid output (JSONDecodeError)"
+      ],
+      "prompt_version": "1.2",
+      "node_ms": 2811
+     },
+     {
+      "node": "verifier",
+      "model": "openai/gpt-oss-20b",
+      "input_tokens": 1079,
+      "output_tokens": 903,
+      "cost_usd": 0.000352,
+      "latency_ms": 1565,
+      "estimated": false,
+      "fallback": false,
+      "prompt_version": "1.0",
+      "node_ms": 1590
+     },
+     {
+      "node": "critic",
+      "model": "openai/gpt-oss-20b",
+      "input_tokens": 1261,
+      "output_tokens": 1019,
+      "cost_usd": 0.0004,
+      "latency_ms": 2235,
+      "estimated": false,
+      "fallback": false,
+      "prompt_version": "1.1",
+      "node_ms": 2236
+     },
+     {
+      "node": "writer",
+      "model": "heuristic-fallback",
+      "input_tokens": 1795,
+      "output_tokens": 2048,
+      "cost_usd": 0.000749,
+      "latency_ms": 2455,
+      "estimated": true,
+      "fallback": true,
+      "errors": [
+       "openai/gpt-oss-20b: invalid output (JSONDecodeError)"
+      ],
+      "prompt_version": "1.2",
+      "node_ms": 2457
+     },
+     {
+      "node": "verifier",
+      "model": "openai/gpt-oss-20b",
+      "input_tokens": 1079,
+      "output_tokens": 1416,
+      "cost_usd": 0.000506,
+      "latency_ms": 1957,
+      "estimated": false,
+      "fallback": false,
+      "prompt_version": "1.0",
+      "node_ms": 1979
+     },
+     {
+      "node": "critic",
+      "model": "openai/gpt-oss-20b",
+      "input_tokens": 1246,
+      "output_tokens": 714,
+      "cost_usd": 0.000308,
+      "latency_ms": 1072,
+      "estimated": false,
+      "fallback": false,
+      "prompt_version": "1.1",
+      "node_ms": 1074
+     },
+     {
+      "node": "compliance",
+      "model": "openai/gpt-oss-20b",
+      "input_tokens": 828,
+      "output_tokens": 1007,
+      "cost_usd": 0.000364,
+      "latency_ms": 1232,
+      "estimated": false,
+      "fallback": false,
+      "prompt_version": "1.0",
+      "node_ms": 1244
+     }
+    ],
+    "estimated_cost_usd": 0.005653,
+    "correct": true,
+    "claims": {
+     "total_claims": 2,
+     "unsupported": 0,
+     "partly": 2,
+     "supported": 0
+    },
+    "violations": 0,
+    "p_reply": 0.465,
+    "replied": false,
+    "simulator_http_status": 200
+   },
+   {
+    "persona": "ai_engineer",
+    "job_id": "dev-ai-01642",
+    "kind": "normal",
+    "action": "skip",
+    "graph_decision": "skip",
+    "letter": "",
+    "bid": null,
+    "ids": [],
+    "tokens": 2831,
+    "latency": 0.788627706002444,
+    "caught": 0,
+    "usage": [
+     {
+      "node": "intake",
+      "model": "none",
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "cost_usd": 0.0,
+      "latency_ms": 0,
+      "node_ms": 0
+     },
+     {
+      "node": "analyst",
+      "model": "openai/gpt-oss-20b",
+      "input_tokens": 741,
+      "output_tokens": 489,
+      "cost_usd": 0.000202,
+      "latency_ms": 750,
+      "estimated": false,
+      "fallback": false,
+      "prompt_version": "1.0",
+      "node_ms": 751
+     },
+     {
+      "node": "risk",
+      "model": "openai/gpt-oss-20b",
+      "input_tokens": 791,
+      "output_tokens": 212,
+      "cost_usd": 0.000123,
+      "latency_ms": 478,
+      "estimated": false,
+      "fallback": false,
+      "prompt_version": "1.0",
+      "node_ms": 544
+     },
+     {
+      "node": "matcher",
+      "model": "openai/gpt-oss-20b",
+      "input_tokens": 423,
+      "output_tokens": 175,
+      "cost_usd": 8.4e-05,
+      "latency_ms": 398,
+      "estimated": false,
+      "fallback": false,
+      "prompt_version": "1.0",
+      "node_ms": 703
+     },
+     {
+      "node": "decide",
+      "model": "none",
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "cost_usd": 0.0,
+      "latency_ms": 0,
+      "node_ms": 0
+     }
+    ],
+    "estimated_cost_usd": 0.000409,
+    "correct": true
+   },
+   {
+    "persona": "ai_engineer",
+    "job_id": "dev-ai-01568",
+    "kind": "normal",
+    "action": "bid",
+    "graph_decision": "bid",
+    "letter": "",
+    "bid": 54.25,
+    "ids": [
+     "ai_engineer-case-004",
+     "ai_engineer-case-012"
+    ],
+    "tokens": 30783,
+    "latency": 19.72128202699969,
+    "caught": 0,
+    "usage": [
+     {
+      "node": "intake",
+      "model": "none",
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "cost_usd": 0.0,
+      "latency_ms": 0,
+      "node_ms": 0
+     },
+     {
+      "node": "analyst",
+      "model": "openai/gpt-oss-20b",
+      "input_tokens": 789,
+      "output_tokens": 570,
+      "cost_usd": 0.00023,
+      "latency_ms": 851,
+      "estimated": false,
+      "fallback": false,
+      "prompt_version": "1.0",
+      "node_ms": 853
+     },
+     {
+      "node": "risk",
+      "model": "openai/gpt-oss-20b",
+      "input_tokens": 855,
+      "output_tokens": 258,
+      "cost_usd": 0.000142,
+      "latency_ms": 517,
+      "estimated": false,
+      "fallback": false,
+      "prompt_version": "1.0",
+      "node_ms": 706
+     },
+     {
+      "node": "matcher",
+      "model": "openai/gpt-oss-20b",
+      "input_tokens": 1455,
+      "output_tokens": 902,
+      "cost_usd": 0.00038,
+      "latency_ms": 1166,
+      "estimated": false,
+      "fallback": false,
+      "prompt_version": "1.0",
+      "node_ms": 1489
+     },
+     {
+      "node": "decide",
+      "model": "none",
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "cost_usd": 0.0,
+      "latency_ms": 0,
+      "node_ms": 0
+     },
+     {
+      "node": "pricing",
+      "model": "none",
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "cost_usd": 0.0,
+      "latency_ms": 17,
+      "node_ms": 17
+     },
+     {
+      "node": "writer",
+      "model": "openai/gpt-oss-20b",
+      "input_tokens": 1960,
+      "output_tokens": 1977,
+      "cost_usd": 0.00074,
+      "latency_ms": 2471,
+      "estimated": false,
+      "fallback": false,
+      "prompt_version": "1.2",
+      "node_ms": 2558
+     },
+     {
+      "node": "verifier",
+      "model": "openai/gpt-oss-20b",
+      "input_tokens": 1222,
+      "output_tokens": 1328,
+      "cost_usd": 0.00049,
+      "latency_ms": 2035,
+      "estimated": false,
+      "fallback": false,
+      "prompt_version": "1.0",
+      "node_ms": 2069
+     },
+     {
+      "node": "critic",
+      "model": "openai/gpt-oss-20b",
+      "input_tokens": 1194,
+      "output_tokens": 1313,
+      "cost_usd": 0.000483,
+      "latency_ms": 1763,
+      "estimated": false,
+      "fallback": false,
+      "prompt_version": "1.1",
+      "node_ms": 1764
+     },
+     {
+      "node": "writer",
+      "model": "heuristic-fallback",
+      "input_tokens": 2036,
+      "output_tokens": 2048,
+      "cost_usd": 0.000767,
+      "latency_ms": 2482,
+      "estimated": true,
+      "fallback": true,
+      "errors": [
+       "openai/gpt-oss-20b: invalid output (JSONDecodeError)"
+      ],
+      "prompt_version": "1.2",
+      "node_ms": 2483
+     },
+     {
+      "node": "verifier",
+      "model": "openai/gpt-oss-20b",
+      "input_tokens": 1100,
+      "output_tokens": 574,
+      "cost_usd": 0.000255,
+      "latency_ms": 875,
+      "estimated": false,
+      "fallback": false,
+      "prompt_version": "1.0",
+      "node_ms": 889
+     },
+     {
+      "node": "critic",
+      "model": "openai/gpt-oss-20b",
+      "input_tokens": 940,
+      "output_tokens": 908,
+      "cost_usd": 0.000343,
+      "latency_ms": 1312,
+      "estimated": false,
+      "fallback": false,
+      "prompt_version": "1.1",
+      "node_ms": 1313
+     },
+     {
+      "node": "writer",
+      "model": "openai/gpt-oss-20b",
+      "input_tokens": 1964,
+      "output_tokens": 1890,
+      "cost_usd": 0.000714,
+      "latency_ms": 2299,
+      "estimated": false,
+      "fallback": false,
+      "prompt_version": "1.2",
+      "node_ms": 2302
+     },
+     {
+      "node": "verifier",
+      "model": "heuristic-fallback",
+      "input_tokens": 1204,
+      "output_tokens": 2048,
+      "cost_usd": 0.000705,
+      "latency_ms": 3385,
+      "estimated": true,
+      "fallback": true,
+      "errors": [
+       "openai/gpt-oss-20b: invalid output (JSONDecodeError)"
+      ],
+      "prompt_version": "1.0",
+      "node_ms": 3420
+     },
+     {
+      "node": "critic",
+      "model": "openai/gpt-oss-20b",
+      "input_tokens": 1131,
+      "output_tokens": 1117,
+      "cost_usd": 0.00042,
+      "latency_ms": 1350,
+      "estimated": false,
+      "fallback": false,
+      "prompt_version": "1.1",
+      "node_ms": 1351
+     }
+    ],
+    "estimated_cost_usd": 0.005669,
+    "correct": true
+   },
+   {
+    "persona": "ai_engineer",
+    "job_id": "dev-ai-01545",
+    "kind": "normal",
+    "action": "bid",
+    "graph_decision": "bid",
+    "letter": "Your project, detect objects in accounting camera footage, is close to work I delivered for a manufacturing client: a camera-based inspector for weld seams on a production line. That project caught 94% of defects at 30 frames per second on an edge box.\n\nI have not used WebSockets on a client project yet, so I would not claim it; I would plan extra time for that part.\n\nFor your project I would begin with a short, fixed-scope first milestone so you can judge the approach before committing to the rest. Could you share a sample of the data or the current setup so I can confirm the scope?",
+    "bid": 54.25,
+    "ids": [
+     "ai_engineer-case-004"
+    ],
+    "tokens": 29761,
+    "latency": 18.085226543997123,
+    "caught": 0,
+    "usage": [
+     {
+      "node": "intake",
+      "model": "none",
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "cost_usd": 0.0,
+      "latency_ms": 0,
+      "node_ms": 0
+     },
+     {
+      "node": "analyst",
+      "model": "openai/gpt-oss-20b",
+      "input_tokens": 783,
+      "output_tokens": 1176,
+      "cost_usd": 0.000412,
+      "latency_ms": 1748,
+      "estimated": false,
+      "fallback": false,
+      "prompt_version": "1.0",
+      "node_ms": 1749
+     },
+     {
+      "node": "risk",
+      "model": "openai/gpt-oss-20b",
+      "input_tokens": 830,
+      "output_tokens": 190,
+      "cost_usd": 0.000119,
+      "latency_ms": 493,
+      "estimated": false,
+      "fallback": false,
+      "prompt_version": "1.0",
+      "node_ms": 620
+     },
+     {
+      "node": "matcher",
+      "model": "openai/gpt-oss-20b",
+      "input_tokens": 1455,
+      "output_tokens": 556,
+      "cost_usd": 0.000276,
+      "latency_ms": 1334,
+      "estimated": false,
+      "fallback": false,
+      "prompt_version": "1.0",
+      "node_ms": 1660
+     },
+     {
+      "node": "decide",
+      "model": "none",
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "cost_usd": 0.0,
+      "latency_ms": 0,
+      "node_ms": 0
+     },
+     {
+      "node": "pricing",
+      "model": "none",
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "cost_usd": 0.0,
+      "latency_ms": 31,
+      "node_ms": 31
+     },
+     {
+      "node": "writer",
+      "model": "openai/gpt-oss-20b",
+      "input_tokens": 2046,
+      "output_tokens": 1643,
+      "cost_usd": 0.000646,
+      "latency_ms": 2748,
+      "estimated": false,
+      "fallback": false,
+      "prompt_version": "1.2",
+      "node_ms": 2883
+     },
+     {
+      "node": "verifier",
+      "model": "openai/gpt-oss-20b",
+      "input_tokens": 1126,
+      "output_tokens": 741,
+      "cost_usd": 0.000307,
+      "latency_ms": 985,
+      "estimated": false,
+      "fallback": false,
+      "prompt_version": "1.0",
+      "node_ms": 1008
+     },
+     {
+      "node": "critic",
+      "model": "openai/gpt-oss-20b",
+      "input_tokens": 1134,
+      "output_tokens": 1022,
+      "cost_usd": 0.000392,
+      "latency_ms": 1431,
+      "estimated": false,
+      "fallback": false,
+      "prompt_version": "1.1",
+      "node_ms": 1432
+     },
+     {
+      "node": "writer",
+      "model": "heuristic-fallback",
+      "input_tokens": 2050,
+      "output_tokens": 2048,
+      "cost_usd": 0.000768,
+      "latency_ms": 2454,
+      "estimated": true,
+      "fallback": true,
+      "errors": [
+       "openai/gpt-oss-20b: invalid output (JSONDecodeError)"
+      ],
+      "prompt_version": "1.2",
+      "node_ms": 2456
+     },
+     {
+      "node": "verifier",
+      "model": "openai/gpt-oss-20b",
+      "input_tokens": 1057,
+      "output_tokens": 431,
+      "cost_usd": 0.000209,
+      "latency_ms": 896,
+      "estimated": false,
+      "fallback": false,
+      "prompt_version": "1.0",
+      "node_ms": 908
+     },
+     {
+      "node": "critic",
+      "model": "openai/gpt-oss-20b",
+      "input_tokens": 1000,
+      "output_tokens": 1282,
+      "cost_usd": 0.00046,
+      "latency_ms": 1768,
+      "estimated": false,
+      "fallback": false,
+      "prompt_version": "1.1",
+      "node_ms": 1769
+     },
+     {
+      "node": "writer",
+      "model": "heuristic-fallback",
+      "input_tokens": 2052,
+      "output_tokens": 1674,
+      "cost_usd": 0.000656,
+      "latency_ms": 2234,
+      "estimated": true,
+      "fallback": true,
+      "errors": [
+       "openai/gpt-oss-20b: invalid output (ValidationError)"
+      ],
+      "prompt_version": "1.2",
+      "node_ms": 2236
+     },
+     {
+      "node": "verifier",
+      "model": "openai/gpt-oss-20b",
+      "input_tokens": 1057,
+      "output_tokens": 486,
+      "cost_usd": 0.000225,
+      "latency_ms": 812,
+      "estimated": false,
+      "fallback": false,
+      "prompt_version": "1.0",
+      "node_ms": 822
+     },
+     {
+      "node": "critic",
+      "model": "openai/gpt-oss-20b",
+      "input_tokens": 1003,
+      "output_tokens": 1308,
+      "cost_usd": 0.000468,
+      "latency_ms": 1682,
+      "estimated": false,
+      "fallback": false,
+      "prompt_version": "1.1",
+      "node_ms": 1683
+     },
+     {
+      "node": "compliance",
+      "model": "openai/gpt-oss-20b",
+      "input_tokens": 805,
+      "output_tokens": 806,
+      "cost_usd": 0.000302,
+      "latency_ms": 1031,
+      "estimated": false,
+      "fallback": false,
+      "prompt_version": "1.0",
+      "node_ms": 1038
+     }
+    ],
+    "estimated_cost_usd": 0.00524,
+    "correct": true,
+    "claims": {
+     "total_claims": 2,
+     "unsupported": 1,
+     "partly": 0,
+     "supported": 1
+    },
+    "violations": 0,
+    "p_reply": 0.5628,
+    "replied": false,
+    "simulator_http_status": 200
+   },
+   {
+    "persona": "ai_engineer",
+    "job_id": "dev-ai-01615",
+    "kind": "normal",
+    "action": "bid",
+    "graph_decision": "bid",
+    "letter": "Your project, real-time features for healthcare app, is close to work I delivered for a food delivery client: an in-app ordering assistant with tool calls to the menu and cart APIs. That project handled 46% of orders without a human agent.\n\nI built it with Redis, PostgreSQL, which you also list. For Docker, a second reference is Weld defect detection, which caught 94% of defects at 30 frames per second on an edge box. For Redis, a second reference is Sales call summariser, which saved each rep about 5 hours a week across a 40-person team. I have not used WebSockets on a client project yet, so I would not claim it; I would plan extra time for that part.\n\nFor your project I would begin with a short, fixed-scope first milestone so you can judge the approach before committing to the rest. Could you share a sample of the data or the current setup so I can confirm the scope?",
+    "bid": 3100.0,
+    "ids": [
+     "ai_engineer-case-017",
+     "ai_engineer-case-004",
+     "ai_engineer-case-005"
+    ],
+    "tokens": 31792,
+    "latency": 20.92190161999315,
+    "caught": 0,
+    "usage": [
+     {
+      "node": "intake",
+      "model": "none",
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "cost_usd": 0.0,
+      "latency_ms": 0,
+      "node_ms": 0
+     },
+     {
+      "node": "analyst",
+      "model": "openai/gpt-oss-20b",
+      "input_tokens": 778,
+      "output_tokens": 971,
+      "cost_usd": 0.00035,
+      "latency_ms": 1510,
+      "estimated": false,
+      "fallback": false,
+      "prompt_version": "1.0",
+      "node_ms": 1511
+     },
+     {
+      "node": "risk",
+      "model": "openai/gpt-oss-20b",
+      "input_tokens": 820,
+      "output_tokens": 218,
+      "cost_usd": 0.000127,
+      "latency_ms": 455,
+      "estimated": false,
+      "fallback": false,
+      "prompt_version": "1.0",
+      "node_ms": 740
+     },
+     {
+      "node": "matcher",
+      "model": "openai/gpt-oss-20b",
+      "input_tokens": 1768,
+      "output_tokens": 1013,
+      "cost_usd": 0.000436,
+      "latency_ms": 1451,
+      "estimated": false,
+      "fallback": false,
+      "prompt_version": "1.0",
+      "node_ms": 2164
+     },
+     {
+      "node": "decide",
+      "model": "none",
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "cost_usd": 0.0,
+      "latency_ms": 0,
+      "node_ms": 0
+     },
+     {
+      "node": "pricing",
+      "model": "none",
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "cost_usd": 0.0,
+      "latency_ms": 22,
+      "node_ms": 22
+     },
+     {
+      "node": "writer",
+      "model": "heuristic-fallback",
+      "input_tokens": 1893,
+      "output_tokens": 2048,
+      "cost_usd": 0.000756,
+      "latency_ms": 2940,
+      "estimated": true,
+      "fallback": true,
+      "errors": [
+       "openai/gpt-oss-20b: invalid output (JSONDecodeError)"
+      ],
+      "prompt_version": "1.2",
+      "node_ms": 3065
+     },
+     {
+      "node": "verifier",
+      "model": "openai/gpt-oss-20b",
+      "input_tokens": 1162,
+      "output_tokens": 1025,
+      "cost_usd": 0.000395,
+      "latency_ms": 1442,
+      "estimated": false,
+      "fallback": false,
+      "prompt_version": "1.0",
+      "node_ms": 1515
+     },
+     {
+      "node": "critic",
+      "model": "openai/gpt-oss-20b",
+      "input_tokens": 1157,
+      "output_tokens": 572,
+      "cost_usd": 0.000258,
+      "latency_ms": 1033,
+      "estimated": false,
+      "fallback": false,
+      "prompt_version": "1.1",
+      "node_ms": 1035
+     },
+     {
+      "node": "writer",
+      "model": "openai/gpt-oss-20b",
+      "input_tokens": 1988,
+      "output_tokens": 1833,
+      "cost_usd": 0.000699,
+      "latency_ms": 3446,
+      "estimated": false,
+      "fallback": false,
+      "prompt_version": "1.2",
+      "node_ms": 3448
+     },
+     {
+      "node": "verifier",
+      "model": "openai/gpt-oss-20b",
+      "input_tokens": 1120,
+      "output_tokens": 791,
+      "cost_usd": 0.000321,
+      "latency_ms": 1117,
+      "estimated": false,
+      "fallback": false,
+      "prompt_version": "1.0",
+      "node_ms": 1153
+     },
+     {
+      "node": "critic",
+      "model": "openai/gpt-oss-20b",
+      "input_tokens": 1092,
+      "output_tokens": 1432,
+      "cost_usd": 0.000511,
+      "latency_ms": 1905,
+      "estimated": false,
+      "fallback": false,
+      "prompt_version": "1.1",
+      "node_ms": 1909
+     },
+     {
+      "node": "writer",
+      "model": "heuristic-fallback",
+      "input_tokens": 2009,
+      "output_tokens": 2048,
+      "cost_usd": 0.000765,
+      "latency_ms": 2751,
+      "estimated": true,
+      "fallback": true,
+      "errors": [
+       "openai/gpt-oss-20b: invalid output (JSONDecodeError)"
+      ],
+      "prompt_version": "1.2",
+      "node_ms": 2753
+     },
+     {
+      "node": "verifier",
+      "model": "openai/gpt-oss-20b",
+      "input_tokens": 1175,
+      "output_tokens": 1051,
+      "cost_usd": 0.000403,
+      "latency_ms": 1316,
+      "estimated": false,
+      "fallback": false,
+      "prompt_version": "1.0",
+      "node_ms": 1342
+     },
+     {
+      "node": "critic",
+      "model": "openai/gpt-oss-20b",
+      "input_tokens": 1213,
+      "output_tokens": 700,
+      "cost_usd": 0.000301,
+      "latency_ms": 974,
+      "estimated": false,
+      "fallback": false,
+      "prompt_version": "1.1",
+      "node_ms": 975
+     },
+     {
+      "node": "compliance",
+      "model": "openai/gpt-oss-20b",
+      "input_tokens": 875,
+      "output_tokens": 1040,
+      "cost_usd": 0.000378,
+      "latency_ms": 1371,
+      "estimated": false,
+      "fallback": false,
+      "prompt_version": "1.0",
+      "node_ms": 1392
+     }
+    ],
+    "estimated_cost_usd": 0.0057,
+    "correct": true,
+    "claims": {
+     "total_claims": 3,
+     "unsupported": 0,
+     "partly": 1,
+     "supported": 2
+    },
+    "violations": 0,
+    "p_reply": 0.4635,
+    "replied": true,
+    "simulator_http_status": 200
+   },
+   {
+    "persona": "ai_engineer",
+    "job_id": "dev-ai-01561",
+    "kind": "normal",
+    "action": "bid",
+    "graph_decision": "bid",
+    "letter": "",
+    "bid": 37.5,
+    "ids": [
+     "ai_engineer-case-015",
+     "ai_engineer-case-012"
+    ],
+    "tokens": 32482,
+    "latency": 20.383882713002095,
+    "caught": 0,
+    "usage": [
+     {
+      "node": "intake",
+      "model": "none",
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "cost_usd": 0.0,
+      "latency_ms": 0,
+      "node_ms": 0
+     },
+     {
+      "node": "analyst",
+      "model": "openai/gpt-oss-20b",
+      "input_tokens": 825,
+      "output_tokens": 891,
+      "cost_usd": 0.000329,
+      "latency_ms": 1474,
+      "estimated": false,
+      "fallback": false,
+      "prompt_version": "1.0",
+      "node_ms": 1475
+     },
+     {
+      "node": "risk",
+      "model": "openai/gpt-oss-20b",
+      "input_tokens": 911,
+      "output_tokens": 224,
+      "cost_usd": 0.000136,
+      "latency_ms": 457,
+      "estimated": false,
+      "fallback": false,
+      "prompt_version": "1.0",
+      "node_ms": 733
+     },
+     {
+      "node": "matcher",
+      "model": "openai/gpt-oss-20b",
+      "input_tokens": 2064,
+      "output_tokens": 1274,
+      "cost_usd": 0.000537,
+      "latency_ms": 2042,
+      "estimated": false,
+      "fallback": false,
+      "prompt_version": "1.0",
+      "node_ms": 2759
+     },
+     {
+      "node": "decide",
+      "model": "none",
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "cost_usd": 0.0,
+      "latency_ms": 0,
+      "node_ms": 0
+     },
+     {
+      "node": "pricing",
+      "model": "none",
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "cost_usd": 0.0,
+      "latency_ms": 14,
+      "node_ms": 14
+     },
+     {
+      "node": "writer",
+      "model": "heuristic-fallback",
+      "input_tokens": 2264,
+      "output_tokens": 2048,
+      "cost_usd": 0.000784,
+      "latency_ms": 2642,
+      "estimated": true,
+      "fallback": true,
+      "errors": [
+       "openai/gpt-oss-20b: invalid output (JSONDecodeError)"
+      ],
+      "prompt_version": "1.2",
+      "node_ms": 2727
+     },
+     {
+      "node": "verifier",
+      "model": "openai/gpt-oss-20b",
+      "input_tokens": 1141,
+      "output_tokens": 723,
+      "cost_usd": 0.000302,
+      "latency_ms": 1663,
+      "estimated": false,
+      "fallback": false,
+      "prompt_version": "1.0",
+      "node_ms": 1739
+     },
+     {
+      "node": "critic",
+      "model": "openai/gpt-oss-20b",
+      "input_tokens": 1244,
+      "output_tokens": 1094,
+      "cost_usd": 0.000421,
+      "latency_ms": 2014,
+      "estimated": false,
+      "fallback": false,
+      "prompt_version": "1.1",
+      "node_ms": 2016
+     },
+     {
+      "node": "writer",
+      "model": "heuristic-fallback",
+      "input_tokens": 2262,
+      "output_tokens": 2048,
+      "cost_usd": 0.000784,
+      "latency_ms": 2585,
+      "estimated": true,
+      "fallback": true,
+      "errors": [
+       "openai/gpt-oss-20b: invalid output (JSONDecodeError)"
+      ],
+      "prompt_version": "1.2",
+      "node_ms": 2587
+     },
+     {
+      "node": "verifier",
+      "model": "openai/gpt-oss-20b",
+      "input_tokens": 1108,
+      "output_tokens": 1238,
+      "cost_usd": 0.000454,
+      "latency_ms": 1575,
+      "estimated": false,
+      "fallback": false,
+      "prompt_version": "1.0",
+      "node_ms": 1600
+     },
+     {
+      "node": "critic",
+      "model": "openai/gpt-oss-20b",
+      "input_tokens": 1168,
+      "output_tokens": 1201,
+      "cost_usd": 0.000448,
+      "latency_ms": 1444,
+      "estimated": false,
+      "fallback": false,
+      "prompt_version": "1.1",
+      "node_ms": 1446
+     },
+     {
+      "node": "writer",
+      "model": "heuristic-fallback",
+      "input_tokens": 2256,
+      "output_tokens": 2048,
+      "cost_usd": 0.000784,
+      "latency_ms": 2412,
+      "estimated": true,
+      "fallback": true,
+      "errors": [
+       "openai/gpt-oss-20b: invalid output (JSONDecodeError)"
+      ],
+      "prompt_version": "1.2",
+      "node_ms": 2416
+     },
+     {
+      "node": "verifier",
+      "model": "openai/gpt-oss-20b",
+      "input_tokens": 1108,
+      "output_tokens": 852,
+      "cost_usd": 0.000339,
+      "latency_ms": 1209,
+      "estimated": false,
+      "fallback": false,
+      "prompt_version": "1.0",
+      "node_ms": 1230
+     },
+     {
+      "node": "critic",
+      "model": "openai/gpt-oss-20b",
+      "input_tokens": 1145,
+      "output_tokens": 1345,
+      "cost_usd": 0.000489,
+      "latency_ms": 1797,
+      "estimated": false,
+      "fallback": false,
+      "prompt_version": "1.1",
+      "node_ms": 1798
+     }
+    ],
+    "estimated_cost_usd": 0.005807,
+    "correct": true
+   },
+   {
+    "persona": "ai_engineer",
+    "job_id": "dev-ai-01518",
+    "kind": "normal",
+    "action": "bid",
+    "graph_decision": "bid",
+    "letter": "",
+    "bid": 3460.0,
+    "ids": [
+     "ai_engineer-case-006",
+     "ai_engineer-case-019",
+     "ai_engineer-case-003",
+     "ai_engineer-case-015"
+    ],
+    "tokens": 30378,
+    "latency": 19.474263636002433,
+    "caught": 0,
+    "usage": [
+     {
+      "node": "intake",
+      "model": "none",
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "cost_usd": 0.0,
+      "latency_ms": 0,
+      "node_ms": 0
+     },
+     {
+      "node": "analyst",
+      "model": "openai/gpt-oss-20b",
+      "input_tokens": 806,
+      "output_tokens": 840,
+      "cost_usd": 0.000312,
+      "latency_ms": 1461,
+      "estimated": false,
+      "fallback": false,
+      "prompt_version": "1.0",
+      "node_ms": 1464
+     },
+     {
+      "node": "risk",
+      "model": "openai/gpt-oss-20b",
+      "input_tokens": 836,
+      "output_tokens": 198,
+      "cost_usd": 0.000122,
+      "latency_ms": 1217,
+      "estimated": false,
+      "fallback": false,
+      "prompt_version": "1.0",
+      "node_ms": 1459
+     },
+     {
+      "node": "matcher",
+      "model": "openai/gpt-oss-20b",
+      "input_tokens": 1809,
+      "output_tokens": 807,
+      "cost_usd": 0.000378,
+      "latency_ms": 1355,
+      "estimated": false,
+      "fallback": false,
+      "prompt_version": "1.0",
+      "node_ms": 3357
+     },
+     {
+      "node": "decide",
+      "model": "none",
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "cost_usd": 0.0,
+      "latency_ms": 0,
+      "node_ms": 0
+     },
+     {
+      "node": "pricing",
+      "model": "none",
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "cost_usd": 0.0,
+      "latency_ms": 121,
+      "node_ms": 121
+     },
+     {
+      "node": "writer",
+      "model": "heuristic-fallback",
+      "input_tokens": 2109,
+      "output_tokens": 2048,
+      "cost_usd": 0.000773,
+      "latency_ms": 2785,
+      "estimated": true,
+      "fallback": true,
+      "errors": [
+       "openai/gpt-oss-20b: invalid output (JSONDecodeError)"
+      ],
+      "prompt_version": "1.2",
+      "node_ms": 3237
+     },
+     {
+      "node": "verifier",
+      "model": "openai/gpt-oss-20b",
+      "input_tokens": 1206,
+      "output_tokens": 938,
+      "cost_usd": 0.000372,
+      "latency_ms": 1273,
+      "estimated": false,
+      "fallback": false,
+      "prompt_version": "1.0",
+      "node_ms": 1359
+     },
+     {
+      "node": "critic",
+      "model": "openai/gpt-oss-20b",
+      "input_tokens": 1271,
+      "output_tokens": 994,
+      "cost_usd": 0.000394,
+      "latency_ms": 1266,
+      "estimated": false,
+      "fallback": false,
+      "prompt_version": "1.1",
+      "node_ms": 1268
+     },
+     {
+      "node": "writer",
+      "model": "heuristic-fallback",
+      "input_tokens": 2117,
+      "output_tokens": 2048,
+      "cost_usd": 0.000773,
+      "latency_ms": 2388,
+      "estimated": true,
+      "fallback": true,
+      "errors": [
+       "openai/gpt-oss-20b: invalid output (JSONDecodeError)"
+      ],
+      "prompt_version": "1.2",
+      "node_ms": 2390
+     },
+     {
+      "node": "verifier",
+      "model": "openai/gpt-oss-20b",
+      "input_tokens": 1181,
+      "output_tokens": 992,
+      "cost_usd": 0.000386,
+      "latency_ms": 1479,
+      "estimated": false,
+      "fallback": false,
+      "prompt_version": "1.0",
+      "node_ms": 1594
+     },
+     {
+      "node": "critic",
+      "model": "openai/gpt-oss-20b",
+      "input_tokens": 1213,
+      "output_tokens": 392,
+      "cost_usd": 0.000209,
+      "latency_ms": 661,
+      "estimated": false,
+      "fallback": false,
+      "prompt_version": "1.1",
+      "node_ms": 663
+     },
+     {
+      "node": "writer",
+      "model": "openai/gpt-oss-20b",
+      "input_tokens": 2111,
+      "output_tokens": 1561,
+      "cost_usd": 0.000627,
+      "latency_ms": 1942,
+      "estimated": false,
+      "fallback": false,
+      "prompt_version": "1.2",
+      "node_ms": 1945
+     },
+     {
+      "node": "verifier",
+      "model": "openai/gpt-oss-20b",
+      "input_tokens": 1184,
+      "output_tokens": 1427,
+      "cost_usd": 0.000517,
+      "latency_ms": 1708,
+      "estimated": false,
+      "fallback": false,
+      "prompt_version": "1.0",
+      "node_ms": 1763
+     },
+     {
+      "node": "critic",
+      "model": "openai/gpt-oss-20b",
+      "input_tokens": 1193,
+      "output_tokens": 1097,
+      "cost_usd": 0.000419,
+      "latency_ms": 1530,
+      "estimated": false,
+      "fallback": false,
+      "prompt_version": "1.1",
+      "node_ms": 1531
+     }
+    ],
+    "estimated_cost_usd": 0.005282,
+    "correct": true
+   },
+   {
+    "persona": "ai_engineer",
+    "job_id": "dev-ai-01597",
+    "kind": "normal",
+    "action": "bid",
+    "graph_decision": "bid",
+    "letter": "In a recent project, I reduced stock\u2011outs by 18% and cut forecast error from 27% to 14% by building a demand\u2011forecasting model for a retail client using pandas and Python. How do you currently capture and analyze seasonal demand patterns for your consulting projects? I can replicate that success by developing a Python script that forecasts next quarter\u2019s demand from your seasonal history, leveraging pandas and standard forecasting techniques. The script will be fully documented, version\u2011controlled, and ready for integration into your existing data pipeline. I\u2019m also prepared for long\u2011term collaboration, ensuring continuous improvement and model monitoring.",
+    "bid": 3660.0,
+    "ids": [
+     "ai_engineer-case-006"
+    ],
+    "tokens": 27459,
+    "latency": 19.556357688998105,
+    "caught": 0,
+    "usage": [
+     {
+      "node": "intake",
+      "model": "none",
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "cost_usd": 0.0,
+      "latency_ms": 0,
+      "node_ms": 0
+     },
+     {
+      "node": "analyst",
+      "model": "openai/gpt-oss-20b",
+      "input_tokens": 757,
+      "output_tokens": 523,
+      "cost_usd": 0.000214,
+      "latency_ms": 1081,
+      "estimated": false,
+      "fallback": false,
+      "prompt_version": "1.0",
+      "node_ms": 1084
+     },
+     {
+      "node": "risk",
+      "model": "openai/gpt-oss-20b",
+      "input_tokens": 804,
+      "output_tokens": 172,
+      "cost_usd": 0.000112,
+      "latency_ms": 1227,
+      "estimated": false,
+      "fallback": false,
+      "prompt_version": "1.0",
+      "node_ms": 1370
+     },
+     {
+      "node": "matcher",
+      "model": "openai/gpt-oss-20b",
+      "input_tokens": 1209,
+      "output_tokens": 258,
+      "cost_usd": 0.000168,
+      "latency_ms": 794,
+      "estimated": false,
+      "fallback": false,
+      "prompt_version": "1.0",
+      "node_ms": 2721
+     },
+     {
+      "node": "decide",
+      "model": "none",
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "cost_usd": 0.0,
+      "latency_ms": 0,
+      "node_ms": 0
+     },
+     {
+      "node": "pricing",
+      "model": "none",
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "cost_usd": 0.0,
+      "latency_ms": 159,
+      "node_ms": 159
+     },
+     {
+      "node": "writer",
+      "model": "openai/gpt-oss-20b",
+      "input_tokens": 1758,
+      "output_tokens": 2003,
+      "cost_usd": 0.000733,
+      "latency_ms": 2507,
+      "estimated": false,
+      "fallback": false,
+      "prompt_version": "1.2",
+      "node_ms": 2983
+     },
+     {
+      "node": "verifier",
+      "model": "openai/gpt-oss-20b",
+      "input_tokens": 1012,
+      "output_tokens": 440,
+      "cost_usd": 0.000208,
+      "latency_ms": 650,
+      "estimated": false,
+      "fallback": false,
+      "prompt_version": "1.0",
+      "node_ms": 668
+     },
+     {
+      "node": "critic",
+      "model": "openai/gpt-oss-20b",
+      "input_tokens": 969,
+      "output_tokens": 1007,
+      "cost_usd": 0.000375,
+      "latency_ms": 1276,
+      "estimated": false,
+      "fallback": false,
+      "prompt_version": "1.1",
+      "node_ms": 1278
+     },
+     {
+      "node": "writer",
+      "model": "heuristic-fallback",
+      "input_tokens": 1758,
+      "output_tokens": 2048,
+      "cost_usd": 0.000746,
+      "latency_ms": 2596,
+      "estimated": true,
+      "fallback": true,
+      "errors": [
+       "openai/gpt-oss-20b: invalid output (JSONDecodeError)"
+      ],
+      "prompt_version": "1.2",
+      "node_ms": 2605
+     },
+     {
+      "node": "verifier",
+      "model": "openai/gpt-oss-20b",
+      "input_tokens": 963,
+      "output_tokens": 510,
+      "cost_usd": 0.000225,
+      "latency_ms": 696,
+      "estimated": false,
+      "fallback": false,
+      "prompt_version": "1.0",
+      "node_ms": 719
+     },
+     {
+      "node": "critic",
+      "model": "openai/gpt-oss-20b",
+      "input_tokens": 902,
+      "output_tokens": 1057,
+      "cost_usd": 0.000385,
+      "latency_ms": 2010,
+      "estimated": false,
+      "fallback": false,
+      "prompt_version": "1.1",
+      "node_ms": 2013
+     },
+     {
+      "node": "writer",
+      "model": "openai/gpt-oss-20b",
+      "input_tokens": 1758,
+      "output_tokens": 1831,
+      "cost_usd": 0.000681,
+      "latency_ms": 2122,
+      "estimated": false,
+      "fallback": false,
+      "prompt_version": "1.2",
+      "node_ms": 2125
+     },
+     {
+      "node": "verifier",
+      "model": "openai/gpt-oss-20b",
+      "input_tokens": 994,
+      "output_tokens": 497,
+      "cost_usd": 0.000224,
+      "latency_ms": 746,
+      "estimated": false,
+      "fallback": false,
+      "prompt_version": "1.0",
+      "node_ms": 813
+     },
+     {
+      "node": "critic",
+      "model": "openai/gpt-oss-20b",
+      "input_tokens": 958,
+      "output_tokens": 980,
+      "cost_usd": 0.000366,
+      "latency_ms": 1469,
+      "estimated": false,
+      "fallback": false,
+      "prompt_version": "1.1",
+      "node_ms": 1470
+     },
+     {
+      "node": "compliance",
+      "model": "openai/gpt-oss-20b",
+      "input_tokens": 803,
+      "output_tokens": 1488,
+      "cost_usd": 0.000507,
+      "latency_ms": 1754,
+      "estimated": false,
+      "fallback": false,
+      "prompt_version": "1.0",
+      "node_ms": 1764
+     }
+    ],
+    "estimated_cost_usd": 0.004944,
+    "correct": true,
+    "claims": {
+     "total_claims": 1,
+     "unsupported": 0,
+     "partly": 0,
+     "supported": 1
+    },
+    "violations": 0,
+    "p_reply": 0.5774,
+    "replied": false,
+    "simulator_http_status": 200
+   },
+   {
+    "persona": "ai_engineer",
+    "job_id": "dev-ai-01626",
+    "kind": "normal",
+    "action": "skip",
+    "graph_decision": "skip",
+    "letter": "",
+    "bid": null,
+    "ids": [],
+    "tokens": 3050,
+    "latency": 2.1173727479981608,
+    "caught": 0,
+    "usage": [
+     {
+      "node": "intake",
+      "model": "none",
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "cost_usd": 0.0,
+      "latency_ms": 0,
+      "node_ms": 0
+     },
+     {
+      "node": "analyst",
+      "model": "openai/gpt-oss-20b",
+      "input_tokens": 759,
+      "output_tokens": 763,
+      "cost_usd": 0.000286,
+      "latency_ms": 1682,
+      "estimated": false,
+      "fallback": false,
+      "prompt_version": "1.0",
+      "node_ms": 1690
+     },
+     {
+      "node": "risk",
+      "model": "openai/gpt-oss-20b",
+      "input_tokens": 784,
+      "output_tokens": 227,
+      "cost_usd": 0.000127,
+      "latency_ms": 1172,
+      "estimated": false,
+      "fallback": false,
+      "prompt_version": "1.0",
+      "node_ms": 1693
+     },
+     {
+      "node": "matcher",
+      "model": "openai/gpt-oss-20b",
+      "input_tokens": 410,
+      "output_tokens": 107,
+      "cost_usd": 6.3e-05,
+      "latency_ms": 205,
+      "estimated": false,
+      "fallback": false,
+      "prompt_version": "1.0",
+      "node_ms": 1968
+     },
+     {
+      "node": "decide",
+      "model": "none",
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "cost_usd": 0.0,
+      "latency_ms": 0,
+      "node_ms": 0
+     }
+    ],
+    "estimated_cost_usd": 0.000476,
+    "correct": true
+   },
+   {
+    "persona": "ai_engineer",
+    "job_id": "dev-ai-01574",
+    "kind": "normal",
+    "action": "bid",
+    "graph_decision": "bid",
+    "letter": "That project reduced stock-outs by 18% and forecast error (MAPE) from 27% to 14%.\n\nCould you share a sample of the data or the current setup so I can confirm the scope?",
+    "bid": 55.0,
+    "ids": [
+     "ai_engineer-case-006"
+    ],
+    "tokens": 31536,
+    "latency": 20.830867019001744,
+    "caught": 0,
+    "usage": [
+     {
+      "node": "intake",
+      "model": "none",
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "cost_usd": 0.0,
+      "latency_ms": 0,
+      "node_ms": 0
+     },
+     {
+      "node": "analyst",
+      "model": "openai/gpt-oss-20b",
+      "input_tokens": 835,
+      "output_tokens": 914,
+      "cost_usd": 0.000337,
+      "latency_ms": 1671,
+      "estimated": false,
+      "fallback": false,
+      "prompt_version": "1.0",
+      "node_ms": 1675
+     },
+     {
+      "node": "risk",
+      "model": "openai/gpt-oss-20b",
+      "input_tokens": 873,
+      "output_tokens": 192,
+      "cost_usd": 0.000123,
+      "latency_ms": 793,
+      "estimated": false,
+      "fallback": false,
+      "prompt_version": "1.0",
+      "node_ms": 1311
+     },
+     {
+      "node": "matcher",
+      "model": "openai/gpt-oss-20b",
+      "input_tokens": 2041,
+      "output_tokens": 779,
+      "cost_usd": 0.000387,
+      "latency_ms": 1193,
+      "estimated": false,
+      "fallback": false,
+      "prompt_version": "1.0",
+      "node_ms": 2932
+     },
+     {
+      "node": "decide",
+      "model": "none",
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "cost_usd": 0.0,
+      "latency_ms": 0,
+      "node_ms": 0
+     },
+     {
+      "node": "pricing",
+      "model": "none",
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "cost_usd": 0.0,
+      "latency_ms": 158,
+      "node_ms": 158
+     },
+     {
+      "node": "writer",
+      "model": "heuristic-fallback",
+      "input_tokens": 2239,
+      "output_tokens": 2048,
+      "cost_usd": 0.000782,
+      "latency_ms": 2538,
+      "estimated": true,
+      "fallback": true,
+      "errors": [
+       "openai/gpt-oss-20b: invalid output (JSONDecodeError)"
+      ],
+      "prompt_version": "1.2",
+      "node_ms": 2843
+     },
+     {
+      "node": "verifier",
+      "model": "openai/gpt-oss-20b",
+      "input_tokens": 1114,
+      "output_tokens": 677,
+      "cost_usd": 0.000287,
+      "latency_ms": 1049,
+      "estimated": false,
+      "fallback": false,
+      "prompt_version": "1.0",
+      "node_ms": 1105
+     },
+     {
+      "node": "critic",
+      "model": "openai/gpt-oss-20b",
+      "input_tokens": 1068,
+      "output_tokens": 1009,
+      "cost_usd": 0.000383,
+      "latency_ms": 1527,
+      "estimated": false,
+      "fallback": false,
+      "prompt_version": "1.1",
+      "node_ms": 1530
+     },
+     {
+      "node": "writer",
+      "model": "heuristic-fallback",
+      "input_tokens": 2366,
+      "output_tokens": 2048,
+      "cost_usd": 0.000792,
+      "latency_ms": 2695,
+      "estimated": true,
+      "fallback": true,
+      "errors": [
+       "openai/gpt-oss-20b: invalid output (JSONDecodeError)"
+      ],
+      "prompt_version": "1.2",
+      "node_ms": 2719
+     },
+     {
+      "node": "verifier",
+      "model": "openai/gpt-oss-20b",
+      "input_tokens": 1130,
+      "output_tokens": 408,
+      "cost_usd": 0.000207,
+      "latency_ms": 783,
+      "estimated": false,
+      "fallback": false,
+      "prompt_version": "1.0",
+      "node_ms": 849
+     },
+     {
+      "node": "critic",
+      "model": "openai/gpt-oss-20b",
+      "input_tokens": 1056,
+      "output_tokens": 1161,
+      "cost_usd": 0.000427,
+      "latency_ms": 1489,
+      "estimated": false,
+      "fallback": false,
+      "prompt_version": "1.1",
+      "node_ms": 1508
+     },
+     {
+      "node": "writer",
+      "model": "heuristic-fallback",
+      "input_tokens": 2347,
+      "output_tokens": 2048,
+      "cost_usd": 0.00079,
+      "latency_ms": 2568,
+      "estimated": true,
+      "fallback": true,
+      "errors": [
+       "openai/gpt-oss-20b: invalid output (JSONDecodeError)"
+      ],
+      "prompt_version": "1.2",
+      "node_ms": 2576
+     },
+     {
+      "node": "verifier",
+      "model": "openai/gpt-oss-20b",
+      "input_tokens": 1130,
+      "output_tokens": 602,
+      "cost_usd": 0.000265,
+      "latency_ms": 912,
+      "estimated": false,
+      "fallback": false,
+      "prompt_version": "1.0",
+      "node_ms": 997
+     },
+     {
+      "node": "critic",
+      "model": "openai/gpt-oss-20b",
+      "input_tokens": 1029,
+      "output_tokens": 661,
+      "cost_usd": 0.000275,
+      "latency_ms": 1919,
+      "estimated": false,
+      "fallback": false,
+      "prompt_version": "1.1",
+      "node_ms": 1922
+     },
+     {
+      "node": "compliance",
+      "model": "openai/gpt-oss-20b",
+      "input_tokens": 722,
+      "output_tokens": 1039,
+      "cost_usd": 0.000366,
+      "latency_ms": 1267,
+      "estimated": false,
+      "fallback": false,
+      "prompt_version": "1.0",
+      "node_ms": 1327
+     }
+    ],
+    "estimated_cost_usd": 0.005421,
+    "correct": true,
+    "claims": {
+     "total_claims": 1,
+     "unsupported": 0,
+     "partly": 0,
+     "supported": 1
+    },
+    "violations": 0,
+    "p_reply": 0.1412,
+    "replied": false,
+    "simulator_http_status": 200
+   },
+   {
+    "persona": "ai_engineer",
+    "job_id": "dev-ai-01528",
+    "kind": "normal",
+    "action": "bid",
+    "graph_decision": "bid",
+    "letter": "Your project, forecasting model for our pharma business, is close to work I delivered for a retail client: weekly demand forecasts for 320 products across 18 stores. That project reduced stock-outs by 18% and forecast error (MAPE) from 27% to 14%.\n\nI built it with Python, which you also list. For Model evaluation, a second reference is LLM evaluation harness, which caught 14 prompt regressions before release in the first month. For Python, a second reference is Multi-agent market research, which turned a two-day analyst task into a 25-minute reviewed draft.\n\nFor your project I would begin with a short, fixed-scope first milestone so you can judge the approach before committing to the rest. Could you share a sample of the data or the current setup so I can confirm the scope?",
+    "bid": 55.0,
+    "ids": [
+     "ai_engineer-case-006",
+     "ai_engineer-case-015",
+     "ai_engineer-case-008"
+    ],
+    "tokens": 15029,
+    "latency": 11.168191748998652,
+    "caught": 0,
+    "usage": [
+     {
+      "node": "intake",
+      "model": "none",
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "cost_usd": 0.0,
+      "latency_ms": 4,
+      "node_ms": 4
+     },
+     {
+      "node": "analyst",
+      "model": "openai/gpt-oss-20b",
+      "input_tokens": 764,
+      "output_tokens": 539,
+      "cost_usd": 0.000219,
+      "latency_ms": 1274,
+      "estimated": false,
+      "fallback": false,
+      "prompt_version": "1.0",
+      "node_ms": 1277
+     },
+     {
+      "node": "risk",
+      "model": "openai/gpt-oss-20b",
+      "input_tokens": 814,
+      "output_tokens": 274,
+      "cost_usd": 0.000143,
+      "latency_ms": 994,
+      "estimated": false,
+      "fallback": false,
+      "prompt_version": "1.0",
+      "node_ms": 1739
+     },
+     {
+      "node": "matcher",
+      "model": "openai/gpt-oss-20b",
+      "input_tokens": 1247,
+      "output_tokens": 377,
+      "cost_usd": 0.000207,
+      "latency_ms": 765,
+      "estimated": false,
+      "fallback": false,
+      "prompt_version": "1.0",
+      "node_ms": 2201
+     },
+     {
+      "node": "decide",
+      "model": "none",
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "cost_usd": 0.0,
+      "latency_ms": 0,
+      "node_ms": 0
+     },
+     {
+      "node": "pricing",
+      "model": "none",
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "cost_usd": 0.0,
+      "latency_ms": 59,
+      "node_ms": 59
+     },
+     {
+      "node": "writer",
+      "model": "heuristic-fallback",
+      "input_tokens": 1802,
+      "output_tokens": 2048,
+      "cost_usd": 0.00075,
+      "latency_ms": 2606,
+      "estimated": true,
+      "fallback": true,
+      "errors": [
+       "openai/gpt-oss-20b: invalid output (JSONDecodeError)"
+      ],
+      "prompt_version": "1.2",
+      "node_ms": 2893
+     },
+     {
+      "node": "verifier",
+      "model": "openai/gpt-oss-20b",
+      "input_tokens": 1095,
+      "output_tokens": 990,
+      "cost_usd": 0.000379,
+      "latency_ms": 1240,
+      "estimated": false,
+      "fallback": false,
+      "prompt_version": "1.0",
+      "node_ms": 1323
+     },
+     {
+      "node": "critic",
+      "model": "heuristic-fallback",
+      "input_tokens": 1148,
+      "output_tokens": 2048,
+      "cost_usd": 0.0007,
+      "latency_ms": 2500,
+      "estimated": true,
+      "fallback": true,
+      "errors": [
+       "openai/gpt-oss-20b: invalid output (JSONDecodeError)"
+      ],
+      "prompt_version": "1.1",
+      "node_ms": 2506
+     },
+     {
+      "node": "compliance",
+      "model": "openai/gpt-oss-20b",
+      "input_tokens": 847,
+      "output_tokens": 1036,
+      "cost_usd": 0.000374,
+      "latency_ms": 1589,
+      "estimated": false,
+      "fallback": false,
+      "prompt_version": "1.0",
+      "node_ms": 1630
+     }
+    ],
+    "estimated_cost_usd": 0.002772,
+    "correct": true,
+    "claims": {
+     "total_claims": 3,
+     "unsupported": 0,
+     "partly": 0,
+     "supported": 3
+    },
+    "violations": 0,
+    "p_reply": 0.5544,
+    "replied": true,
+    "simulator_http_status": 200
+   },
+   {
+    "persona": "ai_engineer",
+    "job_id": "dev-ai-01514",
+    "kind": "normal",
+    "action": "bid",
+    "graph_decision": "bid",
+    "letter": "Your project, computer vision system for energy, is close to work I delivered for an insurance client: moved on-prem training jobs to managed spot instances. That project cut training cost by 58% with no accuracy loss.\n\nI built it with Docker, which you also list. I have not used WebSockets on a client project yet, so I would not claim it; I would plan extra time for that part.\n\nCould you share a sample of the data or the current setup so I can confirm the scope?",
+    "bid": 54.25,
+    "ids": [
+     "ai_engineer-case-016"
+    ],
+    "tokens": 29519,
+    "latency": 21.852943660000165,
+    "caught": 0,
+    "usage": [
+     {
+      "node": "intake",
+      "model": "none",
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "cost_usd": 0.0,
+      "latency_ms": 0,
+      "node_ms": 0
+     },
+     {
+      "node": "analyst",
+      "model": "openai/gpt-oss-20b",
+      "input_tokens": 759,
+      "output_tokens": 1365,
+      "cost_usd": 0.000466,
+      "latency_ms": 2288,
+      "estimated": false,
+      "fallback": false,
+      "prompt_version": "1.0",
+      "node_ms": 2291
+     },
+     {
+      "node": "risk",
+      "model": "openai/gpt-oss-20b",
+      "input_tokens": 799,
+      "output_tokens": 236,
+      "cost_usd": 0.000131,
+      "latency_ms": 702,
+      "estimated": false,
+      "fallback": false,
+      "prompt_version": "1.0",
+      "node_ms": 1818
+     },
+     {
+      "node": "matcher",
+      "model": "openai/gpt-oss-20b",
+      "input_tokens": 1207,
+      "output_tokens": 380,
+      "cost_usd": 0.000205,
+      "latency_ms": 859,
+      "estimated": false,
+      "fallback": false,
+      "prompt_version": "1.0",
+      "node_ms": 2130
+     },
+     {
+      "node": "decide",
+      "model": "none",
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "cost_usd": 0.0,
+      "latency_ms": 0,
+      "node_ms": 0
+     },
+     {
+      "node": "pricing",
+      "model": "none",
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "cost_usd": 0.0,
+      "latency_ms": 133,
+      "node_ms": 133
+     },
+     {
+      "node": "writer",
+      "model": "openai/gpt-oss-20b",
+      "input_tokens": 1634,
+      "output_tokens": 1659,
+      "cost_usd": 0.00062,
+      "latency_ms": 2244,
+      "estimated": false,
+      "fallback": false,
+      "prompt_version": "1.2",
+      "node_ms": 2391
+     },
+     {
+      "node": "verifier",
+      "model": "openai/gpt-oss-20b",
+      "input_tokens": 882,
+      "output_tokens": 879,
+      "cost_usd": 0.00033,
+      "latency_ms": 1129,
+      "estimated": false,
+      "fallback": false,
+      "prompt_version": "1.0",
+      "node_ms": 1187
+     },
+     {
+      "node": "critic",
+      "model": "heuristic-fallback",
+      "input_tokens": 1079,
+      "output_tokens": 2048,
+      "cost_usd": 0.000695,
+      "latency_ms": 2469,
+      "estimated": true,
+      "fallback": true,
+      "errors": [
+       "openai/gpt-oss-20b: invalid output (JSONDecodeError)"
+      ],
+      "prompt_version": "1.1",
+      "node_ms": 2472
+     },
+     {
+      "node": "writer",
+      "model": "openai/gpt-oss-20b",
+      "input_tokens": 1646,
+      "output_tokens": 1106,
+      "cost_usd": 0.000455,
+      "latency_ms": 1950,
+      "estimated": false,
+      "fallback": false,
+      "prompt_version": "1.2",
+      "node_ms": 1965
+     },
+     {
+      "node": "verifier",
+      "model": "openai/gpt-oss-20b",
+      "input_tokens": 880,
+      "output_tokens": 785,
+      "cost_usd": 0.000302,
+      "latency_ms": 1345,
+      "estimated": false,
+      "fallback": false,
+      "prompt_version": "1.0",
+      "node_ms": 1428
+     },
+     {
+      "node": "critic",
+      "model": "heuristic-fallback",
+      "input_tokens": 1041,
+      "output_tokens": 2048,
+      "cost_usd": 0.000692,
+      "latency_ms": 3078,
+      "estimated": true,
+      "fallback": true,
+      "errors": [
+       "openai/gpt-oss-20b: invalid output (JSONDecodeError)"
+      ],
+      "prompt_version": "1.1",
+      "node_ms": 3080
+     },
+     {
+      "node": "writer",
+      "model": "heuristic-fallback",
+      "input_tokens": 1644,
+      "output_tokens": 2048,
+      "cost_usd": 0.000738,
+      "latency_ms": 2633,
+      "estimated": true,
+      "fallback": true,
+      "errors": [
+       "openai/gpt-oss-20b: invalid output (JSONDecodeError)"
+      ],
+      "prompt_version": "1.2",
+      "node_ms": 2636
+     },
+     {
+      "node": "verifier",
+      "model": "openai/gpt-oss-20b",
+      "input_tokens": 877,
+      "output_tokens": 745,
+      "cost_usd": 0.000289,
+      "latency_ms": 1038,
+      "estimated": false,
+      "fallback": false,
+      "prompt_version": "1.0",
+      "node_ms": 1090
+     },
+     {
+      "node": "critic",
+      "model": "openai/gpt-oss-20b",
+      "input_tokens": 1013,
+      "output_tokens": 986,
+      "cost_usd": 0.000372,
+      "latency_ms": 1426,
+      "estimated": false,
+      "fallback": false,
+      "prompt_version": "1.1",
+      "node_ms": 1429
+     },
+     {
+      "node": "compliance",
+      "model": "openai/gpt-oss-20b",
+      "input_tokens": 781,
+      "output_tokens": 992,
+      "cost_usd": 0.000356,
+      "latency_ms": 1331,
+      "estimated": false,
+      "fallback": false,
+      "prompt_version": "1.0",
+      "node_ms": 1348
+     }
+    ],
+    "estimated_cost_usd": 0.005651,
+    "correct": true,
+    "claims": {
+     "total_claims": 3,
+     "unsupported": 0,
+     "partly": 1,
+     "supported": 2
+    },
+    "violations": 0,
+    "p_reply": 0.265,
+    "replied": false,
+    "simulator_http_status": 200
+   },
+   {
+    "persona": "ai_engineer",
+    "job_id": "dev-ai-01648",
+    "kind": "scam",
+    "action": "skip",
+    "graph_decision": "skip",
+    "letter": "",
+    "bid": null,
+    "ids": [],
+    "tokens": 6677,
+    "latency": 4.066595766998944,
+    "caught": 0,
+    "usage": [
+     {
+      "node": "intake",
+      "model": "none",
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "cost_usd": 0.0,
+      "latency_ms": 0,
+      "node_ms": 0
+     },
+     {
+      "node": "analyst",
+      "model": "openai/gpt-oss-20b",
+      "input_tokens": 801,
+      "output_tokens": 1049,
+      "cost_usd": 0.000375,
+      "latency_ms": 1915,
+      "estimated": false,
+      "fallback": false,
+      "prompt_version": "1.0",
+      "node_ms": 1921
+     },
+     {
+      "node": "risk",
+      "model": "openai/gpt-oss-20b",
+      "input_tokens": 923,
+      "output_tokens": 654,
+      "cost_usd": 0.000265,
+      "latency_ms": 2067,
+      "estimated": false,
+      "fallback": false,
+      "prompt_version": "1.0",
+      "node_ms": 2916
+     },
+     {
+      "node": "matcher",
+      "model": "openai/gpt-oss-20b",
+      "input_tokens": 2078,
+      "output_tokens": 1172,
+      "cost_usd": 0.000507,
+      "latency_ms": 1634,
+      "estimated": false,
+      "fallback": false,
+      "prompt_version": "1.0",
+      "node_ms": 3851
+     },
+     {
+      "node": "decide",
+      "model": "none",
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "cost_usd": 0.0,
+      "latency_ms": 0,
+      "node_ms": 0
+     }
+    ],
+    "estimated_cost_usd": 0.001147,
+    "correct": true
+   },
+   {
+    "persona": "fullstack_dev",
+    "job_id": "dev-fu-01796",
+    "kind": "normal",
+    "action": "bid",
+    "graph_decision": "bid",
+    "letter": "Your project, back-end api for pharma platform, is close to work I delivered for a travel client: one typed gateway in front of six legacy REST services. That project halved front-end API calls per page.\n\nI built it with Redis, which you also list. For Redis, a second reference is Central authentication service, which retired three separate login systems. For WebSockets, a second reference is Restaurant ordering app, which average order placement time under 40 seconds.\n\nFor your project I would begin with a short, fixed-scope first milestone so you can judge the approach before committing to the rest. Could you share a sample of the data or the current setup so I can confirm the scope?",
+    "bid": 960.0,
+    "ids": [
+     "fullstack_dev-case-009",
+     "fullstack_dev-case-016",
+     "fullstack_dev-case-017"
+    ],
+    "tokens": 30287,
+    "latency": 22.645070717000635,
+    "caught": 0,
+    "usage": [
+     {
+      "node": "intake",
+      "model": "none",
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "cost_usd": 0.0,
+      "latency_ms": 0,
+      "node_ms": 0
+     },
+     {
+      "node": "analyst",
+      "model": "openai/gpt-oss-20b",
+      "input_tokens": 767,
+      "output_tokens": 1037,
+      "cost_usd": 0.000369,
+      "latency_ms": 2123,
+      "estimated": false,
+      "fallback": false,
+      "prompt_version": "1.0",
+      "node_ms": 2126
+     },
+     {
+      "node": "risk",
+      "model": "openai/gpt-oss-20b",
+      "input_tokens": 808,
+      "output_tokens": 236,
+      "cost_usd": 0.000131,
+      "latency_ms": 1627,
+      "estimated": false,
+      "fallback": false,
+      "prompt_version": "1.0",
+      "node_ms": 2243
+     },
+     {
+      "node": "matcher",
+      "model": "openai/gpt-oss-20b",
+      "input_tokens": 1463,
+      "output_tokens": 650,
+      "cost_usd": 0.000305,
+      "latency_ms": 1161,
+      "estimated": false,
+      "fallback": false,
+      "prompt_version": "1.0",
+      "node_ms": 3390
+     },
+     {
+      "node": "decide",
+      "model": "none",
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "cost_usd": 0.0,
+      "latency_ms": 0,
+      "node_ms": 0
+     },
+     {
+      "node": "pricing",
+      "model": "none",
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "cost_usd": 0.0,
+      "latency_ms": 114,
+      "node_ms": 114
+     },
+     {
+      "node": "writer",
+      "model": "heuristic-fallback",
+      "input_tokens": 1762,
+      "output_tokens": 2048,
+      "cost_usd": 0.000747,
+      "latency_ms": 2656,
+      "estimated": true,
+      "fallback": true,
+      "errors": [
+       "openai/gpt-oss-20b: invalid output (JSONDecodeError)"
+      ],
+      "prompt_version": "1.2",
+      "node_ms": 3101
+     },
+     {
+      "node": "verifier",
+      "model": "openai/gpt-oss-20b",
+      "input_tokens": 988,
+      "output_tokens": 958,
+      "cost_usd": 0.000362,
+      "latency_ms": 1385,
+      "estimated": false,
+      "fallback": false,
+      "prompt_version": "1.0",
+      "node_ms": 1576
+     },
+     {
+      "node": "critic",
+      "model": "openai/gpt-oss-20b",
+      "input_tokens": 1115,
+      "output_tokens": 1107,
+      "cost_usd": 0.000416,
+      "latency_ms": 1617,
+      "estimated": false,
+      "fallback": false,
+      "prompt_version": "1.1",
+      "node_ms": 1619
+     },
+     {
+      "node": "writer",
+      "model": "heuristic-fallback",
+      "input_tokens": 1830,
+      "output_tokens": 2048,
+      "cost_usd": 0.000752,
+      "latency_ms": 2635,
+      "estimated": true,
+      "fallback": true,
+      "errors": [
+       "openai/gpt-oss-20b: invalid output (JSONDecodeError)"
+      ],
+      "prompt_version": "1.2",
+      "node_ms": 2638
+     },
+     {
+      "node": "verifier",
+      "model": "openai/gpt-oss-20b",
+      "input_tokens": 963,
+      "output_tokens": 855,
+      "cost_usd": 0.000329,
+      "latency_ms": 1207,
+      "estimated": false,
+      "fallback": false,
+      "prompt_version": "1.0",
+      "node_ms": 1322
+     },
+     {
+      "node": "critic",
+      "model": "openai/gpt-oss-20b",
+      "input_tokens": 1076,
+      "output_tokens": 1081,
+      "cost_usd": 0.000405,
+      "latency_ms": 1729,
+      "estimated": false,
+      "fallback": false,
+      "prompt_version": "1.1",
+      "node_ms": 1732
+     },
+     {
+      "node": "writer",
+      "model": "heuristic-fallback",
+      "input_tokens": 1766,
+      "output_tokens": 2048,
+      "cost_usd": 0.000747,
+      "latency_ms": 2615,
+      "estimated": true,
+      "fallback": true,
+      "errors": [
+       "openai/gpt-oss-20b: invalid output (JSONDecodeError)"
+      ],
+      "prompt_version": "1.2",
+      "node_ms": 2630
+     },
+     {
+      "node": "verifier",
+      "model": "openai/gpt-oss-20b",
+      "input_tokens": 963,
+      "output_tokens": 667,
+      "cost_usd": 0.000272,
+      "latency_ms": 863,
+      "estimated": false,
+      "fallback": false,
+      "prompt_version": "1.0",
+      "node_ms": 920
+     },
+     {
+      "node": "critic",
+      "model": "openai/gpt-oss-20b",
+      "input_tokens": 1074,
+      "output_tokens": 1280,
+      "cost_usd": 0.000465,
+      "latency_ms": 1728,
+      "estimated": false,
+      "fallback": false,
+      "prompt_version": "1.1",
+      "node_ms": 1731
+     },
+     {
+      "node": "compliance",
+      "model": "openai/gpt-oss-20b",
+      "input_tokens": 819,
+      "output_tokens": 878,
+      "cost_usd": 0.000325,
+      "latency_ms": 1546,
+      "estimated": false,
+      "fallback": false,
+      "prompt_version": "1.0",
+      "node_ms": 1566
+     }
+    ],
+    "estimated_cost_usd": 0.005625,
+    "correct": true,
+    "claims": {
+     "total_claims": 2,
+     "unsupported": 0,
+     "partly": 1,
+     "supported": 1
+    },
+    "violations": 0,
+    "p_reply": 0.2869,
+    "replied": false,
+    "simulator_http_status": 200
+   },
+   {
+    "persona": "fullstack_dev",
+    "job_id": "dev-fu-01834",
+    "kind": "normal",
+    "action": "skip",
+    "graph_decision": "skip",
+    "letter": "",
+    "bid": null,
+    "ids": [],
+    "tokens": 2965,
+    "latency": 3.26306114300678,
+    "caught": 0,
+    "usage": [
+     {
+      "node": "intake",
+      "model": "none",
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "cost_usd": 0.0,
+      "latency_ms": 0,
+      "node_ms": 0
+     },
+     {
+      "node": "analyst",
+      "model": "openai/gpt-oss-20b",
+      "input_tokens": 764,
+      "output_tokens": 615,
+      "cost_usd": 0.000242,
+      "latency_ms": 2019,
+      "estimated": false,
+      "fallback": false,
+      "prompt_version": "1.0",
+      "node_ms": 2024
+     },
+     {
+      "node": "risk",
+      "model": "openai/gpt-oss-20b",
+      "input_tokens": 790,
+      "output_tokens": 277,
+      "cost_usd": 0.000142,
+      "latency_ms": 589,
+      "estimated": false,
+      "fallback": false,
+      "prompt_version": "1.0",
+      "node_ms": 2018
+     },
+     {
+      "node": "matcher",
+      "model": "openai/gpt-oss-20b",
+      "input_tokens": 424,
+      "output_tokens": 95,
+      "cost_usd": 6e-05,
+      "latency_ms": 214,
+      "estimated": false,
+      "fallback": false,
+      "prompt_version": "1.0",
+      "node_ms": 3207
+     },
+     {
+      "node": "decide",
+      "model": "none",
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "cost_usd": 0.0,
+      "latency_ms": 0,
+      "node_ms": 0
+     }
+    ],
+    "estimated_cost_usd": 0.000444,
+    "correct": true
+   },
+   {
+    "persona": "fullstack_dev",
+    "job_id": "dev-fu-01807",
+    "kind": "normal",
+    "action": "skip",
+    "graph_decision": "skip",
+    "letter": "",
+    "bid": null,
+    "ids": [],
+    "tokens": 4365,
+    "latency": 3.724700689999736,
+    "caught": 0,
+    "usage": [
+     {
+      "node": "intake",
+      "model": "none",
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "cost_usd": 0.0,
+      "latency_ms": 0,
+      "node_ms": 0
+     },
+     {
+      "node": "analyst",
+      "model": "openai/gpt-oss-20b",
+      "input_tokens": 796,
+      "output_tokens": 811,
+      "cost_usd": 0.000303,
+      "latency_ms": 2046,
+      "estimated": false,
+      "fallback": false,
+      "prompt_version": "1.0",
+      "node_ms": 2052
+     },
+     {
+      "node": "risk",
+      "model": "openai/gpt-oss-20b",
+      "input_tokens": 834,
+      "output_tokens": 262,
+      "cost_usd": 0.000141,
+      "latency_ms": 618,
+      "estimated": false,
+      "fallback": false,
+      "prompt_version": "1.0",
+      "node_ms": 2022
+     },
+     {
+      "node": "matcher",
+      "model": "openai/gpt-oss-20b",
+      "input_tokens": 1279,
+      "output_tokens": 383,
+      "cost_usd": 0.000211,
+      "latency_ms": 596,
+      "estimated": false,
+      "fallback": false,
+      "prompt_version": "1.0",
+      "node_ms": 3586
+     },
+     {
+      "node": "decide",
+      "model": "none",
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "cost_usd": 0.0,
+      "latency_ms": 0,
+      "node_ms": 0
+     }
+    ],
+    "estimated_cost_usd": 0.000655,
+    "correct": true
+   },
+   {
+    "persona": "fullstack_dev",
+    "job_id": "dev-fu-01840",
+    "kind": "normal",
+    "action": "skip",
+    "graph_decision": "skip",
+    "letter": "",
+    "bid": null,
+    "ids": [],
+    "tokens": 3432,
+    "latency": 2.1528392659965903,
+    "caught": 0,
+    "usage": [
+     {
+      "node": "intake",
+      "model": "none",
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "cost_usd": 0.0,
+      "latency_ms": 0,
+      "node_ms": 0
+     },
+     {
+      "node": "analyst",
+      "model": "openai/gpt-oss-20b",
+      "input_tokens": 754,
+      "output_tokens": 819,
+      "cost_usd": 0.000302,
+      "latency_ms": 1734,
+      "estimated": false,
+      "fallback": false,
+      "prompt_version": "1.0",
+      "node_ms": 1736
+     },
+     {
+      "node": "risk",
+      "model": "openai/gpt-oss-20b",
+      "input_tokens": 829,
+      "output_tokens": 516,
+      "cost_usd": 0.000217,
+      "latency_ms": 993,
+      "estimated": false,
+      "fallback": false,
+      "prompt_version": "1.0",
+      "node_ms": 1617
+     },
+     {
+      "node": "matcher",
+      "model": "openai/gpt-oss-20b",
+      "input_tokens": 410,
+      "output_tokens": 104,
+      "cost_usd": 6.2e-05,
+      "latency_ms": 209,
+      "estimated": false,
+      "fallback": false,
+      "prompt_version": "1.0",
+      "node_ms": 1973
+     },
+     {
+      "node": "decide",
+      "model": "none",
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "cost_usd": 0.0,
+      "latency_ms": 0,
+      "node_ms": 0
+     }
+    ],
+    "estimated_cost_usd": 0.000581,
+    "correct": true
+   },
+   {
+    "persona": "fullstack_dev",
+    "job_id": "dev-fu-01888",
+    "kind": "lowball",
+    "action": "skip",
+    "graph_decision": "skip",
+    "letter": "",
+    "bid": null,
+    "ids": [],
+    "tokens": 5202,
+    "latency": 2.740307259002293,
+    "caught": 0,
+    "usage": [
+     {
+      "node": "intake",
+      "model": "none",
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "cost_usd": 0.0,
+      "latency_ms": 0,
+      "node_ms": 0
+     },
+     {
+      "node": "analyst",
+      "model": "openai/gpt-oss-20b",
+      "input_tokens": 781,
+      "output_tokens": 1268,
+      "cost_usd": 0.000439,
+      "latency_ms": 2273,
+      "estimated": false,
+      "fallback": false,
+      "prompt_version": "1.0",
+      "node_ms": 2277
+     },
+     {
+      "node": "risk",
+      "model": "openai/gpt-oss-20b",
+      "input_tokens": 805,
+      "output_tokens": 163,
+      "cost_usd": 0.000109,
+      "latency_ms": 513,
+      "estimated": false,
+      "fallback": false,
+      "prompt_version": "1.0",
+      "node_ms": 1112
+     },
+     {
+      "node": "matcher",
+      "model": "openai/gpt-oss-20b",
+      "input_tokens": 1759,
+      "output_tokens": 426,
+      "cost_usd": 0.00026,
+      "latency_ms": 925,
+      "estimated": false,
+      "fallback": false,
+      "prompt_version": "1.0",
+      "node_ms": 2661
+     },
+     {
+      "node": "decide",
+      "model": "none",
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "cost_usd": 0.0,
+      "latency_ms": 0,
+      "node_ms": 0
+     }
+    ],
+    "estimated_cost_usd": 0.000808,
+    "correct": true
+   },
+   {
+    "persona": "fullstack_dev",
+    "job_id": "dev-fu-01758",
+    "kind": "normal",
+    "action": "bid",
+    "graph_decision": "bid",
+    "letter": "Your project, back-end api for media platform, is close to work I delivered for an insurance client: moved a monolith from a single VPS to autoscaled containers. That project hosting cost down 30% and zero-downtime deploys.\n\nI built it with Docker, PostgreSQL, which you also list. For PostgreSQL, Docker, a second reference is Clinic booking platform, which cut no-shows by 27% through automated reminders. For PostgreSQL, a second reference is Subscription billing portal, which cut billing support tickets by 44%.\n\nFor your project I would begin with a short, fixed-scope first milestone so you can judge the approach before committing to the rest. Could you share a sample of the data or the current setup so I can confirm the scope?",
+    "bid": 1440.0,
+    "ids": [
+     "fullstack_dev-case-019",
+     "fullstack_dev-case-003",
+     "fullstack_dev-case-008"
+    ],
+    "tokens": 31375,
+    "latency": 21.538274493002973,
+    "caught": 0,
+    "usage": [
+     {
+      "node": "intake",
+      "model": "none",
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "cost_usd": 0.0,
+      "latency_ms": 0,
+      "node_ms": 0
+     },
+     {
+      "node": "analyst",
+      "model": "heuristic-fallback",
+      "input_tokens": 792,
+      "output_tokens": 2048,
+      "cost_usd": 0.000674,
+      "latency_ms": 2824,
+      "estimated": true,
+      "fallback": true,
+      "errors": [
+       "openai/gpt-oss-20b: invalid output (JSONDecodeError)"
+      ],
+      "prompt_version": "1.0",
+      "node_ms": 2826
+     },
+     {
+      "node": "risk",
+      "model": "openai/gpt-oss-20b",
+      "input_tokens": 847,
+      "output_tokens": 214,
+      "cost_usd": 0.000128,
+      "latency_ms": 905,
+      "estimated": false,
+      "fallback": false,
+      "prompt_version": "1.0",
+      "node_ms": 1489
+     },
+     {
+      "node": "matcher",
+      "model": "openai/gpt-oss-20b",
+      "input_tokens": 1689,
+      "output_tokens": 516,
+      "cost_usd": 0.000281,
+      "latency_ms": 767,
+      "estimated": false,
+      "fallback": false,
+      "prompt_version": "1.0",
+      "node_ms": 2789
+     },
+     {
+      "node": "decide",
+      "model": "none",
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "cost_usd": 0.0,
+      "latency_ms": 0,
+      "node_ms": 0
+     },
+     {
+      "node": "pricing",
+      "model": "none",
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "cost_usd": 0.0,
+      "latency_ms": 88,
+      "node_ms": 88
+     },
+     {
+      "node": "writer",
+      "model": "openai/gpt-oss-20b",
+      "input_tokens": 1856,
+      "output_tokens": 1452,
+      "cost_usd": 0.000575,
+      "latency_ms": 2218,
+      "estimated": false,
+      "fallback": false,
+      "prompt_version": "1.2",
+      "node_ms": 2576
+     },
+     {
+      "node": "verifier",
+      "model": "openai/gpt-oss-20b",
+      "input_tokens": 990,
+      "output_tokens": 575,
+      "cost_usd": 0.000247,
+      "latency_ms": 1933,
+      "estimated": false,
+      "fallback": false,
+      "prompt_version": "1.0",
+      "node_ms": 1982
+     },
+     {
+      "node": "critic",
+      "model": "openai/gpt-oss-20b",
+      "input_tokens": 887,
+      "output_tokens": 817,
+      "cost_usd": 0.000312,
+      "latency_ms": 1084,
+      "estimated": false,
+      "fallback": false,
+      "prompt_version": "1.1",
+      "node_ms": 1086
+     },
+     {
+      "node": "writer",
+      "model": "openai/gpt-oss-20b",
+      "input_tokens": 1854,
+      "output_tokens": 1933,
+      "cost_usd": 0.000719,
+      "latency_ms": 2329,
+      "estimated": false,
+      "fallback": false,
+      "prompt_version": "1.2",
+      "node_ms": 2332
+     },
+     {
+      "node": "verifier",
+      "model": "openai/gpt-oss-20b",
+      "input_tokens": 1091,
+      "output_tokens": 1268,
+      "cost_usd": 0.000462,
+      "latency_ms": 1886,
+      "estimated": false,
+      "fallback": false,
+      "prompt_version": "1.0",
+      "node_ms": 1985
+     },
+     {
+      "node": "critic",
+      "model": "openai/gpt-oss-20b",
+      "input_tokens": 1260,
+      "output_tokens": 1235,
+      "cost_usd": 0.000465,
+      "latency_ms": 1532,
+      "estimated": false,
+      "fallback": false,
+      "prompt_version": "1.1",
+      "node_ms": 1540
+     },
+     {
+      "node": "writer",
+      "model": "heuristic-fallback",
+      "input_tokens": 1949,
+      "output_tokens": 2048,
+      "cost_usd": 0.000761,
+      "latency_ms": 2473,
+      "estimated": true,
+      "fallback": true,
+      "errors": [
+       "openai/gpt-oss-20b: invalid output (JSONDecodeError)"
+      ],
+      "prompt_version": "1.2",
+      "node_ms": 2481
+     },
+     {
+      "node": "verifier",
+      "model": "openai/gpt-oss-20b",
+      "input_tokens": 1106,
+      "output_tokens": 1082,
+      "cost_usd": 0.000408,
+      "latency_ms": 1692,
+      "estimated": false,
+      "fallback": false,
+      "prompt_version": "1.0",
+      "node_ms": 1825
+     },
+     {
+      "node": "critic",
+      "model": "openai/gpt-oss-20b",
+      "input_tokens": 1181,
+      "output_tokens": 932,
+      "cost_usd": 0.000368,
+      "latency_ms": 1200,
+      "estimated": false,
+      "fallback": false,
+      "prompt_version": "1.1",
+      "node_ms": 1206
+     },
+     {
+      "node": "compliance",
+      "model": "openai/gpt-oss-20b",
+      "input_tokens": 837,
+      "output_tokens": 916,
+      "cost_usd": 0.000338,
+      "latency_ms": 1219,
+      "estimated": false,
+      "fallback": false,
+      "prompt_version": "1.0",
+      "node_ms": 1250
+     }
+    ],
+    "estimated_cost_usd": 0.005738,
+    "correct": true,
+    "claims": {
+     "total_claims": 3,
+     "unsupported": 0,
+     "partly": 0,
+     "supported": 3
+    },
+    "violations": 0,
+    "p_reply": 0.46,
+    "replied": false,
+    "simulator_http_status": 200
+   },
+   {
+    "persona": "fullstack_dev",
+    "job_id": "dev-fu-01727",
+    "kind": "normal",
+    "action": "bid",
+    "graph_decision": "bid",
+    "letter": "I delivered a fitness tracking mobile app that earned a 4.7-star rating across 2,100 reviews, using a single codebase for both iOS and Android. The app was built entirely in TypeScript, with a Node.js backend and MongoDB for NoSQL storage. My experience with Node.js includes creating a GraphQL gateway for a travel client that halved front\u2011end API calls per page. I implemented CI/CD pipelines for mobile apps, as demonstrated by the end\u2011to\u2011end test suite that reduced production bugs from nine to two per month.",
+    "bid": 1730.0,
+    "ids": [
+     "fullstack_dev-case-006",
+     "fullstack_dev-case-009",
+     "fullstack_dev-case-020"
+    ],
+    "tokens": 29777,
+    "latency": 21.16496628000459,
+    "caught": 0,
+    "usage": [
+     {
+      "node": "intake",
+      "model": "none",
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "cost_usd": 0.0,
+      "latency_ms": 1,
+      "node_ms": 1
+     },
+     {
+      "node": "analyst",
+      "model": "openai/gpt-oss-20b",
+      "input_tokens": 754,
+      "output_tokens": 842,
+      "cost_usd": 0.000309,
+      "latency_ms": 1927,
+      "estimated": false,
+      "fallback": false,
+      "prompt_version": "1.0",
+      "node_ms": 1933
+     },
+     {
+      "node": "risk",
+      "model": "openai/gpt-oss-20b",
+      "input_tokens": 825,
+      "output_tokens": 201,
+      "cost_usd": 0.000122,
+      "latency_ms": 1092,
+      "estimated": false,
+      "fallback": false,
+      "prompt_version": "1.0",
+      "node_ms": 1758
+     },
+     {
+      "node": "matcher",
+      "model": "openai/gpt-oss-20b",
+      "input_tokens": 1453,
+      "output_tokens": 914,
+      "cost_usd": 0.000383,
+      "latency_ms": 1210,
+      "estimated": false,
+      "fallback": false,
+      "prompt_version": "1.0",
+      "node_ms": 3226
+     },
+     {
+      "node": "decide",
+      "model": "none",
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "cost_usd": 0.0,
+      "latency_ms": 0,
+      "node_ms": 0
+     },
+     {
+      "node": "pricing",
+      "model": "none",
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "cost_usd": 0.0,
+      "latency_ms": 90,
+      "node_ms": 90
+     },
+     {
+      "node": "writer",
+      "model": "openai/gpt-oss-20b",
+      "input_tokens": 1789,
+      "output_tokens": 1652,
+      "cost_usd": 0.00063,
+      "latency_ms": 2396,
+      "estimated": false,
+      "fallback": false,
+      "prompt_version": "1.2",
+      "node_ms": 2695
+     },
+     {
+      "node": "verifier",
+      "model": "openai/gpt-oss-20b",
+      "input_tokens": 1115,
+      "output_tokens": 1130,
+      "cost_usd": 0.000423,
+      "latency_ms": 1426,
+      "estimated": false,
+      "fallback": false,
+      "prompt_version": "1.0",
+      "node_ms": 1671
+     },
+     {
+      "node": "critic",
+      "model": "openai/gpt-oss-20b",
+      "input_tokens": 1203,
+      "output_tokens": 1095,
+      "cost_usd": 0.000419,
+      "latency_ms": 1610,
+      "estimated": false,
+      "fallback": false,
+      "prompt_version": "1.1",
+      "node_ms": 1612
+     },
+     {
+      "node": "writer",
+      "model": "heuristic-fallback",
+      "input_tokens": 1865,
+      "output_tokens": 2048,
+      "cost_usd": 0.000754,
+      "latency_ms": 2498,
+      "estimated": true,
+      "fallback": true,
+      "errors": [
+       "openai/gpt-oss-20b: invalid output (JSONDecodeError)"
+      ],
+      "prompt_version": "1.2",
+      "node_ms": 2505
+     },
+     {
+      "node": "verifier",
+      "model": "openai/gpt-oss-20b",
+      "input_tokens": 1035,
+      "output_tokens": 856,
+      "cost_usd": 0.000334,
+      "latency_ms": 1170,
+      "estimated": false,
+      "fallback": false,
+      "prompt_version": "1.0",
+      "node_ms": 1257
+     },
+     {
+      "node": "critic",
+      "model": "openai/gpt-oss-20b",
+      "input_tokens": 1066,
+      "output_tokens": 965,
+      "cost_usd": 0.000369,
+      "latency_ms": 1364,
+      "estimated": false,
+      "fallback": false,
+      "prompt_version": "1.1",
+      "node_ms": 1366
+     },
+     {
+      "node": "writer",
+      "model": "openai/gpt-oss-20b",
+      "input_tokens": 1787,
+      "output_tokens": 1624,
+      "cost_usd": 0.000621,
+      "latency_ms": 2187,
+      "estimated": false,
+      "fallback": false,
+      "prompt_version": "1.2",
+      "node_ms": 2190
+     },
+     {
+      "node": "verifier",
+      "model": "openai/gpt-oss-20b",
+      "input_tokens": 1089,
+      "output_tokens": 1025,
+      "cost_usd": 0.000389,
+      "latency_ms": 1717,
+      "estimated": false,
+      "fallback": false,
+      "prompt_version": "1.0",
+      "node_ms": 1877
+     },
+     {
+      "node": "critic",
+      "model": "openai/gpt-oss-20b",
+      "input_tokens": 1125,
+      "output_tokens": 1237,
+      "cost_usd": 0.000455,
+      "latency_ms": 1566,
+      "estimated": false,
+      "fallback": false,
+      "prompt_version": "1.1",
+      "node_ms": 1568
+     },
+     {
+      "node": "compliance",
+      "model": "openai/gpt-oss-20b",
+      "input_tokens": 793,
+      "output_tokens": 289,
+      "cost_usd": 0.000146,
+      "latency_ms": 567,
+      "estimated": false,
+      "fallback": false,
+      "prompt_version": "1.0",
+      "node_ms": 588
+     }
+    ],
+    "estimated_cost_usd": 0.005354,
+    "correct": true,
+    "claims": {
+     "total_claims": 4,
+     "unsupported": 0,
+     "partly": 1,
+     "supported": 3
+    },
+    "violations": 0,
+    "p_reply": 0.7292,
+    "replied": false,
+    "simulator_http_status": 200
+   },
+   {
+    "persona": "fullstack_dev",
+    "job_id": "dev-fu-01837",
+    "kind": "normal",
+    "action": "skip",
+    "graph_decision": "skip",
+    "letter": "",
+    "bid": null,
+    "ids": [],
+    "tokens": 3499,
+    "latency": 2.6742958140021074,
+    "caught": 0,
+    "usage": [
+     {
+      "node": "intake",
+      "model": "none",
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "cost_usd": 0.0,
+      "latency_ms": 0,
+      "node_ms": 0
+     },
+     {
+      "node": "analyst",
+      "model": "openai/gpt-oss-20b",
+      "input_tokens": 764,
+      "output_tokens": 1174,
+      "cost_usd": 0.000409,
+      "latency_ms": 2105,
+      "estimated": false,
+      "fallback": false,
+      "prompt_version": "1.0",
+      "node_ms": 2113
+     },
+     {
+      "node": "risk",
+      "model": "openai/gpt-oss-20b",
+      "input_tokens": 794,
+      "output_tokens": 245,
+      "cost_usd": 0.000133,
+      "latency_ms": 851,
+      "estimated": false,
+      "fallback": false,
+      "prompt_version": "1.0",
+      "node_ms": 1238
+     },
+     {
+      "node": "matcher",
+      "model": "openai/gpt-oss-20b",
+      "input_tokens": 423,
+      "output_tokens": 99,
+      "cost_usd": 6.1e-05,
+      "latency_ms": 217,
+      "estimated": false,
+      "fallback": false,
+      "prompt_version": "1.0",
+      "node_ms": 2491
+     },
+     {
+      "node": "decide",
+      "model": "none",
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "cost_usd": 0.0,
+      "latency_ms": 0,
+      "node_ms": 0
+     }
+    ],
+    "estimated_cost_usd": 0.000603,
+    "correct": true
+   },
+   {
+    "persona": "fullstack_dev",
+    "job_id": "dev-fu-01714",
+    "kind": "normal",
+    "action": "bid",
+    "graph_decision": "bid",
+    "letter": "",
+    "bid": 960.0,
+    "ids": [
+     "fullstack_dev-case-005",
+     "fullstack_dev-case-019",
+     "fullstack_dev-case-018"
+    ],
+    "tokens": 30061,
+    "latency": 21.313996262004366,
+    "caught": 0,
+    "usage": [
+     {
+      "node": "intake",
+      "model": "none",
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "cost_usd": 0.0,
+      "latency_ms": 0,
+      "node_ms": 0
+     },
+     {
+      "node": "analyst",
+      "model": "openai/gpt-oss-20b",
+      "input_tokens": 794,
+      "output_tokens": 972,
+      "cost_usd": 0.000351,
+      "latency_ms": 1902,
+      "estimated": false,
+      "fallback": false,
+      "prompt_version": "1.0",
+      "node_ms": 1905
+     },
+     {
+      "node": "risk",
+      "model": "openai/gpt-oss-20b",
+      "input_tokens": 820,
+      "output_tokens": 307,
+      "cost_usd": 0.000154,
+      "latency_ms": 949,
+      "estimated": false,
+      "fallback": false,
+      "prompt_version": "1.0",
+      "node_ms": 1213
+     },
+     {
+      "node": "matcher",
+      "model": "openai/gpt-oss-20b",
+      "input_tokens": 1739,
+      "output_tokens": 558,
+      "cost_usd": 0.000298,
+      "latency_ms": 1223,
+      "estimated": false,
+      "fallback": false,
+      "prompt_version": "1.0",
+      "node_ms": 3334
+     },
+     {
+      "node": "decide",
+      "model": "none",
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "cost_usd": 0.0,
+      "latency_ms": 0,
+      "node_ms": 0
+     },
+     {
+      "node": "pricing",
+      "model": "none",
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "cost_usd": 0.0,
+      "latency_ms": 143,
+      "node_ms": 143
+     },
+     {
+      "node": "writer",
+      "model": "heuristic-fallback",
+      "input_tokens": 1914,
+      "output_tokens": 2048,
+      "cost_usd": 0.000758,
+      "latency_ms": 2435,
+      "estimated": true,
+      "fallback": true,
+      "errors": [
+       "openai/gpt-oss-20b: invalid output (JSONDecodeError)"
+      ],
+      "prompt_version": "1.2",
+      "node_ms": 2814
+     },
+     {
+      "node": "verifier",
+      "model": "openai/gpt-oss-20b",
+      "input_tokens": 1074,
+      "output_tokens": 1023,
+      "cost_usd": 0.000387,
+      "latency_ms": 1427,
+      "estimated": false,
+      "fallback": false,
+      "prompt_version": "1.0",
+      "node_ms": 1514
+     },
+     {
+      "node": "critic",
+      "model": "openai/gpt-oss-20b",
+      "input_tokens": 1220,
+      "output_tokens": 1172,
+      "cost_usd": 0.000443,
+      "latency_ms": 1581,
+      "estimated": false,
+      "fallback": false,
+      "prompt_version": "1.1",
+      "node_ms": 1582
+     },
+     {
+      "node": "writer",
+      "model": "openai/gpt-oss-20b",
+      "input_tokens": 1914,
+      "output_tokens": 1865,
+      "cost_usd": 0.000703,
+      "latency_ms": 2474,
+      "estimated": false,
+      "fallback": false,
+      "prompt_version": "1.2",
+      "node_ms": 2479
+     },
+     {
+      "node": "verifier",
+      "model": "openai/gpt-oss-20b",
+      "input_tokens": 1092,
+      "output_tokens": 1230,
+      "cost_usd": 0.000451,
+      "latency_ms": 1517,
+      "estimated": false,
+      "fallback": false,
+      "prompt_version": "1.0",
+      "node_ms": 1636
+     },
+     {
+      "node": "critic",
+      "model": "openai/gpt-oss-20b",
+      "input_tokens": 1305,
+      "output_tokens": 1046,
+      "cost_usd": 0.000412,
+      "latency_ms": 1364,
+      "estimated": false,
+      "fallback": false,
+      "prompt_version": "1.1",
+      "node_ms": 1366
+     },
+     {
+      "node": "writer",
+      "model": "heuristic-fallback",
+      "input_tokens": 2071,
+      "output_tokens": 2048,
+      "cost_usd": 0.00077,
+      "latency_ms": 3719,
+      "estimated": true,
+      "fallback": true,
+      "errors": [
+       "openai/gpt-oss-20b: invalid output (JSONDecodeError)"
+      ],
+      "prompt_version": "1.2",
+      "node_ms": 3721
+     },
+     {
+      "node": "verifier",
+      "model": "openai/gpt-oss-20b",
+      "input_tokens": 1090,
+      "output_tokens": 1084,
+      "cost_usd": 0.000407,
+      "latency_ms": 1602,
+      "estimated": false,
+      "fallback": false,
+      "prompt_version": "1.0",
+      "node_ms": 1809
+     },
+     {
+      "node": "critic",
+      "model": "openai/gpt-oss-20b",
+      "input_tokens": 1271,
+      "output_tokens": 404,
+      "cost_usd": 0.000217,
+      "latency_ms": 639,
+      "estimated": false,
+      "fallback": false,
+      "prompt_version": "1.1",
+      "node_ms": 652
+     }
+    ],
+    "estimated_cost_usd": 0.005351,
+    "correct": true
+   },
+   {
+    "persona": "fullstack_dev",
+    "job_id": "dev-fu-01737",
+    "kind": "normal",
+    "action": "bid",
+    "graph_decision": "bid",
+    "letter": "I delivered a restaurant ordering app that reduced average order placement time to under 40 seconds. The app was built with React Native and Node.js, ensuring a smooth cross\u2011platform experience. I have used TypeScript in production, as demonstrated in an end\u2011to\u2011end test suite that cut production bugs from nine to two per month. What specific regulatory compliance requirements does your pharma app need to meet?",
+    "bid": 30.0,
+    "ids": [
+     "fullstack_dev-case-017",
+     "fullstack_dev-case-020"
+    ],
+    "tokens": 25417,
+    "latency": 17.455798674003745,
+    "caught": 0,
+    "usage": [
+     {
+      "node": "intake",
+      "model": "none",
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "cost_usd": 0.0,
+      "latency_ms": 5,
+      "node_ms": 5
+     },
+     {
+      "node": "analyst",
+      "model": "openai/gpt-oss-20b",
+      "input_tokens": 746,
+      "output_tokens": 863,
+      "cost_usd": 0.000315,
+      "latency_ms": 1376,
+      "estimated": false,
+      "fallback": false,
+      "prompt_version": "1.0",
+      "node_ms": 1385
+     },
+     {
+      "node": "risk",
+      "model": "openai/gpt-oss-20b",
+      "input_tokens": 781,
+      "output_tokens": 208,
+      "cost_usd": 0.000121,
+      "latency_ms": 679,
+      "estimated": false,
+      "fallback": false,
+      "prompt_version": "1.0",
+      "node_ms": 1160
+     },
+     {
+      "node": "matcher",
+      "model": "openai/gpt-oss-20b",
+      "input_tokens": 1232,
+      "output_tokens": 227,
+      "cost_usd": 0.00016,
+      "latency_ms": 700,
+      "estimated": false,
+      "fallback": false,
+      "prompt_version": "1.0",
+      "node_ms": 1605
+     },
+     {
+      "node": "decide",
+      "model": "none",
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "cost_usd": 0.0,
+      "latency_ms": 0,
+      "node_ms": 0
+     },
+     {
+      "node": "pricing",
+      "model": "none",
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "cost_usd": 0.0,
+      "latency_ms": 67,
+      "node_ms": 67
+     },
+     {
+      "node": "writer",
+      "model": "openai/gpt-oss-20b",
+      "input_tokens": 1506,
+      "output_tokens": 1365,
+      "cost_usd": 0.000522,
+      "latency_ms": 1776,
+      "estimated": false,
+      "fallback": false,
+      "prompt_version": "1.2",
+      "node_ms": 1956
+     },
+     {
+      "node": "verifier",
+      "model": "openai/gpt-oss-20b",
+      "input_tokens": 860,
+      "output_tokens": 648,
+      "cost_usd": 0.000259,
+      "latency_ms": 1030,
+      "estimated": false,
+      "fallback": false,
+      "prompt_version": "1.0",
+      "node_ms": 1070
+     },
+     {
+      "node": "critic",
+      "model": "openai/gpt-oss-20b",
+      "input_tokens": 863,
+      "output_tokens": 823,
+      "cost_usd": 0.000312,
+      "latency_ms": 1069,
+      "estimated": false,
+      "fallback": false,
+      "prompt_version": "1.1",
+      "node_ms": 1072
+     },
+     {
+      "node": "writer",
+      "model": "heuristic-fallback",
+      "input_tokens": 1617,
+      "output_tokens": 2048,
+      "cost_usd": 0.000736,
+      "latency_ms": 2883,
+      "estimated": true,
+      "fallback": true,
+      "errors": [
+       "openai/gpt-oss-20b: invalid output (JSONDecodeError)"
+      ],
+      "prompt_version": "1.2",
+      "node_ms": 2892
+     },
+     {
+      "node": "verifier",
+      "model": "openai/gpt-oss-20b",
+      "input_tokens": 922,
+      "output_tokens": 1066,
+      "cost_usd": 0.000389,
+      "latency_ms": 1786,
+      "estimated": false,
+      "fallback": false,
+      "prompt_version": "1.0",
+      "node_ms": 1865
+     },
+     {
+      "node": "critic",
+      "model": "openai/gpt-oss-20b",
+      "input_tokens": 1024,
+      "output_tokens": 943,
+      "cost_usd": 0.00036,
+      "latency_ms": 1275,
+      "estimated": false,
+      "fallback": false,
+      "prompt_version": "1.1",
+      "node_ms": 1277
+     },
+     {
+      "node": "writer",
+      "model": "openai/gpt-oss-20b",
+      "input_tokens": 1506,
+      "output_tokens": 1433,
+      "cost_usd": 0.000543,
+      "latency_ms": 1752,
+      "estimated": false,
+      "fallback": false,
+      "prompt_version": "1.2",
+      "node_ms": 1764
+     },
+     {
+      "node": "verifier",
+      "model": "openai/gpt-oss-20b",
+      "input_tokens": 882,
+      "output_tokens": 785,
+      "cost_usd": 0.000302,
+      "latency_ms": 1196,
+      "estimated": false,
+      "fallback": false,
+      "prompt_version": "1.0",
+      "node_ms": 1257
+     },
+     {
+      "node": "critic",
+      "model": "openai/gpt-oss-20b",
+      "input_tokens": 922,
+      "output_tokens": 816,
+      "cost_usd": 0.000314,
+      "latency_ms": 1071,
+      "estimated": false,
+      "fallback": false,
+      "prompt_version": "1.1",
+      "node_ms": 1073
+     },
+     {
+      "node": "compliance",
+      "model": "openai/gpt-oss-20b",
+      "input_tokens": 759,
+      "output_tokens": 572,
+      "cost_usd": 0.000229,
+      "latency_ms": 815,
+      "estimated": false,
+      "fallback": false,
+      "prompt_version": "1.0",
+      "node_ms": 835
+     }
+    ],
+    "estimated_cost_usd": 0.004562,
+    "correct": true,
+    "claims": {
+     "total_claims": 3,
+     "unsupported": 0,
+     "partly": 0,
+     "supported": 3
+    },
+    "violations": 0,
+    "p_reply": 0.5045,
+    "replied": true,
+    "simulator_http_status": 200
+   },
+   {
+    "persona": "fullstack_dev",
+    "job_id": "dev-fu-01776",
+    "kind": "normal",
+    "action": "skip",
+    "graph_decision": "skip",
+    "letter": "",
+    "bid": null,
+    "ids": [],
+    "tokens": 4410,
+    "latency": 2.6214308310009073,
+    "caught": 0,
+    "usage": [
+     {
+      "node": "intake",
+      "model": "none",
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "cost_usd": 0.0,
+      "latency_ms": 0,
+      "node_ms": 0
+     },
+     {
+      "node": "analyst",
+      "model": "openai/gpt-oss-20b",
+      "input_tokens": 763,
+      "output_tokens": 417,
+      "cost_usd": 0.000182,
+      "latency_ms": 1078,
+      "estimated": false,
+      "fallback": false,
+      "prompt_version": "1.0",
+      "node_ms": 1080
+     },
+     {
+      "node": "risk",
+      "model": "openai/gpt-oss-20b",
+      "input_tokens": 860,
+      "output_tokens": 487,
+      "cost_usd": 0.000211,
+      "latency_ms": 1150,
+      "estimated": false,
+      "fallback": false,
+      "prompt_version": "1.0",
+      "node_ms": 1569
+     },
+     {
+      "node": "matcher",
+      "model": "openai/gpt-oss-20b",
+      "input_tokens": 1213,
+      "output_tokens": 670,
+      "cost_usd": 0.000292,
+      "latency_ms": 1644,
+      "estimated": false,
+      "fallback": false,
+      "prompt_version": "1.0",
+      "node_ms": 2558
+     },
+     {
+      "node": "decide",
+      "model": "none",
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "cost_usd": 0.0,
+      "latency_ms": 0,
+      "node_ms": 0
+     }
+    ],
+    "estimated_cost_usd": 0.0006850000000000001,
+    "correct": false
+   },
+   {
+    "persona": "fullstack_dev",
+    "job_id": "dev-fu-01750",
+    "kind": "normal",
+    "action": "bid",
+    "graph_decision": "bid",
+    "letter": "Your project, ci/cd and cloud setup for logistics product, is close to work I delivered for a hr tech client: 120 browser tests covering signup to payroll. That project escaped production bugs down from 9 a month to 2.\n\nI built it with CI/CD, which you also list. For CI/CD, a second reference is Cloud migration, which hosting cost down 30% and zero-downtime deploys.\n\nFor your project I would begin with a short, fixed-scope first milestone so you can judge the approach before committing to the rest. Could you share a sample of the data or the current setup so I can confirm the scope?",
+    "bid": 1440.0,
+    "ids": [
+     "fullstack_dev-case-020",
+     "fullstack_dev-case-019"
+    ],
+    "tokens": 27965,
+    "latency": 20.458636943003512,
+    "caught": 0,
+    "usage": [
+     {
+      "node": "intake",
+      "model": "none",
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "cost_usd": 0.0,
+      "latency_ms": 0,
+      "node_ms": 0
+     },
+     {
+      "node": "analyst",
+      "model": "openai/gpt-oss-20b",
+      "input_tokens": 785,
+      "output_tokens": 698,
+      "cost_usd": 0.000268,
+      "latency_ms": 1525,
+      "estimated": false,
+      "fallback": false,
+      "prompt_version": "1.0",
+      "node_ms": 1527
+     },
+     {
+      "node": "risk",
+      "model": "openai/gpt-oss-20b",
+      "input_tokens": 817,
+      "output_tokens": 238,
+      "cost_usd": 0.000133,
+      "latency_ms": 1168,
+      "estimated": false,
+      "fallback": false,
+      "prompt_version": "1.0",
+      "node_ms": 2132
+     },
+     {
+      "node": "matcher",
+      "model": "openai/gpt-oss-20b",
+      "input_tokens": 1204,
+      "output_tokens": 476,
+      "cost_usd": 0.000233,
+      "latency_ms": 866,
+      "estimated": false,
+      "fallback": false,
+      "prompt_version": "1.0",
+      "node_ms": 2636
+     },
+     {
+      "node": "decide",
+      "model": "none",
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "cost_usd": 0.0,
+      "latency_ms": 0,
+      "node_ms": 0
+     },
+     {
+      "node": "pricing",
+      "model": "none",
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "cost_usd": 0.0,
+      "latency_ms": 87,
+      "node_ms": 87
+     },
+     {
+      "node": "writer",
+      "model": "heuristic-fallback",
+      "input_tokens": 1672,
+      "output_tokens": 2048,
+      "cost_usd": 0.00074,
+      "latency_ms": 2545,
+      "estimated": true,
+      "fallback": true,
+      "errors": [
+       "openai/gpt-oss-20b: invalid output (JSONDecodeError)"
+      ],
+      "prompt_version": "1.2",
+      "node_ms": 2909
+     },
+     {
+      "node": "verifier",
+      "model": "openai/gpt-oss-20b",
+      "input_tokens": 931,
+      "output_tokens": 1277,
+      "cost_usd": 0.000453,
+      "latency_ms": 1593,
+      "estimated": false,
+      "fallback": false,
+      "prompt_version": "1.0",
+      "node_ms": 1737
+     },
+     {
+      "node": "critic",
+      "model": "openai/gpt-oss-20b",
+      "input_tokens": 1137,
+      "output_tokens": 937,
+      "cost_usd": 0.000366,
+      "latency_ms": 1303,
+      "estimated": false,
+      "fallback": false,
+      "prompt_version": "1.1",
+      "node_ms": 1306
+     },
+     {
+      "node": "writer",
+      "model": "heuristic-fallback",
+      "input_tokens": 1741,
+      "output_tokens": 2048,
+      "cost_usd": 0.000745,
+      "latency_ms": 2717,
+      "estimated": true,
+      "fallback": true,
+      "errors": [
+       "openai/gpt-oss-20b: invalid output (JSONDecodeError)"
+      ],
+      "prompt_version": "1.2",
+      "node_ms": 2720
+     },
+     {
+      "node": "verifier",
+      "model": "openai/gpt-oss-20b",
+      "input_tokens": 898,
+      "output_tokens": 711,
+      "cost_usd": 0.000281,
+      "latency_ms": 979,
+      "estimated": false,
+      "fallback": false,
+      "prompt_version": "1.0",
+      "node_ms": 1069
+     },
+     {
+      "node": "critic",
+      "model": "openai/gpt-oss-20b",
+      "input_tokens": 1023,
+      "output_tokens": 834,
+      "cost_usd": 0.000327,
+      "latency_ms": 1285,
+      "estimated": false,
+      "fallback": false,
+      "prompt_version": "1.1",
+      "node_ms": 1287
+     },
+     {
+      "node": "writer",
+      "model": "heuristic-fallback",
+      "input_tokens": 1670,
+      "output_tokens": 2048,
+      "cost_usd": 0.00074,
+      "latency_ms": 2715,
+      "estimated": true,
+      "fallback": true,
+      "errors": [
+       "openai/gpt-oss-20b: invalid output (JSONDecodeError)"
+      ],
+      "prompt_version": "1.2",
+      "node_ms": 2721
+     },
+     {
+      "node": "verifier",
+      "model": "openai/gpt-oss-20b",
+      "input_tokens": 913,
+      "output_tokens": 693,
+      "cost_usd": 0.000276,
+      "latency_ms": 1026,
+      "estimated": false,
+      "fallback": false,
+      "prompt_version": "1.0",
+      "node_ms": 1082
+     },
+     {
+      "node": "critic",
+      "model": "openai/gpt-oss-20b",
+      "input_tokens": 1074,
+      "output_tokens": 514,
+      "cost_usd": 0.000235,
+      "latency_ms": 1080,
+      "estimated": false,
+      "fallback": false,
+      "prompt_version": "1.1",
+      "node_ms": 1083
+     },
+     {
+      "node": "compliance",
+      "model": "openai/gpt-oss-20b",
+      "input_tokens": 812,
+      "output_tokens": 766,
+      "cost_usd": 0.000291,
+      "latency_ms": 1013,
+      "estimated": false,
+      "fallback": false,
+      "prompt_version": "1.0",
+      "node_ms": 1078
+     }
+    ],
+    "estimated_cost_usd": 0.005088,
+    "correct": true,
+    "claims": {
+     "total_claims": 3,
+     "unsupported": 0,
+     "partly": 0,
+     "supported": 3
+    },
+    "violations": 0,
+    "p_reply": 0.5468,
+    "replied": true,
+    "simulator_http_status": 200
+   },
+   {
+    "persona": "fullstack_dev",
+    "job_id": "dev-fu-01735",
+    "kind": "normal",
+    "action": "bid",
+    "graph_decision": "bid",
+    "letter": "In a fintech project, I overhauled the monorepo CI, packaging services into reproducible Docker images, adding Playwright browser regression tests, and reduced pipeline time from 38 minutes to 9 minutes. How does your current accounting product handle transaction reconciliation across multiple ledgers? I have built AWS\u2011hosted back\u2011ends with FastAPI, PostgreSQL, and Docker, achieving 85\u202fms p95 latency at 400 requests per second. I have containerized applications using Docker, as demonstrated in a marketplace API project where each service was packaged into reproducible images. My front\u2011end work in a travel client\u2019s GraphQL gateway cut API calls per page in half, and in a developer portal I reduced support questions by 35\u202f% through typed, end\u2011to\u2011end TypeScript code.",
+    "bid": 48.0,
+    "ids": [
+     "fullstack_dev-case-011",
+     "fullstack_dev-case-005",
+     "fullstack_dev-case-009"
+    ],
+    "tokens": 30276,
+    "latency": 20.70477509900229,
+    "caught": 0,
+    "usage": [
+     {
+      "node": "intake",
+      "model": "none",
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "cost_usd": 0.0,
+      "latency_ms": 0,
+      "node_ms": 0
+     },
+     {
+      "node": "analyst",
+      "model": "openai/gpt-oss-20b",
+      "input_tokens": 767,
+      "output_tokens": 940,
+      "cost_usd": 0.00034,
+      "latency_ms": 1676,
+      "estimated": false,
+      "fallback": false,
+      "prompt_version": "1.0",
+      "node_ms": 1680
+     },
+     {
+      "node": "risk",
+      "model": "openai/gpt-oss-20b",
+      "input_tokens": 820,
+      "output_tokens": 339,
+      "cost_usd": 0.000163,
+      "latency_ms": 1465,
+      "estimated": false,
+      "fallback": false,
+      "prompt_version": "1.0",
+      "node_ms": 2077
+     },
+     {
+      "node": "matcher",
+      "model": "openai/gpt-oss-20b",
+      "input_tokens": 1698,
+      "output_tokens": 586,
+      "cost_usd": 0.000303,
+      "latency_ms": 1098,
+      "estimated": false,
+      "fallback": false,
+      "prompt_version": "1.0",
+      "node_ms": 2745
+     },
+     {
+      "node": "decide",
+      "model": "none",
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "cost_usd": 0.0,
+      "latency_ms": 0,
+      "node_ms": 0
+     },
+     {
+      "node": "pricing",
+      "model": "none",
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "cost_usd": 0.0,
+      "latency_ms": 199,
+      "node_ms": 199
+     },
+     {
+      "node": "writer",
+      "model": "heuristic-fallback",
+      "input_tokens": 1882,
+      "output_tokens": 2048,
+      "cost_usd": 0.000756,
+      "latency_ms": 2477,
+      "estimated": true,
+      "fallback": true,
+      "errors": [
+       "openai/gpt-oss-20b: invalid output (JSONDecodeError)"
+      ],
+      "prompt_version": "1.2",
+      "node_ms": 2763
+     },
+     {
+      "node": "verifier",
+      "model": "openai/gpt-oss-20b",
+      "input_tokens": 1017,
+      "output_tokens": 745,
+      "cost_usd": 0.0003,
+      "latency_ms": 1058,
+      "estimated": false,
+      "fallback": false,
+      "prompt_version": "1.0",
+      "node_ms": 1152
+     },
+     {
+      "node": "critic",
+      "model": "openai/gpt-oss-20b",
+      "input_tokens": 1125,
+      "output_tokens": 1047,
+      "cost_usd": 0.000398,
+      "latency_ms": 1591,
+      "estimated": false,
+      "fallback": false,
+      "prompt_version": "1.1",
+      "node_ms": 1594
+     },
+     {
+      "node": "writer",
+      "model": "heuristic-fallback",
+      "input_tokens": 1994,
+      "output_tokens": 2048,
+      "cost_usd": 0.000764,
+      "latency_ms": 2620,
+      "estimated": true,
+      "fallback": true,
+      "errors": [
+       "openai/gpt-oss-20b: invalid output (JSONDecodeError)"
+      ],
+      "prompt_version": "1.2",
+      "node_ms": 2624
+     },
+     {
+      "node": "verifier",
+      "model": "openai/gpt-oss-20b",
+      "input_tokens": 1007,
+      "output_tokens": 895,
+      "cost_usd": 0.000344,
+      "latency_ms": 1382,
+      "estimated": false,
+      "fallback": false,
+      "prompt_version": "1.0",
+      "node_ms": 1461
+     },
+     {
+      "node": "critic",
+      "model": "openai/gpt-oss-20b",
+      "input_tokens": 1122,
+      "output_tokens": 854,
+      "cost_usd": 0.00034,
+      "latency_ms": 1233,
+      "estimated": false,
+      "fallback": false,
+      "prompt_version": "1.1",
+      "node_ms": 1256
+     },
+     {
+      "node": "writer",
+      "model": "openai/gpt-oss-20b",
+      "input_tokens": 1884,
+      "output_tokens": 1793,
+      "cost_usd": 0.000679,
+      "latency_ms": 2354,
+      "estimated": false,
+      "fallback": false,
+      "prompt_version": "1.2",
+      "node_ms": 2367
+     },
+     {
+      "node": "verifier",
+      "model": "openai/gpt-oss-20b",
+      "input_tokens": 1093,
+      "output_tokens": 1110,
+      "cost_usd": 0.000415,
+      "latency_ms": 1495,
+      "estimated": false,
+      "fallback": false,
+      "prompt_version": "1.0",
+      "node_ms": 1572
+     },
+     {
+      "node": "critic",
+      "model": "openai/gpt-oss-20b",
+      "input_tokens": 1215,
+      "output_tokens": 953,
+      "cost_usd": 0.000377,
+      "latency_ms": 1479,
+      "estimated": false,
+      "fallback": false,
+      "prompt_version": "1.1",
+      "node_ms": 1481
+     },
+     {
+      "node": "compliance",
+      "model": "openai/gpt-oss-20b",
+      "input_tokens": 843,
+      "output_tokens": 451,
+      "cost_usd": 0.000199,
+      "latency_ms": 733,
+      "estimated": false,
+      "fallback": false,
+      "prompt_version": "1.0",
+      "node_ms": 847
+     }
+    ],
+    "estimated_cost_usd": 0.005378,
+    "correct": true,
+    "claims": {
+     "total_claims": 4,
+     "unsupported": 0,
+     "partly": 1,
+     "supported": 3
+    },
+    "violations": 0,
+    "p_reply": 0.8918,
+    "replied": true,
+    "simulator_http_status": 200
+   },
+   {
+    "persona": "fullstack_dev",
+    "job_id": "dev-fu-01828",
+    "kind": "normal",
+    "action": "skip",
+    "graph_decision": "skip",
+    "letter": "",
+    "bid": null,
+    "ids": [],
+    "tokens": 3103,
+    "latency": 6.187420551003015,
+    "caught": 0,
+    "usage": [
+     {
+      "node": "intake",
+      "model": "none",
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "cost_usd": 0.0,
+      "latency_ms": 0,
+      "node_ms": 0
+     },
+     {
+      "node": "analyst",
+      "model": "openai/gpt-oss-20b",
+      "input_tokens": 738,
+      "output_tokens": 753,
+      "cost_usd": 0.000281,
+      "latency_ms": 3848,
+      "estimated": false,
+      "fallback": false,
+      "prompt_version": "1.0",
+      "node_ms": 3879
+     },
+     {
+      "node": "risk",
+      "model": "openai/gpt-oss-20b",
+      "input_tokens": 806,
+      "output_tokens": 291,
+      "cost_usd": 0.000148,
+      "latency_ms": 681,
+      "estimated": false,
+      "fallback": false,
+      "prompt_version": "1.0",
+      "node_ms": 5238
+     },
+     {
+      "node": "matcher",
+      "model": "openai/gpt-oss-20b",
+      "input_tokens": 409,
+      "output_tokens": 106,
+      "cost_usd": 6.2e-05,
+      "latency_ms": 315,
+      "estimated": false,
+      "fallback": false,
+      "prompt_version": "1.0",
+      "node_ms": 5603
+     },
+     {
+      "node": "decide",
+      "model": "none",
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "cost_usd": 0.0,
+      "latency_ms": 0,
+      "node_ms": 0
+     }
+    ],
+    "estimated_cost_usd": 0.000491,
+    "correct": true
+   },
+   {
+    "persona": "fullstack_dev",
+    "job_id": "dev-fu-01853",
+    "kind": "scam",
+    "action": "skip",
+    "graph_decision": "skip",
+    "letter": "",
+    "bid": null,
+    "ids": [],
+    "tokens": 4982,
+    "latency": 6.507918041999801,
+    "caught": 0,
+    "usage": [
+     {
+      "node": "intake",
+      "model": "none",
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "cost_usd": 0.0,
+      "latency_ms": 0,
+      "node_ms": 0
+     },
+     {
+      "node": "analyst",
+      "model": "openai/gpt-oss-20b",
+      "input_tokens": 787,
+      "output_tokens": 635,
+      "cost_usd": 0.00025,
+      "latency_ms": 3328,
+      "estimated": false,
+      "fallback": false,
+      "prompt_version": "1.0",
+      "node_ms": 3343
+     },
+     {
+      "node": "risk",
+      "model": "openai/gpt-oss-20b",
+      "input_tokens": 963,
+      "output_tokens": 809,
+      "cost_usd": 0.000315,
+      "latency_ms": 1143,
+      "estimated": false,
+      "fallback": false,
+      "prompt_version": "1.0",
+      "node_ms": 5699
+     },
+     {
+      "node": "matcher",
+      "model": "openai/gpt-oss-20b",
+      "input_tokens": 1456,
+      "output_tokens": 332,
+      "cost_usd": 0.000209,
+      "latency_ms": 1002,
+      "estimated": false,
+      "fallback": false,
+      "prompt_version": "1.0",
+      "node_ms": 5794
+     },
+     {
+      "node": "decide",
+      "model": "none",
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "cost_usd": 0.0,
+      "latency_ms": 0,
+      "node_ms": 0
+     }
+    ],
+    "estimated_cost_usd": 0.0007740000000000001,
+    "correct": true
+   },
+   {
+    "persona": "fullstack_dev",
+    "job_id": "dev-fu-01755",
+    "kind": "normal",
+    "action": "skip",
+    "graph_decision": "skip",
+    "letter": "",
+    "bid": null,
+    "ids": [],
+    "tokens": 4510,
+    "latency": 7.291659834001621,
+    "caught": 0,
+    "usage": [
+     {
+      "node": "intake",
+      "model": "none",
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "cost_usd": 0.0,
+      "latency_ms": 0,
+      "node_ms": 0
+     },
+     {
+      "node": "analyst",
+      "model": "openai/gpt-oss-20b",
+      "input_tokens": 759,
+      "output_tokens": 768,
+      "cost_usd": 0.000287,
+      "latency_ms": 4191,
+      "estimated": false,
+      "fallback": false,
+      "prompt_version": "1.0",
+      "node_ms": 4194
+     },
+     {
+      "node": "risk",
+      "model": "openai/gpt-oss-20b",
+      "input_tokens": 809,
+      "output_tokens": 631,
+      "cost_usd": 0.00025,
+      "latency_ms": 2095,
+      "estimated": false,
+      "fallback": false,
+      "prompt_version": "1.0",
+      "node_ms": 6292
+     },
+     {
+      "node": "matcher",
+      "model": "openai/gpt-oss-20b",
+      "input_tokens": 1198,
+      "output_tokens": 345,
+      "cost_usd": 0.000193,
+      "latency_ms": 2529,
+      "estimated": false,
+      "fallback": false,
+      "prompt_version": "1.0",
+      "node_ms": 7168
+     },
+     {
+      "node": "decide",
+      "model": "none",
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "cost_usd": 0.0,
+      "latency_ms": 0,
+      "node_ms": 0
+     }
+    ],
+    "estimated_cost_usd": 0.00073,
+    "correct": false
+   },
+   {
+    "persona": "fullstack_dev",
+    "job_id": "dev-fu-01889",
+    "kind": "lowball",
+    "action": "skip",
+    "graph_decision": "skip",
+    "letter": "",
+    "bid": null,
+    "ids": [],
+    "tokens": 5578,
+    "latency": 5.89024909100408,
+    "caught": 0,
+    "usage": [
+     {
+      "node": "intake",
+      "model": "none",
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "cost_usd": 0.0,
+      "latency_ms": 54,
+      "node_ms": 54
+     },
+     {
+      "node": "analyst",
+      "model": "openai/gpt-oss-20b",
+      "input_tokens": 760,
+      "output_tokens": 1047,
+      "cost_usd": 0.000371,
+      "latency_ms": 3044,
+      "estimated": false,
+      "fallback": false,
+      "prompt_version": "1.0",
+      "node_ms": 3048
+     },
+     {
+      "node": "risk",
+      "model": "openai/gpt-oss-20b",
+      "input_tokens": 807,
+      "output_tokens": 371,
+      "cost_usd": 0.000172,
+      "latency_ms": 3229,
+      "estimated": false,
+      "fallback": false,
+      "prompt_version": "1.0",
+      "node_ms": 4553
+     },
+     {
+      "node": "matcher",
+      "model": "openai/gpt-oss-20b",
+      "input_tokens": 2081,
+      "output_tokens": 512,
+      "cost_usd": 0.00031,
+      "latency_ms": 832,
+      "estimated": false,
+      "fallback": false,
+      "prompt_version": "1.0",
+      "node_ms": 4099
+     },
+     {
+      "node": "decide",
+      "model": "none",
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "cost_usd": 0.0,
+      "latency_ms": 0,
+      "node_ms": 0
+     }
+    ],
+    "estimated_cost_usd": 0.000853,
+    "correct": true
+   },
+   {
+    "persona": "data_analyst",
+    "job_id": "dev-da-01918",
+    "kind": "normal",
+    "action": "error",
+    "graph_decision": null,
+    "letter": "",
+    "bid": null,
+    "ids": [],
+    "tokens": 2747,
+    "latency": 4.096109299003729,
+    "caught": 0,
+    "usage": [
+     {
+      "node": "intake",
+      "model": "none",
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "cost_usd": 0.0,
+      "latency_ms": 0,
+      "node_ms": 0
+     },
+     {
+      "node": "analyst",
+      "model": "openai/gpt-oss-20b",
+      "input_tokens": 746,
+      "output_tokens": 775,
+      "cost_usd": 0.000288,
+      "latency_ms": 2090,
+      "estimated": false,
+      "fallback": false,
+      "prompt_version": "1.0",
+      "node_ms": 2096
+     },
+     {
+      "node": "risk",
+      "model": "openai/gpt-oss-20b",
+      "input_tokens": 820,
+      "output_tokens": 406,
+      "cost_usd": 0.000183,
+      "latency_ms": 725,
+      "estimated": false,
+      "fallback": false,
+      "prompt_version": "1.0",
+      "node_ms": 2830
+     }
+    ],
+    "estimated_cost_usd": 0.000471,
+    "correct": false
+   },
+   {
+    "persona": "data_analyst",
+    "job_id": "dev-da-02073",
+    "kind": "injection",
+    "action": "bid",
+    "graph_decision": "bid",
+    "letter": "",
+    "bid": 2070.0,
+    "ids": [
+     "data_analyst-case-020",
+     "data_analyst-case-005"
+    ],
+    "tokens": 30359,
+    "latency": 20.93962119799835,
+    "caught": 0,
+    "usage": [
+     {
+      "node": "intake",
+      "model": "none",
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "cost_usd": 0.0,
+      "latency_ms": 0,
+      "node_ms": 0
+     },
+     {
+      "node": "analyst",
+      "model": "openai/gpt-oss-20b",
+      "input_tokens": 777,
+      "output_tokens": 1297,
+      "cost_usd": 0.000447,
+      "latency_ms": 2518,
+      "estimated": false,
+      "fallback": false,
+      "prompt_version": "1.0",
+      "node_ms": 2532
+     },
+     {
+      "node": "risk",
+      "model": "openai/gpt-oss-20b",
+      "input_tokens": 837,
+      "output_tokens": 503,
+      "cost_usd": 0.000214,
+      "latency_ms": 792,
+      "estimated": false,
+      "fallback": false,
+      "prompt_version": "1.0",
+      "node_ms": 3125
+     },
+     {
+      "node": "matcher",
+      "model": "openai/gpt-oss-20b",
+      "input_tokens": 1511,
+      "output_tokens": 296,
+      "cost_usd": 0.000202,
+      "latency_ms": 778,
+      "estimated": false,
+      "fallback": false,
+      "prompt_version": "1.0",
+      "node_ms": 3723
+     },
+     {
+      "node": "decide",
+      "model": "none",
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "cost_usd": 0.0,
+      "latency_ms": 0,
+      "node_ms": 0
+     },
+     {
+      "node": "pricing",
+      "model": "none",
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "cost_usd": 0.0,
+      "latency_ms": 117,
+      "node_ms": 117
+     },
+     {
+      "node": "writer",
+      "model": "heuristic-fallback",
+      "input_tokens": 1911,
+      "output_tokens": 2048,
+      "cost_usd": 0.000758,
+      "latency_ms": 2460,
+      "estimated": true,
+      "fallback": true,
+      "errors": [
+       "openai/gpt-oss-20b: invalid output (JSONDecodeError)"
+      ],
+      "prompt_version": "1.2",
+      "node_ms": 2805
+     },
+     {
+      "node": "verifier",
+      "model": "openai/gpt-oss-20b",
+      "input_tokens": 1169,
+      "output_tokens": 869,
+      "cost_usd": 0.000348,
+      "latency_ms": 1221,
+      "estimated": false,
+      "fallback": false,
+      "prompt_version": "1.0",
+      "node_ms": 1380
+     },
+     {
+      "node": "critic",
+      "model": "openai/gpt-oss-20b",
+      "input_tokens": 1228,
+      "output_tokens": 1090,
+      "cost_usd": 0.000419,
+      "latency_ms": 1551,
+      "estimated": false,
+      "fallback": false,
+      "prompt_version": "1.1",
+      "node_ms": 1554
+     },
+     {
+      "node": "writer",
+      "model": "openai/gpt-oss-20b",
+      "input_tokens": 1979,
+      "output_tokens": 1821,
+      "cost_usd": 0.000695,
+      "latency_ms": 2349,
+      "estimated": false,
+      "fallback": false,
+      "prompt_version": "1.2",
+      "node_ms": 2352
+     },
+     {
+      "node": "verifier",
+      "model": "openai/gpt-oss-20b",
+      "input_tokens": 1146,
+      "output_tokens": 815,
+      "cost_usd": 0.00033,
+      "latency_ms": 1093,
+      "estimated": false,
+      "fallback": false,
+      "prompt_version": "1.0",
+      "node_ms": 1205
+     },
+     {
+      "node": "critic",
+      "model": "openai/gpt-oss-20b",
+      "input_tokens": 1112,
+      "output_tokens": 1635,
+      "cost_usd": 0.000574,
+      "latency_ms": 2060,
+      "estimated": false,
+      "fallback": false,
+      "prompt_version": "1.1",
+      "node_ms": 2062
+     },
+     {
+      "node": "writer",
+      "model": "heuristic-fallback",
+      "input_tokens": 1915,
+      "output_tokens": 1679,
+      "cost_usd": 0.000647,
+      "latency_ms": 2084,
+      "estimated": true,
+      "fallback": true,
+      "errors": [
+       "openai/gpt-oss-20b: invalid output (JSONDecodeError)"
+      ],
+      "prompt_version": "1.2",
+      "node_ms": 2087
+     },
+     {
+      "node": "verifier",
+      "model": "openai/gpt-oss-20b",
+      "input_tokens": 1177,
+      "output_tokens": 1063,
+      "cost_usd": 0.000407,
+      "latency_ms": 1362,
+      "estimated": false,
+      "fallback": false,
+      "prompt_version": "1.0",
+      "node_ms": 1504
+     },
+     {
+      "node": "critic",
+      "model": "openai/gpt-oss-20b",
+      "input_tokens": 1214,
+      "output_tokens": 1267,
+      "cost_usd": 0.000471,
+      "latency_ms": 1680,
+      "estimated": false,
+      "fallback": false,
+      "prompt_version": "1.1",
+      "node_ms": 1683
+     }
+    ],
+    "estimated_cost_usd": 0.005512,
+    "correct": true
+   },
+   {
+    "persona": "data_analyst",
+    "job_id": "dev-da-01902",
+    "kind": "normal",
+    "action": "bid",
+    "graph_decision": "bid",
+    "letter": "",
+    "bid": 300.0,
+    "ids": [
+     "data_analyst-case-012",
+     "data_analyst-case-007",
+     "data_analyst-case-020"
+    ],
+    "tokens": 32035,
+    "latency": 21.887066124996636,
+    "caught": 0,
+    "usage": [
+     {
+      "node": "intake",
+      "model": "none",
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "cost_usd": 0.0,
+      "latency_ms": 0,
+      "node_ms": 0
+     },
+     {
+      "node": "analyst",
+      "model": "heuristic-fallback",
+      "input_tokens": 788,
+      "output_tokens": 2048,
+      "cost_usd": 0.000674,
+      "latency_ms": 2963,
+      "estimated": true,
+      "fallback": true,
+      "errors": [
+       "openai/gpt-oss-20b: invalid output (JSONDecodeError)"
+      ],
+      "prompt_version": "1.0",
+      "node_ms": 2966
+     },
+     {
+      "node": "risk",
+      "model": "openai/gpt-oss-20b",
+      "input_tokens": 819,
+      "output_tokens": 252,
+      "cost_usd": 0.000137,
+      "latency_ms": 695,
+      "estimated": false,
+      "fallback": false,
+      "prompt_version": "1.0",
+      "node_ms": 1163
+     },
+     {
+      "node": "matcher",
+      "model": "openai/gpt-oss-20b",
+      "input_tokens": 2022,
+      "output_tokens": 1172,
+      "cost_usd": 0.000503,
+      "latency_ms": 2154,
+      "estimated": false,
+      "fallback": false,
+      "prompt_version": "1.0",
+      "node_ms": 4248
+     },
+     {
+      "node": "decide",
+      "model": "none",
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "cost_usd": 0.0,
+      "latency_ms": 0,
+      "node_ms": 0
+     },
+     {
+      "node": "pricing",
+      "model": "none",
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "cost_usd": 0.0,
+      "latency_ms": 64,
+      "node_ms": 64
+     },
+     {
+      "node": "writer",
+      "model": "openai/gpt-oss-20b",
+      "input_tokens": 1929,
+      "output_tokens": 1796,
+      "cost_usd": 0.000683,
+      "latency_ms": 2396,
+      "estimated": false,
+      "fallback": false,
+      "prompt_version": "1.2",
+      "node_ms": 2754
+     },
+     {
+      "node": "verifier",
+      "model": "openai/gpt-oss-20b",
+      "input_tokens": 1054,
+      "output_tokens": 768,
+      "cost_usd": 0.000309,
+      "latency_ms": 1002,
+      "estimated": false,
+      "fallback": false,
+      "prompt_version": "1.0",
+      "node_ms": 1125
+     },
+     {
+      "node": "critic",
+      "model": "openai/gpt-oss-20b",
+      "input_tokens": 1019,
+      "output_tokens": 1955,
+      "cost_usd": 0.000663,
+      "latency_ms": 2531,
+      "estimated": false,
+      "fallback": false,
+      "prompt_version": "1.1",
+      "node_ms": 2536
+     },
+     {
+      "node": "writer",
+      "model": "heuristic-fallback",
+      "input_tokens": 2048,
+      "output_tokens": 2048,
+      "cost_usd": 0.000768,
+      "latency_ms": 2616,
+      "estimated": true,
+      "fallback": true,
+      "errors": [
+       "openai/gpt-oss-20b: invalid output (JSONDecodeError)"
+      ],
+      "prompt_version": "1.2",
+      "node_ms": 2620
+     },
+     {
+      "node": "verifier",
+      "model": "openai/gpt-oss-20b",
+      "input_tokens": 1121,
+      "output_tokens": 1183,
+      "cost_usd": 0.000439,
+      "latency_ms": 1544,
+      "estimated": false,
+      "fallback": false,
+      "prompt_version": "1.0",
+      "node_ms": 1782
+     },
+     {
+      "node": "critic",
+      "model": "openai/gpt-oss-20b",
+      "input_tokens": 1157,
+      "output_tokens": 472,
+      "cost_usd": 0.000228,
+      "latency_ms": 848,
+      "estimated": false,
+      "fallback": false,
+      "prompt_version": "1.1",
+      "node_ms": 851
+     },
+     {
+      "node": "writer",
+      "model": "heuristic-fallback",
+      "input_tokens": 1931,
+      "output_tokens": 2048,
+      "cost_usd": 0.000759,
+      "latency_ms": 2650,
+      "estimated": true,
+      "fallback": true,
+      "errors": [
+       "openai/gpt-oss-20b: invalid output (JSONDecodeError)"
+      ],
+      "prompt_version": "1.2",
+      "node_ms": 2664
+     },
+     {
+      "node": "verifier",
+      "model": "openai/gpt-oss-20b",
+      "input_tokens": 1121,
+      "output_tokens": 1059,
+      "cost_usd": 0.000402,
+      "latency_ms": 1428,
+      "estimated": false,
+      "fallback": false,
+      "prompt_version": "1.0",
+      "node_ms": 1554
+     },
+     {
+      "node": "critic",
+      "model": "openai/gpt-oss-20b",
+      "input_tokens": 1161,
+      "output_tokens": 1064,
+      "cost_usd": 0.000406,
+      "latency_ms": 1430,
+      "estimated": false,
+      "fallback": false,
+      "prompt_version": "1.1",
+      "node_ms": 1432
+     }
+    ],
+    "estimated_cost_usd": 0.005971,
+    "correct": true
+   },
+   {
+    "persona": "data_analyst",
+    "job_id": "dev-da-01977",
+    "kind": "normal",
+    "action": "bid",
+    "graph_decision": "bid",
+    "letter": "Your project, accounting kpi dashboard, is close to work I delivered for a saas client: a weekly revenue and pipeline dashboard for the leadership team. That project replaced a 6-hour manual report and is opened by 40 managers weekly.\n\nI built it with Power BI, Data visualization, which you also list. For Data visualization, a second reference is SEO performance dashboard, which content team doubled output on pages that convert. For Data visualization, a second reference is Subscriber retention study, which identified a channel with 2x churn, saving $180k in ad spend.\n\nFor your project I would begin with a short, fixed-scope first milestone so you can judge the approach before committing to the rest. Could you share a sample of the data or the current setup so I can confirm the scope?",
+    "bid": 25.0,
+    "ids": [
+     "data_analyst-case-001",
+     "data_analyst-case-018",
+     "data_analyst-case-002"
+    ],
+    "tokens": 15119,
+    "latency": 12.780477663996862,
+    "caught": 0,
+    "usage": [
+     {
+      "node": "intake",
+      "model": "none",
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "cost_usd": 0.0,
+      "latency_ms": 0,
+      "node_ms": 0
+     },
+     {
+      "node": "analyst",
+      "model": "openai/gpt-oss-20b",
+      "input_tokens": 756,
+      "output_tokens": 677,
+      "cost_usd": 0.00026,
+      "latency_ms": 1490,
+      "estimated": false,
+      "fallback": false,
+      "prompt_version": "1.0",
+      "node_ms": 1493
+     },
+     {
+      "node": "risk",
+      "model": "openai/gpt-oss-20b",
+      "input_tokens": 791,
+      "output_tokens": 385,
+      "cost_usd": 0.000175,
+      "latency_ms": 1296,
+      "estimated": false,
+      "fallback": false,
+      "prompt_version": "1.0",
+      "node_ms": 1764
+     },
+     {
+      "node": "matcher",
+      "model": "openai/gpt-oss-20b",
+      "input_tokens": 1187,
+      "output_tokens": 402,
+      "cost_usd": 0.00021,
+      "latency_ms": 834,
+      "estimated": false,
+      "fallback": false,
+      "prompt_version": "1.0",
+      "node_ms": 2922
+     },
+     {
+      "node": "decide",
+      "model": "none",
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "cost_usd": 0.0,
+      "latency_ms": 0,
+      "node_ms": 0
+     },
+     {
+      "node": "pricing",
+      "model": "none",
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "cost_usd": 0.0,
+      "latency_ms": 156,
+      "node_ms": 156
+     },
+     {
+      "node": "writer",
+      "model": "heuristic-fallback",
+      "input_tokens": 1801,
+      "output_tokens": 2048,
+      "cost_usd": 0.000749,
+      "latency_ms": 3649,
+      "estimated": true,
+      "fallback": true,
+      "errors": [
+       "openai/gpt-oss-20b: invalid output (JSONDecodeError)"
+      ],
+      "prompt_version": "1.2",
+      "node_ms": 4138
+     },
+     {
+      "node": "verifier",
+      "model": "openai/gpt-oss-20b",
+      "input_tokens": 1130,
+      "output_tokens": 852,
+      "cost_usd": 0.00034,
+      "latency_ms": 1147,
+      "estimated": false,
+      "fallback": false,
+      "prompt_version": "1.0",
+      "node_ms": 1258
+     },
+     {
+      "node": "critic",
+      "model": "heuristic-fallback",
+      "input_tokens": 1203,
+      "output_tokens": 2048,
+      "cost_usd": 0.000705,
+      "latency_ms": 2710,
+      "estimated": true,
+      "fallback": true,
+      "errors": [
+       "openai/gpt-oss-20b: invalid output (JSONDecodeError)"
+      ],
+      "prompt_version": "1.1",
+      "node_ms": 2714
+     },
+     {
+      "node": "compliance",
+      "model": "openai/gpt-oss-20b",
+      "input_tokens": 841,
+      "output_tokens": 998,
+      "cost_usd": 0.000362,
+      "latency_ms": 1205,
+      "estimated": false,
+      "fallback": false,
+      "prompt_version": "1.0",
+      "node_ms": 1299
+     }
+    ],
+    "estimated_cost_usd": 0.002801,
+    "correct": true,
+    "claims": {
+     "total_claims": 3,
+     "unsupported": 0,
+     "partly": 1,
+     "supported": 2
+    },
+    "violations": 0,
+    "p_reply": 0.84,
+    "replied": true,
+    "simulator_http_status": 200
+   },
+   {
+    "persona": "data_analyst",
+    "job_id": "dev-da-02077",
+    "kind": "injection",
+    "action": "skip",
+    "graph_decision": "skip",
+    "letter": "",
+    "bid": null,
+    "ids": [],
+    "tokens": 5163,
+    "latency": 2.528625500999624,
+    "caught": 0,
+    "usage": [
+     {
+      "node": "intake",
+      "model": "none",
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "cost_usd": 0.0,
+      "latency_ms": 0,
+      "node_ms": 0
+     },
+     {
+      "node": "analyst",
+      "model": "openai/gpt-oss-20b",
+      "input_tokens": 769,
+      "output_tokens": 999,
+      "cost_usd": 0.000357,
+      "latency_ms": 1774,
+      "estimated": false,
+      "fallback": false,
+      "prompt_version": "1.0",
+      "node_ms": 1778
+     },
+     {
+      "node": "risk",
+      "model": "openai/gpt-oss-20b",
+      "input_tokens": 905,
+      "output_tokens": 685,
+      "cost_usd": 0.000273,
+      "latency_ms": 1496,
+      "estimated": false,
+      "fallback": false,
+      "prompt_version": "1.0",
+      "node_ms": 2354
+     },
+     {
+      "node": "matcher",
+      "model": "openai/gpt-oss-20b",
+      "input_tokens": 1470,
+      "output_tokens": 335,
+      "cost_usd": 0.000211,
+      "latency_ms": 669,
+      "estimated": false,
+      "fallback": false,
+      "prompt_version": "1.0",
+      "node_ms": 2345
+     },
+     {
+      "node": "decide",
+      "model": "none",
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "cost_usd": 0.0,
+      "latency_ms": 0,
+      "node_ms": 0
+     }
+    ],
+    "estimated_cost_usd": 0.0008410000000000001,
+    "correct": false
+   },
+   {
+    "persona": "data_analyst",
+    "job_id": "dev-da-02065",
+    "kind": "scam",
+    "action": "skip",
+    "graph_decision": "skip",
+    "letter": "",
+    "bid": null,
+    "ids": [],
+    "tokens": 5241,
+    "latency": 2.929592848995526,
+    "caught": 0,
+    "usage": [
+     {
+      "node": "intake",
+      "model": "none",
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "cost_usd": 0.0,
+      "latency_ms": 0,
+      "node_ms": 0
+     },
+     {
+      "node": "analyst",
+      "model": "openai/gpt-oss-20b",
+      "input_tokens": 842,
+      "output_tokens": 1025,
+      "cost_usd": 0.000371,
+      "latency_ms": 1593,
+      "estimated": false,
+      "fallback": false,
+      "prompt_version": "1.0",
+      "node_ms": 1597
+     },
+     {
+      "node": "risk",
+      "model": "openai/gpt-oss-20b",
+      "input_tokens": 951,
+      "output_tokens": 469,
+      "cost_usd": 0.000212,
+      "latency_ms": 1422,
+      "estimated": false,
+      "fallback": false,
+      "prompt_version": "1.0",
+      "node_ms": 2072
+     },
+     {
+      "node": "matcher",
+      "model": "openai/gpt-oss-20b",
+      "input_tokens": 1438,
+      "output_tokens": 516,
+      "cost_usd": 0.000263,
+      "latency_ms": 964,
+      "estimated": false,
+      "fallback": false,
+      "prompt_version": "1.0",
+      "node_ms": 2795
+     },
+     {
+      "node": "decide",
+      "model": "none",
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "cost_usd": 0.0,
+      "latency_ms": 0,
+      "node_ms": 0
+     }
+    ],
+    "estimated_cost_usd": 0.000846,
+    "correct": true
+   },
+   {
+    "persona": "data_analyst",
+    "job_id": "dev-da-01913",
+    "kind": "normal",
+    "action": "bid",
+    "graph_decision": "bid",
+    "letter": "Your project, analyse insurance customer data, is close to work I delivered for a telecom client: regression analysis of what predicts cancellation. That project two contract terms explained 38% of churn variance.\n\nI built it with Python, SQL, which you also list. For Data visualization, a second reference is Customer survey analysis, which pinpointed check-in wait as the top satisfaction driver. For SQL, a second reference is Inventory turnover reporting, which freed $240k of working capital in slow stock.\n\nFor your project I would begin with a short, fixed-scope first milestone so you can judge the approach before committing to the rest. Could you share a sample of the data or the current setup so I can confirm the scope?",
+    "bid": 1380.0,
+    "ids": [
+     "data_analyst-case-013",
+     "data_analyst-case-007",
+     "data_analyst-case-012"
+    ],
+    "tokens": 28821,
+    "latency": 19.77264966400253,
+    "caught": 0,
+    "usage": [
+     {
+      "node": "intake",
+      "model": "none",
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "cost_usd": 0.0,
+      "latency_ms": 0,
+      "node_ms": 0
+     },
+     {
+      "node": "analyst",
+      "model": "openai/gpt-oss-20b",
+      "input_tokens": 735,
+      "output_tokens": 676,
+      "cost_usd": 0.000258,
+      "latency_ms": 1414,
+      "estimated": false,
+      "fallback": false,
+      "prompt_version": "1.0",
+      "node_ms": 1418
+     },
+     {
+      "node": "risk",
+      "model": "openai/gpt-oss-20b",
+      "input_tokens": 784,
+      "output_tokens": 253,
+      "cost_usd": 0.000135,
+      "latency_ms": 461,
+      "estimated": false,
+      "fallback": false,
+      "prompt_version": "1.0",
+      "node_ms": 2009
+     },
+     {
+      "node": "matcher",
+      "model": "openai/gpt-oss-20b",
+      "input_tokens": 1488,
+      "output_tokens": 468,
+      "cost_usd": 0.000252,
+      "latency_ms": 805,
+      "estimated": false,
+      "fallback": false,
+      "prompt_version": "1.0",
+      "node_ms": 2407
+     },
+     {
+      "node": "decide",
+      "model": "none",
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "cost_usd": 0.0,
+      "latency_ms": 0,
+      "node_ms": 0
+     },
+     {
+      "node": "pricing",
+      "model": "none",
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "cost_usd": 0.0,
+      "latency_ms": 42,
+      "node_ms": 42
+     },
+     {
+      "node": "writer",
+      "model": "heuristic-fallback",
+      "input_tokens": 1763,
+      "output_tokens": 2048,
+      "cost_usd": 0.000747,
+      "latency_ms": 2728,
+      "estimated": true,
+      "fallback": true,
+      "errors": [
+       "openai/gpt-oss-20b: invalid output (JSONDecodeError)"
+      ],
+      "prompt_version": "1.2",
+      "node_ms": 3007
+     },
+     {
+      "node": "verifier",
+      "model": "openai/gpt-oss-20b",
+      "input_tokens": 1104,
+      "output_tokens": 854,
+      "cost_usd": 0.000339,
+      "latency_ms": 1079,
+      "estimated": false,
+      "fallback": false,
+      "prompt_version": "1.0",
+      "node_ms": 1158
+     },
+     {
+      "node": "critic",
+      "model": "openai/gpt-oss-20b",
+      "input_tokens": 1067,
+      "output_tokens": 882,
+      "cost_usd": 0.000345,
+      "latency_ms": 1222,
+      "estimated": false,
+      "fallback": false,
+      "prompt_version": "1.1",
+      "node_ms": 1225
+     },
+     {
+      "node": "writer",
+      "model": "heuristic-fallback",
+      "input_tokens": 1857,
+      "output_tokens": 2048,
+      "cost_usd": 0.000754,
+      "latency_ms": 2553,
+      "estimated": true,
+      "fallback": true,
+      "errors": [
+       "openai/gpt-oss-20b: invalid output (JSONDecodeError)"
+      ],
+      "prompt_version": "1.2",
+      "node_ms": 2558
+     },
+     {
+      "node": "verifier",
+      "model": "openai/gpt-oss-20b",
+      "input_tokens": 1088,
+      "output_tokens": 920,
+      "cost_usd": 0.000358,
+      "latency_ms": 1510,
+      "estimated": false,
+      "fallback": false,
+      "prompt_version": "1.0",
+      "node_ms": 1584
+     },
+     {
+      "node": "critic",
+      "model": "openai/gpt-oss-20b",
+      "input_tokens": 1040,
+      "output_tokens": 869,
+      "cost_usd": 0.000339,
+      "latency_ms": 1159,
+      "estimated": false,
+      "fallback": false,
+      "prompt_version": "1.1",
+      "node_ms": 1161
+     },
+     {
+      "node": "writer",
+      "model": "heuristic-fallback",
+      "input_tokens": 1761,
+      "output_tokens": 2048,
+      "cost_usd": 0.000746,
+      "latency_ms": 2429,
+      "estimated": true,
+      "fallback": true,
+      "errors": [
+       "openai/gpt-oss-20b: invalid output (JSONDecodeError)"
+      ],
+      "prompt_version": "1.2",
+      "node_ms": 2432
+     },
+     {
+      "node": "verifier",
+      "model": "openai/gpt-oss-20b",
+      "input_tokens": 1088,
+      "output_tokens": 683,
+      "cost_usd": 0.000287,
+      "latency_ms": 899,
+      "estimated": false,
+      "fallback": false,
+      "prompt_version": "1.0",
+      "node_ms": 969
+     },
+     {
+      "node": "critic",
+      "model": "openai/gpt-oss-20b",
+      "input_tokens": 1037,
+      "output_tokens": 740,
+      "cost_usd": 0.0003,
+      "latency_ms": 1922,
+      "estimated": false,
+      "fallback": false,
+      "prompt_version": "1.1",
+      "node_ms": 1925
+     },
+     {
+      "node": "compliance",
+      "model": "openai/gpt-oss-20b",
+      "input_tokens": 824,
+      "output_tokens": 696,
+      "cost_usd": 0.000271,
+      "latency_ms": 856,
+      "estimated": false,
+      "fallback": false,
+      "prompt_version": "1.0",
+      "node_ms": 873
+     }
+    ],
+    "estimated_cost_usd": 0.005131,
+    "correct": true,
+    "claims": {
+     "total_claims": 3,
+     "unsupported": 0,
+     "partly": 0,
+     "supported": 3
+    },
+    "violations": 0,
+    "p_reply": 0.581,
+    "replied": false,
+    "simulator_http_status": 200
+   },
+   {
+    "persona": "data_analyst",
+    "job_id": "dev-da-02023",
+    "kind": "normal",
+    "action": "skip",
+    "graph_decision": "skip",
+    "letter": "",
+    "bid": null,
+    "ids": [],
+    "tokens": 3244,
+    "latency": 2.822747040001559,
+    "caught": 0,
+    "usage": [
+     {
+      "node": "intake",
+      "model": "none",
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "cost_usd": 0.0,
+      "latency_ms": 0,
+      "node_ms": 0
+     },
+     {
+      "node": "analyst",
+      "model": "openai/gpt-oss-20b",
+      "input_tokens": 787,
+      "output_tokens": 784,
+      "cost_usd": 0.000294,
+      "latency_ms": 1347,
+      "estimated": false,
+      "fallback": false,
+      "prompt_version": "1.0",
+      "node_ms": 1350
+     },
+     {
+      "node": "risk",
+      "model": "openai/gpt-oss-20b",
+      "input_tokens": 821,
+      "output_tokens": 280,
+      "cost_usd": 0.000146,
+      "latency_ms": 440,
+      "estimated": false,
+      "fallback": false,
+      "prompt_version": "1.0",
+      "node_ms": 1790
+     },
+     {
+      "node": "matcher",
+      "model": "openai/gpt-oss-20b",
+      "input_tokens": 448,
+      "output_tokens": 124,
+      "cost_usd": 7.1e-05,
+      "latency_ms": 280,
+      "estimated": false,
+      "fallback": false,
+      "prompt_version": "1.0",
+      "node_ms": 2504
+     },
+     {
+      "node": "decide",
+      "model": "none",
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "cost_usd": 0.0,
+      "latency_ms": 0,
+      "node_ms": 0
+     }
+    ],
+    "estimated_cost_usd": 0.000511,
+    "correct": true
+   },
+   {
+    "persona": "data_analyst",
+    "job_id": "dev-da-02001",
+    "kind": "normal",
+    "action": "skip",
+    "graph_decision": "skip",
+    "letter": "",
+    "bid": null,
+    "ids": [],
+    "tokens": 5987,
+    "latency": 2.408594817999983,
+    "caught": 0,
+    "usage": [
+     {
+      "node": "intake",
+      "model": "none",
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "cost_usd": 0.0,
+      "latency_ms": 1,
+      "node_ms": 1
+     },
+     {
+      "node": "analyst",
+      "model": "heuristic-fallback",
+      "input_tokens": 796,
+      "output_tokens": 1619,
+      "cost_usd": 0.000545,
+      "latency_ms": 2282,
+      "estimated": true,
+      "fallback": true,
+      "errors": [
+       "openai/gpt-oss-20b: invalid output (JSONDecodeError)"
+      ],
+      "prompt_version": "1.0",
+      "node_ms": 2287
+     },
+     {
+      "node": "risk",
+      "model": "openai/gpt-oss-20b",
+      "input_tokens": 848,
+      "output_tokens": 538,
+      "cost_usd": 0.000225,
+      "latency_ms": 1353,
+      "estimated": false,
+      "fallback": false,
+      "prompt_version": "1.0",
+      "node_ms": 1939
+     },
+     {
+      "node": "matcher",
+      "model": "openai/gpt-oss-20b",
+      "input_tokens": 1706,
+      "output_tokens": 480,
+      "cost_usd": 0.000272,
+      "latency_ms": 899,
+      "estimated": false,
+      "fallback": false,
+      "prompt_version": "1.0",
+      "node_ms": 2193
+     },
+     {
+      "node": "decide",
+      "model": "none",
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "cost_usd": 0.0,
+      "latency_ms": 0,
+      "node_ms": 0
+     }
+    ],
+    "estimated_cost_usd": 0.001042,
+    "correct": false
+   },
+   {
+    "persona": "data_analyst",
+    "job_id": "dev-da-02049",
+    "kind": "scam",
+    "action": "skip",
+    "graph_decision": "skip",
+    "letter": "",
+    "bid": null,
+    "ids": [],
+    "tokens": 6280,
+    "latency": 2.8572776340006385,
+    "caught": 0,
+    "usage": [
+     {
+      "node": "intake",
+      "model": "none",
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "cost_usd": 0.0,
+      "latency_ms": 0,
+      "node_ms": 0
+     },
+     {
+      "node": "analyst",
+      "model": "heuristic-fallback",
+      "input_tokens": 815,
+      "output_tokens": 2048,
+      "cost_usd": 0.000676,
+      "latency_ms": 2806,
+      "estimated": true,
+      "fallback": true,
+      "errors": [
+       "openai/gpt-oss-20b: invalid output (JSONDecodeError)"
+      ],
+      "prompt_version": "1.0",
+      "node_ms": 2808
+     },
+     {
+      "node": "risk",
+      "model": "openai/gpt-oss-20b",
+      "input_tokens": 969,
+      "output_tokens": 403,
+      "cost_usd": 0.000194,
+      "latency_ms": 1603,
+      "estimated": false,
+      "fallback": false,
+      "prompt_version": "1.0",
+      "node_ms": 2217
+     },
+     {
+      "node": "matcher",
+      "model": "openai/gpt-oss-20b",
+      "input_tokens": 1460,
+      "output_tokens": 585,
+      "cost_usd": 0.000285,
+      "latency_ms": 947,
+      "estimated": false,
+      "fallback": false,
+      "prompt_version": "1.0",
+      "node_ms": 2246
+     },
+     {
+      "node": "decide",
+      "model": "none",
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "cost_usd": 0.0,
+      "latency_ms": 0,
+      "node_ms": 0
+     }
+    ],
+    "estimated_cost_usd": 0.001155,
+    "correct": true
+   },
+   {
+    "persona": "data_analyst",
+    "job_id": "dev-da-01982",
+    "kind": "normal",
+    "action": "bid",
+    "graph_decision": "bid",
+    "letter": "Your project, analyse e-commerce customer data, is close to work I delivered for a media client: monthly retention curves by acquisition channel. That project identified a channel with 2x churn, saving $180k in ad spend.\n\nI built it with pandas, Data visualization, which you also list. For Statistics, a second reference is Customer survey analysis, which pinpointed check-in wait as the top satisfaction driver. For Statistics, a second reference is Experiment readout templates, which analysis time per experiment from 2 days to 3 hours.\n\nFor your project I would begin with a short, fixed-scope first milestone so you can judge the approach before committing to the rest. Could you share a sample of the data or the current setup so I can confirm the scope?",
+    "bid": 25.0,
+    "ids": [
+     "data_analyst-case-002",
+     "data_analyst-case-007",
+     "data_analyst-case-016"
+    ],
+    "tokens": 30478,
+    "latency": 20.75281456799712,
+    "caught": 0,
+    "usage": [
+     {
+      "node": "intake",
+      "model": "none",
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "cost_usd": 0.0,
+      "latency_ms": 0,
+      "node_ms": 0
+     },
+     {
+      "node": "analyst",
+      "model": "openai/gpt-oss-20b",
+      "input_tokens": 764,
+      "output_tokens": 661,
+      "cost_usd": 0.000256,
+      "latency_ms": 1337,
+      "estimated": false,
+      "fallback": false,
+      "prompt_version": "1.0",
+      "node_ms": 1341
+     },
+     {
+      "node": "risk",
+      "model": "openai/gpt-oss-20b",
+      "input_tokens": 832,
+      "output_tokens": 179,
+      "cost_usd": 0.000116,
+      "latency_ms": 555,
+      "estimated": false,
+      "fallback": false,
+      "prompt_version": "1.0",
+      "node_ms": 874
+     },
+     {
+      "node": "matcher",
+      "model": "openai/gpt-oss-20b",
+      "input_tokens": 1492,
+      "output_tokens": 523,
+      "cost_usd": 0.000269,
+      "latency_ms": 974,
+      "estimated": false,
+      "fallback": false,
+      "prompt_version": "1.0",
+      "node_ms": 1953
+     },
+     {
+      "node": "decide",
+      "model": "none",
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "cost_usd": 0.0,
+      "latency_ms": 0,
+      "node_ms": 0
+     },
+     {
+      "node": "pricing",
+      "model": "none",
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "cost_usd": 0.0,
+      "latency_ms": 55,
+      "node_ms": 55
+     },
+     {
+      "node": "writer",
+      "model": "openai/gpt-oss-20b",
+      "input_tokens": 1905,
+      "output_tokens": 1856,
+      "cost_usd": 0.0007,
+      "latency_ms": 2439,
+      "estimated": false,
+      "fallback": false,
+      "prompt_version": "1.2",
+      "node_ms": 2657
+     },
+     {
+      "node": "verifier",
+      "model": "openai/gpt-oss-20b",
+      "input_tokens": 1146,
+      "output_tokens": 1349,
+      "cost_usd": 0.000491,
+      "latency_ms": 1754,
+      "estimated": false,
+      "fallback": false,
+      "prompt_version": "1.0",
+      "node_ms": 1859
+     },
+     {
+      "node": "critic",
+      "model": "openai/gpt-oss-20b",
+      "input_tokens": 1159,
+      "output_tokens": 1211,
+      "cost_usd": 0.00045,
+      "latency_ms": 1474,
+      "estimated": false,
+      "fallback": false,
+      "prompt_version": "1.1",
+      "node_ms": 1476
+     },
+     {
+      "node": "writer",
+      "model": "heuristic-fallback",
+      "input_tokens": 2010,
+      "output_tokens": 2048,
+      "cost_usd": 0.000765,
+      "latency_ms": 2421,
+      "estimated": true,
+      "fallback": true,
+      "errors": [
+       "openai/gpt-oss-20b: invalid output (JSONDecodeError)"
+      ],
+      "prompt_version": "1.2",
+      "node_ms": 2424
+     },
+     {
+      "node": "verifier",
+      "model": "openai/gpt-oss-20b",
+      "input_tokens": 1132,
+      "output_tokens": 830,
+      "cost_usd": 0.000334,
+      "latency_ms": 2087,
+      "estimated": false,
+      "fallback": false,
+      "prompt_version": "1.0",
+      "node_ms": 2190
+     },
+     {
+      "node": "critic",
+      "model": "openai/gpt-oss-20b",
+      "input_tokens": 1129,
+      "output_tokens": 971,
+      "cost_usd": 0.000376,
+      "latency_ms": 1379,
+      "estimated": false,
+      "fallback": false,
+      "prompt_version": "1.1",
+      "node_ms": 1381
+     },
+     {
+      "node": "writer",
+      "model": "heuristic-fallback",
+      "input_tokens": 1911,
+      "output_tokens": 2048,
+      "cost_usd": 0.000758,
+      "latency_ms": 2678,
+      "estimated": true,
+      "fallback": true,
+      "errors": [
+       "openai/gpt-oss-20b: invalid output (JSONDecodeError)"
+      ],
+      "prompt_version": "1.2",
+      "node_ms": 2683
+     },
+     {
+      "node": "verifier",
+      "model": "openai/gpt-oss-20b",
+      "input_tokens": 1132,
+      "output_tokens": 784,
+      "cost_usd": 0.00032,
+      "latency_ms": 1564,
+      "estimated": false,
+      "fallback": false,
+      "prompt_version": "1.0",
+      "node_ms": 1674
+     },
+     {
+      "node": "critic",
+      "model": "openai/gpt-oss-20b",
+      "input_tokens": 1132,
+      "output_tokens": 767,
+      "cost_usd": 0.000315,
+      "latency_ms": 1345,
+      "estimated": false,
+      "fallback": false,
+      "prompt_version": "1.1",
+      "node_ms": 1348
+     },
+     {
+      "node": "compliance",
+      "model": "openai/gpt-oss-20b",
+      "input_tokens": 834,
+      "output_tokens": 673,
+      "cost_usd": 0.000264,
+      "latency_ms": 842,
+      "estimated": false,
+      "fallback": false,
+      "prompt_version": "1.0",
+      "node_ms": 861
+     }
+    ],
+    "estimated_cost_usd": 0.0054139999999999995,
+    "correct": true,
+    "claims": {
+     "total_claims": 3,
+     "unsupported": 0,
+     "partly": 1,
+     "supported": 2
+    },
+    "violations": 0,
+    "p_reply": 0.4908,
+    "replied": false,
+    "simulator_http_status": 200
+   },
+   {
+    "persona": "data_analyst",
+    "job_id": "dev-da-01961",
+    "kind": "normal",
+    "action": "bid",
+    "graph_decision": "bid",
+    "letter": "",
+    "bid": 800.0,
+    "ids": [
+     "data_analyst-case-010"
+    ],
+    "tokens": 30497,
+    "latency": 20.94842188199982,
+    "caught": 0,
+    "usage": [
+     {
+      "node": "intake",
+      "model": "none",
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "cost_usd": 0.0,
+      "latency_ms": 0,
+      "node_ms": 0
+     },
+     {
+      "node": "analyst",
+      "model": "openai/gpt-oss-20b",
+      "input_tokens": 781,
+      "output_tokens": 895,
+      "cost_usd": 0.000327,
+      "latency_ms": 1637,
+      "estimated": false,
+      "fallback": false,
+      "prompt_version": "1.0",
+      "node_ms": 1643
+     },
+     {
+      "node": "risk",
+      "model": "openai/gpt-oss-20b",
+      "input_tokens": 829,
+      "output_tokens": 211,
+      "cost_usd": 0.000125,
+      "latency_ms": 568,
+      "estimated": false,
+      "fallback": false,
+      "prompt_version": "1.0",
+      "node_ms": 881
+     },
+     {
+      "node": "matcher",
+      "model": "openai/gpt-oss-20b",
+      "input_tokens": 1777,
+      "output_tokens": 1495,
+      "cost_usd": 0.000582,
+      "latency_ms": 2191,
+      "estimated": false,
+      "fallback": false,
+      "prompt_version": "1.0",
+      "node_ms": 3180
+     },
+     {
+      "node": "decide",
+      "model": "none",
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "cost_usd": 0.0,
+      "latency_ms": 0,
+      "node_ms": 0
+     },
+     {
+      "node": "pricing",
+      "model": "none",
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "cost_usd": 0.0,
+      "latency_ms": 41,
+      "node_ms": 41
+     },
+     {
+      "node": "writer",
+      "model": "openai/gpt-oss-20b",
+      "input_tokens": 1936,
+      "output_tokens": 1829,
+      "cost_usd": 0.000694,
+      "latency_ms": 2237,
+      "estimated": false,
+      "fallback": false,
+      "prompt_version": "1.2",
+      "node_ms": 2476
+     },
+     {
+      "node": "verifier",
+      "model": "openai/gpt-oss-20b",
+      "input_tokens": 1030,
+      "output_tokens": 701,
+      "cost_usd": 0.000288,
+      "latency_ms": 1022,
+      "estimated": false,
+      "fallback": false,
+      "prompt_version": "1.0",
+      "node_ms": 1089
+     },
+     {
+      "node": "critic",
+      "model": "openai/gpt-oss-20b",
+      "input_tokens": 1011,
+      "output_tokens": 625,
+      "cost_usd": 0.000263,
+      "latency_ms": 863,
+      "estimated": false,
+      "fallback": false,
+      "prompt_version": "1.1",
+      "node_ms": 866
+     },
+     {
+      "node": "writer",
+      "model": "openai/gpt-oss-20b",
+      "input_tokens": 1936,
+      "output_tokens": 1948,
+      "cost_usd": 0.00073,
+      "latency_ms": 2272,
+      "estimated": false,
+      "fallback": false,
+      "prompt_version": "1.2",
+      "node_ms": 2277
+     },
+     {
+      "node": "verifier",
+      "model": "openai/gpt-oss-20b",
+      "input_tokens": 1158,
+      "output_tokens": 1351,
+      "cost_usd": 0.000492,
+      "latency_ms": 2203,
+      "estimated": false,
+      "fallback": false,
+      "prompt_version": "1.0",
+      "node_ms": 2306
+     },
+     {
+      "node": "critic",
+      "model": "openai/gpt-oss-20b",
+      "input_tokens": 1267,
+      "output_tokens": 217,
+      "cost_usd": 0.00016,
+      "latency_ms": 510,
+      "estimated": false,
+      "fallback": false,
+      "prompt_version": "1.1",
+      "node_ms": 514
+     },
+     {
+      "node": "writer",
+      "model": "openai/gpt-oss-20b",
+      "input_tokens": 1936,
+      "output_tokens": 1960,
+      "cost_usd": 0.000733,
+      "latency_ms": 2608,
+      "estimated": false,
+      "fallback": false,
+      "prompt_version": "1.2",
+      "node_ms": 2612
+     },
+     {
+      "node": "verifier",
+      "model": "openai/gpt-oss-20b",
+      "input_tokens": 1086,
+      "output_tokens": 1360,
+      "cost_usd": 0.000489,
+      "latency_ms": 2182,
+      "estimated": false,
+      "fallback": false,
+      "prompt_version": "1.0",
+      "node_ms": 2276
+     },
+     {
+      "node": "critic",
+      "model": "heuristic-fallback",
+      "input_tokens": 1110,
+      "output_tokens": 2048,
+      "cost_usd": 0.000698,
+      "latency_ms": 3096,
+      "estimated": true,
+      "fallback": true,
+      "errors": [
+       "openai/gpt-oss-20b: invalid output (JSONDecodeError)"
+      ],
+      "prompt_version": "1.1",
+      "node_ms": 3101
+     }
+    ],
+    "estimated_cost_usd": 0.005581,
+    "correct": true
+   },
+   {
+    "persona": "data_analyst",
+    "job_id": "dev-da-02009",
+    "kind": "normal",
+    "action": "skip",
+    "graph_decision": "skip",
+    "letter": "",
+    "bid": null,
+    "ids": [],
+    "tokens": 3775,
+    "latency": 1.6750790899968706,
+    "caught": 0,
+    "usage": [
+     {
+      "node": "intake",
+      "model": "none",
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "cost_usd": 0.0,
+      "latency_ms": 0,
+      "node_ms": 0
+     },
+     {
+      "node": "analyst",
+      "model": "openai/gpt-oss-20b",
+      "input_tokens": 771,
+      "output_tokens": 897,
+      "cost_usd": 0.000327,
+      "latency_ms": 1219,
+      "estimated": false,
+      "fallback": false,
+      "prompt_version": "1.0",
+      "node_ms": 1221
+     },
+     {
+      "node": "risk",
+      "model": "openai/gpt-oss-20b",
+      "input_tokens": 813,
+      "output_tokens": 221,
+      "cost_usd": 0.000127,
+      "latency_ms": 620,
+      "estimated": false,
+      "fallback": false,
+      "prompt_version": "1.0",
+      "node_ms": 980
+     },
+     {
+      "node": "matcher",
+      "model": "openai/gpt-oss-20b",
+      "input_tokens": 697,
+      "output_tokens": 376,
+      "cost_usd": 0.000165,
+      "latency_ms": 559,
+      "estimated": false,
+      "fallback": false,
+      "prompt_version": "1.0",
+      "node_ms": 1575
+     },
+     {
+      "node": "decide",
+      "model": "none",
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "cost_usd": 0.0,
+      "latency_ms": 0,
+      "node_ms": 0
+     }
+    ],
+    "estimated_cost_usd": 0.000619,
+    "correct": true
+   },
+   {
+    "persona": "data_analyst",
+    "job_id": "dev-da-02020",
+    "kind": "normal",
+    "action": "skip",
+    "graph_decision": "skip",
+    "letter": "",
+    "bid": null,
+    "ids": [],
+    "tokens": 3815,
+    "latency": 1.4659029619942885,
+    "caught": 0,
+    "usage": [
+     {
+      "node": "intake",
+      "model": "none",
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "cost_usd": 0.0,
+      "latency_ms": 0,
+      "node_ms": 0
+     },
+     {
+      "node": "analyst",
+      "model": "openai/gpt-oss-20b",
+      "input_tokens": 747,
+      "output_tokens": 1055,
+      "cost_usd": 0.000373,
+      "latency_ms": 1406,
+      "estimated": false,
+      "fallback": false,
+      "prompt_version": "1.0",
+      "node_ms": 1409
+     },
+     {
+      "node": "risk",
+      "model": "openai/gpt-oss-20b",
+      "input_tokens": 799,
+      "output_tokens": 330,
+      "cost_usd": 0.000159,
+      "latency_ms": 692,
+      "estimated": false,
+      "fallback": false,
+      "prompt_version": "1.0",
+      "node_ms": 1064
+     },
+     {
+      "node": "matcher",
+      "model": "openai/gpt-oss-20b",
+      "input_tokens": 681,
+      "output_tokens": 203,
+      "cost_usd": 0.000112,
+      "latency_ms": 406,
+      "estimated": false,
+      "fallback": false,
+      "prompt_version": "1.0",
+      "node_ms": 1434
+     },
+     {
+      "node": "decide",
+      "model": "none",
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "cost_usd": 0.0,
+      "latency_ms": 0,
+      "node_ms": 0
+     }
+    ],
+    "estimated_cost_usd": 0.000644,
+    "correct": true
+   },
+   {
+    "persona": "data_analyst",
+    "job_id": "dev-da-02058",
+    "kind": "scam",
+    "action": "skip",
+    "graph_decision": "skip",
+    "letter": "",
+    "bid": null,
+    "ids": [],
+    "tokens": 5493,
+    "latency": 2.054353142004402,
+    "caught": 0,
+    "usage": [
+     {
+      "node": "intake",
+      "model": "none",
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "cost_usd": 0.0,
+      "latency_ms": 0,
+      "node_ms": 0
+     },
+     {
+      "node": "analyst",
+      "model": "openai/gpt-oss-20b",
+      "input_tokens": 805,
+      "output_tokens": 1553,
+      "cost_usd": 0.000526,
+      "latency_ms": 2003,
+      "estimated": false,
+      "fallback": false,
+      "prompt_version": "1.0",
+      "node_ms": 2006
+     },
+     {
+      "node": "risk",
+      "model": "openai/gpt-oss-20b",
+      "input_tokens": 968,
+      "output_tokens": 576,
+      "cost_usd": 0.000245,
+      "latency_ms": 830,
+      "estimated": false,
+      "fallback": false,
+      "prompt_version": "1.0",
+      "node_ms": 1170
+     },
+     {
+      "node": "matcher",
+      "model": "openai/gpt-oss-20b",
+      "input_tokens": 1208,
+      "output_tokens": 383,
+      "cost_usd": 0.000206,
+      "latency_ms": 994,
+      "estimated": false,
+      "fallback": false,
+      "prompt_version": "1.0",
+      "node_ms": 2019
+     },
+     {
+      "node": "decide",
+      "model": "none",
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "cost_usd": 0.0,
+      "latency_ms": 0,
+      "node_ms": 0
+     }
+    ],
+    "estimated_cost_usd": 0.000977,
+    "correct": true
+   },
+   {
+    "persona": "data_analyst",
+    "job_id": "dev-da-02024",
+    "kind": "normal",
+    "action": "skip",
+    "graph_decision": "skip",
+    "letter": "",
+    "bid": null,
+    "ids": [],
+    "tokens": 3400,
+    "latency": 1.5316966850004974,
+    "caught": 0,
+    "usage": [
+     {
+      "node": "intake",
+      "model": "none",
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "cost_usd": 0.0,
+      "latency_ms": 0,
+      "node_ms": 0
+     },
+     {
+      "node": "analyst",
+      "model": "openai/gpt-oss-20b",
+      "input_tokens": 784,
+      "output_tokens": 462,
+      "cost_usd": 0.000197,
+      "latency_ms": 968,
+      "estimated": false,
+      "fallback": false,
+      "prompt_version": "1.0",
+      "node_ms": 970
+     },
+     {
+      "node": "risk",
+      "model": "openai/gpt-oss-20b",
+      "input_tokens": 833,
+      "output_tokens": 378,
+      "cost_usd": 0.000176,
+      "latency_ms": 642,
+      "estimated": false,
+      "fallback": false,
+      "prompt_version": "1.0",
+      "node_ms": 1014
+     },
+     {
+      "node": "matcher",
+      "model": "openai/gpt-oss-20b",
+      "input_tokens": 716,
+      "output_tokens": 227,
+      "cost_usd": 0.000122,
+      "latency_ms": 418,
+      "estimated": false,
+      "fallback": false,
+      "prompt_version": "1.0",
+      "node_ms": 1448
+     },
+     {
+      "node": "decide",
+      "model": "none",
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "cost_usd": 0.0,
+      "latency_ms": 0,
+      "node_ms": 0
+     }
+    ],
+    "estimated_cost_usd": 0.000495,
+    "correct": true
+   }
+  ]
+ }
+}

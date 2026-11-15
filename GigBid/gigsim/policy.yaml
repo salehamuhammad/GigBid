@@ -1,0 +1,17 @@
+# GigSim platform policy. GigBid never hard-codes these values: it reads them from GET /policy
+# and from dry_run previews, so a policy change needs no code change on the GigBid side.
+version: "2026-11-02"
+rate_limit_per_minute: 30
+error_rate: 0.03                 # share of requests answered with HTTP 503
+connects:
+  weekly_allowance: 120
+proposal:
+  max_cover_letter_chars: 3000
+# --- "Platform policy update" of 2 November 2026 (change request).
+# NOTE: this is OUR stand-in for the instructor's update. Replace the values below with the
+# real ones when they differ; nothing else has to change (see docs/adr/0006-change-request.md).
+update:
+  effective: "2026-11-02"
+  crowded_job_surcharge: {proposals_threshold: 20, extra_connects: 4}
+  daily_proposal_cap: 15
+  max_cover_letter_chars: 1800

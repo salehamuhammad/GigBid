@@ -1,0 +1,38 @@
+{
+ "env": {
+  "model_profile": "offline",
+  "embeddings": {
+   "provider": "hash",
+   "model": "hash-1024"
+  },
+  "reranker": {
+   "provider": "lexical",
+   "model": "lexical-overlap"
+  },
+  "deployed_variant": "best",
+  "at": "2026-11-14 10:20:45"
+ },
+ "counts": {
+  "missed evidence (wrong skip)": 2
+ },
+ "failures": [
+  {
+   "category": "missed evidence (wrong skip)",
+   "persona": "data_analyst",
+   "job_id": "dev-da-01956",
+   "kind": "normal",
+   "action": "none",
+   "gold_bid": true,
+   "price_in_band": null
+  },
+  {
+   "category": "missed evidence (wrong skip)",
+   "persona": "data_analyst",
+   "job_id": "dev-da-01998",
+   "kind": "normal",
+   "action": "none",
+   "gold_bid": true,
+   "price_in_band": null
+  }
+ ]
+}

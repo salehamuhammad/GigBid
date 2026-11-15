@@ -1,0 +1,63 @@
+[project]
+name = "gigbid"
+version = "1.0.0"
+description = "GigBid: a multi-agent freelancer copilot (AI-4016 R&D assignment)"
+requires-python = ">=3.11"
+dependencies = [
+  "fastapi==0.162.7",
+  "uvicorn[standard]==0.54.0",
+  "pydantic==2.13.5",
+  "pyyaml==6.0.3",
+  "langgraph==1.2.21",
+  "langgraph-checkpoint-sqlite==3.1.3",
+  "langgraph-checkpoint-postgres==3.2.0",
+  "langgraph-supervisor==0.0.31",
+  "langchain-core==1.8.0",
+  "langchain-openai==1.8.0",
+  "langchain-mcp-adapters==0.3.2",
+  "mcp==1.30.0",
+  "httpx==0.28.1",
+  "sqlalchemy==2.1.8",
+  "psycopg[binary,pool]==3.3.9",
+  "aiosqlite==0.22.1",
+  "arq==0.28.0",
+  "redis==5.3.1",
+  "numpy>=2.0",
+  "scikit-learn>=1.5",
+  "pypdf==6.17.0",
+  "python-multipart==0.0.32",
+  "PyJWT==2.15.0",
+  "cryptography>=43",
+  "reportlab>=4",
+]
+
+[project.optional-dependencies]
+# Real open-weight embedding + reranker models (CPU, ONNX). Needed for the `open` profile.
+models = ["fastembed==0.9.1", "qdrant-client==1.15.1"]
+tracing = ["langsmith"]
+dev = ["pytest", "pytest-asyncio", "ruff"]
+
+[project.scripts]
+gigbid-portfolio-mcp = "mcp_servers.portfolio.server:main"
+gigbid-marketplace-mcp = "mcp_servers.marketplace.server:main"
+gigbid-workspace-mcp = "mcp_servers.workspace.server:main"
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+include = ["agent*", "apps*", "rag*", "mcp_servers*", "worker*", "gigsim*", "evals*", "scripts*"]
+
+[tool.pytest.ini_options]
+asyncio_mode = "auto"
+testpaths = ["tests", "mcp_servers"]
+filterwarnings = ["ignore::DeprecationWarning"]
+
+[tool.ruff]
+line-length = 110
+exclude = ["apps/web", "data", "gigsim/seed"]
+
+[tool.ruff.lint]
+select = ["E", "F", "I"]
+ignore = ["E501", "E701", "E702", "E731", "E741"]

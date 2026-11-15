@@ -1,0 +1,15 @@
+job_id,persona,failure,observed,comparison_or_retry,result,source
+dev-ai-01594,ai_engineer,missed evidence,V0 recovered zero gold items in top five,V9 skill graph,V9 Recall@5=0.3750,rag_open_bge_qdrant_no_cross_encoder.json
+dev-ai-01656,ai_engineer,missed evidence,V0 recovered zero gold items in top five,V9 skill graph,V9 Recall@5=0.5000,rag_open_bge_qdrant_no_cross_encoder.json
+dev-ai-01621,ai_engineer,missed evidence,V0 recovered zero gold items in top five,V9 skill graph,V9 Recall@5=0.3333,rag_open_bge_qdrant_no_cross_encoder.json
+dev-fu-01846,fullstack_dev,missed evidence,V0 recovered zero gold items in top five,V9 skill graph,V9 Recall@5=0.4286,rag_open_bge_qdrant_no_cross_encoder.json
+dev-fu-01779,fullstack_dev,missed evidence,V0 recovered zero gold items in top five,V9 skill graph,V9 Recall@5=0.6667,rag_open_bge_qdrant_no_cross_encoder.json
+dev-fu-01847,fullstack_dev,missed evidence,V0 recovered zero gold items in top five,V9 skill graph,V9 Recall@5=1.0000,rag_open_bge_qdrant_no_cross_encoder.json
+dev-fu-01743,fullstack_dev,missed evidence,V0 recovered zero gold items in top five,V9 skill graph,V9 Recall@5=1.0000,rag_open_bge_qdrant_no_cross_encoder.json
+dev-da-02068,data_analyst,missed evidence,V0 recovered zero gold items in top five,V9 skill graph,V9 Recall@5=0.5000,rag_open_bge_qdrant_no_cross_encoder.json
+dev-da-02075,data_analyst,missed evidence,V0 recovered zero gold items in top five,V9 skill graph,V9 Recall@5=0.2000,rag_open_bge_qdrant_no_cross_encoder.json
+dev-ai-01504,ai_engineer,provider/tool error,Supervisor HTTP 400,single-job supervisor retry,one successful rerun on dev-ai-01504; other jobs pending,baselines_open_lexical_smoke.json
+dev-fu-01796,fullstack_dev,provider/tool error,Supervisor HTTP 400,single-job supervisor retry,one successful rerun on dev-ai-01504; other jobs pending,baselines_open_lexical_smoke.json
+dev-da-01918,data_analyst,provider/tool error,Supervisor HTTP 400,single-job supervisor retry,one successful rerun on dev-ai-01504; other jobs pending,baselines_open_lexical_smoke.json
+dev-ai-01504,ai_engineer,wrong decision,ReAct decision skip,matched hand graph,no observed correction,baselines_open_lexical_smoke.json
+dev-da-01918,data_analyst,wrong decision,ReAct decision skip,matched hand graph,no observed correction,baselines_open_lexical_smoke.json

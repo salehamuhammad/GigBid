@@ -1,0 +1,505 @@
+{
+ "env": {
+  "model_profile": "offline",
+  "embeddings": {
+   "provider": "hash",
+   "model": "hash-1024"
+  },
+  "reranker": {
+   "provider": "lexical",
+   "model": "lexical-overlap"
+  },
+  "deployed_variant": "best",
+  "at": "2026-11-14 10:18:02"
+ },
+ "rows": [
+  {
+   "persona": "ai_engineer",
+   "variant": "best",
+   "n_pos": 156,
+   "n_neg": 20,
+   "recall@5": 0.6694,
+   "mrr": 0.8585,
+   "ndcg@10": 0.7354,
+   "refusal_accuracy": 0.7,
+   "p50_ms": 7.8,
+   "p95_ms": 15.0
+  },
+  {
+   "persona": "ai_engineer",
+   "variant": "v0_naive",
+   "n_pos": 156,
+   "n_neg": 20,
+   "recall@5": 0.5128,
+   "mrr": 0.7685,
+   "ndcg@10": 0.5696,
+   "refusal_accuracy": 0.0,
+   "p50_ms": 0.1,
+   "p95_ms": 0.2
+  },
+  {
+   "persona": "ai_engineer",
+   "variant": "v1_decompose",
+   "n_pos": 156,
+   "n_neg": 20,
+   "recall@5": 0.5072,
+   "mrr": 0.7553,
+   "ndcg@10": 0.5757,
+   "refusal_accuracy": 0.0,
+   "p50_ms": 0.8,
+   "p95_ms": 1.1
+  },
+  {
+   "persona": "ai_engineer",
+   "variant": "v2_hybrid",
+   "n_pos": 156,
+   "n_neg": 20,
+   "recall@5": 0.5989,
+   "mrr": 0.8308,
+   "ndcg@10": 0.6507,
+   "refusal_accuracy": 0.0,
+   "p50_ms": 0.4,
+   "p95_ms": 0.5
+  },
+  {
+   "persona": "ai_engineer",
+   "variant": "v3_rerank",
+   "n_pos": 156,
+   "n_neg": 20,
+   "recall@5": 0.6441,
+   "mrr": 0.8987,
+   "ndcg@10": 0.7227,
+   "refusal_accuracy": 0.0,
+   "p50_ms": 0.9,
+   "p95_ms": 1.0
+  },
+  {
+   "persona": "ai_engineer",
+   "variant": "v4_outcome",
+   "n_pos": 156,
+   "n_neg": 20,
+   "recall@5": 0.6062,
+   "mrr": 0.8385,
+   "ndcg@10": 0.6569,
+   "refusal_accuracy": 0.0,
+   "p50_ms": 0.8,
+   "p95_ms": 1.0
+  },
+  {
+   "persona": "ai_engineer",
+   "variant": "v5_multivector",
+   "n_pos": 156,
+   "n_neg": 20,
+   "recall@5": 0.5846,
+   "mrr": 0.8269,
+   "ndcg@10": 0.6353,
+   "refusal_accuracy": 0.0,
+   "p50_ms": 0.7,
+   "p95_ms": 0.9
+  },
+  {
+   "persona": "ai_engineer",
+   "variant": "v6_contextual",
+   "n_pos": 156,
+   "n_neg": 20,
+   "recall@5": 0.5988,
+   "mrr": 0.8376,
+   "ndcg@10": 0.6574,
+   "refusal_accuracy": 0.0,
+   "p50_ms": 0.4,
+   "p95_ms": 0.5
+  },
+  {
+   "persona": "ai_engineer",
+   "variant": "v7_hyde",
+   "n_pos": 156,
+   "n_neg": 20,
+   "recall@5": 0.5045,
+   "mrr": 0.8065,
+   "ndcg@10": 0.5845,
+   "refusal_accuracy": 0.0,
+   "p50_ms": 1.3,
+   "p95_ms": 1.6
+  },
+  {
+   "persona": "ai_engineer",
+   "variant": "v8_corrective",
+   "n_pos": 156,
+   "n_neg": 20,
+   "recall@5": 0.6334,
+   "mrr": 0.852,
+   "ndcg@10": 0.7012,
+   "refusal_accuracy": 0.7,
+   "p50_ms": 6.3,
+   "p95_ms": 10.7
+  },
+  {
+   "persona": "ai_engineer",
+   "variant": "v9_skill_graph",
+   "n_pos": 156,
+   "n_neg": 20,
+   "recall@5": 0.7342,
+   "mrr": 0.942,
+   "ndcg@10": 0.8243,
+   "refusal_accuracy": 0.0,
+   "p50_ms": 3.0,
+   "p95_ms": 4.5
+  },
+  {
+   "persona": "fullstack_dev",
+   "variant": "best",
+   "n_pos": 154,
+   "n_neg": 20,
+   "recall@5": 0.7661,
+   "mrr": 0.8907,
+   "ndcg@10": 0.7481,
+   "refusal_accuracy": 0.5,
+   "p50_ms": 7.1,
+   "p95_ms": 13.8
+  },
+  {
+   "persona": "fullstack_dev",
+   "variant": "v0_naive",
+   "n_pos": 154,
+   "n_neg": 20,
+   "recall@5": 0.5457,
+   "mrr": 0.794,
+   "ndcg@10": 0.5332,
+   "refusal_accuracy": 0.0,
+   "p50_ms": 0.1,
+   "p95_ms": 0.2
+  },
+  {
+   "persona": "fullstack_dev",
+   "variant": "v1_decompose",
+   "n_pos": 154,
+   "n_neg": 20,
+   "recall@5": 0.5021,
+   "mrr": 0.703,
+   "ndcg@10": 0.5057,
+   "refusal_accuracy": 0.0,
+   "p50_ms": 0.8,
+   "p95_ms": 1.1
+  },
+  {
+   "persona": "fullstack_dev",
+   "variant": "v2_hybrid",
+   "n_pos": 154,
+   "n_neg": 20,
+   "recall@5": 0.5971,
+   "mrr": 0.8474,
+   "ndcg@10": 0.6033,
+   "refusal_accuracy": 0.0,
+   "p50_ms": 0.3,
+   "p95_ms": 0.4
+  },
+  {
+   "persona": "fullstack_dev",
+   "variant": "v3_rerank",
+   "n_pos": 154,
+   "n_neg": 20,
+   "recall@5": 0.6525,
+   "mrr": 0.9273,
+   "ndcg@10": 0.6783,
+   "refusal_accuracy": 0.0,
+   "p50_ms": 0.8,
+   "p95_ms": 1.0
+  },
+  {
+   "persona": "fullstack_dev",
+   "variant": "v4_outcome",
+   "n_pos": 154,
+   "n_neg": 20,
+   "recall@5": 0.5965,
+   "mrr": 0.8228,
+   "ndcg@10": 0.5819,
+   "refusal_accuracy": 0.0,
+   "p50_ms": 0.7,
+   "p95_ms": 0.9
+  },
+  {
+   "persona": "fullstack_dev",
+   "variant": "v5_multivector",
+   "n_pos": 154,
+   "n_neg": 20,
+   "recall@5": 0.5623,
+   "mrr": 0.8405,
+   "ndcg@10": 0.5633,
+   "refusal_accuracy": 0.0,
+   "p50_ms": 0.6,
+   "p95_ms": 0.7
+  },
+  {
+   "persona": "fullstack_dev",
+   "variant": "v6_contextual",
+   "n_pos": 154,
+   "n_neg": 20,
+   "recall@5": 0.5938,
+   "mrr": 0.8576,
+   "ndcg@10": 0.6065,
+   "refusal_accuracy": 0.0,
+   "p50_ms": 0.4,
+   "p95_ms": 0.5
+  },
+  {
+   "persona": "fullstack_dev",
+   "variant": "v7_hyde",
+   "n_pos": 154,
+   "n_neg": 20,
+   "recall@5": 0.5184,
+   "mrr": 0.7927,
+   "ndcg@10": 0.5388,
+   "refusal_accuracy": 0.0,
+   "p50_ms": 1.2,
+   "p95_ms": 1.4
+  },
+  {
+   "persona": "fullstack_dev",
+   "variant": "v8_corrective",
+   "n_pos": 154,
+   "n_neg": 20,
+   "recall@5": 0.7139,
+   "mrr": 0.8862,
+   "ndcg@10": 0.694,
+   "refusal_accuracy": 0.5,
+   "p50_ms": 5.5,
+   "p95_ms": 9.2
+  },
+  {
+   "persona": "fullstack_dev",
+   "variant": "v9_skill_graph",
+   "n_pos": 154,
+   "n_neg": 20,
+   "recall@5": 0.8076,
+   "mrr": 0.938,
+   "ndcg@10": 0.7947,
+   "refusal_accuracy": 0.0,
+   "p50_ms": 2.8,
+   "p95_ms": 3.7
+  },
+  {
+   "persona": "data_analyst",
+   "variant": "best",
+   "n_pos": 151,
+   "n_neg": 20,
+   "recall@5": 0.7897,
+   "mrr": 0.9178,
+   "ndcg@10": 0.7312,
+   "refusal_accuracy": 0.65,
+   "p50_ms": 7.5,
+   "p95_ms": 14.2
+  },
+  {
+   "persona": "data_analyst",
+   "variant": "v0_naive",
+   "n_pos": 151,
+   "n_neg": 20,
+   "recall@5": 0.603,
+   "mrr": 0.8391,
+   "ndcg@10": 0.5614,
+   "refusal_accuracy": 0.0,
+   "p50_ms": 0.1,
+   "p95_ms": 0.2
+  },
+  {
+   "persona": "data_analyst",
+   "variant": "v1_decompose",
+   "n_pos": 151,
+   "n_neg": 20,
+   "recall@5": 0.6486,
+   "mrr": 0.8647,
+   "ndcg@10": 0.6091,
+   "refusal_accuracy": 0.0,
+   "p50_ms": 0.8,
+   "p95_ms": 1.1
+  },
+  {
+   "persona": "data_analyst",
+   "variant": "v2_hybrid",
+   "n_pos": 151,
+   "n_neg": 20,
+   "recall@5": 0.7063,
+   "mrr": 0.8658,
+   "ndcg@10": 0.6419,
+   "refusal_accuracy": 0.0,
+   "p50_ms": 0.4,
+   "p95_ms": 0.6
+  },
+  {
+   "persona": "data_analyst",
+   "variant": "v3_rerank",
+   "n_pos": 151,
+   "n_neg": 20,
+   "recall@5": 0.7492,
+   "mrr": 0.9237,
+   "ndcg@10": 0.7,
+   "refusal_accuracy": 0.0,
+   "p50_ms": 0.8,
+   "p95_ms": 1.0
+  },
+  {
+   "persona": "data_analyst",
+   "variant": "v4_outcome",
+   "n_pos": 151,
+   "n_neg": 20,
+   "recall@5": 0.7155,
+   "mrr": 0.879,
+   "ndcg@10": 0.6419,
+   "refusal_accuracy": 0.0,
+   "p50_ms": 0.8,
+   "p95_ms": 1.0
+  },
+  {
+   "persona": "data_analyst",
+   "variant": "v5_multivector",
+   "n_pos": 151,
+   "n_neg": 20,
+   "recall@5": 0.6778,
+   "mrr": 0.8885,
+   "ndcg@10": 0.6311,
+   "refusal_accuracy": 0.0,
+   "p50_ms": 0.6,
+   "p95_ms": 0.8
+  },
+  {
+   "persona": "data_analyst",
+   "variant": "v6_contextual",
+   "n_pos": 151,
+   "n_neg": 20,
+   "recall@5": 0.6815,
+   "mrr": 0.8813,
+   "ndcg@10": 0.6341,
+   "refusal_accuracy": 0.0,
+   "p50_ms": 0.4,
+   "p95_ms": 0.5
+  },
+  {
+   "persona": "data_analyst",
+   "variant": "v7_hyde",
+   "n_pos": 151,
+   "n_neg": 20,
+   "recall@5": 0.6224,
+   "mrr": 0.8018,
+   "ndcg@10": 0.6053,
+   "refusal_accuracy": 0.0,
+   "p50_ms": 1.2,
+   "p95_ms": 1.5
+  },
+  {
+   "persona": "data_analyst",
+   "variant": "v8_corrective",
+   "n_pos": 151,
+   "n_neg": 20,
+   "recall@5": 0.7429,
+   "mrr": 0.9109,
+   "ndcg@10": 0.6934,
+   "refusal_accuracy": 0.65,
+   "p50_ms": 5.6,
+   "p95_ms": 7.2
+  },
+  {
+   "persona": "data_analyst",
+   "variant": "v9_skill_graph",
+   "n_pos": 151,
+   "n_neg": 20,
+   "recall@5": 0.787,
+   "mrr": 0.9012,
+   "ndcg@10": 0.7549,
+   "refusal_accuracy": 0.0,
+   "p50_ms": 3.0,
+   "p95_ms": 3.9
+  }
+ ],
+ "summary": {
+  "best": {
+   "recall@5": 0.7417,
+   "mrr": 0.889,
+   "ndcg@10": 0.7382,
+   "p95_ms": 14.3333,
+   "refusal_accuracy": 0.6167
+  },
+  "v0_naive": {
+   "recall@5": 0.5538,
+   "mrr": 0.8005,
+   "ndcg@10": 0.5547,
+   "p95_ms": 0.2,
+   "refusal_accuracy": 0.0
+  },
+  "v1_decompose": {
+   "recall@5": 0.5526,
+   "mrr": 0.7743,
+   "ndcg@10": 0.5635,
+   "p95_ms": 1.1,
+   "refusal_accuracy": 0.0
+  },
+  "v2_hybrid": {
+   "recall@5": 0.6341,
+   "mrr": 0.848,
+   "ndcg@10": 0.632,
+   "p95_ms": 0.5,
+   "refusal_accuracy": 0.0
+  },
+  "v3_rerank": {
+   "recall@5": 0.6819,
+   "mrr": 0.9166,
+   "ndcg@10": 0.7003,
+   "p95_ms": 1.0,
+   "refusal_accuracy": 0.0
+  },
+  "v4_outcome": {
+   "recall@5": 0.6394,
+   "mrr": 0.8468,
+   "ndcg@10": 0.6269,
+   "p95_ms": 0.9667,
+   "refusal_accuracy": 0.0
+  },
+  "v5_multivector": {
+   "recall@5": 0.6082,
+   "mrr": 0.852,
+   "ndcg@10": 0.6099,
+   "p95_ms": 0.8,
+   "refusal_accuracy": 0.0
+  },
+  "v6_contextual": {
+   "recall@5": 0.6247,
+   "mrr": 0.8588,
+   "ndcg@10": 0.6327,
+   "p95_ms": 0.5,
+   "refusal_accuracy": 0.0
+  },
+  "v7_hyde": {
+   "recall@5": 0.5484,
+   "mrr": 0.8003,
+   "ndcg@10": 0.5762,
+   "p95_ms": 1.5,
+   "refusal_accuracy": 0.0
+  },
+  "v8_corrective": {
+   "recall@5": 0.6967,
+   "mrr": 0.883,
+   "ndcg@10": 0.6962,
+   "p95_ms": 9.0333,
+   "refusal_accuracy": 0.6167
+  },
+  "v9_skill_graph": {
+   "recall@5": 0.7763,
+   "mrr": 0.9271,
+   "ndcg@10": 0.7913,
+   "p95_ms": 4.0333,
+   "refusal_accuracy": 0.0
+  }
+ },
+ "description": {
+  "best": "Shipped composition (agent/config.yaml rag.best)",
+  "v0_naive": "Naive dense: fixed chunks, top-k cosine on the whole post",
+  "v1_decompose": "Requirement decomposition",
+  "v2_hybrid": "Hybrid BM25 + dense with RRF",
+  "v3_rerank": "Hybrid + cross-encoder rerank",
+  "v4_outcome": "Outcome-aware ranking",
+  "v5_multivector": "Multi-vector items",
+  "v6_contextual": "Contextual retrieval",
+  "v7_hyde": "HyDE",
+  "v8_corrective": "Corrective RAG loop",
+  "v9_skill_graph": "Skill graph (GraphRAG)"
+ }
+}

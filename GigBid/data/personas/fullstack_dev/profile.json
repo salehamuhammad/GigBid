@@ -1,0 +1,40 @@
+{
+  "persona": "fullstack_dev",
+  "name": "Daniel Okafor (synthetic)",
+  "headline": "Full-stack web developer - React, Next.js, Node and Python back ends",
+  "skills": [
+    "AWS",
+    "CI/CD",
+    "Celery",
+    "Django",
+    "Docker",
+    "Elasticsearch",
+    "FastAPI",
+    "GraphQL",
+    "MongoDB",
+    "Next.js",
+    "Node.js",
+    "OAuth",
+    "Playwright",
+    "PostgreSQL",
+    "Prisma",
+    "React",
+    "React Native",
+    "Redis",
+    "Stripe",
+    "Tailwind CSS",
+    "TypeScript",
+    "WebSockets"
+  ],
+  "floor_rate": 30,
+  "target_rate": 48,
+  "min_project": 250,
+  "categories": [
+    "web_app",
+    "ecommerce",
+    "api_backend",
+    "mobile",
+    "devops"
+  ],
+  "provenance": "synthetic"
+}

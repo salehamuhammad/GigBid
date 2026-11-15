@@ -1,0 +1,375 @@
+{
+ "PyTorch": {
+  "aliases": [
+   "torch"
+  ]
+ },
+ "Transformers": {
+  "aliases": [
+   "Hugging Face",
+   "HF Transformers"
+  ]
+ },
+ "LangGraph": {
+  "aliases": [
+   "LangChain",
+   "agent orchestration"
+  ]
+ },
+ "RAG": {
+  "aliases": [
+   "retrieval augmented generation",
+   "document Q&A"
+  ]
+ },
+ "FAISS": {
+  "aliases": [
+   "vector search",
+   "Pinecone",
+   "vector database"
+  ]
+ },
+ "LLM fine-tuning": {
+  "aliases": [
+   "LoRA",
+   "PEFT",
+   "QLoRA"
+  ]
+ },
+ "scikit-learn": {
+  "aliases": [
+   "sklearn"
+  ]
+ },
+ "XGBoost": {
+  "aliases": [
+   "gradient boosting",
+   "LightGBM"
+  ]
+ },
+ "OpenCV": {
+  "aliases": [
+   "image processing"
+  ]
+ },
+ "YOLO": {
+  "aliases": [
+   "object detection",
+   "Ultralytics"
+  ]
+ },
+ "MLflow": {
+  "aliases": [
+   "experiment tracking",
+   "model registry"
+  ]
+ },
+ "Whisper": {
+  "aliases": [
+   "speech-to-text",
+   "ASR"
+  ]
+ },
+ "NLP": {
+  "aliases": [
+   "text classification",
+   "natural language processing"
+  ]
+ },
+ "Time-series forecasting": {
+  "aliases": [
+   "Prophet",
+   "demand forecasting"
+  ]
+ },
+ "SageMaker": {
+  "aliases": [
+   "AWS SageMaker",
+   "AWS ML"
+  ]
+ },
+ "Model evaluation": {
+  "aliases": [
+   "evaluation harness",
+   "LLM evals"
+  ]
+ },
+ "Python": {
+  "aliases": [
+   "python3"
+  ]
+ },
+ "FastAPI": {
+  "aliases": [
+   "Python REST API"
+  ]
+ },
+ "Docker": {
+  "aliases": [
+   "containers",
+   "containerization"
+  ]
+ },
+ "PostgreSQL": {
+  "aliases": [
+   "Postgres"
+  ]
+ },
+ "Redis": {
+  "aliases": [
+   "caching"
+  ]
+ },
+ "Celery": {
+  "aliases": [
+   "background jobs",
+   "task queue"
+  ]
+ },
+ "AWS": {
+  "aliases": [
+   "Amazon Web Services",
+   "EC2",
+   "S3"
+  ]
+ },
+ "CI/CD": {
+  "aliases": [
+   "GitHub Actions",
+   "continuous deployment"
+  ]
+ },
+ "SQL": {
+  "aliases": [
+   "queries"
+  ]
+ },
+ "React": {
+  "aliases": [
+   "React.js",
+   "ReactJS"
+  ]
+ },
+ "Next.js": {
+  "aliases": [
+   "NextJS",
+   "server-side rendering"
+  ]
+ },
+ "TypeScript": {
+  "aliases": [
+   "TS"
+  ]
+ },
+ "Node.js": {
+  "aliases": [
+   "Node",
+   "Express"
+  ]
+ },
+ "Django": {
+  "aliases": [
+   "Django REST Framework",
+   "DRF"
+  ]
+ },
+ "MongoDB": {
+  "aliases": [
+   "NoSQL"
+  ]
+ },
+ "Stripe": {
+  "aliases": [
+   "payments",
+   "payment integration"
+  ]
+ },
+ "GraphQL": {
+  "aliases": [
+   "Apollo"
+  ]
+ },
+ "Tailwind CSS": {
+  "aliases": [
+   "Tailwind"
+  ]
+ },
+ "WebSockets": {
+  "aliases": [
+   "real-time",
+   "Socket.IO"
+  ]
+ },
+ "Playwright": {
+  "aliases": [
+   "end-to-end tests",
+   "E2E testing"
+  ]
+ },
+ "React Native": {
+  "aliases": [
+   "mobile app",
+   "Expo"
+  ]
+ },
+ "OAuth": {
+  "aliases": [
+   "authentication",
+   "SSO"
+  ]
+ },
+ "Elasticsearch": {
+  "aliases": [
+   "full-text search"
+  ]
+ },
+ "Prisma": {
+  "aliases": [
+   "ORM"
+  ]
+ },
+ "pandas": {
+  "aliases": [
+   "dataframes"
+  ]
+ },
+ "Power BI": {
+  "aliases": [
+   "PowerBI",
+   "DAX"
+  ]
+ },
+ "Tableau": {
+  "aliases": [
+   "Tableau dashboards"
+  ]
+ },
+ "Excel": {
+  "aliases": [
+   "spreadsheets",
+   "pivot tables"
+  ]
+ },
+ "dbt": {
+  "aliases": [
+   "data build tool",
+   "analytics engineering"
+  ]
+ },
+ "BigQuery": {
+  "aliases": [
+   "Google BigQuery",
+   "GCP"
+  ]
+ },
+ "Snowflake": {
+  "aliases": [
+   "data warehouse"
+  ]
+ },
+ "Looker Studio": {
+  "aliases": [
+   "Google Data Studio"
+  ]
+ },
+ "A/B testing": {
+  "aliases": [
+   "experimentation",
+   "split testing"
+  ]
+ },
+ "Statistics": {
+  "aliases": [
+   "statistical analysis",
+   "regression analysis"
+  ]
+ },
+ "Airflow": {
+  "aliases": [
+   "ETL",
+   "data pipelines"
+  ]
+ },
+ "GA4": {
+  "aliases": [
+   "Google Analytics"
+  ]
+ },
+ "Cohort analysis": {
+  "aliases": [
+   "retention analysis"
+  ]
+ },
+ "Data cleaning": {
+  "aliases": [
+   "data wrangling"
+  ]
+ },
+ "Data visualization": {
+  "aliases": [
+   "charts",
+   "Plotly",
+   "Matplotlib"
+  ]
+ },
+ "R": {
+  "aliases": [
+   "RStudio",
+   "tidyverse"
+  ]
+ },
+ "Figma": {
+  "aliases": []
+ },
+ "Adobe Illustrator": {
+  "aliases": []
+ },
+ "Branding": {
+  "aliases": []
+ },
+ "Logo design": {
+  "aliases": []
+ },
+ "Adobe Premiere": {
+  "aliases": []
+ },
+ "After Effects": {
+  "aliases": []
+ },
+ "Motion graphics": {
+  "aliases": []
+ },
+ "Copywriting": {
+  "aliases": []
+ },
+ "SEO writing": {
+  "aliases": []
+ },
+ "Content strategy": {
+  "aliases": []
+ },
+ "Solidity": {
+  "aliases": []
+ },
+ "Web3": {
+  "aliases": []
+ },
+ "Smart contracts": {
+  "aliases": []
+ },
+ "Rust": {
+  "aliases": []
+ },
+ "WordPress": {
+  "aliases": []
+ },
+ "PHP": {
+  "aliases": []
+ },
+ "Elementor": {
+  "aliases": []
+ },
+ "WooCommerce": {
+  "aliases": []
+ }
+}

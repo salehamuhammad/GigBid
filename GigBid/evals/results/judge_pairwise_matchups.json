@@ -1,0 +1,17 @@
+{
+  "source_votes": "judge_ai_review.json",
+  "source_blinding": "judge_blinding_manifest.json",
+  "pairs": 15,
+  "matchups": {
+    "architecture_alt_50:graph vs architecture_open_50:graph": {
+      "win: architecture_open_50:graph": 5
+    },
+    "architecture_open_50:graph vs architecture_open_50:react": {
+      "order_sensitive": 3,
+      "win: architecture_open_50:react": 1
+    },
+    "architecture_alt_50:graph vs architecture_open_50:react": {
+      "win: architecture_open_50:react": 6
+    }
+  }
+}

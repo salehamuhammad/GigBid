@@ -1,0 +1,3982 @@
+{
+ "env": {
+  "model_profile": "open",
+  "embeddings": {
+   "provider": "fastembed",
+   "model": "BAAI/bge-small-en-v1.5"
+  },
+  "reranker": {
+   "provider": "fastembed",
+   "model": "BAAI/bge-reranker-base"
+  },
+  "deployed_variant": "best",
+  "at": "2026-11-15 09:20:08"
+ },
+ "fine": {
+  "n": 40,
+  "errors": 0,
+  "tool_selection_accuracy": 0.85,
+  "argument_accuracy": 0.775,
+  "tokens_per_task": 780.875,
+  "token_samples": 40,
+  "rows": [
+   {
+    "task_id": 1,
+    "ask": "Is client cl-0134 trustworthy? Check their history.",
+    "expected": {
+     "persona": "fullstack_dev",
+     "ask": "Is client cl-0134 trustworthy? Check their history.",
+     "tool": "get_client_history",
+     "args": {
+      "client_id": "cl-0134"
+     }
+    },
+    "called": "get_client_history",
+    "arguments": {
+     "client_id": "cl-0134"
+    },
+    "tool_ok": true,
+    "args_ok": true,
+    "usage": {
+     "input_tokens": 718,
+     "output_tokens": 52,
+     "total_tokens": 770,
+     "input_token_details": {
+      "cache_read": 512
+     },
+     "output_token_details": {
+      "reasoning": 20
+     }
+    },
+    "model": "openai/gpt-oss-120b",
+    "requested_model": "openai/gpt-oss-120b",
+    "latency_s": 0.948,
+    "error": null,
+    "estimated_cost_usd": 0.000139
+   },
+   {
+    "task_id": 2,
+    "ask": "Do I have portfolio proof of Data cleaning?",
+    "expected": {
+     "persona": "data_analyst",
+     "ask": "Do I have portfolio proof of Data cleaning?",
+     "tool": "search_evidence",
+     "args_contains": {
+      "requirement": "Data cleaning"
+     }
+    },
+    "called": "list_workspace_items",
+    "arguments": {},
+    "tool_ok": false,
+    "args_ok": false,
+    "usage": {
+     "input_tokens": 715,
+     "output_tokens": 102,
+     "total_tokens": 817,
+     "input_token_details": {
+      "cache_read": 512
+     },
+     "output_token_details": {
+      "reasoning": 82
+     }
+    },
+    "model": "openai/gpt-oss-120b",
+    "requested_model": "openai/gpt-oss-120b",
+    "latency_s": 0.417,
+    "error": null,
+    "estimated_cost_usd": 0.000168
+   },
+   {
+    "task_id": 3,
+    "ask": "Show me the full post for job dev-fu-01795.",
+    "expected": {
+     "persona": "fullstack_dev",
+     "ask": "Show me the full post for job dev-fu-01795.",
+     "tool": "get_job",
+     "args": {
+      "job_id": "dev-fu-01795"
+     }
+    },
+    "called": "get_job",
+    "arguments": {
+     "job_id": "dev-fu-01795"
+    },
+    "tool_ok": true,
+    "args_ok": true,
+    "usage": {
+     "input_tokens": 720,
+     "output_tokens": 53,
+     "total_tokens": 773,
+     "input_token_details": {
+      "cache_read": 512
+     },
+     "output_token_details": {
+      "reasoning": 20
+     }
+    },
+    "model": "openai/gpt-oss-120b",
+    "requested_model": "openai/gpt-oss-120b",
+    "latency_s": 0.32,
+    "error": null,
+    "estimated_cost_usd": 0.00014
+   },
+   {
+    "task_id": 4,
+    "ask": "What do computer vision jobs usually pay?",
+    "expected": {
+     "persona": "ai_engineer",
+     "ask": "What do computer vision jobs usually pay?",
+     "tool": "get_market_stats",
+     "args": {
+      "category": "computer_vision"
+     }
+    },
+    "called": "get_market_stats",
+    "arguments": {
+     "category": "computer vision"
+    },
+    "tool_ok": true,
+    "args_ok": false,
+    "usage": {
+     "input_tokens": 714,
+     "output_tokens": 82,
+     "total_tokens": 796,
+     "input_token_details": {
+      "cache_read": 512
+     },
+     "output_token_details": {
+      "reasoning": 53
+     }
+    },
+    "model": "openai/gpt-oss-120b",
+    "requested_model": "openai/gpt-oss-120b",
+    "latency_s": 0.405,
+    "error": null,
+    "estimated_cost_usd": 0.000156
+   },
+   {
+    "task_id": 5,
+    "ask": "Is client cl-0014 trustworthy? Check their history.",
+    "expected": {
+     "persona": "ai_engineer",
+     "ask": "Is client cl-0014 trustworthy? Check their history.",
+     "tool": "get_client_history",
+     "args": {
+      "client_id": "cl-0014"
+     }
+    },
+    "called": "get_client_history",
+    "arguments": {
+     "client_id": "cl-0014"
+    },
+    "tool_ok": true,
+    "args_ok": true,
+    "usage": {
+     "input_tokens": 718,
+     "output_tokens": 52,
+     "total_tokens": 770,
+     "input_token_details": {
+      "cache_read": 512
+     },
+     "output_token_details": {
+      "reasoning": 20
+     }
+    },
+    "model": "openai/gpt-oss-120b",
+    "requested_model": "openai/gpt-oss-120b",
+    "latency_s": 0.331,
+    "error": null,
+    "estimated_cost_usd": 0.000139
+   },
+   {
+    "task_id": 6,
+    "ask": "Do I have portfolio proof of NLP?",
+    "expected": {
+     "persona": "ai_engineer",
+     "ask": "Do I have portfolio proof of NLP?",
+     "tool": "search_evidence",
+     "args_contains": {
+      "requirement": "NLP"
+     }
+    },
+    "called": "list_workspace_items",
+    "arguments": {
+     "": {}
+    },
+    "tool_ok": false,
+    "args_ok": false,
+    "usage": {
+     "input_tokens": 714,
+     "output_tokens": 111,
+     "total_tokens": 825,
+     "input_token_details": {
+      "cache_read": 512
+     },
+     "output_token_details": {
+      "reasoning": 86
+     }
+    },
+    "model": "openai/gpt-oss-120b",
+    "requested_model": "openai/gpt-oss-120b",
+    "latency_s": 0.42,
+    "error": null,
+    "estimated_cost_usd": 0.000174
+   },
+   {
+    "task_id": 7,
+    "ask": "What do computer vision jobs usually pay?",
+    "expected": {
+     "persona": "data_analyst",
+     "ask": "What do computer vision jobs usually pay?",
+     "tool": "get_market_stats",
+     "args": {
+      "category": "computer_vision"
+     }
+    },
+    "called": "get_market_stats",
+    "arguments": {
+     "category": "Computer Vision"
+    },
+    "tool_ok": true,
+    "args_ok": false,
+    "usage": {
+     "input_tokens": 714,
+     "output_tokens": 103,
+     "total_tokens": 817,
+     "input_token_details": {
+      "cache_read": 512
+     },
+     "output_token_details": {
+      "reasoning": 74
+     }
+    },
+    "model": "openai/gpt-oss-120b",
+    "requested_model": "openai/gpt-oss-120b",
+    "latency_s": 2.134,
+    "error": null,
+    "estimated_cost_usd": 0.000169
+   },
+   {
+    "task_id": 8,
+    "ask": "What do wordpress jobs usually pay?",
+    "expected": {
+     "persona": "ai_engineer",
+     "ask": "What do wordpress jobs usually pay?",
+     "tool": "get_market_stats",
+     "args": {
+      "category": "wordpress"
+     }
+    },
+    "called": "get_market_stats",
+    "arguments": {
+     "category": "WordPress"
+    },
+    "tool_ok": true,
+    "args_ok": false,
+    "usage": {
+     "input_tokens": 713,
+     "output_tokens": 91,
+     "total_tokens": 804,
+     "input_token_details": {
+      "cache_read": 512
+     },
+     "output_token_details": {
+      "reasoning": 62
+     }
+    },
+    "model": "openai/gpt-oss-120b",
+    "requested_model": "openai/gpt-oss-120b",
+    "latency_s": 0.427,
+    "error": null,
+    "estimated_cost_usd": 0.000162
+   },
+   {
+    "task_id": 9,
+    "ask": "Show me the full post for job dev-fu-01739.",
+    "expected": {
+     "persona": "fullstack_dev",
+     "ask": "Show me the full post for job dev-fu-01739.",
+     "tool": "get_job",
+     "args": {
+      "job_id": "dev-fu-01739"
+     }
+    },
+    "called": "get_job",
+    "arguments": {
+     "job_id": "dev-fu-01739"
+    },
+    "tool_ok": true,
+    "args_ok": true,
+    "usage": {
+     "input_tokens": 720,
+     "output_tokens": 53,
+     "total_tokens": 773,
+     "input_token_details": {
+      "cache_read": 512
+     },
+     "output_token_details": {
+      "reasoning": 20
+     }
+    },
+    "model": "openai/gpt-oss-120b",
+    "requested_model": "openai/gpt-oss-120b",
+    "latency_s": 0.3,
+    "error": null,
+    "estimated_cost_usd": 0.00014
+   },
+   {
+    "task_id": 10,
+    "ask": "Is client cl-0198 trustworthy? Check their history.",
+    "expected": {
+     "persona": "fullstack_dev",
+     "ask": "Is client cl-0198 trustworthy? Check their history.",
+     "tool": "get_client_history",
+     "args": {
+      "client_id": "cl-0198"
+     }
+    },
+    "called": "get_client_history",
+    "arguments": {
+     "client_id": "cl-0198"
+    },
+    "tool_ok": true,
+    "args_ok": true,
+    "usage": {
+     "input_tokens": 718,
+     "output_tokens": 52,
+     "total_tokens": 770,
+     "input_token_details": {
+      "cache_read": 512
+     },
+     "output_token_details": {
+      "reasoning": 20
+     }
+    },
+    "model": "openai/gpt-oss-120b",
+    "requested_model": "openai/gpt-oss-120b",
+    "latency_s": 0.303,
+    "error": null,
+    "estimated_cost_usd": 0.000139
+   },
+   {
+    "task_id": 11,
+    "ask": "Show me the full post for job dev-da-01961.",
+    "expected": {
+     "persona": "data_analyst",
+     "ask": "Show me the full post for job dev-da-01961.",
+     "tool": "get_job",
+     "args": {
+      "job_id": "dev-da-01961"
+     }
+    },
+    "called": "get_job",
+    "arguments": {
+     "job_id": "dev-da-01961"
+    },
+    "tool_ok": true,
+    "args_ok": true,
+    "usage": {
+     "input_tokens": 719,
+     "output_tokens": 53,
+     "total_tokens": 772,
+     "input_token_details": {
+      "cache_read": 512
+     },
+     "output_token_details": {
+      "reasoning": 21
+     }
+    },
+    "model": "openai/gpt-oss-120b",
+    "requested_model": "openai/gpt-oss-120b",
+    "latency_s": 0.317,
+    "error": null,
+    "estimated_cost_usd": 0.00014
+   },
+   {
+    "task_id": 12,
+    "ask": "Do I have portfolio proof of AWS?",
+    "expected": {
+     "persona": "ai_engineer",
+     "ask": "Do I have portfolio proof of AWS?",
+     "tool": "search_evidence",
+     "args_contains": {
+      "requirement": "AWS"
+     }
+    },
+    "called": "search_evidence",
+    "arguments": {
+     "requirement": "AWS"
+    },
+    "tool_ok": true,
+    "args_ok": true,
+    "usage": {
+     "input_tokens": 714,
+     "output_tokens": 126,
+     "total_tokens": 840,
+     "input_token_details": {
+      "cache_read": 512
+     },
+     "output_token_details": {
+      "reasoning": 97
+     }
+    },
+    "model": "openai/gpt-oss-120b",
+    "requested_model": "openai/gpt-oss-120b",
+    "latency_s": 0.531,
+    "error": null,
+    "estimated_cost_usd": 0.000183
+   },
+   {
+    "task_id": 13,
+    "ask": "Show me the full post for job dev-fu-01726.",
+    "expected": {
+     "persona": "fullstack_dev",
+     "ask": "Show me the full post for job dev-fu-01726.",
+     "tool": "get_job",
+     "args": {
+      "job_id": "dev-fu-01726"
+     }
+    },
+    "called": "get_job",
+    "arguments": {
+     "job_id": "dev-fu-01726"
+    },
+    "tool_ok": true,
+    "args_ok": true,
+    "usage": {
+     "input_tokens": 720,
+     "output_tokens": 53,
+     "total_tokens": 773,
+     "input_token_details": {
+      "cache_read": 512
+     },
+     "output_token_details": {
+      "reasoning": 20
+     }
+    },
+    "model": "openai/gpt-oss-120b",
+    "requested_model": "openai/gpt-oss-120b",
+    "latency_s": 0.338,
+    "error": null,
+    "estimated_cost_usd": 0.00014
+   },
+   {
+    "task_id": 14,
+    "ask": "Do I have portfolio proof of Adobe Illustrator?",
+    "expected": {
+     "persona": "fullstack_dev",
+     "ask": "Do I have portfolio proof of Adobe Illustrator?",
+     "tool": "search_evidence",
+     "args_contains": {
+      "requirement": "Adobe Illustrator"
+     }
+    },
+    "called": "list_workspace_items",
+    "arguments": {},
+    "tool_ok": false,
+    "args_ok": false,
+    "usage": {
+     "input_tokens": 715,
+     "output_tokens": 91,
+     "total_tokens": 806,
+     "input_token_details": {
+      "cache_read": 512
+     },
+     "output_token_details": {
+      "reasoning": 71
+     }
+    },
+    "model": "openai/gpt-oss-120b",
+    "requested_model": "openai/gpt-oss-120b",
+    "latency_s": 0.946,
+    "error": null,
+    "estimated_cost_usd": 0.000162
+   },
+   {
+    "task_id": 15,
+    "ask": "Do I have portfolio proof of Data visualization?",
+    "expected": {
+     "persona": "data_analyst",
+     "ask": "Do I have portfolio proof of Data visualization?",
+     "tool": "search_evidence",
+     "args_contains": {
+      "requirement": "Data visualization"
+     }
+    },
+    "called": "list_workspace_items",
+    "arguments": {
+     "": {}
+    },
+    "tool_ok": false,
+    "args_ok": false,
+    "usage": {
+     "input_tokens": 715,
+     "output_tokens": 99,
+     "total_tokens": 814,
+     "input_token_details": {
+      "cache_read": 512
+     },
+     "output_token_details": {
+      "reasoning": 74
+     }
+    },
+    "model": "openai/gpt-oss-120b",
+    "requested_model": "openai/gpt-oss-120b",
+    "latency_s": 2.422,
+    "error": null,
+    "estimated_cost_usd": 0.000167
+   },
+   {
+    "task_id": 16,
+    "ask": "Is client cl-0062 trustworthy? Check their history.",
+    "expected": {
+     "persona": "data_analyst",
+     "ask": "Is client cl-0062 trustworthy? Check their history.",
+     "tool": "get_client_history",
+     "args": {
+      "client_id": "cl-0062"
+     }
+    },
+    "called": "get_client_history",
+    "arguments": {
+     "client_id": "cl-0062"
+    },
+    "tool_ok": true,
+    "args_ok": true,
+    "usage": {
+     "input_tokens": 718,
+     "output_tokens": 52,
+     "total_tokens": 770,
+     "input_token_details": {
+      "cache_read": 512
+     },
+     "output_token_details": {
+      "reasoning": 20
+     }
+    },
+    "model": "openai/gpt-oss-120b",
+    "requested_model": "openai/gpt-oss-120b",
+    "latency_s": 0.775,
+    "error": null,
+    "estimated_cost_usd": 0.000139
+   },
+   {
+    "task_id": 17,
+    "ask": "Show me the full post for job dev-ai-01549.",
+    "expected": {
+     "persona": "ai_engineer",
+     "ask": "Show me the full post for job dev-ai-01549.",
+     "tool": "get_job",
+     "args": {
+      "job_id": "dev-ai-01549"
+     }
+    },
+    "called": "get_job",
+    "arguments": {
+     "job_id": "dev-ai-01549"
+    },
+    "tool_ok": true,
+    "args_ok": true,
+    "usage": {
+     "input_tokens": 719,
+     "output_tokens": 52,
+     "total_tokens": 771,
+     "input_token_details": {
+      "cache_read": 512
+     },
+     "output_token_details": {
+      "reasoning": 20
+     }
+    },
+    "model": "openai/gpt-oss-120b",
+    "requested_model": "openai/gpt-oss-120b",
+    "latency_s": 0.352,
+    "error": null,
+    "estimated_cost_usd": 0.000139
+   },
+   {
+    "task_id": 18,
+    "ask": "Is client cl-0227 trustworthy? Check their history.",
+    "expected": {
+     "persona": "data_analyst",
+     "ask": "Is client cl-0227 trustworthy? Check their history.",
+     "tool": "get_client_history",
+     "args": {
+      "client_id": "cl-0227"
+     }
+    },
+    "called": "get_client_history",
+    "arguments": {
+     "client_id": "cl-0227"
+    },
+    "tool_ok": true,
+    "args_ok": true,
+    "usage": {
+     "input_tokens": 718,
+     "output_tokens": 52,
+     "total_tokens": 770,
+     "input_token_details": {
+      "cache_read": 512
+     },
+     "output_token_details": {
+      "reasoning": 20
+     }
+    },
+    "model": "openai/gpt-oss-120b",
+    "requested_model": "openai/gpt-oss-120b",
+    "latency_s": 0.282,
+    "error": null,
+    "estimated_cost_usd": 0.000139
+   },
+   {
+    "task_id": 19,
+    "ask": "Do I have portfolio proof of Elasticsearch?",
+    "expected": {
+     "persona": "fullstack_dev",
+     "ask": "Do I have portfolio proof of Elasticsearch?",
+     "tool": "search_evidence",
+     "args_contains": {
+      "requirement": "Elasticsearch"
+     }
+    },
+    "called": "search_evidence",
+    "arguments": {
+     "k": 10,
+     "requirement": "Elasticsearch"
+    },
+    "tool_ok": true,
+    "args_ok": true,
+    "usage": {
+     "input_tokens": 714,
+     "output_tokens": 91,
+     "total_tokens": 805,
+     "input_token_details": {
+      "cache_read": 512
+     },
+     "output_token_details": {
+      "reasoning": 54
+     }
+    },
+    "model": "openai/gpt-oss-120b",
+    "requested_model": "openai/gpt-oss-120b",
+    "latency_s": 0.554,
+    "error": null,
+    "estimated_cost_usd": 0.000162
+   },
+   {
+    "task_id": 20,
+    "ask": "Show me the full post for job dev-ai-01603.",
+    "expected": {
+     "persona": "ai_engineer",
+     "ask": "Show me the full post for job dev-ai-01603.",
+     "tool": "get_job",
+     "args": {
+      "job_id": "dev-ai-01603"
+     }
+    },
+    "called": "get_job",
+    "arguments": {
+     "job_id": "dev-ai-01603"
+    },
+    "tool_ok": true,
+    "args_ok": true,
+    "usage": {
+     "input_tokens": 719,
+     "output_tokens": 51,
+     "total_tokens": 770,
+     "input_token_details": {
+      "cache_read": 512
+     },
+     "output_token_details": {
+      "reasoning": 19
+     }
+    },
+    "model": "openai/gpt-oss-120b",
+    "requested_model": "openai/gpt-oss-120b",
+    "latency_s": 0.357,
+    "error": null,
+    "estimated_cost_usd": 0.000138
+   },
+   {
+    "task_id": 21,
+    "ask": "How many Connects do I have left?",
+    "expected": {
+     "persona": "data_analyst",
+     "ask": "How many Connects do I have left?",
+     "tool": "get_connects_balance",
+     "args": {}
+    },
+    "called": "get_connects_balance",
+    "arguments": {},
+    "tool_ok": true,
+    "args_ok": true,
+    "usage": {
+     "input_tokens": 715,
+     "output_tokens": 35,
+     "total_tokens": 750,
+     "input_token_details": {
+      "cache_read": 512
+     },
+     "output_token_details": {
+      "reasoning": 14
+     }
+    },
+    "model": "openai/gpt-oss-120b",
+    "requested_model": "openai/gpt-oss-120b",
+    "latency_s": 0.32,
+    "error": null,
+    "estimated_cost_usd": 0.000128
+   },
+   {
+    "task_id": 22,
+    "ask": "Show me the full post for job dev-fu-01717.",
+    "expected": {
+     "persona": "fullstack_dev",
+     "ask": "Show me the full post for job dev-fu-01717.",
+     "tool": "get_job",
+     "args": {
+      "job_id": "dev-fu-01717"
+     }
+    },
+    "called": "get_job",
+    "arguments": {
+     "job_id": "dev-fu-01717"
+    },
+    "tool_ok": true,
+    "args_ok": true,
+    "usage": {
+     "input_tokens": 720,
+     "output_tokens": 55,
+     "total_tokens": 775,
+     "input_token_details": {
+      "cache_read": 512
+     },
+     "output_token_details": {
+      "reasoning": 22
+     }
+    },
+    "model": "openai/gpt-oss-120b",
+    "requested_model": "openai/gpt-oss-120b",
+    "latency_s": 0.406,
+    "error": null,
+    "estimated_cost_usd": 0.000141
+   },
+   {
+    "task_id": 23,
+    "ask": "Show me the full post for job dev-da-02043.",
+    "expected": {
+     "persona": "data_analyst",
+     "ask": "Show me the full post for job dev-da-02043.",
+     "tool": "get_job",
+     "args": {
+      "job_id": "dev-da-02043"
+     }
+    },
+    "called": "get_job",
+    "arguments": {
+     "job_id": "dev-da-02043"
+    },
+    "tool_ok": true,
+    "args_ok": true,
+    "usage": {
+     "input_tokens": 719,
+     "output_tokens": 53,
+     "total_tokens": 772,
+     "input_token_details": {
+      "cache_read": 512
+     },
+     "output_token_details": {
+      "reasoning": 21
+     }
+    },
+    "model": "openai/gpt-oss-120b",
+    "requested_model": "openai/gpt-oss-120b",
+    "latency_s": 0.309,
+    "error": null,
+    "estimated_cost_usd": 0.00014
+   },
+   {
+    "task_id": 24,
+    "ask": "How many Connects do I have left?",
+    "expected": {
+     "persona": "fullstack_dev",
+     "ask": "How many Connects do I have left?",
+     "tool": "get_connects_balance",
+     "args": {}
+    },
+    "called": "get_connects_balance",
+    "arguments": {},
+    "tool_ok": true,
+    "args_ok": true,
+    "usage": {
+     "input_tokens": 715,
+     "output_tokens": 34,
+     "total_tokens": 749,
+     "input_token_details": {
+      "cache_read": 512
+     },
+     "output_token_details": {
+      "reasoning": 13
+     }
+    },
+    "model": "openai/gpt-oss-120b",
+    "requested_model": "openai/gpt-oss-120b",
+    "latency_s": 0.325,
+    "error": null,
+    "estimated_cost_usd": 0.000128
+   },
+   {
+    "task_id": 25,
+    "ask": "Is client cl-0246 trustworthy? Check their history.",
+    "expected": {
+     "persona": "ai_engineer",
+     "ask": "Is client cl-0246 trustworthy? Check their history.",
+     "tool": "get_client_history",
+     "args": {
+      "client_id": "cl-0246"
+     }
+    },
+    "called": "get_client_history",
+    "arguments": {
+     "client_id": "cl-0246"
+    },
+    "tool_ok": true,
+    "args_ok": true,
+    "usage": {
+     "input_tokens": 718,
+     "output_tokens": 52,
+     "total_tokens": 770,
+     "input_token_details": {
+      "cache_read": 512
+     },
+     "output_token_details": {
+      "reasoning": 20
+     }
+    },
+    "model": "openai/gpt-oss-120b",
+    "requested_model": "openai/gpt-oss-120b",
+    "latency_s": 0.433,
+    "error": null,
+    "estimated_cost_usd": 0.000139
+   },
+   {
+    "task_id": 26,
+    "ask": "Is client cl-0092 trustworthy? Check their history.",
+    "expected": {
+     "persona": "ai_engineer",
+     "ask": "Is client cl-0092 trustworthy? Check their history.",
+     "tool": "get_client_history",
+     "args": {
+      "client_id": "cl-0092"
+     }
+    },
+    "called": "get_client_history",
+    "arguments": {
+     "client_id": "cl-0092"
+    },
+    "tool_ok": true,
+    "args_ok": true,
+    "usage": {
+     "input_tokens": 718,
+     "output_tokens": 52,
+     "total_tokens": 770,
+     "input_token_details": {
+      "cache_read": 512
+     },
+     "output_token_details": {
+      "reasoning": 20
+     }
+    },
+    "model": "openai/gpt-oss-120b",
+    "requested_model": "openai/gpt-oss-120b",
+    "latency_s": 0.605,
+    "error": null,
+    "estimated_cost_usd": 0.000139
+   },
+   {
+    "task_id": 27,
+    "ask": "What do ml modeling jobs usually pay?",
+    "expected": {
+     "persona": "ai_engineer",
+     "ask": "What do ml modeling jobs usually pay?",
+     "tool": "get_market_stats",
+     "args": {
+      "category": "ml_modeling"
+     }
+    },
+    "called": "search_jobs",
+    "arguments": {
+     "limit": 5,
+     "query": "machine learning engineer salary"
+    },
+    "tool_ok": false,
+    "args_ok": false,
+    "usage": {
+     "input_tokens": 714,
+     "output_tokens": 93,
+     "total_tokens": 807,
+     "input_token_details": {
+      "cache_read": 512
+     },
+     "output_token_details": {
+      "reasoning": 56
+     }
+    },
+    "model": "openai/gpt-oss-120b",
+    "requested_model": "openai/gpt-oss-120b",
+    "latency_s": 0.482,
+    "error": null,
+    "estimated_cost_usd": 0.000163
+   },
+   {
+    "task_id": 28,
+    "ask": "Show me the full post for job dev-ai-01598.",
+    "expected": {
+     "persona": "ai_engineer",
+     "ask": "Show me the full post for job dev-ai-01598.",
+     "tool": "get_job",
+     "args": {
+      "job_id": "dev-ai-01598"
+     }
+    },
+    "called": "get_job",
+    "arguments": {
+     "job_id": "dev-ai-01598"
+    },
+    "tool_ok": true,
+    "args_ok": true,
+    "usage": {
+     "input_tokens": 719,
+     "output_tokens": 52,
+     "total_tokens": 771,
+     "input_token_details": {
+      "cache_read": 512
+     },
+     "output_token_details": {
+      "reasoning": 20
+     }
+    },
+    "model": "openai/gpt-oss-120b",
+    "requested_model": "openai/gpt-oss-120b",
+    "latency_s": 0.562,
+    "error": null,
+    "estimated_cost_usd": 0.000139
+   },
+   {
+    "task_id": 29,
+    "ask": "Show me the full post for job dev-ai-01636.",
+    "expected": {
+     "persona": "ai_engineer",
+     "ask": "Show me the full post for job dev-ai-01636.",
+     "tool": "get_job",
+     "args": {
+      "job_id": "dev-ai-01636"
+     }
+    },
+    "called": "get_job",
+    "arguments": {
+     "job_id": "dev-ai-01636"
+    },
+    "tool_ok": true,
+    "args_ok": true,
+    "usage": {
+     "input_tokens": 719,
+     "output_tokens": 51,
+     "total_tokens": 770,
+     "input_token_details": {
+      "cache_read": 512
+     },
+     "output_token_details": {
+      "reasoning": 19
+     }
+    },
+    "model": "openai/gpt-oss-120b",
+    "requested_model": "openai/gpt-oss-120b",
+    "latency_s": 0.404,
+    "error": null,
+    "estimated_cost_usd": 0.000138
+   },
+   {
+    "task_id": 30,
+    "ask": "Is client cl-0207 trustworthy? Check their history.",
+    "expected": {
+     "persona": "fullstack_dev",
+     "ask": "Is client cl-0207 trustworthy? Check their history.",
+     "tool": "get_client_history",
+     "args": {
+      "client_id": "cl-0207"
+     }
+    },
+    "called": "get_client_history",
+    "arguments": {
+     "client_id": "cl-0207"
+    },
+    "tool_ok": true,
+    "args_ok": true,
+    "usage": {
+     "input_tokens": 718,
+     "output_tokens": 52,
+     "total_tokens": 770,
+     "input_token_details": {
+      "cache_read": 512
+     },
+     "output_token_details": {
+      "reasoning": 20
+     }
+    },
+    "model": "openai/gpt-oss-120b",
+    "requested_model": "openai/gpt-oss-120b",
+    "latency_s": 0.52,
+    "error": null,
+    "estimated_cost_usd": 0.000139
+   },
+   {
+    "task_id": 31,
+    "ask": "How many Connects do I have left?",
+    "expected": {
+     "persona": "data_analyst",
+     "ask": "How many Connects do I have left?",
+     "tool": "get_connects_balance",
+     "args": {}
+    },
+    "called": "get_connects_balance",
+    "arguments": {},
+    "tool_ok": true,
+    "args_ok": true,
+    "usage": {
+     "input_tokens": 715,
+     "output_tokens": 31,
+     "total_tokens": 746,
+     "input_token_details": {
+      "cache_read": 512
+     },
+     "output_token_details": {
+      "reasoning": 10
+     }
+    },
+    "model": "openai/gpt-oss-120b",
+    "requested_model": "openai/gpt-oss-120b",
+    "latency_s": 0.387,
+    "error": null,
+    "estimated_cost_usd": 0.000126
+   },
+   {
+    "task_id": 32,
+    "ask": "Show me the full post for job dev-ai-01627.",
+    "expected": {
+     "persona": "ai_engineer",
+     "ask": "Show me the full post for job dev-ai-01627.",
+     "tool": "get_job",
+     "args": {
+      "job_id": "dev-ai-01627"
+     }
+    },
+    "called": "get_job",
+    "arguments": {
+     "job_id": "dev-ai-01627"
+    },
+    "tool_ok": true,
+    "args_ok": true,
+    "usage": {
+     "input_tokens": 719,
+     "output_tokens": 51,
+     "total_tokens": 770,
+     "input_token_details": {
+      "cache_read": 512
+     },
+     "output_token_details": {
+      "reasoning": 19
+     }
+    },
+    "model": "openai/gpt-oss-120b",
+    "requested_model": "openai/gpt-oss-120b",
+    "latency_s": 0.396,
+    "error": null,
+    "estimated_cost_usd": 0.000138
+   },
+   {
+    "task_id": 33,
+    "ask": "How many Connects do I have left?",
+    "expected": {
+     "persona": "data_analyst",
+     "ask": "How many Connects do I have left?",
+     "tool": "get_connects_balance",
+     "args": {}
+    },
+    "called": "get_connects_balance",
+    "arguments": {},
+    "tool_ok": true,
+    "args_ok": true,
+    "usage": {
+     "input_tokens": 715,
+     "output_tokens": 36,
+     "total_tokens": 751,
+     "input_token_details": {
+      "cache_read": 512
+     },
+     "output_token_details": {
+      "reasoning": 15
+     }
+    },
+    "model": "openai/gpt-oss-120b",
+    "requested_model": "openai/gpt-oss-120b",
+    "latency_s": 3.036,
+    "error": null,
+    "estimated_cost_usd": 0.000129
+   },
+   {
+    "task_id": 34,
+    "ask": "Show me the full post for job dev-da-01975.",
+    "expected": {
+     "persona": "data_analyst",
+     "ask": "Show me the full post for job dev-da-01975.",
+     "tool": "get_job",
+     "args": {
+      "job_id": "dev-da-01975"
+     }
+    },
+    "called": "get_job",
+    "arguments": {
+     "job_id": "dev-da-01975"
+    },
+    "tool_ok": true,
+    "args_ok": true,
+    "usage": {
+     "input_tokens": 719,
+     "output_tokens": 51,
+     "total_tokens": 770,
+     "input_token_details": {
+      "cache_read": 512
+     },
+     "output_token_details": {
+      "reasoning": 19
+     }
+    },
+    "model": "openai/gpt-oss-120b",
+    "requested_model": "openai/gpt-oss-120b",
+    "latency_s": 0.43,
+    "error": null,
+    "estimated_cost_usd": 0.000138
+   },
+   {
+    "task_id": 35,
+    "ask": "How many Connects do I have left?",
+    "expected": {
+     "persona": "fullstack_dev",
+     "ask": "How many Connects do I have left?",
+     "tool": "get_connects_balance",
+     "args": {}
+    },
+    "called": "get_connects_balance",
+    "arguments": {},
+    "tool_ok": true,
+    "args_ok": true,
+    "usage": {
+     "input_tokens": 715,
+     "output_tokens": 31,
+     "total_tokens": 746,
+     "input_token_details": {
+      "cache_read": 512
+     },
+     "output_token_details": {
+      "reasoning": 10
+     }
+    },
+    "model": "openai/gpt-oss-120b",
+    "requested_model": "openai/gpt-oss-120b",
+    "latency_s": 1.042,
+    "error": null,
+    "estimated_cost_usd": 0.000126
+   },
+   {
+    "task_id": 36,
+    "ask": "Do I have portfolio proof of Elementor?",
+    "expected": {
+     "persona": "data_analyst",
+     "ask": "Do I have portfolio proof of Elementor?",
+     "tool": "search_evidence",
+     "args_contains": {
+      "requirement": "Elementor"
+     }
+    },
+    "called": "search_evidence",
+    "arguments": {
+     "k": 5,
+     "requirement": "Elementor portfolio proof"
+    },
+    "tool_ok": true,
+    "args_ok": true,
+    "usage": {
+     "input_tokens": 714,
+     "output_tokens": 101,
+     "total_tokens": 815,
+     "input_token_details": {
+      "cache_read": 512
+     },
+     "output_token_details": {
+      "reasoning": 62
+     }
+    },
+    "model": "openai/gpt-oss-120b",
+    "requested_model": "openai/gpt-oss-120b",
+    "latency_s": 1.836,
+    "error": null,
+    "estimated_cost_usd": 0.000168
+   },
+   {
+    "task_id": 37,
+    "ask": "How many Connects do I have left?",
+    "expected": {
+     "persona": "data_analyst",
+     "ask": "How many Connects do I have left?",
+     "tool": "get_connects_balance",
+     "args": {}
+    },
+    "called": "get_connects_balance",
+    "arguments": {},
+    "tool_ok": true,
+    "args_ok": true,
+    "usage": {
+     "input_tokens": 715,
+     "output_tokens": 36,
+     "total_tokens": 751,
+     "input_token_details": {
+      "cache_read": 512
+     },
+     "output_token_details": {
+      "reasoning": 15
+     }
+    },
+    "model": "openai/gpt-oss-120b",
+    "requested_model": "openai/gpt-oss-120b",
+    "latency_s": 1.31,
+    "error": null,
+    "estimated_cost_usd": 0.000129
+   },
+   {
+    "task_id": 38,
+    "ask": "Is client cl-0112 trustworthy? Check their history.",
+    "expected": {
+     "persona": "ai_engineer",
+     "ask": "Is client cl-0112 trustworthy? Check their history.",
+     "tool": "get_client_history",
+     "args": {
+      "client_id": "cl-0112"
+     }
+    },
+    "called": "get_client_history",
+    "arguments": {
+     "client_id": "cl-0112"
+    },
+    "tool_ok": true,
+    "args_ok": true,
+    "usage": {
+     "input_tokens": 718,
+     "output_tokens": 52,
+     "total_tokens": 770,
+     "input_token_details": {
+      "cache_read": 512
+     },
+     "output_token_details": {
+      "reasoning": 20
+     }
+    },
+    "model": "openai/gpt-oss-120b",
+    "requested_model": "openai/gpt-oss-120b",
+    "latency_s": 0.557,
+    "error": null,
+    "estimated_cost_usd": 0.000139
+   },
+   {
+    "task_id": 39,
+    "ask": "Do I have portfolio proof of Celery?",
+    "expected": {
+     "persona": "fullstack_dev",
+     "ask": "Do I have portfolio proof of Celery?",
+     "tool": "search_evidence",
+     "args_contains": {
+      "requirement": "Celery"
+     }
+    },
+    "called": "get_case_study",
+    "arguments": {
+     "id": "celery"
+    },
+    "tool_ok": false,
+    "args_ok": false,
+    "usage": {
+     "input_tokens": 715,
+     "output_tokens": 121,
+     "total_tokens": 836,
+     "input_token_details": {
+      "cache_read": 512
+     },
+     "output_token_details": {
+      "reasoning": 91
+     }
+    },
+    "model": "openai/gpt-oss-120b",
+    "requested_model": "openai/gpt-oss-120b",
+    "latency_s": 0.491,
+    "error": null,
+    "estimated_cost_usd": 0.00018
+   },
+   {
+    "task_id": 40,
+    "ask": "Show me the full post for job dev-ai-01630.",
+    "expected": {
+     "persona": "ai_engineer",
+     "ask": "Show me the full post for job dev-ai-01630.",
+     "tool": "get_job",
+     "args": {
+      "job_id": "dev-ai-01630"
+     }
+    },
+    "called": "get_job",
+    "arguments": {
+     "job_id": "dev-ai-01630"
+    },
+    "tool_ok": true,
+    "args_ok": true,
+    "usage": {
+     "input_tokens": 719,
+     "output_tokens": 51,
+     "total_tokens": 770,
+     "input_token_details": {
+      "cache_read": 512
+     },
+     "output_token_details": {
+      "reasoning": 19
+     }
+    },
+    "model": "openai/gpt-oss-120b",
+    "requested_model": "openai/gpt-oss-120b",
+    "latency_s": 0.313,
+    "error": null,
+    "estimated_cost_usd": 0.000138
+   }
+  ]
+ },
+ "coarse": {
+  "n": 40,
+  "errors": 8,
+  "tool_selection_accuracy": 0.7,
+  "argument_accuracy": 0.675,
+  "tokens_per_task": 531.7812,
+  "token_samples": 32,
+  "rows": [
+   {
+    "task_id": 1,
+    "ask": "Is client cl-0134 trustworthy? Check their history.",
+    "expected": {
+     "persona": "fullstack_dev",
+     "ask": "Is client cl-0134 trustworthy? Check their history.",
+     "tool": "get_client_history",
+     "args": {
+      "client_id": "cl-0134"
+     }
+    },
+    "called": null,
+    "arguments": {},
+    "tool_ok": false,
+    "args_ok": false,
+    "usage": {},
+    "model": null,
+    "requested_model": "openai/gpt-oss-120b",
+    "latency_s": 0.034,
+    "error": {
+     "type": "RuntimeError",
+     "http_status": null,
+     "provider_code": null
+    },
+    "estimated_cost_usd": null
+   },
+   {
+    "task_id": 2,
+    "ask": "Do I have portfolio proof of Data cleaning?",
+    "expected": {
+     "persona": "data_analyst",
+     "ask": "Do I have portfolio proof of Data cleaning?",
+     "tool": "search_evidence",
+     "args_contains": {
+      "requirement": "Data cleaning"
+     }
+    },
+    "called": null,
+    "arguments": {},
+    "tool_ok": false,
+    "args_ok": false,
+    "usage": {
+     "input_tokens": 390,
+     "output_tokens": 102,
+     "total_tokens": 492,
+     "input_token_details": {},
+     "output_token_details": {
+      "reasoning": 52
+     }
+    },
+    "model": "openai/gpt-oss-120b",
+    "requested_model": "openai/gpt-oss-120b",
+    "latency_s": 0.627,
+    "error": null,
+    "estimated_cost_usd": 0.00012
+   },
+   {
+    "task_id": 3,
+    "ask": "Show me the full post for job dev-fu-01795.",
+    "expected": {
+     "persona": "fullstack_dev",
+     "ask": "Show me the full post for job dev-fu-01795.",
+     "tool": "get_job",
+     "args": {
+      "job_id": "dev-fu-01795"
+     }
+    },
+    "called": "get_job",
+    "arguments": {
+     "job_id": "dev-fu-01795"
+    },
+    "tool_ok": true,
+    "args_ok": true,
+    "usage": {
+     "input_tokens": 395,
+     "output_tokens": 68,
+     "total_tokens": 463,
+     "input_token_details": {},
+     "output_token_details": {
+      "reasoning": 22
+     }
+    },
+    "model": "openai/gpt-oss-120b",
+    "requested_model": "openai/gpt-oss-120b",
+    "latency_s": 0.315,
+    "error": null,
+    "estimated_cost_usd": 0.0001
+   },
+   {
+    "task_id": 4,
+    "ask": "What do computer vision jobs usually pay?",
+    "expected": {
+     "persona": "ai_engineer",
+     "ask": "What do computer vision jobs usually pay?",
+     "tool": "get_market_stats",
+     "args": {
+      "category": "computer_vision"
+     }
+    },
+    "called": "search_jobs",
+    "arguments": {
+     "query": "computer vision",
+     "category": "AI/ML",
+     "limit": 10,
+     "offset": 0
+    },
+    "tool_ok": false,
+    "args_ok": false,
+    "usage": {
+     "input_tokens": 389,
+     "output_tokens": 95,
+     "total_tokens": 484,
+     "input_token_details": {
+      "cache_read": 256
+     },
+     "output_token_details": {
+      "reasoning": 35
+     }
+    },
+    "model": "openai/gpt-oss-120b",
+    "requested_model": "openai/gpt-oss-120b",
+    "latency_s": 0.344,
+    "error": null,
+    "estimated_cost_usd": 0.000115
+   },
+   {
+    "task_id": 5,
+    "ask": "Is client cl-0014 trustworthy? Check their history.",
+    "expected": {
+     "persona": "ai_engineer",
+     "ask": "Is client cl-0014 trustworthy? Check their history.",
+     "tool": "get_client_history",
+     "args": {
+      "client_id": "cl-0014"
+     }
+    },
+    "called": null,
+    "arguments": {},
+    "tool_ok": false,
+    "args_ok": false,
+    "usage": {},
+    "model": null,
+    "requested_model": "openai/gpt-oss-120b",
+    "latency_s": 0.282,
+    "error": {
+     "type": "OpenAIInvalidRequestError",
+     "http_status": 400,
+     "provider_code": "tool_use_failed"
+    },
+    "estimated_cost_usd": null
+   },
+   {
+    "task_id": 6,
+    "ask": "Do I have portfolio proof of NLP?",
+    "expected": {
+     "persona": "ai_engineer",
+     "ask": "Do I have portfolio proof of NLP?",
+     "tool": "search_evidence",
+     "args_contains": {
+      "requirement": "NLP"
+     }
+    },
+    "called": "search_evidence",
+    "arguments": {
+     "requirement": "NLP",
+     "k": 5,
+     "filters": {}
+    },
+    "tool_ok": true,
+    "args_ok": true,
+    "usage": {
+     "input_tokens": 389,
+     "output_tokens": 110,
+     "total_tokens": 499,
+     "input_token_details": {},
+     "output_token_details": {
+      "reasoning": 56
+     }
+    },
+    "model": "openai/gpt-oss-120b",
+    "requested_model": "openai/gpt-oss-120b",
+    "latency_s": 0.421,
+    "error": null,
+    "estimated_cost_usd": 0.000124
+   },
+   {
+    "task_id": 7,
+    "ask": "What do computer vision jobs usually pay?",
+    "expected": {
+     "persona": "data_analyst",
+     "ask": "What do computer vision jobs usually pay?",
+     "tool": "get_market_stats",
+     "args": {
+      "category": "computer_vision"
+     }
+    },
+    "called": "search_jobs",
+    "arguments": {
+     "query": "computer vision",
+     "category": "AI/ML",
+     "limit": 10,
+     "offset": 0
+    },
+    "tool_ok": false,
+    "args_ok": false,
+    "usage": {
+     "input_tokens": 389,
+     "output_tokens": 108,
+     "total_tokens": 497,
+     "input_token_details": {},
+     "output_token_details": {
+      "reasoning": 48
+     }
+    },
+    "model": "openai/gpt-oss-120b",
+    "requested_model": "openai/gpt-oss-120b",
+    "latency_s": 0.444,
+    "error": null,
+    "estimated_cost_usd": 0.000123
+   },
+   {
+    "task_id": 8,
+    "ask": "What do wordpress jobs usually pay?",
+    "expected": {
+     "persona": "ai_engineer",
+     "ask": "What do wordpress jobs usually pay?",
+     "tool": "get_market_stats",
+     "args": {
+      "category": "wordpress"
+     }
+    },
+    "called": "get_market_stats",
+    "arguments": {
+     "category": "WordPress"
+    },
+    "tool_ok": true,
+    "args_ok": false,
+    "usage": {
+     "input_tokens": 388,
+     "output_tokens": 85,
+     "total_tokens": 473,
+     "input_token_details": {
+      "cache_read": 256
+     },
+     "output_token_details": {
+      "reasoning": 43
+     }
+    },
+    "model": "openai/gpt-oss-120b",
+    "requested_model": "openai/gpt-oss-120b",
+    "latency_s": 0.531,
+    "error": null,
+    "estimated_cost_usd": 0.000109
+   },
+   {
+    "task_id": 9,
+    "ask": "Show me the full post for job dev-fu-01739.",
+    "expected": {
+     "persona": "fullstack_dev",
+     "ask": "Show me the full post for job dev-fu-01739.",
+     "tool": "get_job",
+     "args": {
+      "job_id": "dev-fu-01739"
+     }
+    },
+    "called": "get_job",
+    "arguments": {
+     "job_id": "dev-fu-01739"
+    },
+    "tool_ok": true,
+    "args_ok": true,
+    "usage": {
+     "input_tokens": 395,
+     "output_tokens": 69,
+     "total_tokens": 464,
+     "input_token_details": {
+      "cache_read": 256
+     },
+     "output_token_details": {
+      "reasoning": 23
+     }
+    },
+    "model": "openai/gpt-oss-120b",
+    "requested_model": "openai/gpt-oss-120b",
+    "latency_s": 0.599,
+    "error": null,
+    "estimated_cost_usd": 0.000101
+   },
+   {
+    "task_id": 10,
+    "ask": "Is client cl-0198 trustworthy? Check their history.",
+    "expected": {
+     "persona": "fullstack_dev",
+     "ask": "Is client cl-0198 trustworthy? Check their history.",
+     "tool": "get_client_history",
+     "args": {
+      "client_id": "cl-0198"
+     }
+    },
+    "called": "get_client_history",
+    "arguments": {
+     "client_id": "cl-0198"
+    },
+    "tool_ok": true,
+    "args_ok": true,
+    "usage": {
+     "input_tokens": 393,
+     "output_tokens": 67,
+     "total_tokens": 460,
+     "input_token_details": {
+      "cache_read": 256
+     },
+     "output_token_details": {
+      "reasoning": 22
+     }
+    },
+    "model": "openai/gpt-oss-120b",
+    "requested_model": "openai/gpt-oss-120b",
+    "latency_s": 0.485,
+    "error": null,
+    "estimated_cost_usd": 9.9e-05
+   },
+   {
+    "task_id": 11,
+    "ask": "Show me the full post for job dev-da-01961.",
+    "expected": {
+     "persona": "data_analyst",
+     "ask": "Show me the full post for job dev-da-01961.",
+     "tool": "get_job",
+     "args": {
+      "job_id": "dev-da-01961"
+     }
+    },
+    "called": "get_job",
+    "arguments": {
+     "job_id": "dev-da-01961"
+    },
+    "tool_ok": true,
+    "args_ok": true,
+    "usage": {
+     "input_tokens": 394,
+     "output_tokens": 67,
+     "total_tokens": 461,
+     "input_token_details": {
+      "cache_read": 256
+     },
+     "output_token_details": {
+      "reasoning": 22
+     }
+    },
+    "model": "openai/gpt-oss-120b",
+    "requested_model": "openai/gpt-oss-120b",
+    "latency_s": 0.563,
+    "error": null,
+    "estimated_cost_usd": 9.9e-05
+   },
+   {
+    "task_id": 12,
+    "ask": "Do I have portfolio proof of AWS?",
+    "expected": {
+     "persona": "ai_engineer",
+     "ask": "Do I have portfolio proof of AWS?",
+     "tool": "search_evidence",
+     "args_contains": {
+      "requirement": "AWS"
+     }
+    },
+    "called": "search_evidence",
+    "arguments": {
+     "requirement": "AWS",
+     "k": 5,
+     "filters": {}
+    },
+    "tool_ok": true,
+    "args_ok": true,
+    "usage": {
+     "input_tokens": 389,
+     "output_tokens": 111,
+     "total_tokens": 500,
+     "input_token_details": {
+      "cache_read": 256
+     },
+     "output_token_details": {
+      "reasoning": 58
+     }
+    },
+    "model": "openai/gpt-oss-120b",
+    "requested_model": "openai/gpt-oss-120b",
+    "latency_s": 0.437,
+    "error": null,
+    "estimated_cost_usd": 0.000125
+   },
+   {
+    "task_id": 13,
+    "ask": "Show me the full post for job dev-fu-01726.",
+    "expected": {
+     "persona": "fullstack_dev",
+     "ask": "Show me the full post for job dev-fu-01726.",
+     "tool": "get_job",
+     "args": {
+      "job_id": "dev-fu-01726"
+     }
+    },
+    "called": "get_job",
+    "arguments": {
+     "job_id": "dev-fu-01726"
+    },
+    "tool_ok": true,
+    "args_ok": true,
+    "usage": {
+     "input_tokens": 395,
+     "output_tokens": 69,
+     "total_tokens": 464,
+     "input_token_details": {},
+     "output_token_details": {
+      "reasoning": 23
+     }
+    },
+    "model": "openai/gpt-oss-120b",
+    "requested_model": "openai/gpt-oss-120b",
+    "latency_s": 0.394,
+    "error": null,
+    "estimated_cost_usd": 0.000101
+   },
+   {
+    "task_id": 14,
+    "ask": "Do I have portfolio proof of Adobe Illustrator?",
+    "expected": {
+     "persona": "fullstack_dev",
+     "ask": "Do I have portfolio proof of Adobe Illustrator?",
+     "tool": "search_evidence",
+     "args_contains": {
+      "requirement": "Adobe Illustrator"
+     }
+    },
+    "called": null,
+    "arguments": {},
+    "tool_ok": false,
+    "args_ok": false,
+    "usage": {},
+    "model": null,
+    "requested_model": "openai/gpt-oss-120b",
+    "latency_s": 0.447,
+    "error": {
+     "type": "OpenAIInvalidRequestError",
+     "http_status": 400,
+     "provider_code": "tool_use_failed"
+    },
+    "estimated_cost_usd": null
+   },
+   {
+    "task_id": 15,
+    "ask": "Do I have portfolio proof of Data visualization?",
+    "expected": {
+     "persona": "data_analyst",
+     "ask": "Do I have portfolio proof of Data visualization?",
+     "tool": "search_evidence",
+     "args_contains": {
+      "requirement": "Data visualization"
+     }
+    },
+    "called": null,
+    "arguments": {},
+    "tool_ok": false,
+    "args_ok": false,
+    "usage": {},
+    "model": null,
+    "requested_model": "openai/gpt-oss-120b",
+    "latency_s": 0.345,
+    "error": {
+     "type": "OpenAIInvalidRequestError",
+     "http_status": 400,
+     "provider_code": "tool_use_failed"
+    },
+    "estimated_cost_usd": null
+   },
+   {
+    "task_id": 16,
+    "ask": "Is client cl-0062 trustworthy? Check their history.",
+    "expected": {
+     "persona": "data_analyst",
+     "ask": "Is client cl-0062 trustworthy? Check their history.",
+     "tool": "get_client_history",
+     "args": {
+      "client_id": "cl-0062"
+     }
+    },
+    "called": "get_client_history",
+    "arguments": {
+     "client_id": "cl-0062"
+    },
+    "tool_ok": true,
+    "args_ok": true,
+    "usage": {
+     "input_tokens": 393,
+     "output_tokens": 67,
+     "total_tokens": 460,
+     "input_token_details": {
+      "cache_read": 256
+     },
+     "output_token_details": {
+      "reasoning": 22
+     }
+    },
+    "model": "openai/gpt-oss-120b",
+    "requested_model": "openai/gpt-oss-120b",
+    "latency_s": 0.366,
+    "error": null,
+    "estimated_cost_usd": 9.9e-05
+   },
+   {
+    "task_id": 17,
+    "ask": "Show me the full post for job dev-ai-01549.",
+    "expected": {
+     "persona": "ai_engineer",
+     "ask": "Show me the full post for job dev-ai-01549.",
+     "tool": "get_job",
+     "args": {
+      "job_id": "dev-ai-01549"
+     }
+    },
+    "called": "get_job",
+    "arguments": {
+     "job_id": "dev-ai-01549"
+    },
+    "tool_ok": true,
+    "args_ok": true,
+    "usage": {
+     "input_tokens": 394,
+     "output_tokens": 67,
+     "total_tokens": 461,
+     "input_token_details": {
+      "cache_read": 256
+     },
+     "output_token_details": {
+      "reasoning": 22
+     }
+    },
+    "model": "openai/gpt-oss-120b",
+    "requested_model": "openai/gpt-oss-120b",
+    "latency_s": 0.399,
+    "error": null,
+    "estimated_cost_usd": 9.9e-05
+   },
+   {
+    "task_id": 18,
+    "ask": "Is client cl-0227 trustworthy? Check their history.",
+    "expected": {
+     "persona": "data_analyst",
+     "ask": "Is client cl-0227 trustworthy? Check their history.",
+     "tool": "get_client_history",
+     "args": {
+      "client_id": "cl-0227"
+     }
+    },
+    "called": null,
+    "arguments": {},
+    "tool_ok": false,
+    "args_ok": false,
+    "usage": {},
+    "model": null,
+    "requested_model": "openai/gpt-oss-120b",
+    "latency_s": 0.364,
+    "error": {
+     "type": "OpenAIInvalidRequestError",
+     "http_status": 400,
+     "provider_code": "tool_use_failed"
+    },
+    "estimated_cost_usd": null
+   },
+   {
+    "task_id": 19,
+    "ask": "Do I have portfolio proof of Elasticsearch?",
+    "expected": {
+     "persona": "fullstack_dev",
+     "ask": "Do I have portfolio proof of Elasticsearch?",
+     "tool": "search_evidence",
+     "args_contains": {
+      "requirement": "Elasticsearch"
+     }
+    },
+    "called": "search_evidence",
+    "arguments": {
+     "requirement": "Elasticsearch",
+     "k": 5,
+     "filters": {}
+    },
+    "tool_ok": true,
+    "args_ok": true,
+    "usage": {
+     "input_tokens": 389,
+     "output_tokens": 131,
+     "total_tokens": 520,
+     "input_token_details": {
+      "cache_read": 256
+     },
+     "output_token_details": {
+      "reasoning": 77
+     }
+    },
+    "model": "openai/gpt-oss-120b",
+    "requested_model": "openai/gpt-oss-120b",
+    "latency_s": 0.597,
+    "error": null,
+    "estimated_cost_usd": 0.000137
+   },
+   {
+    "task_id": 20,
+    "ask": "Show me the full post for job dev-ai-01603.",
+    "expected": {
+     "persona": "ai_engineer",
+     "ask": "Show me the full post for job dev-ai-01603.",
+     "tool": "get_job",
+     "args": {
+      "job_id": "dev-ai-01603"
+     }
+    },
+    "called": "get_job",
+    "arguments": {
+     "job_id": "dev-ai-01603"
+    },
+    "tool_ok": true,
+    "args_ok": true,
+    "usage": {
+     "input_tokens": 394,
+     "output_tokens": 65,
+     "total_tokens": 459,
+     "input_token_details": {
+      "cache_read": 256
+     },
+     "output_token_details": {
+      "reasoning": 20
+     }
+    },
+    "model": "openai/gpt-oss-120b",
+    "requested_model": "openai/gpt-oss-120b",
+    "latency_s": 0.477,
+    "error": null,
+    "estimated_cost_usd": 9.8e-05
+   },
+   {
+    "task_id": 21,
+    "ask": "How many Connects do I have left?",
+    "expected": {
+     "persona": "data_analyst",
+     "ask": "How many Connects do I have left?",
+     "tool": "get_connects_balance",
+     "args": {}
+    },
+    "called": "get_connects_balance",
+    "arguments": {},
+    "tool_ok": true,
+    "args_ok": true,
+    "usage": {
+     "input_tokens": 390,
+     "output_tokens": 51,
+     "total_tokens": 441,
+     "input_token_details": {
+      "cache_read": 256
+     },
+     "output_token_details": {
+      "reasoning": 14
+     }
+    },
+    "model": "openai/gpt-oss-120b",
+    "requested_model": "openai/gpt-oss-120b",
+    "latency_s": 0.58,
+    "error": null,
+    "estimated_cost_usd": 8.9e-05
+   },
+   {
+    "task_id": 22,
+    "ask": "Show me the full post for job dev-fu-01717.",
+    "expected": {
+     "persona": "fullstack_dev",
+     "ask": "Show me the full post for job dev-fu-01717.",
+     "tool": "get_job",
+     "args": {
+      "job_id": "dev-fu-01717"
+     }
+    },
+    "called": "get_job",
+    "arguments": {
+     "job_id": "dev-fu-01717"
+    },
+    "tool_ok": true,
+    "args_ok": true,
+    "usage": {
+     "input_tokens": 395,
+     "output_tokens": 69,
+     "total_tokens": 464,
+     "input_token_details": {
+      "cache_read": 256
+     },
+     "output_token_details": {
+      "reasoning": 23
+     }
+    },
+    "model": "openai/gpt-oss-120b",
+    "requested_model": "openai/gpt-oss-120b",
+    "latency_s": 0.616,
+    "error": null,
+    "estimated_cost_usd": 0.000101
+   },
+   {
+    "task_id": 23,
+    "ask": "Show me the full post for job dev-da-02043.",
+    "expected": {
+     "persona": "data_analyst",
+     "ask": "Show me the full post for job dev-da-02043.",
+     "tool": "get_job",
+     "args": {
+      "job_id": "dev-da-02043"
+     }
+    },
+    "called": "get_job",
+    "arguments": {
+     "job_id": "dev-da-02043"
+    },
+    "tool_ok": true,
+    "args_ok": true,
+    "usage": {
+     "input_tokens": 394,
+     "output_tokens": 66,
+     "total_tokens": 460,
+     "input_token_details": {
+      "cache_read": 256
+     },
+     "output_token_details": {
+      "reasoning": 21
+     }
+    },
+    "model": "openai/gpt-oss-120b",
+    "requested_model": "openai/gpt-oss-120b",
+    "latency_s": 0.517,
+    "error": null,
+    "estimated_cost_usd": 9.9e-05
+   },
+   {
+    "task_id": 24,
+    "ask": "How many Connects do I have left?",
+    "expected": {
+     "persona": "fullstack_dev",
+     "ask": "How many Connects do I have left?",
+     "tool": "get_connects_balance",
+     "args": {}
+    },
+    "called": "get_connects_balance",
+    "arguments": {},
+    "tool_ok": true,
+    "args_ok": true,
+    "usage": {
+     "input_tokens": 390,
+     "output_tokens": 55,
+     "total_tokens": 445,
+     "input_token_details": {
+      "cache_read": 256
+     },
+     "output_token_details": {
+      "reasoning": 18
+     }
+    },
+    "model": "openai/gpt-oss-120b",
+    "requested_model": "openai/gpt-oss-120b",
+    "latency_s": 0.458,
+    "error": null,
+    "estimated_cost_usd": 9.2e-05
+   },
+   {
+    "task_id": 25,
+    "ask": "Is client cl-0246 trustworthy? Check their history.",
+    "expected": {
+     "persona": "ai_engineer",
+     "ask": "Is client cl-0246 trustworthy? Check their history.",
+     "tool": "get_client_history",
+     "args": {
+      "client_id": "cl-0246"
+     }
+    },
+    "called": null,
+    "arguments": {},
+    "tool_ok": false,
+    "args_ok": false,
+    "usage": {},
+    "model": null,
+    "requested_model": "openai/gpt-oss-120b",
+    "latency_s": 0.386,
+    "error": {
+     "type": "OpenAIInvalidRequestError",
+     "http_status": 400,
+     "provider_code": "tool_use_failed"
+    },
+    "estimated_cost_usd": null
+   },
+   {
+    "task_id": 26,
+    "ask": "Is client cl-0092 trustworthy? Check their history.",
+    "expected": {
+     "persona": "ai_engineer",
+     "ask": "Is client cl-0092 trustworthy? Check their history.",
+     "tool": "get_client_history",
+     "args": {
+      "client_id": "cl-0092"
+     }
+    },
+    "called": "get_client_history",
+    "arguments": {
+     "client_id": "cl-0092"
+    },
+    "tool_ok": true,
+    "args_ok": true,
+    "usage": {
+     "input_tokens": 393,
+     "output_tokens": 67,
+     "total_tokens": 460,
+     "input_token_details": {
+      "cache_read": 256
+     },
+     "output_token_details": {
+      "reasoning": 22
+     }
+    },
+    "model": "openai/gpt-oss-120b",
+    "requested_model": "openai/gpt-oss-120b",
+    "latency_s": 0.503,
+    "error": null,
+    "estimated_cost_usd": 9.9e-05
+   },
+   {
+    "task_id": 27,
+    "ask": "What do ml modeling jobs usually pay?",
+    "expected": {
+     "persona": "ai_engineer",
+     "ask": "What do ml modeling jobs usually pay?",
+     "tool": "get_market_stats",
+     "args": {
+      "category": "ml_modeling"
+     }
+    },
+    "called": null,
+    "arguments": {},
+    "tool_ok": false,
+    "args_ok": false,
+    "usage": {
+     "input_tokens": 389,
+     "output_tokens": 2075,
+     "total_tokens": 2464,
+     "input_token_details": {
+      "cache_read": 256
+     },
+     "output_token_details": {
+      "reasoning": 104
+     }
+    },
+    "model": "openai/gpt-oss-120b",
+    "requested_model": "openai/gpt-oss-120b",
+    "latency_s": 4.63,
+    "error": null,
+    "estimated_cost_usd": 0.001303
+   },
+   {
+    "task_id": 28,
+    "ask": "Show me the full post for job dev-ai-01598.",
+    "expected": {
+     "persona": "ai_engineer",
+     "ask": "Show me the full post for job dev-ai-01598.",
+     "tool": "get_job",
+     "args": {
+      "job_id": "dev-ai-01598"
+     }
+    },
+    "called": "get_job",
+    "arguments": {
+     "job_id": "dev-ai-01598"
+    },
+    "tool_ok": true,
+    "args_ok": true,
+    "usage": {
+     "input_tokens": 394,
+     "output_tokens": 67,
+     "total_tokens": 461,
+     "input_token_details": {
+      "cache_read": 256
+     },
+     "output_token_details": {
+      "reasoning": 22
+     }
+    },
+    "model": "openai/gpt-oss-120b",
+    "requested_model": "openai/gpt-oss-120b",
+    "latency_s": 0.424,
+    "error": null,
+    "estimated_cost_usd": 9.9e-05
+   },
+   {
+    "task_id": 29,
+    "ask": "Show me the full post for job dev-ai-01636.",
+    "expected": {
+     "persona": "ai_engineer",
+     "ask": "Show me the full post for job dev-ai-01636.",
+     "tool": "get_job",
+     "args": {
+      "job_id": "dev-ai-01636"
+     }
+    },
+    "called": "get_job",
+    "arguments": {
+     "job_id": "dev-ai-01636"
+    },
+    "tool_ok": true,
+    "args_ok": true,
+    "usage": {
+     "input_tokens": 394,
+     "output_tokens": 65,
+     "total_tokens": 459,
+     "input_token_details": {
+      "cache_read": 256
+     },
+     "output_token_details": {
+      "reasoning": 20
+     }
+    },
+    "model": "openai/gpt-oss-120b",
+    "requested_model": "openai/gpt-oss-120b",
+    "latency_s": 0.293,
+    "error": null,
+    "estimated_cost_usd": 9.8e-05
+   },
+   {
+    "task_id": 30,
+    "ask": "Is client cl-0207 trustworthy? Check their history.",
+    "expected": {
+     "persona": "fullstack_dev",
+     "ask": "Is client cl-0207 trustworthy? Check their history.",
+     "tool": "get_client_history",
+     "args": {
+      "client_id": "cl-0207"
+     }
+    },
+    "called": null,
+    "arguments": {},
+    "tool_ok": false,
+    "args_ok": false,
+    "usage": {},
+    "model": null,
+    "requested_model": "openai/gpt-oss-120b",
+    "latency_s": 0.33,
+    "error": {
+     "type": "OpenAIInvalidRequestError",
+     "http_status": 400,
+     "provider_code": "tool_use_failed"
+    },
+    "estimated_cost_usd": null
+   },
+   {
+    "task_id": 31,
+    "ask": "How many Connects do I have left?",
+    "expected": {
+     "persona": "data_analyst",
+     "ask": "How many Connects do I have left?",
+     "tool": "get_connects_balance",
+     "args": {}
+    },
+    "called": "get_connects_balance",
+    "arguments": {},
+    "tool_ok": true,
+    "args_ok": true,
+    "usage": {
+     "input_tokens": 390,
+     "output_tokens": 51,
+     "total_tokens": 441,
+     "input_token_details": {},
+     "output_token_details": {
+      "reasoning": 14
+     }
+    },
+    "model": "openai/gpt-oss-120b",
+    "requested_model": "openai/gpt-oss-120b",
+    "latency_s": 0.583,
+    "error": null,
+    "estimated_cost_usd": 8.9e-05
+   },
+   {
+    "task_id": 32,
+    "ask": "Show me the full post for job dev-ai-01627.",
+    "expected": {
+     "persona": "ai_engineer",
+     "ask": "Show me the full post for job dev-ai-01627.",
+     "tool": "get_job",
+     "args": {
+      "job_id": "dev-ai-01627"
+     }
+    },
+    "called": "get_job",
+    "arguments": {
+     "job_id": "dev-ai-01627"
+    },
+    "tool_ok": true,
+    "args_ok": true,
+    "usage": {
+     "input_tokens": 394,
+     "output_tokens": 67,
+     "total_tokens": 461,
+     "input_token_details": {
+      "cache_read": 256
+     },
+     "output_token_details": {
+      "reasoning": 22
+     }
+    },
+    "model": "openai/gpt-oss-120b",
+    "requested_model": "openai/gpt-oss-120b",
+    "latency_s": 0.591,
+    "error": null,
+    "estimated_cost_usd": 9.9e-05
+   },
+   {
+    "task_id": 33,
+    "ask": "How many Connects do I have left?",
+    "expected": {
+     "persona": "data_analyst",
+     "ask": "How many Connects do I have left?",
+     "tool": "get_connects_balance",
+     "args": {}
+    },
+    "called": "get_connects_balance",
+    "arguments": {},
+    "tool_ok": true,
+    "args_ok": true,
+    "usage": {
+     "input_tokens": 390,
+     "output_tokens": 55,
+     "total_tokens": 445,
+     "input_token_details": {
+      "cache_read": 256
+     },
+     "output_token_details": {
+      "reasoning": 18
+     }
+    },
+    "model": "openai/gpt-oss-120b",
+    "requested_model": "openai/gpt-oss-120b",
+    "latency_s": 0.466,
+    "error": null,
+    "estimated_cost_usd": 9.2e-05
+   },
+   {
+    "task_id": 34,
+    "ask": "Show me the full post for job dev-da-01975.",
+    "expected": {
+     "persona": "data_analyst",
+     "ask": "Show me the full post for job dev-da-01975.",
+     "tool": "get_job",
+     "args": {
+      "job_id": "dev-da-01975"
+     }
+    },
+    "called": "get_job",
+    "arguments": {
+     "job_id": "dev-da-01975"
+    },
+    "tool_ok": true,
+    "args_ok": true,
+    "usage": {
+     "input_tokens": 394,
+     "output_tokens": 66,
+     "total_tokens": 460,
+     "input_token_details": {
+      "cache_read": 256
+     },
+     "output_token_details": {
+      "reasoning": 21
+     }
+    },
+    "model": "openai/gpt-oss-120b",
+    "requested_model": "openai/gpt-oss-120b",
+    "latency_s": 0.472,
+    "error": null,
+    "estimated_cost_usd": 9.9e-05
+   },
+   {
+    "task_id": 35,
+    "ask": "How many Connects do I have left?",
+    "expected": {
+     "persona": "fullstack_dev",
+     "ask": "How many Connects do I have left?",
+     "tool": "get_connects_balance",
+     "args": {}
+    },
+    "called": "get_connects_balance",
+    "arguments": {},
+    "tool_ok": true,
+    "args_ok": true,
+    "usage": {
+     "input_tokens": 390,
+     "output_tokens": 52,
+     "total_tokens": 442,
+     "input_token_details": {
+      "cache_read": 256
+     },
+     "output_token_details": {
+      "reasoning": 15
+     }
+    },
+    "model": "openai/gpt-oss-120b",
+    "requested_model": "openai/gpt-oss-120b",
+    "latency_s": 1.131,
+    "error": null,
+    "estimated_cost_usd": 9e-05
+   },
+   {
+    "task_id": 36,
+    "ask": "Do I have portfolio proof of Elementor?",
+    "expected": {
+     "persona": "data_analyst",
+     "ask": "Do I have portfolio proof of Elementor?",
+     "tool": "search_evidence",
+     "args_contains": {
+      "requirement": "Elementor"
+     }
+    },
+    "called": "search_evidence",
+    "arguments": {
+     "requirement": "Elementor",
+     "k": 5,
+     "filters": {}
+    },
+    "tool_ok": true,
+    "args_ok": true,
+    "usage": {
+     "input_tokens": 389,
+     "output_tokens": 139,
+     "total_tokens": 528,
+     "input_token_details": {
+      "cache_read": 256
+     },
+     "output_token_details": {
+      "reasoning": 85
+     }
+    },
+    "model": "openai/gpt-oss-120b",
+    "requested_model": "openai/gpt-oss-120b",
+    "latency_s": 2.253,
+    "error": null,
+    "estimated_cost_usd": 0.000142
+   },
+   {
+    "task_id": 37,
+    "ask": "How many Connects do I have left?",
+    "expected": {
+     "persona": "data_analyst",
+     "ask": "How many Connects do I have left?",
+     "tool": "get_connects_balance",
+     "args": {}
+    },
+    "called": "get_connects_balance",
+    "arguments": {},
+    "tool_ok": true,
+    "args_ok": true,
+    "usage": {
+     "input_tokens": 390,
+     "output_tokens": 71,
+     "total_tokens": 461,
+     "input_token_details": {
+      "cache_read": 256
+     },
+     "output_token_details": {
+      "reasoning": 34
+     }
+    },
+    "model": "openai/gpt-oss-120b",
+    "requested_model": "openai/gpt-oss-120b",
+    "latency_s": 0.326,
+    "error": null,
+    "estimated_cost_usd": 0.000101
+   },
+   {
+    "task_id": 38,
+    "ask": "Is client cl-0112 trustworthy? Check their history.",
+    "expected": {
+     "persona": "ai_engineer",
+     "ask": "Is client cl-0112 trustworthy? Check their history.",
+     "tool": "get_client_history",
+     "args": {
+      "client_id": "cl-0112"
+     }
+    },
+    "called": null,
+    "arguments": {},
+    "tool_ok": false,
+    "args_ok": false,
+    "usage": {},
+    "model": null,
+    "requested_model": "openai/gpt-oss-120b",
+    "latency_s": 0.27,
+    "error": {
+     "type": "OpenAIInvalidRequestError",
+     "http_status": 400,
+     "provider_code": "tool_use_failed"
+    },
+    "estimated_cost_usd": null
+   },
+   {
+    "task_id": 39,
+    "ask": "Do I have portfolio proof of Celery?",
+    "expected": {
+     "persona": "fullstack_dev",
+     "ask": "Do I have portfolio proof of Celery?",
+     "tool": "search_evidence",
+     "args_contains": {
+      "requirement": "Celery"
+     }
+    },
+    "called": "search_evidence",
+    "arguments": {
+     "requirement": "Celery",
+     "k": 5,
+     "filters": {}
+    },
+    "tool_ok": true,
+    "args_ok": true,
+    "usage": {
+     "input_tokens": 390,
+     "output_tokens": 115,
+     "total_tokens": 505,
+     "input_token_details": {
+      "cache_read": 256
+     },
+     "output_token_details": {
+      "reasoning": 61
+     }
+    },
+    "model": "openai/gpt-oss-120b",
+    "requested_model": "openai/gpt-oss-120b",
+    "latency_s": 0.586,
+    "error": null,
+    "estimated_cost_usd": 0.000128
+   },
+   {
+    "task_id": 40,
+    "ask": "Show me the full post for job dev-ai-01630.",
+    "expected": {
+     "persona": "ai_engineer",
+     "ask": "Show me the full post for job dev-ai-01630.",
+     "tool": "get_job",
+     "args": {
+      "job_id": "dev-ai-01630"
+     }
+    },
+    "called": "get_job",
+    "arguments": {
+     "job_id": "dev-ai-01630"
+    },
+    "tool_ok": true,
+    "args_ok": true,
+    "usage": {
+     "input_tokens": 394,
+     "output_tokens": 69,
+     "total_tokens": 463,
+     "input_token_details": {
+      "cache_read": 256
+     },
+     "output_token_details": {
+      "reasoning": 24
+     }
+    },
+    "model": "openai/gpt-oss-120b",
+    "requested_model": "openai/gpt-oss-120b",
+    "latency_s": 0.367,
+    "error": null,
+    "estimated_cost_usd": 0.000101
+   }
+  ]
+ },
+ "best": {
+  "n": 40,
+  "errors": 1,
+  "tool_selection_accuracy": 0.925,
+  "argument_accuracy": 0.825,
+  "tokens_per_task": 1071.641,
+  "token_samples": 39,
+  "rows": [
+   {
+    "task_id": 1,
+    "ask": "Is client cl-0134 trustworthy? Check their history.",
+    "expected": {
+     "persona": "fullstack_dev",
+     "ask": "Is client cl-0134 trustworthy? Check their history.",
+     "tool": "get_client_history",
+     "args": {
+      "client_id": "cl-0134"
+     }
+    },
+    "called": null,
+    "arguments": {},
+    "tool_ok": false,
+    "args_ok": false,
+    "usage": {},
+    "model": null,
+    "requested_model": "openai/gpt-oss-120b",
+    "latency_s": 0.065,
+    "error": {
+     "type": "RuntimeError",
+     "http_status": null,
+     "provider_code": null
+    },
+    "estimated_cost_usd": null
+   },
+   {
+    "task_id": 2,
+    "ask": "Do I have portfolio proof of Data cleaning?",
+    "expected": {
+     "persona": "data_analyst",
+     "ask": "Do I have portfolio proof of Data cleaning?",
+     "tool": "search_evidence",
+     "args_contains": {
+      "requirement": "Data cleaning"
+     }
+    },
+    "called": "search_evidence",
+    "arguments": {
+     "k": 5,
+     "requirement": "Data cleaning"
+    },
+    "tool_ok": true,
+    "args_ok": true,
+    "usage": {
+     "input_tokens": 1014,
+     "output_tokens": 69,
+     "total_tokens": 1083,
+     "input_token_details": {
+      "cache_read": 768
+     },
+     "output_token_details": {
+      "reasoning": 32
+     }
+    },
+    "model": "openai/gpt-oss-120b",
+    "requested_model": "openai/gpt-oss-120b",
+    "latency_s": 1.073,
+    "error": null,
+    "estimated_cost_usd": 0.000193
+   },
+   {
+    "task_id": 3,
+    "ask": "Show me the full post for job dev-fu-01795.",
+    "expected": {
+     "persona": "fullstack_dev",
+     "ask": "Show me the full post for job dev-fu-01795.",
+     "tool": "get_job",
+     "args": {
+      "job_id": "dev-fu-01795"
+     }
+    },
+    "called": "get_job",
+    "arguments": {
+     "job_id": "dev-fu-01795"
+    },
+    "tool_ok": true,
+    "args_ok": true,
+    "usage": {
+     "input_tokens": 1019,
+     "output_tokens": 54,
+     "total_tokens": 1073,
+     "input_token_details": {
+      "cache_read": 768
+     },
+     "output_token_details": {
+      "reasoning": 21
+     }
+    },
+    "model": "openai/gpt-oss-120b",
+    "requested_model": "openai/gpt-oss-120b",
+    "latency_s": 0.518,
+    "error": null,
+    "estimated_cost_usd": 0.000185
+   },
+   {
+    "task_id": 4,
+    "ask": "What do computer vision jobs usually pay?",
+    "expected": {
+     "persona": "ai_engineer",
+     "ask": "What do computer vision jobs usually pay?",
+     "tool": "get_market_stats",
+     "args": {
+      "category": "computer_vision"
+     }
+    },
+    "called": "get_market_stats",
+    "arguments": {
+     "category": "Computer Vision"
+    },
+    "tool_ok": true,
+    "args_ok": false,
+    "usage": {
+     "input_tokens": 1013,
+     "output_tokens": 84,
+     "total_tokens": 1097,
+     "input_token_details": {
+      "cache_read": 768
+     },
+     "output_token_details": {
+      "reasoning": 55
+     }
+    },
+    "model": "openai/gpt-oss-120b",
+    "requested_model": "openai/gpt-oss-120b",
+    "latency_s": 0.415,
+    "error": null,
+    "estimated_cost_usd": 0.000202
+   },
+   {
+    "task_id": 5,
+    "ask": "Is client cl-0014 trustworthy? Check their history.",
+    "expected": {
+     "persona": "ai_engineer",
+     "ask": "Is client cl-0014 trustworthy? Check their history.",
+     "tool": "get_client_history",
+     "args": {
+      "client_id": "cl-0014"
+     }
+    },
+    "called": "get_client_history",
+    "arguments": {
+     "client_id": "cl-0014"
+    },
+    "tool_ok": true,
+    "args_ok": true,
+    "usage": {
+     "input_tokens": 1017,
+     "output_tokens": 52,
+     "total_tokens": 1069,
+     "input_token_details": {
+      "cache_read": 768
+     },
+     "output_token_details": {
+      "reasoning": 20
+     }
+    },
+    "model": "openai/gpt-oss-120b",
+    "requested_model": "openai/gpt-oss-120b",
+    "latency_s": 0.426,
+    "error": null,
+    "estimated_cost_usd": 0.000184
+   },
+   {
+    "task_id": 6,
+    "ask": "Do I have portfolio proof of NLP?",
+    "expected": {
+     "persona": "ai_engineer",
+     "ask": "Do I have portfolio proof of NLP?",
+     "tool": "search_evidence",
+     "args_contains": {
+      "requirement": "NLP"
+     }
+    },
+    "called": "search_evidence",
+    "arguments": {
+     "k": 5,
+     "requirement": "NLP"
+    },
+    "tool_ok": true,
+    "args_ok": true,
+    "usage": {
+     "input_tokens": 1013,
+     "output_tokens": 71,
+     "total_tokens": 1084,
+     "input_token_details": {
+      "cache_read": 768
+     },
+     "output_token_details": {
+      "reasoning": 34
+     }
+    },
+    "model": "openai/gpt-oss-120b",
+    "requested_model": "openai/gpt-oss-120b",
+    "latency_s": 0.401,
+    "error": null,
+    "estimated_cost_usd": 0.000195
+   },
+   {
+    "task_id": 7,
+    "ask": "What do computer vision jobs usually pay?",
+    "expected": {
+     "persona": "data_analyst",
+     "ask": "What do computer vision jobs usually pay?",
+     "tool": "get_market_stats",
+     "args": {
+      "category": "computer_vision"
+     }
+    },
+    "called": "get_market_stats",
+    "arguments": {
+     "category": "Computer Vision"
+    },
+    "tool_ok": true,
+    "args_ok": false,
+    "usage": {
+     "input_tokens": 1013,
+     "output_tokens": 77,
+     "total_tokens": 1090,
+     "input_token_details": {
+      "cache_read": 768
+     },
+     "output_token_details": {
+      "reasoning": 48
+     }
+    },
+    "model": "openai/gpt-oss-120b",
+    "requested_model": "openai/gpt-oss-120b",
+    "latency_s": 0.435,
+    "error": null,
+    "estimated_cost_usd": 0.000198
+   },
+   {
+    "task_id": 8,
+    "ask": "What do wordpress jobs usually pay?",
+    "expected": {
+     "persona": "ai_engineer",
+     "ask": "What do wordpress jobs usually pay?",
+     "tool": "get_market_stats",
+     "args": {
+      "category": "wordpress"
+     }
+    },
+    "called": "get_market_stats",
+    "arguments": {
+     "category": "WordPress"
+    },
+    "tool_ok": true,
+    "args_ok": false,
+    "usage": {
+     "input_tokens": 1012,
+     "output_tokens": 60,
+     "total_tokens": 1072,
+     "input_token_details": {
+      "cache_read": 768
+     },
+     "output_token_details": {
+      "reasoning": 31
+     }
+    },
+    "model": "openai/gpt-oss-120b",
+    "requested_model": "openai/gpt-oss-120b",
+    "latency_s": 0.828,
+    "error": null,
+    "estimated_cost_usd": 0.000188
+   },
+   {
+    "task_id": 9,
+    "ask": "Show me the full post for job dev-fu-01739.",
+    "expected": {
+     "persona": "fullstack_dev",
+     "ask": "Show me the full post for job dev-fu-01739.",
+     "tool": "get_job",
+     "args": {
+      "job_id": "dev-fu-01739"
+     }
+    },
+    "called": "get_job",
+    "arguments": {
+     "job_id": "dev-fu-01739"
+    },
+    "tool_ok": true,
+    "args_ok": true,
+    "usage": {
+     "input_tokens": 1019,
+     "output_tokens": 54,
+     "total_tokens": 1073,
+     "input_token_details": {
+      "cache_read": 768
+     },
+     "output_token_details": {
+      "reasoning": 21
+     }
+    },
+    "model": "openai/gpt-oss-120b",
+    "requested_model": "openai/gpt-oss-120b",
+    "latency_s": 0.393,
+    "error": null,
+    "estimated_cost_usd": 0.000185
+   },
+   {
+    "task_id": 10,
+    "ask": "Is client cl-0198 trustworthy? Check their history.",
+    "expected": {
+     "persona": "fullstack_dev",
+     "ask": "Is client cl-0198 trustworthy? Check their history.",
+     "tool": "get_client_history",
+     "args": {
+      "client_id": "cl-0198"
+     }
+    },
+    "called": "get_client_history",
+    "arguments": {
+     "client_id": "cl-0198"
+    },
+    "tool_ok": true,
+    "args_ok": true,
+    "usage": {
+     "input_tokens": 1017,
+     "output_tokens": 52,
+     "total_tokens": 1069,
+     "input_token_details": {
+      "cache_read": 768
+     },
+     "output_token_details": {
+      "reasoning": 20
+     }
+    },
+    "model": "openai/gpt-oss-120b",
+    "requested_model": "openai/gpt-oss-120b",
+    "latency_s": 0.435,
+    "error": null,
+    "estimated_cost_usd": 0.000184
+   },
+   {
+    "task_id": 11,
+    "ask": "Show me the full post for job dev-da-01961.",
+    "expected": {
+     "persona": "data_analyst",
+     "ask": "Show me the full post for job dev-da-01961.",
+     "tool": "get_job",
+     "args": {
+      "job_id": "dev-da-01961"
+     }
+    },
+    "called": "get_job",
+    "arguments": {
+     "job_id": "dev-da-01961"
+    },
+    "tool_ok": true,
+    "args_ok": true,
+    "usage": {
+     "input_tokens": 1018,
+     "output_tokens": 52,
+     "total_tokens": 1070,
+     "input_token_details": {
+      "cache_read": 768
+     },
+     "output_token_details": {
+      "reasoning": 20
+     }
+    },
+    "model": "openai/gpt-oss-120b",
+    "requested_model": "openai/gpt-oss-120b",
+    "latency_s": 0.795,
+    "error": null,
+    "estimated_cost_usd": 0.000184
+   },
+   {
+    "task_id": 12,
+    "ask": "Do I have portfolio proof of AWS?",
+    "expected": {
+     "persona": "ai_engineer",
+     "ask": "Do I have portfolio proof of AWS?",
+     "tool": "search_evidence",
+     "args_contains": {
+      "requirement": "AWS"
+     }
+    },
+    "called": "search_evidence",
+    "arguments": {
+     "k": 5,
+     "requirement": "AWS"
+    },
+    "tool_ok": true,
+    "args_ok": true,
+    "usage": {
+     "input_tokens": 1013,
+     "output_tokens": 68,
+     "total_tokens": 1081,
+     "input_token_details": {
+      "cache_read": 768
+     },
+     "output_token_details": {
+      "reasoning": 32
+     }
+    },
+    "model": "openai/gpt-oss-120b",
+    "requested_model": "openai/gpt-oss-120b",
+    "latency_s": 1.296,
+    "error": null,
+    "estimated_cost_usd": 0.000193
+   },
+   {
+    "task_id": 13,
+    "ask": "Show me the full post for job dev-fu-01726.",
+    "expected": {
+     "persona": "fullstack_dev",
+     "ask": "Show me the full post for job dev-fu-01726.",
+     "tool": "get_job",
+     "args": {
+      "job_id": "dev-fu-01726"
+     }
+    },
+    "called": "get_job",
+    "arguments": {
+     "job_id": "dev-fu-01726"
+    },
+    "tool_ok": true,
+    "args_ok": true,
+    "usage": {
+     "input_tokens": 1019,
+     "output_tokens": 54,
+     "total_tokens": 1073,
+     "input_token_details": {
+      "cache_read": 768
+     },
+     "output_token_details": {
+      "reasoning": 21
+     }
+    },
+    "model": "openai/gpt-oss-120b",
+    "requested_model": "openai/gpt-oss-120b",
+    "latency_s": 0.536,
+    "error": null,
+    "estimated_cost_usd": 0.000185
+   },
+   {
+    "task_id": 14,
+    "ask": "Do I have portfolio proof of Adobe Illustrator?",
+    "expected": {
+     "persona": "fullstack_dev",
+     "ask": "Do I have portfolio proof of Adobe Illustrator?",
+     "tool": "search_evidence",
+     "args_contains": {
+      "requirement": "Adobe Illustrator"
+     }
+    },
+    "called": "list_skills",
+    "arguments": {},
+    "tool_ok": false,
+    "args_ok": false,
+    "usage": {
+     "input_tokens": 1014,
+     "output_tokens": 70,
+     "total_tokens": 1084,
+     "input_token_details": {
+      "cache_read": 768
+     },
+     "output_token_details": {
+      "reasoning": 50
+     }
+    },
+    "model": "openai/gpt-oss-120b",
+    "requested_model": "openai/gpt-oss-120b",
+    "latency_s": 0.379,
+    "error": null,
+    "estimated_cost_usd": 0.000194
+   },
+   {
+    "task_id": 15,
+    "ask": "Do I have portfolio proof of Data visualization?",
+    "expected": {
+     "persona": "data_analyst",
+     "ask": "Do I have portfolio proof of Data visualization?",
+     "tool": "search_evidence",
+     "args_contains": {
+      "requirement": "Data visualization"
+     }
+    },
+    "called": "list_skills",
+    "arguments": {},
+    "tool_ok": false,
+    "args_ok": false,
+    "usage": {
+     "input_tokens": 1014,
+     "output_tokens": 71,
+     "total_tokens": 1085,
+     "input_token_details": {
+      "cache_read": 768
+     },
+     "output_token_details": {
+      "reasoning": 51
+     }
+    },
+    "model": "openai/gpt-oss-120b",
+    "requested_model": "openai/gpt-oss-120b",
+    "latency_s": 0.491,
+    "error": null,
+    "estimated_cost_usd": 0.000195
+   },
+   {
+    "task_id": 16,
+    "ask": "Is client cl-0062 trustworthy? Check their history.",
+    "expected": {
+     "persona": "data_analyst",
+     "ask": "Is client cl-0062 trustworthy? Check their history.",
+     "tool": "get_client_history",
+     "args": {
+      "client_id": "cl-0062"
+     }
+    },
+    "called": "get_client_history",
+    "arguments": {
+     "client_id": "cl-0062"
+    },
+    "tool_ok": true,
+    "args_ok": true,
+    "usage": {
+     "input_tokens": 1017,
+     "output_tokens": 52,
+     "total_tokens": 1069,
+     "input_token_details": {
+      "cache_read": 768
+     },
+     "output_token_details": {
+      "reasoning": 20
+     }
+    },
+    "model": "openai/gpt-oss-120b",
+    "requested_model": "openai/gpt-oss-120b",
+    "latency_s": 0.503,
+    "error": null,
+    "estimated_cost_usd": 0.000184
+   },
+   {
+    "task_id": 17,
+    "ask": "Show me the full post for job dev-ai-01549.",
+    "expected": {
+     "persona": "ai_engineer",
+     "ask": "Show me the full post for job dev-ai-01549.",
+     "tool": "get_job",
+     "args": {
+      "job_id": "dev-ai-01549"
+     }
+    },
+    "called": "get_job",
+    "arguments": {
+     "job_id": "dev-ai-01549"
+    },
+    "tool_ok": true,
+    "args_ok": true,
+    "usage": {
+     "input_tokens": 1018,
+     "output_tokens": 53,
+     "total_tokens": 1071,
+     "input_token_details": {
+      "cache_read": 768
+     },
+     "output_token_details": {
+      "reasoning": 21
+     }
+    },
+    "model": "openai/gpt-oss-120b",
+    "requested_model": "openai/gpt-oss-120b",
+    "latency_s": 0.553,
+    "error": null,
+    "estimated_cost_usd": 0.000185
+   },
+   {
+    "task_id": 18,
+    "ask": "Is client cl-0227 trustworthy? Check their history.",
+    "expected": {
+     "persona": "data_analyst",
+     "ask": "Is client cl-0227 trustworthy? Check their history.",
+     "tool": "get_client_history",
+     "args": {
+      "client_id": "cl-0227"
+     }
+    },
+    "called": "get_client_history",
+    "arguments": {
+     "client_id": "cl-0227"
+    },
+    "tool_ok": true,
+    "args_ok": true,
+    "usage": {
+     "input_tokens": 1017,
+     "output_tokens": 52,
+     "total_tokens": 1069,
+     "input_token_details": {
+      "cache_read": 768
+     },
+     "output_token_details": {
+      "reasoning": 20
+     }
+    },
+    "model": "openai/gpt-oss-120b",
+    "requested_model": "openai/gpt-oss-120b",
+    "latency_s": 0.334,
+    "error": null,
+    "estimated_cost_usd": 0.000184
+   },
+   {
+    "task_id": 19,
+    "ask": "Do I have portfolio proof of Elasticsearch?",
+    "expected": {
+     "persona": "fullstack_dev",
+     "ask": "Do I have portfolio proof of Elasticsearch?",
+     "tool": "search_evidence",
+     "args_contains": {
+      "requirement": "Elasticsearch"
+     }
+    },
+    "called": "search_evidence",
+    "arguments": {
+     "k": 5,
+     "requirement": "Elasticsearch"
+    },
+    "tool_ok": true,
+    "args_ok": true,
+    "usage": {
+     "input_tokens": 1013,
+     "output_tokens": 69,
+     "total_tokens": 1082,
+     "input_token_details": {
+      "cache_read": 768
+     },
+     "output_token_details": {
+      "reasoning": 32
+     }
+    },
+    "model": "openai/gpt-oss-120b",
+    "requested_model": "openai/gpt-oss-120b",
+    "latency_s": 0.35,
+    "error": null,
+    "estimated_cost_usd": 0.000193
+   },
+   {
+    "task_id": 20,
+    "ask": "Show me the full post for job dev-ai-01603.",
+    "expected": {
+     "persona": "ai_engineer",
+     "ask": "Show me the full post for job dev-ai-01603.",
+     "tool": "get_job",
+     "args": {
+      "job_id": "dev-ai-01603"
+     }
+    },
+    "called": "get_job",
+    "arguments": {
+     "job_id": "dev-ai-01603"
+    },
+    "tool_ok": true,
+    "args_ok": true,
+    "usage": {
+     "input_tokens": 1018,
+     "output_tokens": 52,
+     "total_tokens": 1070,
+     "input_token_details": {
+      "cache_read": 768
+     },
+     "output_token_details": {
+      "reasoning": 20
+     }
+    },
+    "model": "openai/gpt-oss-120b",
+    "requested_model": "openai/gpt-oss-120b",
+    "latency_s": 0.548,
+    "error": null,
+    "estimated_cost_usd": 0.000184
+   },
+   {
+    "task_id": 21,
+    "ask": "How many Connects do I have left?",
+    "expected": {
+     "persona": "data_analyst",
+     "ask": "How many Connects do I have left?",
+     "tool": "get_connects_balance",
+     "args": {}
+    },
+    "called": "get_connects_balance",
+    "arguments": {},
+    "tool_ok": true,
+    "args_ok": true,
+    "usage": {
+     "input_tokens": 1014,
+     "output_tokens": 36,
+     "total_tokens": 1050,
+     "input_token_details": {
+      "cache_read": 768
+     },
+     "output_token_details": {
+      "reasoning": 15
+     }
+    },
+    "model": "openai/gpt-oss-120b",
+    "requested_model": "openai/gpt-oss-120b",
+    "latency_s": 0.421,
+    "error": null,
+    "estimated_cost_usd": 0.000174
+   },
+   {
+    "task_id": 22,
+    "ask": "Show me the full post for job dev-fu-01717.",
+    "expected": {
+     "persona": "fullstack_dev",
+     "ask": "Show me the full post for job dev-fu-01717.",
+     "tool": "get_job",
+     "args": {
+      "job_id": "dev-fu-01717"
+     }
+    },
+    "called": "get_job",
+    "arguments": {
+     "job_id": "dev-fu-01717"
+    },
+    "tool_ok": true,
+    "args_ok": true,
+    "usage": {
+     "input_tokens": 1019,
+     "output_tokens": 54,
+     "total_tokens": 1073,
+     "input_token_details": {
+      "cache_read": 768
+     },
+     "output_token_details": {
+      "reasoning": 21
+     }
+    },
+    "model": "openai/gpt-oss-120b",
+    "requested_model": "openai/gpt-oss-120b",
+    "latency_s": 0.394,
+    "error": null,
+    "estimated_cost_usd": 0.000185
+   },
+   {
+    "task_id": 23,
+    "ask": "Show me the full post for job dev-da-02043.",
+    "expected": {
+     "persona": "data_analyst",
+     "ask": "Show me the full post for job dev-da-02043.",
+     "tool": "get_job",
+     "args": {
+      "job_id": "dev-da-02043"
+     }
+    },
+    "called": "get_job",
+    "arguments": {
+     "job_id": "dev-da-02043"
+    },
+    "tool_ok": true,
+    "args_ok": true,
+    "usage": {
+     "input_tokens": 1018,
+     "output_tokens": 52,
+     "total_tokens": 1070,
+     "input_token_details": {
+      "cache_read": 768
+     },
+     "output_token_details": {
+      "reasoning": 20
+     }
+    },
+    "model": "openai/gpt-oss-120b",
+    "requested_model": "openai/gpt-oss-120b",
+    "latency_s": 0.403,
+    "error": null,
+    "estimated_cost_usd": 0.000184
+   },
+   {
+    "task_id": 24,
+    "ask": "How many Connects do I have left?",
+    "expected": {
+     "persona": "fullstack_dev",
+     "ask": "How many Connects do I have left?",
+     "tool": "get_connects_balance",
+     "args": {}
+    },
+    "called": "get_connects_balance",
+    "arguments": {},
+    "tool_ok": true,
+    "args_ok": true,
+    "usage": {
+     "input_tokens": 1014,
+     "output_tokens": 31,
+     "total_tokens": 1045,
+     "input_token_details": {
+      "cache_read": 768
+     },
+     "output_token_details": {
+      "reasoning": 10
+     }
+    },
+    "model": "openai/gpt-oss-120b",
+    "requested_model": "openai/gpt-oss-120b",
+    "latency_s": 0.424,
+    "error": null,
+    "estimated_cost_usd": 0.000171
+   },
+   {
+    "task_id": 25,
+    "ask": "Is client cl-0246 trustworthy? Check their history.",
+    "expected": {
+     "persona": "ai_engineer",
+     "ask": "Is client cl-0246 trustworthy? Check their history.",
+     "tool": "get_client_history",
+     "args": {
+      "client_id": "cl-0246"
+     }
+    },
+    "called": "get_client_history",
+    "arguments": {
+     "client_id": "cl-0246"
+    },
+    "tool_ok": true,
+    "args_ok": true,
+    "usage": {
+     "input_tokens": 1017,
+     "output_tokens": 52,
+     "total_tokens": 1069,
+     "input_token_details": {
+      "cache_read": 768
+     },
+     "output_token_details": {
+      "reasoning": 20
+     }
+    },
+    "model": "openai/gpt-oss-120b",
+    "requested_model": "openai/gpt-oss-120b",
+    "latency_s": 0.612,
+    "error": null,
+    "estimated_cost_usd": 0.000184
+   },
+   {
+    "task_id": 26,
+    "ask": "Is client cl-0092 trustworthy? Check their history.",
+    "expected": {
+     "persona": "ai_engineer",
+     "ask": "Is client cl-0092 trustworthy? Check their history.",
+     "tool": "get_client_history",
+     "args": {
+      "client_id": "cl-0092"
+     }
+    },
+    "called": "get_client_history",
+    "arguments": {
+     "client_id": "cl-0092"
+    },
+    "tool_ok": true,
+    "args_ok": true,
+    "usage": {
+     "input_tokens": 1017,
+     "output_tokens": 52,
+     "total_tokens": 1069,
+     "input_token_details": {
+      "cache_read": 768
+     },
+     "output_token_details": {
+      "reasoning": 20
+     }
+    },
+    "model": "openai/gpt-oss-120b",
+    "requested_model": "openai/gpt-oss-120b",
+    "latency_s": 0.39,
+    "error": null,
+    "estimated_cost_usd": 0.000184
+   },
+   {
+    "task_id": 27,
+    "ask": "What do ml modeling jobs usually pay?",
+    "expected": {
+     "persona": "ai_engineer",
+     "ask": "What do ml modeling jobs usually pay?",
+     "tool": "get_market_stats",
+     "args": {
+      "category": "ml_modeling"
+     }
+    },
+    "called": "get_market_stats",
+    "arguments": {
+     "category": "Machine Learning"
+    },
+    "tool_ok": true,
+    "args_ok": false,
+    "usage": {
+     "input_tokens": 1013,
+     "output_tokens": 78,
+     "total_tokens": 1091,
+     "input_token_details": {
+      "cache_read": 768
+     },
+     "output_token_details": {
+      "reasoning": 49
+     }
+    },
+    "model": "openai/gpt-oss-120b",
+    "requested_model": "openai/gpt-oss-120b",
+    "latency_s": 0.434,
+    "error": null,
+    "estimated_cost_usd": 0.000199
+   },
+   {
+    "task_id": 28,
+    "ask": "Show me the full post for job dev-ai-01598.",
+    "expected": {
+     "persona": "ai_engineer",
+     "ask": "Show me the full post for job dev-ai-01598.",
+     "tool": "get_job",
+     "args": {
+      "job_id": "dev-ai-01598"
+     }
+    },
+    "called": "get_job",
+    "arguments": {
+     "job_id": "dev-ai-01598"
+    },
+    "tool_ok": true,
+    "args_ok": true,
+    "usage": {
+     "input_tokens": 1018,
+     "output_tokens": 52,
+     "total_tokens": 1070,
+     "input_token_details": {
+      "cache_read": 768
+     },
+     "output_token_details": {
+      "reasoning": 20
+     }
+    },
+    "model": "openai/gpt-oss-120b",
+    "requested_model": "openai/gpt-oss-120b",
+    "latency_s": 0.399,
+    "error": null,
+    "estimated_cost_usd": 0.000184
+   },
+   {
+    "task_id": 29,
+    "ask": "Show me the full post for job dev-ai-01636.",
+    "expected": {
+     "persona": "ai_engineer",
+     "ask": "Show me the full post for job dev-ai-01636.",
+     "tool": "get_job",
+     "args": {
+      "job_id": "dev-ai-01636"
+     }
+    },
+    "called": "get_job",
+    "arguments": {
+     "job_id": "dev-ai-01636"
+    },
+    "tool_ok": true,
+    "args_ok": true,
+    "usage": {
+     "input_tokens": 1018,
+     "output_tokens": 52,
+     "total_tokens": 1070,
+     "input_token_details": {
+      "cache_read": 768
+     },
+     "output_token_details": {
+      "reasoning": 20
+     }
+    },
+    "model": "openai/gpt-oss-120b",
+    "requested_model": "openai/gpt-oss-120b",
+    "latency_s": 0.394,
+    "error": null,
+    "estimated_cost_usd": 0.000184
+   },
+   {
+    "task_id": 30,
+    "ask": "Is client cl-0207 trustworthy? Check their history.",
+    "expected": {
+     "persona": "fullstack_dev",
+     "ask": "Is client cl-0207 trustworthy? Check their history.",
+     "tool": "get_client_history",
+     "args": {
+      "client_id": "cl-0207"
+     }
+    },
+    "called": "get_client_history",
+    "arguments": {
+     "client_id": "cl-0207"
+    },
+    "tool_ok": true,
+    "args_ok": true,
+    "usage": {
+     "input_tokens": 1017,
+     "output_tokens": 52,
+     "total_tokens": 1069,
+     "input_token_details": {
+      "cache_read": 768
+     },
+     "output_token_details": {
+      "reasoning": 20
+     }
+    },
+    "model": "openai/gpt-oss-120b",
+    "requested_model": "openai/gpt-oss-120b",
+    "latency_s": 0.651,
+    "error": null,
+    "estimated_cost_usd": 0.000184
+   },
+   {
+    "task_id": 31,
+    "ask": "How many Connects do I have left?",
+    "expected": {
+     "persona": "data_analyst",
+     "ask": "How many Connects do I have left?",
+     "tool": "get_connects_balance",
+     "args": {}
+    },
+    "called": "get_connects_balance",
+    "arguments": {},
+    "tool_ok": true,
+    "args_ok": true,
+    "usage": {
+     "input_tokens": 1014,
+     "output_tokens": 36,
+     "total_tokens": 1050,
+     "input_token_details": {
+      "cache_read": 768
+     },
+     "output_token_details": {
+      "reasoning": 15
+     }
+    },
+    "model": "openai/gpt-oss-120b",
+    "requested_model": "openai/gpt-oss-120b",
+    "latency_s": 0.247,
+    "error": null,
+    "estimated_cost_usd": 0.000174
+   },
+   {
+    "task_id": 32,
+    "ask": "Show me the full post for job dev-ai-01627.",
+    "expected": {
+     "persona": "ai_engineer",
+     "ask": "Show me the full post for job dev-ai-01627.",
+     "tool": "get_job",
+     "args": {
+      "job_id": "dev-ai-01627"
+     }
+    },
+    "called": "get_job",
+    "arguments": {
+     "job_id": "dev-ai-01627"
+    },
+    "tool_ok": true,
+    "args_ok": true,
+    "usage": {
+     "input_tokens": 1018,
+     "output_tokens": 52,
+     "total_tokens": 1070,
+     "input_token_details": {
+      "cache_read": 768
+     },
+     "output_token_details": {
+      "reasoning": 20
+     }
+    },
+    "model": "openai/gpt-oss-120b",
+    "requested_model": "openai/gpt-oss-120b",
+    "latency_s": 0.286,
+    "error": null,
+    "estimated_cost_usd": 0.000184
+   },
+   {
+    "task_id": 33,
+    "ask": "How many Connects do I have left?",
+    "expected": {
+     "persona": "data_analyst",
+     "ask": "How many Connects do I have left?",
+     "tool": "get_connects_balance",
+     "args": {}
+    },
+    "called": "get_connects_balance",
+    "arguments": {},
+    "tool_ok": true,
+    "args_ok": true,
+    "usage": {
+     "input_tokens": 1014,
+     "output_tokens": 42,
+     "total_tokens": 1056,
+     "input_token_details": {
+      "cache_read": 768
+     },
+     "output_token_details": {
+      "reasoning": 21
+     }
+    },
+    "model": "openai/gpt-oss-120b",
+    "requested_model": "openai/gpt-oss-120b",
+    "latency_s": 0.627,
+    "error": null,
+    "estimated_cost_usd": 0.000177
+   },
+   {
+    "task_id": 34,
+    "ask": "Show me the full post for job dev-da-01975.",
+    "expected": {
+     "persona": "data_analyst",
+     "ask": "Show me the full post for job dev-da-01975.",
+     "tool": "get_job",
+     "args": {
+      "job_id": "dev-da-01975"
+     }
+    },
+    "called": "get_job",
+    "arguments": {
+     "job_id": "dev-da-01975"
+    },
+    "tool_ok": true,
+    "args_ok": true,
+    "usage": {
+     "input_tokens": 1018,
+     "output_tokens": 52,
+     "total_tokens": 1070,
+     "input_token_details": {
+      "cache_read": 768
+     },
+     "output_token_details": {
+      "reasoning": 20
+     }
+    },
+    "model": "openai/gpt-oss-120b",
+    "requested_model": "openai/gpt-oss-120b",
+    "latency_s": 0.487,
+    "error": null,
+    "estimated_cost_usd": 0.000184
+   },
+   {
+    "task_id": 35,
+    "ask": "How many Connects do I have left?",
+    "expected": {
+     "persona": "fullstack_dev",
+     "ask": "How many Connects do I have left?",
+     "tool": "get_connects_balance",
+     "args": {}
+    },
+    "called": "get_connects_balance",
+    "arguments": {},
+    "tool_ok": true,
+    "args_ok": true,
+    "usage": {
+     "input_tokens": 1014,
+     "output_tokens": 31,
+     "total_tokens": 1045,
+     "input_token_details": {
+      "cache_read": 768
+     },
+     "output_token_details": {
+      "reasoning": 10
+     }
+    },
+    "model": "openai/gpt-oss-120b",
+    "requested_model": "openai/gpt-oss-120b",
+    "latency_s": 0.379,
+    "error": null,
+    "estimated_cost_usd": 0.000171
+   },
+   {
+    "task_id": 36,
+    "ask": "Do I have portfolio proof of Elementor?",
+    "expected": {
+     "persona": "data_analyst",
+     "ask": "Do I have portfolio proof of Elementor?",
+     "tool": "search_evidence",
+     "args_contains": {
+      "requirement": "Elementor"
+     }
+    },
+    "called": "search_evidence",
+    "arguments": {
+     "k": 5,
+     "requirement": "Elementor"
+    },
+    "tool_ok": true,
+    "args_ok": true,
+    "usage": {
+     "input_tokens": 1013,
+     "output_tokens": 68,
+     "total_tokens": 1081,
+     "input_token_details": {
+      "cache_read": 768
+     },
+     "output_token_details": {
+      "reasoning": 31
+     }
+    },
+    "model": "openai/gpt-oss-120b",
+    "requested_model": "openai/gpt-oss-120b",
+    "latency_s": 0.455,
+    "error": null,
+    "estimated_cost_usd": 0.000193
+   },
+   {
+    "task_id": 37,
+    "ask": "How many Connects do I have left?",
+    "expected": {
+     "persona": "data_analyst",
+     "ask": "How many Connects do I have left?",
+     "tool": "get_connects_balance",
+     "args": {}
+    },
+    "called": "get_connects_balance",
+    "arguments": {},
+    "tool_ok": true,
+    "args_ok": true,
+    "usage": {
+     "input_tokens": 1014,
+     "output_tokens": 40,
+     "total_tokens": 1054,
+     "input_token_details": {
+      "cache_read": 768
+     },
+     "output_token_details": {
+      "reasoning": 19
+     }
+    },
+    "model": "openai/gpt-oss-120b",
+    "requested_model": "openai/gpt-oss-120b",
+    "latency_s": 1.878,
+    "error": null,
+    "estimated_cost_usd": 0.000176
+   },
+   {
+    "task_id": 38,
+    "ask": "Is client cl-0112 trustworthy? Check their history.",
+    "expected": {
+     "persona": "ai_engineer",
+     "ask": "Is client cl-0112 trustworthy? Check their history.",
+     "tool": "get_client_history",
+     "args": {
+      "client_id": "cl-0112"
+     }
+    },
+    "called": "get_client_history",
+    "arguments": {
+     "client_id": "cl-0112"
+    },
+    "tool_ok": true,
+    "args_ok": true,
+    "usage": {
+     "input_tokens": 1017,
+     "output_tokens": 52,
+     "total_tokens": 1069,
+     "input_token_details": {
+      "cache_read": 768
+     },
+     "output_token_details": {
+      "reasoning": 20
+     }
+    },
+    "model": "openai/gpt-oss-120b",
+    "requested_model": "openai/gpt-oss-120b",
+    "latency_s": 0.369,
+    "error": null,
+    "estimated_cost_usd": 0.000184
+   },
+   {
+    "task_id": 39,
+    "ask": "Do I have portfolio proof of Celery?",
+    "expected": {
+     "persona": "fullstack_dev",
+     "ask": "Do I have portfolio proof of Celery?",
+     "tool": "search_evidence",
+     "args_contains": {
+      "requirement": "Celery"
+     }
+    },
+    "called": "search_evidence",
+    "arguments": {
+     "k": 5,
+     "requirement": "Celery"
+    },
+    "tool_ok": true,
+    "args_ok": true,
+    "usage": {
+     "input_tokens": 1014,
+     "output_tokens": 75,
+     "total_tokens": 1089,
+     "input_token_details": {
+      "cache_read": 768
+     },
+     "output_token_details": {
+      "reasoning": 38
+     }
+    },
+    "model": "openai/gpt-oss-120b",
+    "requested_model": "openai/gpt-oss-120b",
+    "latency_s": 0.56,
+    "error": null,
+    "estimated_cost_usd": 0.000197
+   },
+   {
+    "task_id": 40,
+    "ask": "Show me the full post for job dev-ai-01630.",
+    "expected": {
+     "persona": "ai_engineer",
+     "ask": "Show me the full post for job dev-ai-01630.",
+     "tool": "get_job",
+     "args": {
+      "job_id": "dev-ai-01630"
+     }
+    },
+    "called": "get_job",
+    "arguments": {
+     "job_id": "dev-ai-01630"
+    },
+    "tool_ok": true,
+    "args_ok": true,
+    "usage": {
+     "input_tokens": 1018,
+     "output_tokens": 52,
+     "total_tokens": 1070,
+     "input_token_details": {
+      "cache_read": 768
+     },
+     "output_token_details": {
+      "reasoning": 20
+     }
+    },
+    "model": "openai/gpt-oss-120b",
+    "requested_model": "openai/gpt-oss-120b",
+    "latency_s": 0.358,
+    "error": null,
+    "estimated_cost_usd": 0.000184
+   }
+  ]
+ }
+}

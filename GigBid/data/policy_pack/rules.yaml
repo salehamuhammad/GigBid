@@ -1,0 +1,76 @@
+version: "1.1"
+# severity: block  -> draft cannot be sent; reason is shown in the UI
+#           redact -> offending text is removed automatically and the user is told
+#           warn   -> shown inline, does not stop the draft
+compliance_rules:
+  - id: contact_email
+    description: No email addresses (off-platform contact).
+    severity: redact
+    patterns: ['[\w.+-]+@[\w-]+\.[\w.-]+']
+  - id: contact_phone
+    description: No phone numbers (off-platform contact).
+    severity: redact
+    patterns: ['(?<!\w)\+?\d[\d ()\-]{8,}\d(?!\w)']
+  - id: contact_handle
+    description: No messaging apps or handles (off-platform contact).
+    severity: redact
+    patterns: ['(?i)\b(telegram|whatsapp|skype|signal|discord|wechat|viber)\b[^.!?\n]*', '(?i)\b(t\.me|wa\.me)/\S+', '(?<!\w)@[A-Za-z0-9_]{4,}']
+  - id: external_link
+    description: No external links.
+    severity: redact
+    patterns: ['(?i)\bhttps?://\S+', '(?i)\bwww\.\S+']
+  - id: off_platform_payment
+    description: No off-platform payment.
+    severity: block
+    patterns: ['(?i)\b(paypal|venmo|cash ?app|wire transfer|western union|crypto(currency)?|bitcoin|usdt|bank transfer|zelle|payoneer)\b', '(?i)\b(outside|off)[- ](the )?(platform|upwork|gigsim)\b']
+  - id: guarantee
+    description: No guarantees of results.
+    severity: redact
+    patterns: ['(?i)[^.!?\n]*\b(guarantee[ds]?|100% (success|satisfaction|accuracy)|risk[- ]free|money[- ]back|i promise|will definitely|ranked? #?1)\b[^.!?\n]*[.!?]?']
+  - id: free_work
+    description: Do not offer unpaid production work.
+    severity: redact
+    patterns: ['(?i)[^.!?\n]*\b(for free|free of charge|unpaid (trial|test|sample)|no charge)\b[^.!?\n]*[.!?]?']
+  - id: unsupported_claim
+    description: Experience claims must be supported by portfolio evidence (set by claim verification, not regex).
+    severity: block
+    patterns: []
+  - id: cover_letter_length
+    description: Cover letter must fit the marketplace maximum (read from get_policy).
+    severity: block
+    patterns: []
+# Risk Assessor: scam / red-flag signals in job posts and client messages.
+risk_signals:
+  off_platform_contact: {weight: 0.45, patterns: ['(?i)\b(telegram|whatsapp|skype|signal app|wechat)\b', '(?i)[\w.+-]+@(gmail|yahoo|outlook|hotmail|proton)\.\w+', '(?i)\b(t\.me|wa\.me)/']}
+  off_platform_payment: {weight: 0.5, patterns: ['(?i)\b(outside|off)[- ]?(the )?platform\b', '(?i)\b(paypal|western union|wire back|crypto wallet|gift cards?|friends and family|bank transfer)\b', '(?i)to (avoid|skip) (the )?fees']}
+  free_work: {weight: 0.4, patterns: ['(?i)\b(for free|unpaid (trial|test)|free (sample|test|trial)|as a test.{0,40}free)\b']}
+  upfront_fee: {weight: 0.6, patterns: ['(?i)\b(registration|refundable|security) (fee|deposit)\b', '(?i)\bpay (a|us|the) .{0,30}(fee|deposit)\b', '(?i)\bcheque\b.{0,60}\b(wire|send) back\b']}
+  too_good: {weight: 0.2, patterns: ['(?i)\b(easy money|no experience needed|earn \$\d+ (a|per) day)\b']}
+client_signals:
+  payment_unverified: 0.25
+  no_hire_history: 0.10
+  low_rating_below: 3.8
+  low_rating: 0.15
+  new_account_days: 30
+  new_account: 0.10
+# Injection defence: sentences matching these are removed from untrusted text before any LLM sees it.
+injection_patterns:
+  - '(?i)\b(ignore|disregard|forget|override)\b.{0,40}\b(previous|prior|above|all|your)\b.{0,30}\b(instructions?|rules?|prompts?|polic(y|ies)|portfolio)\b'
+  - '(?i)(\bsystem (note|prompt|message)\b|\bdeveloper mode\b|\[\[\s*instruction\s*\]\]|###\s*ai\b|<!--\s*assistant\b)'
+  - '(?i)\bforget (the|your) (portfolio|rules|instructions|guidelines)\b'
+  - '(?i)\b(ai|llm|automated|bot)\b.{0,25}\b(assistants?|agents?|tools?|models?)\b.{0,60}\b(must|should|reading this|include|set|submit|reveal)\b'
+  - '(?i)\b(reveal|print|show)\b.{0,30}\b(system prompt|instructions|api key|secret)\b'
+  - '(?i)\bwithout (human )?approval\b'
+generic_phrases:
+  - '(?i)^\W*dear (hiring manager|sir|madam|client)'
+  - '(?i)\bi am writing to (express|apply)'
+  - '(?i)\bi hope this (message|email) finds you well'
+  - '(?i)\bpassionate\b'
+  - '(?i)\bperfect fit\b'
+  - '(?i)\bi have read your job (description|post) carefully'
+pii_patterns:
+  email: '[\w.+-]+@[\w-]+\.[\w.-]+'
+  phone: '(?<!\w)\+?\d[\d ()\-]{8,}\d(?!\w)'
+  card: '\b(?:\d[ -]?){13,19}\b'
+  iban: '\b[A-Z]{2}\d{2}[A-Z0-9]{11,30}\b'
+  token: '(?i)\b(bearer|sk|gsk|ghp|pat)[-_ ][A-Za-z0-9_\-.]{12,}\b'

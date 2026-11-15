@@ -1,0 +1,211 @@
+# GigBid configuration. Every model, threshold, budget and platform rule lives here
+# (or in data/policy_pack/rules.yaml) -- never in code. Env vars override the keys marked [env].
+marketplace:
+  mode: gigsim                    # [env MARKETPLACE_MODE] gigsim | upwork
+  max_requests_per_minute: 26     # our own limiter; GigSim allows 30/min, so we stay under it  [env MARKETPLACE_RPM]
+  scout_max_new_per_run: 5        # new jobs fetched per scouting pass; the rest are picked up on the next pass
+  timeout_s: 10
+  max_retries: 3
+  backoff_base_s: 0.4
+  scout_interval_minutes:
+    gigsim: 5
+    upwork: 180                   # justified in docs/RUNBOOK.md
+  upwork:
+    url: https://mcp.upwork.com/mcp
+    # Port method -> Upwork MCP tool name. Verified at connect time against list_tools();
+    # a missing tool disables that port method with a clear error instead of guessing.
+    tool_map:
+      search_jobs: search_jobs
+      get_job: get_job_details
+      get_client_history: get_client_details
+      get_connects_balance: get_connects_balance
+      list_messages: list_messages
+      create_proposal_draft: create_proposal_draft
+      send_message: create_message_draft
+
+tools:
+  timeout_s: 30
+  max_retries: 2
+  backoff_base_s: 0.5
+  cache_ttl_s: 300                # read-only reference data that rarely changes is cached per process
+  cacheable: [marketplace.get_policy, marketplace.get_market_stats, portfolio.list_skills]
+  # A6: each agent gets only the tools it needs, filtered by name. Anything else is refused.
+  allow:
+    scout: [marketplace.search_jobs, marketplace.get_job]
+    analyst: []
+    risk: [marketplace.get_client_history]
+    matcher: [portfolio.search_evidence, portfolio.list_skills]
+    pricing: [marketplace.get_market_stats, marketplace.get_connects_balance, marketplace.get_policy]
+    writer: [portfolio.search_evidence, portfolio.get_case_study]
+    verifier: [portfolio.get_case_study]
+    critic: [portfolio.get_case_study]
+    compliance: []
+    # the approval gate: the only place write tools are reachable, and only after a human approved
+    gateway: [marketplace.create_proposal_draft, marketplace.submit_proposal]
+    liaison: [marketplace.list_threads, marketplace.list_messages, marketplace.list_events, marketplace.send_message,
+              workspace.find_free_slots, workspace.create_interview_hold, workspace.create_email_draft, portfolio.search_evidence]
+    # baselines for R&D question C hold every tool
+    single_agent: ["*"]
+
+models:
+  profile: offline                # [env MODEL_PROFILE]
+  profiles:
+    # Deterministic, no network, no key. Used by CI and for a first run. Not an LLM.
+    offline:
+      provider: offline
+      embeddings: {provider: hash, model: hash-1024}
+      reranker: {provider: lexical, model: lexical-overlap}
+      nodes: {}
+    # REQUIRED profile: open-weight models through a hosted open-model provider.
+    open:
+      provider: openai_compatible
+      base_url: https://api.groq.com/openai/v1
+      api_key_env: GROQ_API_KEY
+      embeddings: &emb {provider: fastembed, model: BAAI/bge-small-en-v1.5}
+      reranker: &rr {provider: fastembed, model: BAAI/bge-reranker-base}
+      fallback_model: openai/gpt-oss-20b
+      nodes:
+        analyst: openai/gpt-oss-20b
+        risk: openai/gpt-oss-20b
+        matcher: openai/gpt-oss-20b
+        pricing: openai/gpt-oss-20b
+        intent: openai/gpt-oss-20b
+        compliance: openai/gpt-oss-20b
+        verifier: openai/gpt-oss-20b
+        rag: openai/gpt-oss-20b
+        writer: openai/gpt-oss-120b
+        critic: openai/gpt-oss-120b
+        liaison: openai/gpt-oss-120b
+        judge: openai/gpt-oss-120b
+      # USD per 1M tokens [input, output]. Check the provider's pricing page before reporting cost.
+      price_per_mtok:
+        openai/gpt-oss-20b: [0.075, 0.30]
+        openai/gpt-oss-120b: [0.15, 0.60]
+    # Second open configuration. Keep 20B routing and also use 20B for drafting and review.
+    open_alt:
+      provider: openai_compatible
+      base_url: https://api.groq.com/openai/v1
+      api_key_env: GROQ_API_KEY
+      embeddings: *emb
+      reranker: *rr
+      fallback_model: openai/gpt-oss-20b
+      nodes:
+        analyst: openai/gpt-oss-20b
+        risk: openai/gpt-oss-20b
+        matcher: openai/gpt-oss-20b
+        pricing: openai/gpt-oss-20b
+        intent: openai/gpt-oss-20b
+        compliance: openai/gpt-oss-20b
+        verifier: openai/gpt-oss-20b
+        rag: openai/gpt-oss-20b
+        writer: openai/gpt-oss-20b
+        critic: openai/gpt-oss-20b
+        liaison: openai/gpt-oss-20b
+        judge: openai/gpt-oss-20b
+      price_per_mtok:
+        openai/gpt-oss-20b: [0.075, 0.30]
+    # Fully local open profile (docker compose `ollama` service).
+    open_local:
+      provider: openai_compatible
+      base_url_env: OLLAMA_BASE_URL
+      base_url_suffix: /v1
+      api_key: ollama
+      embeddings: *emb
+      reranker: *rr
+      fallback_model: qwen3:4b
+      nodes:
+        analyst: qwen3:4b
+        risk: qwen3:4b
+        matcher: qwen3:4b
+        pricing: qwen3:4b
+        intent: qwen3:4b
+        compliance: qwen3:4b
+        verifier: qwen3:4b
+        rag: qwen3:4b
+        writer: qwen3:8b
+        critic: qwen3:8b
+        liaison: qwen3:8b
+        judge: qwen3:8b
+      price_per_mtok: {}
+    # OPTIONAL paid profile.
+    paid:
+      provider: openai_compatible
+      base_url: https://api.openai.com/v1
+      api_key_env: OPENAI_API_KEY
+      embeddings: *emb
+      reranker: *rr
+      fallback_model: gpt-4o-mini
+      nodes:
+        analyst: gpt-4o-mini
+        risk: gpt-4o-mini
+        matcher: gpt-4o-mini
+        pricing: gpt-4o-mini
+        intent: gpt-4o-mini
+        compliance: gpt-4o-mini
+        verifier: gpt-4o-mini
+        rag: gpt-4o-mini
+        writer: gpt-4o
+        critic: gpt-4o
+        liaison: gpt-4o
+        judge: gpt-4o
+      price_per_mtok:
+        gpt-4o-mini: [0.15, 0.60]
+        gpt-4o: [2.50, 10.00]
+  temperature: 0.2
+  request_timeout_s: 60
+
+rag:
+  deployed_variant: v9_skill_graph # see the matched retrieval outcomes and full-dev results
+  # `best` preserves the original BGE composition for comparison.
+  best:
+    # Combines V9's skill-graph ranking with V3's reranker and V8's corrective refusal loop.
+    index: plain
+    query: decompose
+    retrieval: graph
+    rerank: true
+    outcome_boost: false
+    corrective: true
+  chunk_words: 120
+  chunk_overlap: 20
+  top_k: 10
+  rrf_k: 60
+  rerank_pool: 30
+  outcome_weights: {won: 1.25, replied: 1.10, ignored: 0.90}
+  # evidence weaker than this is re-queried once, then refused. One floor per reranker family because
+  # their score scales differ; tune with `python -m evals.runners.rag_eval --grades`.
+  corrective: {min_score: {lexical: 0.16, cross_encoder: 0.10}, max_requery: 1}
+  verify: {supported: 0.75, partial: 0.40}
+
+budgets:
+  max_graph_steps: 30
+  max_revisions: 2
+  max_tokens_per_thread: 30000
+  node_timeout_s: 90
+  node_max_attempts: 3
+  # Declared budgets (E5). Measured values are written by evals to evals/results/.
+  declared:
+    p95_latency_s_per_job_analysed: 12
+    p95_latency_s_per_proposal: 45
+    usd_per_job_analysed: 0.002
+    usd_per_proposal: 0.01
+
+thresholds:
+  minimum_fit_score: 0.55
+  watch_fit_score: 0.40
+  maximum_risk_score: 0.60
+  min_expected_value_per_connect_usd: 1.0
+  base_reply_rate: 0.12           # prior used until outcome memory has data
+  proposal_min_words: 90
+  proposal_max_words: 260
+
+memory:
+  style_promote_after: 3          # same edit pattern seen in N distinct edits
+  outcome_min_samples: 5          # proposals with a known outcome in a category
+  max_item_chars: 160
+
+autonomy:
+  default_level: suggest          # suggest | auto_skip   (auto-send does not exist)
+
+experiments:                      # signature extension X2
+  enabled: true
+  arms: [evidence_first, question_first]

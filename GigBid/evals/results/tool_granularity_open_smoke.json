@@ -1,0 +1,315 @@
+{
+ "env": {
+  "model_profile": "open",
+  "embeddings": {
+   "provider": "fastembed",
+   "model": "BAAI/bge-small-en-v1.5"
+  },
+  "reranker": {
+   "provider": "fastembed",
+   "model": "BAAI/bge-reranker-base"
+  },
+  "deployed_variant": "best",
+  "at": "2026-11-15 08:51:27"
+ },
+ "fine": {
+  "n": 3,
+  "errors": 0,
+  "tool_selection_accuracy": 0.6667,
+  "argument_accuracy": 0.6667,
+  "tokens_per_task": 783.0,
+  "token_samples": 3,
+  "rows": [
+   {
+    "task_id": 1,
+    "ask": "Is client cl-0134 trustworthy? Check their history.",
+    "expected": {
+     "persona": "fullstack_dev",
+     "ask": "Is client cl-0134 trustworthy? Check their history.",
+     "tool": "get_client_history",
+     "args": {
+      "client_id": "cl-0134"
+     }
+    },
+    "called": "get_client_history",
+    "arguments": {
+     "client_id": "cl-0134"
+    },
+    "tool_ok": true,
+    "args_ok": true,
+    "usage": {
+     "input_tokens": 718,
+     "output_tokens": 52,
+     "total_tokens": 770,
+     "input_token_details": {},
+     "output_token_details": {
+      "reasoning": 20
+     }
+    },
+    "model": "openai/gpt-oss-120b",
+    "requested_model": "openai/gpt-oss-120b",
+    "latency_s": 0.891,
+    "error": null,
+    "estimated_cost_usd": 0.000139
+   },
+   {
+    "task_id": 2,
+    "ask": "Do I have portfolio proof of Data cleaning?",
+    "expected": {
+     "persona": "data_analyst",
+     "ask": "Do I have portfolio proof of Data cleaning?",
+     "tool": "search_evidence",
+     "args_contains": {
+      "requirement": "Data cleaning"
+     }
+    },
+    "called": "list_workspace_items",
+    "arguments": {
+     "": {}
+    },
+    "tool_ok": false,
+    "args_ok": false,
+    "usage": {
+     "input_tokens": 715,
+     "output_tokens": 91,
+     "total_tokens": 806,
+     "input_token_details": {},
+     "output_token_details": {
+      "reasoning": 66
+     }
+    },
+    "model": "openai/gpt-oss-120b",
+    "requested_model": "openai/gpt-oss-120b",
+    "latency_s": 0.712,
+    "error": null,
+    "estimated_cost_usd": 0.000162
+   },
+   {
+    "task_id": 3,
+    "ask": "Show me the full post for job dev-fu-01795.",
+    "expected": {
+     "persona": "fullstack_dev",
+     "ask": "Show me the full post for job dev-fu-01795.",
+     "tool": "get_job",
+     "args": {
+      "job_id": "dev-fu-01795"
+     }
+    },
+    "called": "get_job",
+    "arguments": {
+     "job_id": "dev-fu-01795"
+    },
+    "tool_ok": true,
+    "args_ok": true,
+    "usage": {
+     "input_tokens": 720,
+     "output_tokens": 53,
+     "total_tokens": 773,
+     "input_token_details": {},
+     "output_token_details": {
+      "reasoning": 20
+     }
+    },
+    "model": "openai/gpt-oss-120b",
+    "requested_model": "openai/gpt-oss-120b",
+    "latency_s": 0.328,
+    "error": null,
+    "estimated_cost_usd": 0.00014
+   }
+  ]
+ },
+ "coarse": {
+  "n": 3,
+  "errors": 2,
+  "tool_selection_accuracy": 0.3333,
+  "argument_accuracy": 0.3333,
+  "tokens_per_task": 979.0,
+  "token_samples": 1,
+  "rows": [
+   {
+    "task_id": 1,
+    "ask": "Is client cl-0134 trustworthy? Check their history.",
+    "expected": {
+     "persona": "fullstack_dev",
+     "ask": "Is client cl-0134 trustworthy? Check their history.",
+     "tool": "get_client_history",
+     "args": {
+      "client_id": "cl-0134"
+     }
+    },
+    "called": null,
+    "arguments": {},
+    "tool_ok": false,
+    "args_ok": false,
+    "usage": {},
+    "model": null,
+    "requested_model": "openai/gpt-oss-120b",
+    "latency_s": 0.093,
+    "error": {
+     "type": "RuntimeError",
+     "http_status": null
+    },
+    "estimated_cost_usd": null
+   },
+   {
+    "task_id": 2,
+    "ask": "Do I have portfolio proof of Data cleaning?",
+    "expected": {
+     "persona": "data_analyst",
+     "ask": "Do I have portfolio proof of Data cleaning?",
+     "tool": "search_evidence",
+     "args_contains": {
+      "requirement": "Data cleaning"
+     }
+    },
+    "called": "search_evidence",
+    "arguments": {
+     "filters": null,
+     "k": 5,
+     "requirement": "Data cleaning"
+    },
+    "tool_ok": true,
+    "args_ok": true,
+    "usage": {
+     "input_tokens": 866,
+     "output_tokens": 113,
+     "total_tokens": 979,
+     "input_token_details": {},
+     "output_token_details": {
+      "reasoning": 55
+     }
+    },
+    "model": "openai/gpt-oss-120b",
+    "requested_model": "openai/gpt-oss-120b",
+    "latency_s": 0.892,
+    "error": null,
+    "estimated_cost_usd": 0.000198
+   },
+   {
+    "task_id": 3,
+    "ask": "Show me the full post for job dev-fu-01795.",
+    "expected": {
+     "persona": "fullstack_dev",
+     "ask": "Show me the full post for job dev-fu-01795.",
+     "tool": "get_job",
+     "args": {
+      "job_id": "dev-fu-01795"
+     }
+    },
+    "called": null,
+    "arguments": {},
+    "tool_ok": false,
+    "args_ok": false,
+    "usage": {},
+    "model": null,
+    "requested_model": "openai/gpt-oss-120b",
+    "latency_s": 0.385,
+    "error": {
+     "type": "OpenAIInvalidRequestError",
+     "http_status": 400
+    },
+    "estimated_cost_usd": null
+   }
+  ]
+ },
+ "best": {
+  "n": 3,
+  "errors": 1,
+  "tool_selection_accuracy": 0.6667,
+  "argument_accuracy": 0.6667,
+  "tokens_per_task": 1078.0,
+  "token_samples": 2,
+  "rows": [
+   {
+    "task_id": 1,
+    "ask": "Is client cl-0134 trustworthy? Check their history.",
+    "expected": {
+     "persona": "fullstack_dev",
+     "ask": "Is client cl-0134 trustworthy? Check their history.",
+     "tool": "get_client_history",
+     "args": {
+      "client_id": "cl-0134"
+     }
+    },
+    "called": null,
+    "arguments": {},
+    "tool_ok": false,
+    "args_ok": false,
+    "usage": {},
+    "model": null,
+    "requested_model": "openai/gpt-oss-120b",
+    "latency_s": 0.037,
+    "error": {
+     "type": "RuntimeError",
+     "http_status": null
+    },
+    "estimated_cost_usd": null
+   },
+   {
+    "task_id": 2,
+    "ask": "Do I have portfolio proof of Data cleaning?",
+    "expected": {
+     "persona": "data_analyst",
+     "ask": "Do I have portfolio proof of Data cleaning?",
+     "tool": "search_evidence",
+     "args_contains": {
+      "requirement": "Data cleaning"
+     }
+    },
+    "called": "search_evidence",
+    "arguments": {
+     "k": 5,
+     "requirement": "Data cleaning"
+    },
+    "tool_ok": true,
+    "args_ok": true,
+    "usage": {
+     "input_tokens": 1014,
+     "output_tokens": 69,
+     "total_tokens": 1083,
+     "input_token_details": {},
+     "output_token_details": {
+      "reasoning": 32
+     }
+    },
+    "model": "openai/gpt-oss-120b",
+    "requested_model": "openai/gpt-oss-120b",
+    "latency_s": 0.587,
+    "error": null,
+    "estimated_cost_usd": 0.000193
+   },
+   {
+    "task_id": 3,
+    "ask": "Show me the full post for job dev-fu-01795.",
+    "expected": {
+     "persona": "fullstack_dev",
+     "ask": "Show me the full post for job dev-fu-01795.",
+     "tool": "get_job",
+     "args": {
+      "job_id": "dev-fu-01795"
+     }
+    },
+    "called": "get_job",
+    "arguments": {
+     "job_id": "dev-fu-01795"
+    },
+    "tool_ok": true,
+    "args_ok": true,
+    "usage": {
+     "input_tokens": 1019,
+     "output_tokens": 54,
+     "total_tokens": 1073,
+     "input_token_details": {},
+     "output_token_details": {
+      "reasoning": 21
+     }
+    },
+    "model": "openai/gpt-oss-120b",
+    "requested_model": "openai/gpt-oss-120b",
+    "latency_s": 0.334,
+    "error": null,
+    "estimated_cost_usd": 0.000185
+   }
+  ]
+ }
+}

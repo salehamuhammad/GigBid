@@ -1,0 +1,379 @@
+{
+ "env": {
+  "model_profile": "open",
+  "embeddings": {
+   "provider": "fastembed",
+   "model": "BAAI/bge-small-en-v1.5"
+  },
+  "reranker": {
+   "provider": "fastembed",
+   "model": "BAAI/bge-reranker-base"
+  },
+  "deployed_variant": "best",
+  "at": "2026-11-15 10:03:03"
+ },
+ "calibration": {
+  "P001": {
+   "file": "architecture_alt_50.json",
+   "arm": "graph",
+   "job_id": "dev-ai-01545"
+  },
+  "P002": {
+   "file": "architecture_open_50.json",
+   "arm": "graph",
+   "job_id": "dev-fu-01727"
+  },
+  "P003": {
+   "file": "architecture_open_50.json",
+   "arm": "react",
+   "job_id": "dev-fu-01758"
+  },
+  "P004": {
+   "file": "architecture_alt_50.json",
+   "arm": "graph",
+   "job_id": "dev-da-01913"
+  },
+  "P005": {
+   "file": "architecture_open_50.json",
+   "arm": "react",
+   "job_id": "dev-ai-01514"
+  },
+  "P006": {
+   "file": "architecture_alt_50.json",
+   "arm": "graph",
+   "job_id": "dev-da-01977"
+  },
+  "P007": {
+   "file": "architecture_alt_50.json",
+   "arm": "graph",
+   "job_id": "dev-fu-01750"
+  },
+  "P008": {
+   "file": "architecture_alt_50.json",
+   "arm": "graph",
+   "job_id": "dev-ai-01524"
+  },
+  "P009": {
+   "file": "architecture_alt_50.json",
+   "arm": "graph",
+   "job_id": "dev-fu-01735"
+  },
+  "P010": {
+   "file": "architecture_alt_50.json",
+   "arm": "graph",
+   "job_id": "dev-ai-01597"
+  },
+  "P011": {
+   "file": "architecture_open_50.json",
+   "arm": "react",
+   "job_id": "dev-da-01961"
+  },
+  "P012": {
+   "file": "architecture_open_50.json",
+   "arm": "graph",
+   "job_id": "dev-ai-01528"
+  },
+  "P013": {
+   "file": "architecture_open_50.json",
+   "arm": "graph",
+   "job_id": "dev-ai-01514"
+  },
+  "P014": {
+   "file": "architecture_open_50.json",
+   "arm": "react",
+   "job_id": "dev-ai-01597"
+  },
+  "P015": {
+   "file": "architecture_open_50.json",
+   "arm": "graph",
+   "job_id": "dev-fu-01755"
+  },
+  "P016": {
+   "file": "architecture_open_50.json",
+   "arm": "react",
+   "job_id": "dev-fu-01750"
+  },
+  "P017": {
+   "file": "architecture_open_50.json",
+   "arm": "react",
+   "job_id": "dev-da-02001"
+  },
+  "P018": {
+   "file": "architecture_alt_50.json",
+   "arm": "graph",
+   "job_id": "dev-fu-01758"
+  },
+  "P019": {
+   "file": "architecture_open_50.json",
+   "arm": "react",
+   "job_id": "dev-ai-01615"
+  },
+  "P020": {
+   "file": "architecture_open_50.json",
+   "arm": "react",
+   "job_id": "dev-fu-01755"
+  },
+  "P021": {
+   "file": "architecture_open_50.json",
+   "arm": "graph",
+   "job_id": "dev-ai-01545"
+  },
+  "P022": {
+   "file": "architecture_open_50.json",
+   "arm": "react",
+   "job_id": "dev-ai-01524"
+  },
+  "P023": {
+   "file": "architecture_open_50.json",
+   "arm": "graph",
+   "job_id": "dev-fu-01737"
+  },
+  "P024": {
+   "file": "architecture_alt_50.json",
+   "arm": "graph",
+   "job_id": "dev-ai-01504"
+  },
+  "P025": {
+   "file": "architecture_open_50.json",
+   "arm": "react",
+   "job_id": "dev-da-01918"
+  },
+  "P026": {
+   "file": "architecture_open_50.json",
+   "arm": "react",
+   "job_id": "dev-ai-01504"
+  },
+  "P027": {
+   "file": "architecture_open_50.json",
+   "arm": "supervisor",
+   "job_id": "dev-fu-01837"
+  },
+  "P028": {
+   "file": "architecture_alt_50.json",
+   "arm": "graph",
+   "job_id": "dev-ai-01582"
+  },
+  "P029": {
+   "file": "architecture_open_50.json",
+   "arm": "react",
+   "job_id": "dev-fu-01727"
+  },
+  "P030": {
+   "file": "architecture_open_50.json",
+   "arm": "react",
+   "job_id": "dev-fu-01735"
+  }
+ },
+ "pairs": [
+  {
+   "a": "P001",
+   "b": "P021",
+   "sources": [
+    {
+     "file": "architecture_alt_50.json",
+     "arm": "graph"
+    },
+    {
+     "file": "architecture_open_50.json",
+     "arm": "graph"
+    }
+   ]
+  },
+  {
+   "a": "P002",
+   "b": "P029",
+   "sources": [
+    {
+     "file": "architecture_open_50.json",
+     "arm": "graph"
+    },
+    {
+     "file": "architecture_open_50.json",
+     "arm": "react"
+    }
+   ]
+  },
+  {
+   "a": "P003",
+   "b": "P018",
+   "sources": [
+    {
+     "file": "architecture_open_50.json",
+     "arm": "react"
+    },
+    {
+     "file": "architecture_alt_50.json",
+     "arm": "graph"
+    }
+   ]
+  },
+  {
+   "a": "P004",
+   "b": "P031",
+   "sources": [
+    {
+     "file": "architecture_alt_50.json",
+     "arm": "graph"
+    },
+    {
+     "file": "architecture_open_50.json",
+     "arm": "graph"
+    }
+   ]
+  },
+  {
+   "a": "P005",
+   "b": "P013",
+   "sources": [
+    {
+     "file": "architecture_open_50.json",
+     "arm": "react"
+    },
+    {
+     "file": "architecture_open_50.json",
+     "arm": "graph"
+    }
+   ]
+  },
+  {
+   "a": "P006",
+   "b": "P032",
+   "sources": [
+    {
+     "file": "architecture_alt_50.json",
+     "arm": "graph"
+    },
+    {
+     "file": "architecture_open_50.json",
+     "arm": "graph"
+    }
+   ]
+  },
+  {
+   "a": "P007",
+   "b": "P016",
+   "sources": [
+    {
+     "file": "architecture_alt_50.json",
+     "arm": "graph"
+    },
+    {
+     "file": "architecture_open_50.json",
+     "arm": "react"
+    }
+   ]
+  },
+  {
+   "a": "P008",
+   "b": "P022",
+   "sources": [
+    {
+     "file": "architecture_alt_50.json",
+     "arm": "graph"
+    },
+    {
+     "file": "architecture_open_50.json",
+     "arm": "react"
+    }
+   ]
+  },
+  {
+   "a": "P009",
+   "b": "P030",
+   "sources": [
+    {
+     "file": "architecture_alt_50.json",
+     "arm": "graph"
+    },
+    {
+     "file": "architecture_open_50.json",
+     "arm": "react"
+    }
+   ]
+  },
+  {
+   "a": "P010",
+   "b": "P014",
+   "sources": [
+    {
+     "file": "architecture_alt_50.json",
+     "arm": "graph"
+    },
+    {
+     "file": "architecture_open_50.json",
+     "arm": "react"
+    }
+   ]
+  },
+  {
+   "a": "P011",
+   "b": "P033",
+   "sources": [
+    {
+     "file": "architecture_open_50.json",
+     "arm": "react"
+    },
+    {
+     "file": "architecture_open_50.json",
+     "arm": "graph"
+    }
+   ]
+  },
+  {
+   "a": "P012",
+   "b": "P034",
+   "sources": [
+    {
+     "file": "architecture_open_50.json",
+     "arm": "graph"
+    },
+    {
+     "file": "architecture_alt_50.json",
+     "arm": "graph"
+    }
+   ]
+  },
+  {
+   "a": "P015",
+   "b": "P020",
+   "sources": [
+    {
+     "file": "architecture_open_50.json",
+     "arm": "graph"
+    },
+    {
+     "file": "architecture_open_50.json",
+     "arm": "react"
+    }
+   ]
+  },
+  {
+   "a": "P019",
+   "b": "P035",
+   "sources": [
+    {
+     "file": "architecture_open_50.json",
+     "arm": "react"
+    },
+    {
+     "file": "architecture_alt_50.json",
+     "arm": "graph"
+    }
+   ]
+  },
+  {
+   "a": "P023",
+   "b": "P036",
+   "sources": [
+    {
+     "file": "architecture_open_50.json",
+     "arm": "graph"
+    },
+    {
+     "file": "architecture_alt_50.json",
+     "arm": "graph"
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,85 @@
+<!doctype html><html><head><meta charset='utf-8'><title>GigBid graphs</title><script type='module'>import m from 'https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs';m.initialize({startOnLoad:true});</script></head><body>
+<h2>bid_graph</h2><pre class='mermaid'>---
+config:
+  flowchart:
+    curve: linear
+---
+graph TD;
+	__start__([<p>__start__</p>]):::first
+	intake(intake)
+	analyst(analyst)
+	risk(risk)
+	matcher(matcher)
+	decide(decide)
+	pricing(pricing)
+	writer(writer)
+	verifier(verifier)
+	critic(critic)
+	compliance(compliance)
+	apply_edit(apply_edit)
+	approval(approval)
+	submit(submit)
+	__end__([<p>__end__</p>]):::last
+	__start__ --> intake;
+	analyst --> decide;
+	apply_edit -.-> __end__;
+	apply_edit -.-> compliance;
+	approval -.-> __end__;
+	approval -.-> apply_edit;
+	approval -.-> submit;
+	approval -.-> writer;
+	compliance -.-> __end__;
+	compliance -.-> approval;
+	critic -.-> __end__;
+	critic -.-> compliance;
+	critic -.-> writer;
+	decide -.-> __end__;
+	decide -.-> pricing;
+	intake -.-> __end__;
+	intake -.-> analyst;
+	intake -.-> matcher;
+	intake -.-> risk;
+	matcher --> decide;
+	pricing -.-> __end__;
+	pricing -.-> writer;
+	risk --> decide;
+	verifier -.-> __end__;
+	verifier -.-> critic;
+	writer -.-> __end__;
+	writer -.-> verifier;
+	submit --> __end__;
+	classDef default fill:#f2f0ff,line-height:1.2
+	classDef first fill-opacity:0
+	classDef last fill:#bfb6fc
+</pre>
+<h2>conversation_graph</h2><pre class='mermaid'>---
+config:
+  flowchart:
+    curve: linear
+---
+graph TD;
+	__start__([<p>__start__</p>]):::first
+	load(load)
+	classify(classify)
+	slots(slots)
+	draft(draft)
+	approval(approval)
+	send(send)
+	__end__([<p>__end__</p>]):::last
+	__start__ --> load;
+	approval -.-> __end__;
+	approval -.-> send;
+	classify -.-> __end__;
+	classify -.-> draft;
+	classify -.-> slots;
+	draft -.-> __end__;
+	draft -.-> approval;
+	load -.-> __end__;
+	load -.-> classify;
+	slots -.-> __end__;
+	slots -.-> draft;
+	send --> __end__;
+	classDef default fill:#f2f0ff,line-height:1.2
+	classDef first fill-opacity:0
+	classDef last fill:#bfb6fc
+</pre></body></html>

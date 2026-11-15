@@ -1,0 +1,70 @@
+"""Vector stores. One interface, two back ends:
+
+  NumpyStore  -- a .npy matrix per (owner, kind) on disk; safe to read from several processes.
+                 Default for local runs (no service to start).
+  QdrantStore -- used when QDRANT_URL is set (docker compose). Every point carries `owner`, and
+                 every query filters on it, so tenants never see each other's portfolio.
+"""
+from __future__ import annotations
+
+import uuid
+from pathlib import Path
+
+import numpy as np
+
+from agent.settings import get_settings
+
+
+class NumpyStore:
+    def __init__(self, base: Path | None = None):
+        self.base = base or get_settings().processed / "index"
+        self._cache: dict[tuple, tuple[float, np.ndarray]] = {}
+
+    def _path(self, owner, kind): return self.base / owner / f"{kind}.npy"
+
+    def upsert(self, owner: str, kind: str, ids: list[str], vectors: np.ndarray) -> None:
+        p = self._path(owner, kind); p.parent.mkdir(parents=True, exist_ok=True)
+        tmp = p.with_suffix(".tmp.npy"); np.save(tmp, vectors.astype(np.float32)); tmp.replace(p)
+
+    def search(self, owner: str, kind: str, query: np.ndarray, n: int) -> list[tuple[int, float]]:
+        p = self._path(owner, kind)
+        if not p.exists(): return []
+        mt = p.stat().st_mtime
+        if self._cache.get((owner, kind), (0, None))[0] != mt:
+            self._cache[(owner, kind)] = (mt, np.load(p))
+        mat = self._cache[(owner, kind)][1]
+        sims = mat @ query.astype(np.float32)
+        top = np.argsort(-sims)[:n]
+        return [(int(i), float(sims[i])) for i in top]
+
+
+class QdrantStore:
+    def __init__(self, url: str | None = None, client=None):
+        from qdrant_client import QdrantClient
+        self.c = client or QdrantClient(url=url or get_settings().qdrant_url, timeout=20)
+
+    def upsert(self, owner: str, kind: str, ids: list[str], vectors: np.ndarray) -> None:
+        from qdrant_client import models as qm
+        col = f"gigbid_{kind}" if vectors.shape[1] == 1024 else f"gigbid_{kind}_{vectors.shape[1]}"
+        if not self.c.collection_exists(col):
+            self.c.create_collection(col, vectors_config=qm.VectorParams(size=int(vectors.shape[1]), distance=qm.Distance.COSINE))
+            self.c.create_payload_index(col, "owner", qm.PayloadSchemaType.KEYWORD)
+        self.c.delete(col, points_selector=qm.FilterSelector(filter=qm.Filter(must=[qm.FieldCondition(key="owner", match=qm.MatchValue(value=owner))])))
+        pts = [qm.PointStruct(id=str(uuid.uuid5(uuid.NAMESPACE_URL, f"{owner}/{cid}")), vector=v.tolist(), payload={"owner": owner, "pos": i, "chunk_id": cid})
+               for i, (cid, v) in enumerate(zip(ids, vectors))]
+        for i in range(0, len(pts), 256): self.c.upsert(col, points=pts[i:i + 256])
+
+    def search(self, owner: str, kind: str, query: np.ndarray, n: int) -> list[tuple[int, float]]:
+        from qdrant_client import models as qm
+        col = f"gigbid_{kind}" if query.shape[0] == 1024 else f"gigbid_{kind}_{query.shape[0]}"
+        res = self.c.query_points(col, query=query.tolist(), limit=n, with_payload=True,
+                                  query_filter=qm.Filter(must=[qm.FieldCondition(key="owner", match=qm.MatchValue(value=owner))]))
+        return [(int(p.payload["pos"]), float(p.score)) for p in res.points]
+
+
+_store = None
+def get_store():
+    global _store
+    if _store is None:
+        _store = QdrantStore() if get_settings().qdrant_url else NumpyStore()
+    return _store

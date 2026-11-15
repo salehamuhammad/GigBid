@@ -1,0 +1,38 @@
+{
+  "persona": "data_analyst",
+  "name": "Mei Tanaka (synthetic)",
+  "headline": "Data analyst - SQL, dashboards and experimentation",
+  "skills": [
+    "A/B testing",
+    "Airflow",
+    "BigQuery",
+    "Cohort analysis",
+    "Data cleaning",
+    "Data visualization",
+    "Excel",
+    "GA4",
+    "Looker Studio",
+    "PostgreSQL",
+    "Power BI",
+    "Python",
+    "R",
+    "SQL",
+    "Snowflake",
+    "Statistics",
+    "Tableau",
+    "Time-series forecasting",
+    "dbt",
+    "pandas"
+  ],
+  "floor_rate": 25,
+  "target_rate": 40,
+  "min_project": 150,
+  "categories": [
+    "dashboards",
+    "analytics",
+    "data_engineering",
+    "experimentation",
+    "reporting"
+  ],
+  "provenance": "synthetic"
+}

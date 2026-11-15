@@ -1,0 +1,1549 @@
+{
+ "env": {
+  "model_profile": "open",
+  "embeddings": {
+   "provider": "fastembed",
+   "model": "BAAI/bge-small-en-v1.5"
+  },
+  "reranker": {
+   "provider": "fastembed",
+   "model": "BAAI/bge-reranker-base"
+  },
+  "deployed_variant": "best",
+  "at": "2026-11-15 11:13:59"
+ },
+ "protocol": "AI-to-AI agreement and blinded AI pairwise comparison",
+ "second_rater_model": "openai/gpt-oss-20b",
+ "items": 30,
+ "matched_ratings": 30,
+ "cohens_kappa": 0.1196,
+ "quadratic_weighted_kappa": 0.2182,
+ "pairs": 15,
+ "pair_status": {
+  "consistent": 12,
+  "order_sensitive": 3
+ },
+ "consistent_preferences": {
+  "B": 7,
+  "A": 5
+ },
+ "ratings": [
+  {
+   "proposal_id": "P001",
+   "original": {
+    "relevance": 4,
+    "evidence": 3,
+    "clarity": 5,
+    "professionalism": 5,
+    "overall": 4,
+    "reason": "Relevant experience with real-time detection, concrete past project, clear and concise, professional tone; evidence limited to one example."
+   },
+   "original_model": "openai/gpt-oss-120b",
+   "second_rater": {
+    "rating": {
+     "relevance": 3,
+     "evidence": 4,
+     "clarity": 5,
+     "professionalism": 5,
+     "overall": 3,
+     "reason": "Solid evidence, but lacks detail on packaging and preprocessing, so moderate confidence."
+    },
+    "usage": {
+     "node": "judge",
+     "model": "openai/gpt-oss-20b",
+     "input_tokens": 662,
+     "output_tokens": 302,
+     "cost_usd": 0.00014,
+     "latency_ms": 13631,
+     "estimated": false,
+     "fallback": false
+    }
+   }
+  },
+  {
+   "proposal_id": "P002",
+   "original": {
+    "relevance": 5,
+    "evidence": 5,
+    "clarity": 5,
+    "professionalism": 5,
+    "overall": 5,
+    "reason": "Strong relevant experience, concrete metrics, clear concise, professional tone\u2014highly compelling."
+   },
+   "original_model": "openai/gpt-oss-120b",
+   "second_rater": {
+    "rating": {
+     "relevance": 5,
+     "evidence": 5,
+     "clarity": 5,
+     "professionalism": 5,
+     "overall": 5,
+     "reason": "Strong, specific examples directly match all job requirements; concise, professional tone with no filler or guarantees."
+    },
+    "usage": {
+     "node": "judge",
+     "model": "openai/gpt-oss-20b",
+     "input_tokens": 733,
+     "output_tokens": 289,
+     "cost_usd": 0.000142,
+     "latency_ms": 1119,
+     "estimated": false,
+     "fallback": false
+    }
+   }
+  },
+  {
+   "proposal_id": "P003",
+   "original": {
+    "relevance": 5,
+    "evidence": 5,
+    "clarity": 5,
+    "professionalism": 4,
+    "overall": 5,
+    "reason": "Strong alignment with required tech, concrete project examples, clear plan; minor generic greeting but overall compelling."
+   },
+   "original_model": "openai/gpt-oss-120b",
+   "second_rater": {
+    "rating": {
+     "relevance": 5,
+     "evidence": 5,
+     "clarity": 5,
+     "professionalism": 4,
+     "overall": 5,
+     "reason": "Excellent evidence, highly relevant, clear, professional. Likely to reply."
+    },
+    "usage": {
+     "node": "judge",
+     "model": "openai/gpt-oss-20b",
+     "input_tokens": 725,
+     "output_tokens": 470,
+     "cost_usd": 0.000195,
+     "latency_ms": 1308,
+     "estimated": false,
+     "fallback": false
+    }
+   }
+  },
+  {
+   "proposal_id": "P004",
+   "original": {
+    "relevance": 3,
+    "evidence": 5,
+    "clarity": 5,
+    "professionalism": 5,
+    "overall": 4,
+    "reason": "Concrete relevant experience and clear proposal, though cohort analysis not explicitly highlighted."
+   },
+   "original_model": "openai/gpt-oss-120b",
+   "second_rater": {
+    "rating": {
+     "relevance": 4,
+     "evidence": 5,
+     "clarity": 5,
+     "professionalism": 5,
+     "overall": 5,
+     "reason": "Strong evidence, relevant skills, clear and professional. Likely to reply."
+    },
+    "usage": {
+     "node": "judge",
+     "model": "openai/gpt-oss-20b",
+     "input_tokens": 630,
+     "output_tokens": 370,
+     "cost_usd": 0.000158,
+     "latency_ms": 575,
+     "estimated": false,
+     "fallback": false
+    }
+   }
+  },
+  {
+   "proposal_id": "P005",
+   "original": {
+    "relevance": 5,
+    "evidence": 5,
+    "clarity": 5,
+    "professionalism": 4,
+    "overall": 5,
+    "reason": "Directly matches requirements, cites concrete Docker CV project, clear and concise."
+   },
+   "original_model": "openai/gpt-oss-120b",
+   "second_rater": {
+    "rating": {
+     "relevance": 5,
+     "evidence": 5,
+     "clarity": 5,
+     "professionalism": 5,
+     "overall": 5,
+     "reason": "Proposal directly addresses all job requirements, cites concrete past work, is concise, and maintains professional tone without filler."
+    },
+    "usage": {
+     "node": "judge",
+     "model": "openai/gpt-oss-20b",
+     "input_tokens": 655,
+     "output_tokens": 294,
+     "cost_usd": 0.000137,
+     "latency_ms": 472,
+     "estimated": false,
+     "fallback": false
+    }
+   }
+  },
+  {
+   "proposal_id": "P006",
+   "original": {
+    "relevance": 4,
+    "evidence": 4,
+    "clarity": 4,
+    "professionalism": 5,
+    "overall": 4,
+    "reason": "Strong PowerBI focus, concrete examples, clear proposal; minor redundancy but overall compelling."
+   },
+   "original_model": "openai/gpt-oss-120b",
+   "second_rater": {
+    "rating": {
+     "relevance": 3,
+     "evidence": 5,
+     "clarity": 5,
+     "professionalism": 5,
+     "overall": 4,
+     "reason": "Strong evidence and clarity, but lacks Google dashboard experience, slightly reducing relevance."
+    },
+    "usage": {
+     "node": "judge",
+     "model": "openai/gpt-oss-20b",
+     "input_tokens": 656,
+     "output_tokens": 394,
+     "cost_usd": 0.000167,
+     "latency_ms": 819,
+     "estimated": false,
+     "fallback": false
+    }
+   }
+  },
+  {
+   "proposal_id": "P007",
+   "original": {
+    "relevance": 4,
+    "evidence": 4,
+    "clarity": 5,
+    "professionalism": 5,
+    "overall": 4,
+    "reason": "Shows relevant CI/CD/cloud work, concrete results, clear ask; minor missing front\u2011end detail but strong enough to merit reply."
+   },
+   "original_model": "openai/gpt-oss-120b",
+   "second_rater": {
+    "rating": {
+     "relevance": 3,
+     "evidence": 5,
+     "clarity": 5,
+     "professionalism": 5,
+     "overall": 4,
+     "reason": "Solid CI/CD and cloud experience, but lacks front\u2011end details; still a strong candidate."
+    },
+    "usage": {
+     "node": "judge",
+     "model": "openai/gpt-oss-20b",
+     "input_tokens": 653,
+     "output_tokens": 329,
+     "cost_usd": 0.000148,
+     "latency_ms": 1028,
+     "estimated": false,
+     "fallback": false
+    }
+   }
+  },
+  {
+   "proposal_id": "P008",
+   "original": {
+    "relevance": 3,
+    "evidence": 4,
+    "clarity": 4,
+    "professionalism": 5,
+    "overall": 4,
+    "reason": "Shows relevant AWS/SageMaker experience and concrete examples, but omits GitHub Actions and experiment tracking details."
+   },
+   "original_model": "openai/gpt-oss-120b",
+   "second_rater": {
+    "rating": {
+     "relevance": 3,
+     "evidence": 5,
+     "clarity": 5,
+     "professionalism": 5,
+     "overall": 4,
+     "reason": "Solid evidence and clear, relevant experience, but lacks explicit GitHub Actions mention; still likely to consider."
+    },
+    "usage": {
+     "node": "judge",
+     "model": "openai/gpt-oss-20b",
+     "input_tokens": 694,
+     "output_tokens": 315,
+     "cost_usd": 0.000147,
+     "latency_ms": 804,
+     "estimated": false,
+     "fallback": false
+    }
+   }
+  },
+  {
+   "proposal_id": "P009",
+   "original": {
+    "relevance": 4,
+    "evidence": 5,
+    "clarity": 4,
+    "professionalism": 5,
+    "overall": 4,
+    "reason": "Strong relevant experience with CI/CD, Docker, AWS and regression tests; concrete metrics boost confidence."
+   },
+   "original_model": "openai/gpt-oss-120b",
+   "second_rater": {
+    "rating": {
+     "relevance": 5,
+     "evidence": 5,
+     "clarity": 5,
+     "professionalism": 5,
+     "overall": 5,
+     "reason": "Strong, evidence-backed, relevant, clear, professional; meets all job requirements and showcases concrete results."
+    },
+    "usage": {
+     "node": "judge",
+     "model": "openai/gpt-oss-20b",
+     "input_tokens": 687,
+     "output_tokens": 396,
+     "cost_usd": 0.00017,
+     "latency_ms": 939,
+     "estimated": false,
+     "fallback": false
+    }
+   }
+  },
+  {
+   "proposal_id": "P010",
+   "original": {
+    "relevance": 5,
+    "evidence": 5,
+    "clarity": 5,
+    "professionalism": 5,
+    "overall": 5,
+    "reason": "Directly matches requirements, cites concrete results, concise, and maintains professional tone."
+   },
+   "original_model": "openai/gpt-oss-120b",
+   "second_rater": {
+    "rating": {
+     "relevance": 5,
+     "evidence": 5,
+     "clarity": 5,
+     "professionalism": 5,
+     "overall": 5,
+     "reason": "Strong evidence, highly relevant, clear, professional; confident in delivering the requested forecasting model."
+    },
+    "usage": {
+     "node": "judge",
+     "model": "openai/gpt-oss-20b",
+     "input_tokens": 633,
+     "output_tokens": 407,
+     "cost_usd": 0.00017,
+     "latency_ms": 1369,
+     "estimated": false,
+     "fallback": false
+    }
+   }
+  },
+  {
+   "proposal_id": "P011",
+   "original": {
+    "relevance": 5,
+    "evidence": 5,
+    "clarity": 5,
+    "professionalism": 5,
+    "overall": 5,
+    "reason": "Strong relevant experience, concrete examples, clear and professional."
+   },
+   "original_model": "openai/gpt-oss-120b",
+   "second_rater": {
+    "rating": {
+     "relevance": 5,
+     "evidence": 5,
+     "clarity": 5,
+     "professionalism": 2,
+     "overall": 4,
+     "reason": "Strong evidence and relevance, but generic opening and guarantees reduce professionalism."
+    },
+    "usage": {
+     "node": "judge",
+     "model": "openai/gpt-oss-20b",
+     "input_tokens": 710,
+     "output_tokens": 385,
+     "cost_usd": 0.000169,
+     "latency_ms": 1324,
+     "estimated": false,
+     "fallback": false
+    }
+   }
+  },
+  {
+   "proposal_id": "P012",
+   "original": {
+    "relevance": 5,
+    "evidence": 5,
+    "clarity": 5,
+    "professionalism": 5,
+    "overall": 5,
+    "reason": "Strong relevant experience, concrete results, clear plan; highly likely to engage."
+   },
+   "original_model": "openai/gpt-oss-120b",
+   "second_rater": {
+    "rating": {
+     "relevance": 5,
+     "evidence": 5,
+     "clarity": 5,
+     "professionalism": 5,
+     "overall": 5,
+     "reason": "Strong relevance, concrete evidence, clear and professional proposal. Highly likely to respond."
+    },
+    "usage": {
+     "node": "judge",
+     "model": "openai/gpt-oss-20b",
+     "input_tokens": 658,
+     "output_tokens": 323,
+     "cost_usd": 0.000146,
+     "latency_ms": 873,
+     "estimated": false,
+     "fallback": false
+    }
+   }
+  },
+  {
+   "proposal_id": "P013",
+   "original": {
+    "relevance": 5,
+    "evidence": 5,
+    "clarity": 5,
+    "professionalism": 5,
+    "overall": 5,
+    "reason": "Directly matches required tech, cites concrete results, concise and professional\u2014strong fit for the 30\u2011hour CV task."
+   },
+   "original_model": "openai/gpt-oss-120b",
+   "second_rater": {
+    "rating": {
+     "relevance": 5,
+     "evidence": 5,
+     "clarity": 5,
+     "professionalism": 5,
+     "overall": 5,
+     "reason": "Strong relevance, concrete evidence, clear concise, professional. Highly likely to reply."
+    },
+    "usage": {
+     "node": "judge",
+     "model": "openai/gpt-oss-20b",
+     "input_tokens": 612,
+     "output_tokens": 329,
+     "cost_usd": 0.000145,
+     "latency_ms": 880,
+     "estimated": false,
+     "fallback": false
+    }
+   }
+  },
+  {
+   "proposal_id": "P014",
+   "original": {
+    "relevance": 5,
+    "evidence": 5,
+    "clarity": 5,
+    "professionalism": 5,
+    "overall": 5,
+    "reason": "Strong fit: clear pandas forecasting experience, concrete past project, concise proposal\u2014high likelihood to engage."
+   },
+   "original_model": "openai/gpt-oss-120b",
+   "second_rater": {
+    "rating": {
+     "relevance": 5,
+     "evidence": 5,
+     "clarity": 5,
+     "professionalism": 5,
+     "overall": 5,
+     "reason": "Strong, evidence-backed, relevant, concise, professional. Highly likely to respond."
+    },
+    "usage": {
+     "node": "judge",
+     "model": "openai/gpt-oss-20b",
+     "input_tokens": 660,
+     "output_tokens": 373,
+     "cost_usd": 0.000161,
+     "latency_ms": 1020,
+     "estimated": false,
+     "fallback": false
+    }
+   }
+  },
+  {
+   "proposal_id": "P015",
+   "original": {
+    "relevance": 5,
+    "evidence": 5,
+    "clarity": 5,
+    "professionalism": 5,
+    "overall": 5,
+    "reason": "Strong relevant experience, concrete examples, clear and professional; likely to engage."
+   },
+   "original_model": "openai/gpt-oss-120b",
+   "second_rater": {
+    "rating": {
+     "relevance": 5,
+     "evidence": 5,
+     "clarity": 5,
+     "professionalism": 5,
+     "overall": 5,
+     "reason": "Highly relevant, evidence-backed, clear, professional; very likely to reply."
+    },
+    "usage": {
+     "node": "judge",
+     "model": "openai/gpt-oss-20b",
+     "input_tokens": 648,
+     "output_tokens": 318,
+     "cost_usd": 0.000144,
+     "latency_ms": 621,
+     "estimated": false,
+     "fallback": false
+    }
+   }
+  },
+  {
+   "proposal_id": "P016",
+   "original": {
+    "relevance": 5,
+    "evidence": 4,
+    "clarity": 5,
+    "professionalism": 4,
+    "overall": 5,
+    "reason": "Strong relevant experience, concrete examples, clear proposal, reasonable rate\u2014makes me want to engage."
+   },
+   "original_model": "openai/gpt-oss-120b",
+   "second_rater": {
+    "rating": {
+     "relevance": 5,
+     "evidence": 5,
+     "clarity": 5,
+     "professionalism": 3,
+     "overall": 4,
+     "reason": "Strong relevance, evidence, and clarity; generic opening slightly lowers professionalism but overall still appealing."
+    },
+    "usage": {
+     "node": "judge",
+     "model": "openai/gpt-oss-20b",
+     "input_tokens": 683,
+     "output_tokens": 346,
+     "cost_usd": 0.000155,
+     "latency_ms": 581,
+     "estimated": false,
+     "fallback": false
+    }
+   }
+  },
+  {
+   "proposal_id": "P017",
+   "original": {
+    "relevance": 5,
+    "evidence": 5,
+    "clarity": 5,
+    "professionalism": 4,
+    "overall": 5,
+    "reason": "Highly relevant, concrete examples, clear and concise; only minor generic opening reduces professionalism slightly."
+   },
+   "original_model": "openai/gpt-oss-120b",
+   "second_rater": {
+    "rating": {
+     "relevance": 5,
+     "evidence": 5,
+     "clarity": 5,
+     "professionalism": 5,
+     "overall": 5,
+     "reason": "Clear, evidence\u2011rich, directly addresses all job requirements; concise, professional tone with no filler or generic openings."
+    },
+    "usage": {
+     "node": "judge",
+     "model": "openai/gpt-oss-20b",
+     "input_tokens": 701,
+     "output_tokens": 269,
+     "cost_usd": 0.000133,
+     "latency_ms": 466,
+     "estimated": false,
+     "fallback": false
+    }
+   }
+  },
+  {
+   "proposal_id": "P018",
+   "original": {
+    "relevance": 3,
+    "evidence": 4,
+    "clarity": 4,
+    "professionalism": 5,
+    "overall": 4,
+    "reason": "Shows relevant Docker/PostgreSQL experience and concrete examples, but lacks explicit Apollo/JS backend mention; overall strong and professional."
+   },
+   "original_model": "openai/gpt-oss-120b",
+   "second_rater": {
+    "rating": {
+     "relevance": 3,
+     "evidence": 3,
+     "clarity": 5,
+     "professionalism": 5,
+     "overall": 3,
+     "reason": "Missing Apollo and background worker details, but solid Docker/PostgreSQL evidence and clear writing."
+    },
+    "usage": {
+     "node": "judge",
+     "model": "openai/gpt-oss-20b",
+     "input_tokens": 682,
+     "output_tokens": 382,
+     "cost_usd": 0.000166,
+     "latency_ms": 927,
+     "estimated": false,
+     "fallback": false
+    }
+   }
+  },
+  {
+   "proposal_id": "P019",
+   "original": {
+    "relevance": 5,
+    "evidence": 4,
+    "clarity": 5,
+    "professionalism": 5,
+    "overall": 4,
+    "reason": "Strong relevant experience and concrete examples; clear and professional, though not healthcare\u2011specific, making it a promising candidate."
+   },
+   "original_model": "openai/gpt-oss-120b",
+   "second_rater": {
+    "rating": {
+     "relevance": 5,
+     "evidence": 5,
+     "clarity": 5,
+     "professionalism": 5,
+     "overall": 5,
+     "reason": "Highly relevant, concrete evidence, concise, professional tone\u2014very likely to reply."
+    },
+    "usage": {
+     "node": "judge",
+     "model": "openai/gpt-oss-20b",
+     "input_tokens": 722,
+     "output_tokens": 417,
+     "cost_usd": 0.000179,
+     "latency_ms": 811,
+     "estimated": false,
+     "fallback": false
+    }
+   }
+  },
+  {
+   "proposal_id": "P020",
+   "original": {
+    "relevance": 5,
+    "evidence": 5,
+    "clarity": 5,
+    "professionalism": 4,
+    "overall": 5,
+    "reason": "Strong relevant experience, concrete examples, clear and professional."
+   },
+   "original_model": "openai/gpt-oss-120b",
+   "second_rater": {
+    "rating": {
+     "relevance": 5,
+     "evidence": 5,
+     "clarity": 5,
+     "professionalism": 4,
+     "overall": 5,
+     "reason": "Strongly relevant, concrete evidence, clear writing, minor generic greeting but overall professional and likely to be accepted."
+    },
+    "usage": {
+     "node": "judge",
+     "model": "openai/gpt-oss-20b",
+     "input_tokens": 702,
+     "output_tokens": 273,
+     "cost_usd": 0.000135,
+     "latency_ms": 489,
+     "estimated": false,
+     "fallback": false
+    }
+   }
+  },
+  {
+   "proposal_id": "P021",
+   "original": {
+    "relevance": 4,
+    "evidence": 5,
+    "clarity": 5,
+    "professionalism": 5,
+    "overall": 4,
+    "reason": "Strong relevant experience with real-time YOLO detection and Docker packaging; concrete results make me interested despite different domain."
+   },
+   "original_model": "openai/gpt-oss-120b",
+   "second_rater": {
+    "rating": {
+     "relevance": 5,
+     "evidence": 5,
+     "clarity": 5,
+     "professionalism": 5,
+     "overall": 5,
+     "reason": "Proposal is highly relevant, evidence-backed, clear, professional; meets all job requirements."
+    },
+    "usage": {
+     "node": "judge",
+     "model": "openai/gpt-oss-20b",
+     "input_tokens": 658,
+     "output_tokens": 253,
+     "cost_usd": 0.000125,
+     "latency_ms": 406,
+     "estimated": false,
+     "fallback": false
+    }
+   }
+  },
+  {
+   "proposal_id": "P022",
+   "original": {
+    "relevance": 5,
+    "evidence": 4,
+    "clarity": 4,
+    "professionalism": 5,
+    "overall": 5,
+    "reason": "Strong alignment with requirements, concrete project references, clear and professional tone; likely to engage."
+   },
+   "original_model": "openai/gpt-oss-120b",
+   "second_rater": {
+    "rating": {
+     "relevance": 5,
+     "evidence": 5,
+     "clarity": 5,
+     "professionalism": 4,
+     "overall": 5,
+     "reason": "Excellent relevance, evidence, clarity; minor generic opening, but overall compelling."
+    },
+    "usage": {
+     "node": "judge",
+     "model": "openai/gpt-oss-20b",
+     "input_tokens": 722,
+     "output_tokens": 408,
+     "cost_usd": 0.000177,
+     "latency_ms": 669,
+     "estimated": false,
+     "fallback": false
+    }
+   }
+  },
+  {
+   "proposal_id": "P023",
+   "original": {
+    "relevance": 4,
+    "evidence": 4,
+    "clarity": 4,
+    "professionalism": 5,
+    "overall": 4,
+    "reason": "Strong tech match and concrete examples, but lacks explicit Express experience; overall compelling enough to consider replying."
+   },
+   "original_model": "openai/gpt-oss-120b",
+   "second_rater": {
+    "rating": {
+     "relevance": 4,
+     "evidence": 5,
+     "clarity": 5,
+     "professionalism": 5,
+     "overall": 5,
+     "reason": "Strong evidence, relevant tech stack, concise, professional. Missing Express mention but still likely to reply."
+    },
+    "usage": {
+     "node": "judge",
+     "model": "openai/gpt-oss-20b",
+     "input_tokens": 677,
+     "output_tokens": 449,
+     "cost_usd": 0.000185,
+     "latency_ms": 721,
+     "estimated": false,
+     "fallback": false
+    }
+   }
+  },
+  {
+   "proposal_id": "P024",
+   "original": {
+    "relevance": 4,
+    "evidence": 5,
+    "clarity": 5,
+    "professionalism": 5,
+    "overall": 4,
+    "reason": "Strong LoRA and evaluation experience, concrete results; minor mismatch in domain but skills align well."
+   },
+   "original_model": "openai/gpt-oss-120b",
+   "second_rater": {
+    "rating": {
+     "relevance": 5,
+     "evidence": 5,
+     "clarity": 5,
+     "professionalism": 5,
+     "overall": 5,
+     "reason": "Strong evidence, relevant, clear, professional; meets all requirements, likely to be accepted."
+    },
+    "usage": {
+     "node": "judge",
+     "model": "openai/gpt-oss-20b",
+     "input_tokens": 631,
+     "output_tokens": 306,
+     "cost_usd": 0.000139,
+     "latency_ms": 534,
+     "estimated": false,
+     "fallback": false
+    }
+   }
+  },
+  {
+   "proposal_id": "P025",
+   "original": {
+    "relevance": 5,
+    "evidence": 5,
+    "clarity": 5,
+    "professionalism": 4,
+    "overall": 5,
+    "reason": "Clear, relevant experience with R, SQL, Excel; concrete examples; concise and professional, prompting a response."
+   },
+   "original_model": "openai/gpt-oss-120b",
+   "second_rater": {
+    "rating": {
+     "relevance": 4,
+     "evidence": 5,
+     "clarity": 5,
+     "professionalism": 2,
+     "overall": 3,
+     "reason": "Good evidence and clarity, but generic opening and guarantees reduce professionalism; still likely to consider due to strong relevance and evidence."
+    },
+    "usage": {
+     "node": "judge",
+     "model": "openai/gpt-oss-20b",
+     "input_tokens": 692,
+     "output_tokens": 573,
+     "cost_usd": 0.000224,
+     "latency_ms": 874,
+     "estimated": false,
+     "fallback": false
+    }
+   }
+  },
+  {
+   "proposal_id": "P026",
+   "original": {
+    "relevance": 5,
+    "evidence": 5,
+    "clarity": 5,
+    "professionalism": 4,
+    "overall": 5,
+    "reason": "Strong fit, concrete examples, clear proposal; minor generic greeting but otherwise professional."
+   },
+   "original_model": "openai/gpt-oss-120b",
+   "second_rater": {
+    "rating": {
+     "relevance": 5,
+     "evidence": 5,
+     "clarity": 5,
+     "professionalism": 3,
+     "overall": 4,
+     "reason": "Strong technical fit and concrete examples, but generic greeting and guaranteed delivery reduce professionalism slightly."
+    },
+    "usage": {
+     "node": "judge",
+     "model": "openai/gpt-oss-20b",
+     "input_tokens": 698,
+     "output_tokens": 347,
+     "cost_usd": 0.000156,
+     "latency_ms": 599,
+     "estimated": false,
+     "fallback": false
+    }
+   }
+  },
+  {
+   "proposal_id": "P027",
+   "original": {
+    "relevance": 5,
+    "evidence": 4,
+    "clarity": 5,
+    "professionalism": 5,
+    "overall": 5,
+    "reason": "Clear, relevant proposal with solid Solidity/Rust experience; provides concrete work details though lacking explicit project links."
+   },
+   "original_model": "openai/gpt-oss-120b",
+   "second_rater": {
+    "rating": {
+     "relevance": 5,
+     "evidence": 5,
+     "clarity": 5,
+     "professionalism": 2,
+     "overall": 4,
+     "reason": "Excellent technical fit, but generic opening and contact details lower professionalism."
+    },
+    "usage": {
+     "node": "judge",
+     "model": "openai/gpt-oss-20b",
+     "input_tokens": 771,
+     "output_tokens": 547,
+     "cost_usd": 0.000222,
+     "latency_ms": 1202,
+     "estimated": false,
+     "fallback": false
+    }
+   }
+  },
+  {
+   "proposal_id": "P028",
+   "original": {
+    "relevance": 5,
+    "evidence": 5,
+    "clarity": 5,
+    "professionalism": 5,
+    "overall": 5,
+    "reason": "Highly relevant, concrete examples, clear and professional; shows exact FastAPI and container experience, making me eager to respond."
+   },
+   "original_model": "openai/gpt-oss-120b",
+   "second_rater": {
+    "rating": {
+     "relevance": 4,
+     "evidence": 5,
+     "clarity": 5,
+     "professionalism": 5,
+     "overall": 5,
+     "reason": "Strong evidence, relevant experience, concise, professional. Likely to reply."
+    },
+    "usage": {
+     "node": "judge",
+     "model": "openai/gpt-oss-20b",
+     "input_tokens": 666,
+     "output_tokens": 417,
+     "cost_usd": 0.000175,
+     "latency_ms": 780,
+     "estimated": false,
+     "fallback": false
+    }
+   }
+  },
+  {
+   "proposal_id": "P029",
+   "original": {
+    "relevance": 5,
+    "evidence": 5,
+    "clarity": 5,
+    "professionalism": 4,
+    "overall": 5,
+    "reason": "Strong match, concrete example, clear, professional; likely to engage."
+   },
+   "original_model": "openai/gpt-oss-120b",
+   "second_rater": {
+    "rating": {
+     "relevance": 5,
+     "evidence": 5,
+     "clarity": 5,
+     "professionalism": 5,
+     "overall": 5,
+     "reason": "Strongly relevant, evidence-backed, clear, professional; meets all criteria, highly likely to reply."
+    },
+    "usage": {
+     "node": "judge",
+     "model": "openai/gpt-oss-20b",
+     "input_tokens": 670,
+     "output_tokens": 290,
+     "cost_usd": 0.000137,
+     "latency_ms": 584,
+     "estimated": false,
+     "fallback": false
+    }
+   }
+  },
+  {
+   "proposal_id": "P030",
+   "original": {
+    "relevance": 5,
+    "evidence": 5,
+    "clarity": 5,
+    "professionalism": 4,
+    "overall": 5,
+    "reason": "Strong alignment, concrete examples, clear and concise; minor generic greeting reduces professionalism slightly."
+   },
+   "original_model": "openai/gpt-oss-120b",
+   "second_rater": {
+    "rating": {
+     "relevance": 5,
+     "evidence": 5,
+     "clarity": 5,
+     "professionalism": 5,
+     "overall": 5,
+     "reason": "Proposal is highly relevant, evidence-rich, clear, professional, and matches the job requirements."
+    },
+    "usage": {
+     "node": "judge",
+     "model": "openai/gpt-oss-20b",
+     "input_tokens": 735,
+     "output_tokens": 350,
+     "cost_usd": 0.00016,
+     "latency_ms": 544,
+     "estimated": false,
+     "fallback": false
+    }
+   }
+  }
+ ],
+ "preferences": [
+  {
+   "pair_id": "PAIR01",
+   "original_order": {
+    "rating": {
+     "choice": "B",
+     "reason": "Proposal B provides a more detailed, relevant, and professional response. It explicitly references a similar real\u2011time YOLO\u2011based detector, confirms use of Python (the standard data\u2011science language), and demonstrates that all components\u2014including preprocessing, inference, and packaging\u2014were delivered as reproducible Docker images, directly addressing the job\u2019s requirements. It also asks a concrete question about the number of simultaneous camera feeds and offers comprehensive documentation and example scripts for integration, showing readiness to meet the client\u2019s needs. Proposal A, while mentioning similar work, lacks the same level of detail on packaging, reproducibility, and integration support, and it admits not having used WebSockets, which reduces its perceived readiness for the full scope. Therefore, B is the stronger candidate to earn a reply."
+    },
+    "usage": {
+     "node": "judge",
+     "model": "openai/gpt-oss-20b",
+     "input_tokens": 601,
+     "output_tokens": 834,
+     "cost_usd": 0.000295,
+     "latency_ms": 1474,
+     "estimated": false,
+     "fallback": false
+    }
+   },
+   "reversed_order": {
+    "rating": {
+     "choice": "A",
+     "reason": "Proposal A directly addresses the key requirements\u2014real\u2011time detection, Python implementation, Docker packaging, and frame\u2011level preprocessing\u2014while providing concrete evidence (94% capture at 30\u202ffps on an edge device). It also asks a relevant question about simultaneous camera feeds and offers comprehensive documentation and example scripts, which signals readiness and professionalism. Proposal B, while mentioning similar metrics, highlights a limitation (no WebSocket experience) and focuses on a milestone plan, making it slightly less targeted to the job\u2019s immediate needs."
+    },
+    "usage": {
+     "node": "judge",
+     "model": "openai/gpt-oss-20b",
+     "input_tokens": 601,
+     "output_tokens": 864,
+     "cost_usd": 0.000304,
+     "latency_ms": 1226,
+     "estimated": false,
+     "fallback": false
+    }
+   },
+   "status": "consistent",
+   "preference": "B"
+  },
+  {
+   "pair_id": "PAIR02",
+   "original_order": {
+    "rating": {
+     "choice": "B",
+     "reason": "Proposal B is concise, friendly, and directly addresses all the job requirements\u2014TypeScript, single codebase for iOS/Android, NoSQL (MongoDB), and Node.js backend\u2014while also highlighting a relevant case study, a 4.7\u2011star rating, on\u2011schedule delivery, and readiness to start immediately. It includes a clear sign\u2011off and a mention of rate alignment, which are practical details that resonate with a short, 40\u2011hour project. Proposal A, while rich in technical detail, is longer, lacks a greeting and sign\u2011off, and admits a missing public Git workflow example, which could be a slight drawback for a quick reply. Therefore, B is more likely to earn a response. "
+    },
+    "usage": {
+     "node": "judge",
+     "model": "openai/gpt-oss-20b",
+     "input_tokens": 743,
+     "output_tokens": 945,
+     "cost_usd": 0.000339,
+     "latency_ms": 1326,
+     "estimated": false,
+     "fallback": false
+    }
+   },
+   "reversed_order": {
+    "rating": {
+     "choice": "B",
+     "reason": "Proposal B provides more specific evidence of relevant experience, including a travel\u2011client project, a typed GraphQL gateway, and a React Native app built with TypeScript and MongoDB. It also demonstrates quality practices (Playwright tests, CI/CD pipeline) and shows measurable impact (reduced API calls and bugs). While it admits no public Git workflow example, its depth, relevance to the travel domain, and clear demonstration of Node.js and NoSQL expertise make it more likely to earn a reply than Proposal A, which references a fitness app rather than a travel client."
+    },
+    "usage": {
+     "node": "judge",
+     "model": "openai/gpt-oss-20b",
+     "input_tokens": 743,
+     "output_tokens": 751,
+     "cost_usd": 0.000281,
+     "latency_ms": 1027,
+     "estimated": false,
+     "fallback": false
+    }
+   },
+   "status": "order_sensitive",
+   "preference": null
+  },
+  {
+   "pair_id": "PAIR03",
+   "original_order": {
+    "rating": {
+     "choice": "A",
+     "reason": "Proposal A demonstrates stronger relevance to the job requirements by explicitly mentioning Apollo GraphQL, middleware routing, and background workers. It provides detailed, specific evidence of past work with Docker, PostgreSQL, and GraphQL through named case studies, showing concrete achievements such as zero\u2011downtime deployments and performance tuning. The proposal is clear, professional, and offers a concrete plan for the first week, increasing the likelihood of a reply. Proposal B, while mentioning Docker and PostgreSQL, lacks Apollo experience, provides less technical detail, and offers a more generic approach. Therefore, Proposal A is the preferred choice."
+    },
+    "usage": {
+     "node": "judge",
+     "model": "openai/gpt-oss-20b",
+     "input_tokens": 710,
+     "output_tokens": 743,
+     "cost_usd": 0.000276,
+     "latency_ms": 1032,
+     "estimated": false,
+     "fallback": false
+    }
+   },
+   "reversed_order": {
+    "rating": {
+     "choice": "B",
+     "reason": "Proposal B directly addresses every key requirement of the job: it demonstrates hands\u2011on Docker experience, PostgreSQL expertise, JavaScript middleware routing, and explicit Apollo/GraphQL knowledge. It also mentions migrating slow work to background workers, matching the client\u2019s need. The evidence is specific, citing concrete case studies with identifiers, and the tone is clear, professional, and action\u2011oriented. Proposal A lacks explicit Apollo/GraphQL references, background\u2011worker detail, and JavaScript middleware routing, making B the stronger candidate for eliciting a reply."
+    },
+    "usage": {
+     "node": "judge",
+     "model": "openai/gpt-oss-20b",
+     "input_tokens": 710,
+     "output_tokens": 846,
+     "cost_usd": 0.000307,
+     "latency_ms": 1271,
+     "estimated": false,
+     "fallback": false
+    }
+   },
+   "status": "consistent",
+   "preference": "A"
+  },
+  {
+   "pair_id": "PAIR04",
+   "original_order": {
+    "rating": {
+     "choice": "B",
+     "reason": "Proposal B directly addresses all key requirements\u2014Python, SQL, data visualization, and cohort analysis\u2014providing concrete, relevant examples (e.g., a churn driver analysis, an executive dashboard, and an open\u2011source cohort analysis repo). It also demonstrates compliance with data\u2011privacy best practices and expresses willingness for a short engagement and long\u2011term partnership, making it clearer, more specific, and more professional than Proposal A, which lacks explicit cohort analysis evidence and offers less detailed proof of relevant experience."
+    },
+    "usage": {
+     "node": "judge",
+     "model": "openai/gpt-oss-20b",
+     "input_tokens": 641,
+     "output_tokens": 633,
+     "cost_usd": 0.000238,
+     "latency_ms": 1441,
+     "estimated": false,
+     "fallback": false
+    }
+   },
+   "reversed_order": {
+    "rating": {
+     "choice": "A",
+     "reason": "Proposal A better matches the job requirements: it explicitly demonstrates cohort\u2011analysis experience, provides concrete metrics (38% variance explained, 40 managers using a dashboard, forecast error reduction), and references an open\u2011source cohort repository. Its language is clear, professional, and it addresses data\u2011privacy compliance and long\u2011term partnership. Proposal B is less specific about cohort analysis, less polished, and offers a more generic set of references. Therefore A is more likely to earn a reply."
+    },
+    "usage": {
+     "node": "judge",
+     "model": "openai/gpt-oss-20b",
+     "input_tokens": 641,
+     "output_tokens": 661,
+     "cost_usd": 0.000246,
+     "latency_ms": 940,
+     "estimated": false,
+     "fallback": false
+    }
+   },
+   "status": "consistent",
+   "preference": "B"
+  },
+  {
+   "pair_id": "PAIR05",
+   "original_order": {
+    "rating": {
+     "choice": "B",
+     "reason": "Proposal B offers more specific evidence\u201494% detection accuracy, 30\u202ffps performance, use of YOLO and Docker\u2014directly addressing the job\u2019s technical requirements. It also asks a concrete follow\u2011up question about the dataset and hardware, demonstrating readiness to move forward and encouraging a reply. Proposal A, while relevant, lacks quantitative metrics and does not prompt a response. Therefore B is more likely to earn a reply."
+    },
+    "usage": {
+     "node": "judge",
+     "model": "openai/gpt-oss-20b",
+     "input_tokens": 595,
+     "output_tokens": 911,
+     "cost_usd": 0.000318,
+     "latency_ms": 1184,
+     "estimated": false,
+     "fallback": false
+    }
+   },
+   "reversed_order": {
+    "rating": {
+     "choice": "B",
+     "reason": "Proposal B explicitly addresses all key job requirements\u2014Docker, custom training loop, real\u2011time detection\u2014and provides concrete evidence (case study reference, 30\u202ffps performance). It also states a clear timeline (30\u202fhours in two weeks) and commits to frequent, clear communication, directly matching the client\u2019s stated needs. While Proposal A is concise and asks a relevant question, B\u2019s additional details on communication, timeline, and a specific case study give it a slight edge in likelihood of eliciting a reply."
+    },
+    "usage": {
+     "node": "judge",
+     "model": "openai/gpt-oss-20b",
+     "input_tokens": 595,
+     "output_tokens": 1124,
+     "cost_usd": 0.000382,
+     "latency_ms": 1466,
+     "estimated": false,
+     "fallback": false
+    }
+   },
+   "status": "order_sensitive",
+   "preference": null
+  },
+  {
+   "pair_id": "PAIR06",
+   "original_order": {
+    "rating": {
+     "choice": "B",
+     "reason": "Proposal B directly addresses the job\u2019s requirement for free Google dashboards that the marketing team can edit, while also demonstrating Power BI expertise. It cites relevant experience with Google Data Studio and GA4 integration, outlines a clear technical plan (data extraction, modeling, prototype), and shows depth in data modeling and visual design. Proposal A, though strong on Power BI and past dashboards, does not mention Google Data Studio and is less specific about meeting the free\u2011editable dashboard requirement. Therefore B is more likely to earn a reply."
+    },
+    "usage": {
+     "node": "judge",
+     "model": "openai/gpt-oss-20b",
+     "input_tokens": 559,
+     "output_tokens": 819,
+     "cost_usd": 0.000288,
+     "latency_ms": 1082,
+     "estimated": false,
+     "fallback": false
+    }
+   },
+   "reversed_order": {
+    "rating": {
+     "choice": "A",
+     "reason": "Proposal A directly addresses the job\u2019s key requirement of creating free, editable Google dashboards (Google Data Studio) while also demonstrating Power BI expertise. It references relevant data modeling skills and GA4 integration, aligning closely with the client\u2019s needs. Proposal B, though rich in past project outcomes and a clear milestone plan, does not mention Google Data Studio or free dashboards, missing a critical client requirement. Therefore, A is more likely to earn a reply."
+    },
+    "usage": {
+     "node": "judge",
+     "model": "openai/gpt-oss-20b",
+     "input_tokens": 559,
+     "output_tokens": 944,
+     "cost_usd": 0.000325,
+     "latency_ms": 1555,
+     "estimated": false,
+     "fallback": false
+    }
+   },
+   "status": "consistent",
+   "preference": "B"
+  },
+  {
+   "pair_id": "PAIR07",
+   "original_order": {
+    "rating": {
+     "choice": "B",
+     "reason": "Proposal B is more likely to earn a reply because it is clearer, more professional, and provides a broader range of specific evidence (case numbers, metrics for all three tasks, and a cost estimate). It directly addresses each job requirement with concrete examples and a concise budget, making it more relevant and persuasive than Proposal A."
+    },
+    "usage": {
+     "node": "judge",
+     "model": "openai/gpt-oss-20b",
+     "input_tokens": 644,
+     "output_tokens": 886,
+     "cost_usd": 0.000314,
+     "latency_ms": 1536,
+     "estimated": false,
+     "fallback": false
+    }
+   },
+   "reversed_order": {
+    "rating": {
+     "choice": "A",
+     "reason": "Proposal A provides a clear, professional response that directly addresses all three key requirements of the job (CI/CD, AWS deployment, and typed front\u2011end). It cites specific past projects with concrete metrics (e.g., 30% cost reduction, zero\u2011downtime deployments, 35% lower support queries) and includes a rate and total cost that align with the client\u2019s budget. Proposal B, while mentioning CI/CD and cloud migration, lacks details on front\u2011end typing, does not provide a rate, and offers a less polished tone. Therefore, Proposal A is more likely to earn a reply."
+    },
+    "usage": {
+     "node": "judge",
+     "model": "openai/gpt-oss-20b",
+     "input_tokens": 644,
+     "output_tokens": 624,
+     "cost_usd": 0.000236,
+     "latency_ms": 867,
+     "estimated": false,
+     "fallback": false
+    }
+   },
+   "status": "consistent",
+   "preference": "B"
+  },
+  {
+   "pair_id": "PAIR08",
+   "original_order": {
+    "rating": {
+     "choice": "B",
+     "reason": "Proposal B explicitly addresses every job requirement\u2014GitHub Actions, Python REST API with FastAPI, SageMaker, reproducible container packaging, and experiment tracking with MLflow. It cites concrete case studies and quantifies results, demonstrates the ability to deliver the 20\u2011hour scope within a week, and signals readiness for long\u2011term collaboration. Proposal A, while mentioning SageMaker and FastAPI, omits GitHub Actions, experiment tracking, and reproducible image packaging, and is less detailed and slightly less professional in tone. Therefore B is more likely to earn a reply."
+    },
+    "usage": {
+     "node": "judge",
+     "model": "openai/gpt-oss-20b",
+     "input_tokens": 717,
+     "output_tokens": 928,
+     "cost_usd": 0.000332,
+     "latency_ms": 1194,
+     "estimated": false,
+     "fallback": false
+    }
+   },
+   "reversed_order": {
+    "rating": {
+     "choice": "A",
+     "reason": "Proposal A directly addresses all job requirements\u2014GitHub Actions, Python REST API, AWS, SageMaker, reproducible images, and experiment tracking\u2014by citing specific, relevant case studies and tools (e.g., FastAPI, MLflow). It provides concrete evidence of cost savings, monitoring, and CI/CD implementation, and clearly states availability and commitment to the 20\u2011hour scope and long\u2011term partnership. Proposal B, while mentioning SageMaker and FastAPI, lacks explicit references to reproducible image packaging and experiment tracking, and its evidence is less directly tied to the requested tasks. Therefore, A is more likely to earn a reply."
+    },
+    "usage": {
+     "node": "judge",
+     "model": "openai/gpt-oss-20b",
+     "input_tokens": 717,
+     "output_tokens": 942,
+     "cost_usd": 0.000336,
+     "latency_ms": 1458,
+     "estimated": false,
+     "fallback": false
+    }
+   },
+   "status": "consistent",
+   "preference": "B"
+  },
+  {
+   "pair_id": "PAIR09",
+   "original_order": {
+    "rating": {
+     "choice": "B",
+     "reason": "Proposal B directly addresses all job requirements\u2014CI/CD, containerization, AWS, typed front\u2011end, browser regression tests\u2014while also confirming the 120\u2011hour, 8\u2011week timeline and clear communication. It is concise, professional, and explicitly aligns its experience with the client\u2019s needs, making it more likely to elicit a reply than Proposal A, which, though detailed, includes a question that may distract from the core requirements."
+    },
+    "usage": {
+     "node": "judge",
+     "model": "openai/gpt-oss-20b",
+     "input_tokens": 757,
+     "output_tokens": 820,
+     "cost_usd": 0.000303,
+     "latency_ms": 1181,
+     "estimated": false,
+     "fallback": false
+    }
+   },
+   "reversed_order": {
+    "rating": {
+     "choice": "A",
+     "reason": "Proposal A is more directly relevant to the job requirements, clearly addresses typed front\u2011end work, CI/CD, containerization, and AWS, and provides specific, measurable evidence (pipeline runtime reduction, cost savings, zero\u2011downtime deployments). It is concise, focused, and demonstrates clear communication. Proposal B, while detailed and metric\u2011rich, includes a question that diverts from the core requirements and emphasizes backend performance over the front\u2011end and CI/CD aspects, making it slightly less aligned with the client\u2019s stated needs."
+    },
+    "usage": {
+     "node": "judge",
+     "model": "openai/gpt-oss-20b",
+     "input_tokens": 757,
+     "output_tokens": 933,
+     "cost_usd": 0.000337,
+     "latency_ms": 1244,
+     "estimated": false,
+     "fallback": false
+    }
+   },
+   "status": "consistent",
+   "preference": "B"
+  },
+  {
+   "pair_id": "PAIR10",
+   "original_order": {
+    "rating": {
+     "choice": "B",
+     "reason": "Proposal B directly addresses the job\u2019s key requirements\u2014Python, pandas, forecasting next quarter demand from seasonal history\u2014and provides concrete evidence (case study ID, repository link, use of Prophet). It also references the specified timeline (80 hours over 5 weeks) and offers a fixed price, giving the client clear expectations. While Proposal A is professional and mentions long\u2011term collaboration, it lacks the specific evidence, timeline, and pricing details that make B more likely to elicit a reply."
+    },
+    "usage": {
+     "node": "judge",
+     "model": "openai/gpt-oss-20b",
+     "input_tokens": 613,
+     "output_tokens": 1140,
+     "cost_usd": 0.000388,
+     "latency_ms": 1929,
+     "estimated": false,
+     "fallback": false
+    }
+   },
+   "reversed_order": {
+    "rating": {
+     "choice": "A",
+     "reason": "Proposal A gives a concrete, relevant case study with a specific repository, demonstrates use of Prophet and pandas, quantifies impact, and includes a clear timeline and fixed price. It directly addresses the job requirements and provides verifiable evidence of past success. Proposal B, while mentioning similar metrics, is less specific about the approach, does not provide a repository or price, and opens with a question that may distract from the direct request. Therefore A is more likely to earn a reply."
+    },
+    "usage": {
+     "node": "judge",
+     "model": "openai/gpt-oss-20b",
+     "input_tokens": 613,
+     "output_tokens": 924,
+     "cost_usd": 0.000323,
+     "latency_ms": 1319,
+     "estimated": false,
+     "fallback": false
+    }
+   },
+   "status": "consistent",
+   "preference": "B"
+  },
+  {
+   "pair_id": "PAIR11",
+   "original_order": {
+    "rating": {
+     "choice": "A",
+     "reason": "Proposal A better meets the job\u2019s key requirements: it demonstrates direct Snowflake experience, shows dbt and PostgreSQL expertise, and includes specific, measurable past work (35% warehouse cost reduction, end\u2011to\u2011end dependency\u2011graph pipelines). It also tailors the pitch to hospitality analytics and promises clear documentation. Proposal B lacks Snowflake experience and is less tailored to the hospitality context, making A the more likely to earn a reply."
+    },
+    "usage": {
+     "node": "judge",
+     "model": "openai/gpt-oss-20b",
+     "input_tokens": 690,
+     "output_tokens": 798,
+     "cost_usd": 0.000291,
+     "latency_ms": 1075,
+     "estimated": false,
+     "fallback": false
+    }
+   },
+   "reversed_order": {
+    "rating": {
+     "choice": "B",
+     "reason": "Proposal B demonstrates direct experience with Snowflake, a key requirement, and provides concrete case studies with measurable outcomes (35% cost reduction, end\u2011to\u2011end ETL pipelines). It also shows dbt expertise, PostgreSQL query skills, and Python scripting\u2014all aligned with the job\u2019s needs. Proposal A lacks Snowflake experience and offers less specific evidence, making B the stronger candidate for a reply."
+    },
+    "usage": {
+     "node": "judge",
+     "model": "openai/gpt-oss-20b",
+     "input_tokens": 690,
+     "output_tokens": 633,
+     "cost_usd": 0.000242,
+     "latency_ms": 924,
+     "estimated": false,
+     "fallback": false
+    }
+   },
+   "status": "consistent",
+   "preference": "A"
+  },
+  {
+   "pair_id": "PAIR12",
+   "original_order": {
+    "rating": {
+     "choice": "A",
+     "reason": "Proposal A is more focused on the job requirements, providing specific, relevant evidence (e.g., reduced stock\u2011outs, lowered MAPE, a repeatable evaluation harness) and a clear, actionable plan with deliverables. It directly addresses the need for Python, time\u2011series forecasting, and model evaluation, and maintains a concise, professional tone. Proposal B, while also mentioning relevant metrics, includes extraneous references (LLM harness, multi\u2011agent research) that dilute focus and offers a less structured response. Therefore, A is more likely to earn a reply."
+    },
+    "usage": {
+     "node": "judge",
+     "model": "openai/gpt-oss-20b",
+     "input_tokens": 641,
+     "output_tokens": 1122,
+     "cost_usd": 0.000385,
+     "latency_ms": 1460,
+     "estimated": false,
+     "fallback": false
+    }
+   },
+   "reversed_order": {
+    "rating": {
+     "choice": "B",
+     "reason": "Proposal B is more likely to earn a reply because it directly addresses the key job requirements\u2014forecasting next quarter\u2019s demand from seasonal history, using Python, and providing a rigorous model\u2011evaluation framework. It offers a clear, actionable timeline (cleaned data, baseline forecast, and a development plan by week\u202fone) and references the same relevant retail and edtech projects as Proposal\u202fA, but with a tighter focus on the specific deliverables and a more concrete plan. This combination of relevance, specificity, clarity, and professionalism gives it a slight edge over Proposal\u202fA."
+    },
+    "usage": {
+     "node": "judge",
+     "model": "openai/gpt-oss-20b",
+     "input_tokens": 641,
+     "output_tokens": 1080,
+     "cost_usd": 0.000372,
+     "latency_ms": 1803,
+     "estimated": false,
+     "fallback": false
+    }
+   },
+   "status": "consistent",
+   "preference": "A"
+  },
+  {
+   "pair_id": "PAIR13",
+   "original_order": {
+    "rating": {
+     "choice": "A",
+     "reason": "Proposal A provides more specific evidence of relevant experience, notably handling 3,000 concurrent WebSocket sessions and delivering measurable performance improvements. It also demonstrates a clear approach to testing, monitoring, and documentation, and proactively asks about authentication integration, showing engagement with the client\u2019s needs. Proposal B, while competent, offers less concrete metrics and contains a potentially confusing time figure. Therefore, A is more likely to earn a reply."
+    },
+    "usage": {
+     "node": "judge",
+     "model": "openai/gpt-oss-20b",
+     "input_tokens": 695,
+     "output_tokens": 783,
+     "cost_usd": 0.000287,
+     "latency_ms": 1346,
+     "estimated": false,
+     "fallback": false
+    }
+   },
+   "reversed_order": {
+    "rating": {
+     "choice": "A",
+     "reason": "Proposal A is more likely to earn a reply because it provides concrete, specific examples with case IDs and measurable outcomes, directly addresses the required timeline and deployment concerns, and ends with a professional closing. While Proposal B also references relevant projects and asks a thoughtful question, it is slightly less proactive and does not explicitly confirm readiness to start within the one\u2011week window. Therefore, A stands out as the stronger, more complete proposal."
+    },
+    "usage": {
+     "node": "judge",
+     "model": "openai/gpt-oss-20b",
+     "input_tokens": 695,
+     "output_tokens": 1018,
+     "cost_usd": 0.000358,
+     "latency_ms": 2051,
+     "estimated": false,
+     "fallback": false
+    }
+   },
+   "status": "order_sensitive",
+   "preference": null
+  },
+  {
+   "pair_id": "PAIR14",
+   "original_order": {
+    "rating": {
+     "choice": "A",
+     "reason": "Proposal A directly addresses all key requirements\u2014PostgreSQL, Redis, Docker, background workers, and typed query endpoints\u2014providing concrete, recent project examples with clear evidence of relevant experience. Its tone is professional, concise, and confident, and it explicitly commits to the 60\u2011hour timeline and long\u2011term collaboration. Proposal B, while mentioning some relevant technologies, lacks specific evidence of background worker implementation, typed query endpoints, and healthcare context, and it also admits not having used WebSockets. Therefore, A is more likely to earn a reply."
+    },
+    "usage": {
+     "node": "judge",
+     "model": "openai/gpt-oss-20b",
+     "input_tokens": 765,
+     "output_tokens": 894,
+     "cost_usd": 0.000326,
+     "latency_ms": 1203,
+     "estimated": false,
+     "fallback": false
+    }
+   },
+   "reversed_order": {
+    "rating": {
+     "choice": "B",
+     "reason": "Proposal B directly addresses all key requirements\u2014PostgreSQL, Redis, Docker, background workers (Celery), and typed query endpoints\u2014using concrete, recent case studies that match the stack and real\u2011time nature of the job. It also explicitly commits to the 60\u2011hour timeline and long\u2011term collaboration, and it is concise, clear, and professionally presented. Proposal A, while relevant, lacks the same level of specificity, mentions a missing WebSocket experience, and is less focused on the exact stack. Therefore, B is more likely to earn a reply."
+    },
+    "usage": {
+     "node": "judge",
+     "model": "openai/gpt-oss-20b",
+     "input_tokens": 765,
+     "output_tokens": 851,
+     "cost_usd": 0.000313,
+     "latency_ms": 1122,
+     "estimated": false,
+     "fallback": false
+    }
+   },
+   "status": "consistent",
+   "preference": "A"
+  },
+  {
+   "pair_id": "PAIR15",
+   "original_order": {
+    "rating": {
+     "choice": "A",
+     "reason": "Proposal A provides specific, relevant evidence of experience with React Native, TypeScript, and Node.js (which implies Express knowledge). It explicitly addresses regulatory compliance for pharma, offers to share work samples, and outlines a clear schedule and communication plan. Proposal B, while mentioning similar projects, lacks explicit reference to Express, does not discuss compliance, and ends with a question that may appear less confident or professional. Therefore, A is more likely to earn a reply."
+    },
+    "usage": {
+     "node": "judge",
+     "model": "openai/gpt-oss-20b",
+     "input_tokens": 573,
+     "output_tokens": 680,
+     "cost_usd": 0.000247,
+     "latency_ms": 1136,
+     "estimated": false,
+     "fallback": false
+    }
+   },
+   "reversed_order": {
+    "rating": {
+     "choice": "B",
+     "reason": "Proposal B provides more specific evidence of relevant experience, explicitly addresses regulatory compliance, offers to share work samples, and outlines a clear plan for the 30\u2011hour, 2\u2011week timeline with regular updates. It is more detailed, professional, and directly aligns with the job requirements, making it more likely to elicit a reply."
+    },
+    "usage": {
+     "node": "judge",
+     "model": "openai/gpt-oss-20b",
+     "input_tokens": 573,
+     "output_tokens": 631,
+     "cost_usd": 0.000232,
+     "latency_ms": 917,
+     "estimated": false,
+     "fallback": false
+    }
+   },
+   "status": "consistent",
+   "preference": "A"
+  }
+ ]
+}

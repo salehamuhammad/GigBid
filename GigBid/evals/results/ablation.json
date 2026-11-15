@@ -1,0 +1,67 @@
+{
+ "env": {
+  "model_profile": "offline",
+  "embeddings": {
+   "provider": "hash",
+   "model": "hash-1024"
+  },
+  "reranker": {
+   "provider": "lexical",
+   "model": "lexical-overlap"
+  },
+  "deployed_variant": "best",
+  "at": "2026-11-14 10:20:45"
+ },
+ "rag": {
+  "best (shipped)": {
+   "recall@5": 0.7424,
+   "mrr": 0.8809,
+   "ndcg@10": 0.746,
+   "refusal_accuracy": 0.6333
+  },
+  "- rerank": {
+   "recall@5": 0.7197,
+   "mrr": 0.8494,
+   "ndcg@10": 0.7321,
+   "refusal_accuracy": 0.6333
+  },
+  "- skill graph (hybrid instead)": {
+   "recall@5": 0.7058,
+   "mrr": 0.8693,
+   "ndcg@10": 0.6957,
+   "refusal_accuracy": 0.6333
+  },
+  "- graph and BM25 (dense only)": {
+   "recall@5": 0.6362,
+   "mrr": 0.8189,
+   "ndcg@10": 0.6291,
+   "refusal_accuracy": 0.7556
+  },
+  "- decomposition": {
+   "recall@5": 0.7058,
+   "mrr": 0.9059,
+   "ndcg@10": 0.7126,
+   "refusal_accuracy": 0.2333
+  },
+  "- corrective loop": {
+   "recall@5": 0.7738,
+   "mrr": 0.9238,
+   "ndcg@10": 0.7823,
+   "refusal_accuracy": 0.0
+  }
+ },
+ "graph": {
+  "verification on": {
+   "drafts": 35,
+   "claims": 191,
+   "unsupported_reaching_human": 0,
+   "rate": 0.0
+  },
+  "verification off": {
+   "drafts": 35,
+   "claims": 191,
+   "unsupported_reaching_human": 0,
+   "rate": 0.0
+  }
+ }
+}

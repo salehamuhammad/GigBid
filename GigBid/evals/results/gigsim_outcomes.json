@@ -1,0 +1,1923 @@
+{
+ "env": {
+  "model_profile": "offline",
+  "embeddings": {
+   "provider": "hash",
+   "model": "hash-1024"
+  },
+  "reranker": {
+   "provider": "lexical",
+   "model": "lexical-overlap"
+  },
+  "deployed_variant": "best",
+  "at": "2026-11-14 10:20:08"
+ },
+ "arms": {
+  "generic": {
+   "n": 74,
+   "mean_p_reply": 0.1256,
+   "reply_rate": 0.0676,
+   "hire_rate": 0.0,
+   "policy_violations": 0
+  },
+  "evidence_first": {
+   "n": 74,
+   "mean_p_reply": 0.5549,
+   "reply_rate": 0.527,
+   "hire_rate": 0.1892,
+   "policy_violations": 0
+  },
+  "question_first": {
+   "n": 74,
+   "mean_p_reply": 0.556,
+   "reply_rate": 0.527,
+   "hire_rate": 0.1892,
+   "policy_violations": 0
+  }
+ },
+ "evidence_first_vs_generic": {
+  "mean_diff_p_reply": 0.4293,
+  "ci95": [
+   0.3913,
+   0.4677
+  ],
+  "wins": 74,
+  "losses": 0,
+  "sign_test_p": 0.0
+ },
+ "question_first_vs_evidence_first": {
+  "mean_diff_p_reply": 0.0011,
+  "ci95": [
+   0.0,
+   0.0034
+  ],
+  "wins": 1,
+  "losses": 0,
+  "sign_test_p": 1.0
+ },
+ "rows": [
+  {
+   "persona": "ai_engineer",
+   "job_id": "dev-ai-01586",
+   "evidence_first": {
+    "p_reply": 0.5528,
+    "replied": true,
+    "hired": true,
+    "violation": false,
+    "bid": 6600.0
+   },
+   "question_first": {
+    "p_reply": 0.5528,
+    "replied": true,
+    "hired": true,
+    "violation": false,
+    "bid": 6600.0
+   },
+   "generic": {
+    "p_reply": 0.1705,
+    "replied": true,
+    "hired": false,
+    "violation": false,
+    "bid": 6600.0
+   }
+  },
+  {
+   "persona": "ai_engineer",
+   "job_id": "dev-ai-01550",
+   "evidence_first": {
+    "p_reply": 0.7012,
+    "replied": true,
+    "hired": false,
+    "violation": false,
+    "bid": 3300.0
+   },
+   "question_first": {
+    "p_reply": 0.7012,
+    "replied": true,
+    "hired": false,
+    "violation": false,
+    "bid": 3300.0
+   },
+   "generic": {
+    "p_reply": 0.182,
+    "replied": false,
+    "hired": false,
+    "violation": false,
+    "bid": 3300.0
+   }
+  },
+  {
+   "persona": "ai_engineer",
+   "job_id": "dev-ai-01503",
+   "evidence_first": {
+    "p_reply": 0.5209,
+    "replied": true,
+    "hired": false,
+    "violation": false,
+    "bid": 2200.0
+   },
+   "question_first": {
+    "p_reply": 0.5209,
+    "replied": true,
+    "hired": false,
+    "violation": false,
+    "bid": 2200.0
+   },
+   "generic": {
+    "p_reply": 0.2697,
+    "replied": false,
+    "hired": false,
+    "violation": false,
+    "bid": 2200.0
+   }
+  },
+  {
+   "persona": "ai_engineer",
+   "job_id": "dev-ai-01552",
+   "evidence_first": {
+    "p_reply": 0.7684,
+    "replied": false,
+    "hired": false,
+    "violation": false,
+    "bid": 1650.0
+   },
+   "question_first": {
+    "p_reply": 0.7684,
+    "replied": false,
+    "hired": false,
+    "violation": false,
+    "bid": 1650.0
+   },
+   "generic": {
+    "p_reply": 0.0567,
+    "replied": false,
+    "hired": false,
+    "violation": false,
+    "bid": 1650.0
+   }
+  },
+  {
+   "persona": "ai_engineer",
+   "job_id": "dev-ai-01501",
+   "evidence_first": {
+    "p_reply": 0.6352,
+    "replied": false,
+    "hired": false,
+    "violation": false,
+    "bid": 4400.0
+   },
+   "question_first": {
+    "p_reply": 0.6352,
+    "replied": false,
+    "hired": false,
+    "violation": false,
+    "bid": 4400.0
+   },
+   "generic": {
+    "p_reply": 0.1189,
+    "replied": false,
+    "hired": false,
+    "violation": false,
+    "bid": 4400.0
+   }
+  },
+  {
+   "persona": "ai_engineer",
+   "job_id": "dev-ai-01530",
+   "evidence_first": {
+    "p_reply": 0.7871,
+    "replied": true,
+    "hired": true,
+    "violation": false,
+    "bid": 55.0
+   },
+   "question_first": {
+    "p_reply": 0.7871,
+    "replied": true,
+    "hired": true,
+    "violation": false,
+    "bid": 55.0
+   },
+   "generic": {
+    "p_reply": 0.0916,
+    "replied": false,
+    "hired": false,
+    "violation": false,
+    "bid": 55.0
+   }
+  },
+  {
+   "persona": "ai_engineer",
+   "job_id": "dev-ai-01591",
+   "evidence_first": {
+    "p_reply": 0.7965,
+    "replied": true,
+    "hired": true,
+    "violation": false,
+    "bid": 5670.0
+   },
+   "question_first": {
+    "p_reply": 0.7965,
+    "replied": true,
+    "hired": true,
+    "violation": false,
+    "bid": 5670.0
+   },
+   "generic": {
+    "p_reply": 0.2457,
+    "replied": false,
+    "hired": false,
+    "violation": false,
+    "bid": 5670.0
+   }
+  },
+  {
+   "persona": "ai_engineer",
+   "job_id": "dev-ai-01555",
+   "evidence_first": {
+    "p_reply": 0.3832,
+    "replied": true,
+    "hired": false,
+    "violation": false,
+    "bid": 4400.0
+   },
+   "question_first": {
+    "p_reply": 0.3832,
+    "replied": true,
+    "hired": false,
+    "violation": false,
+    "bid": 4400.0
+   },
+   "generic": {
+    "p_reply": 0.0698,
+    "replied": false,
+    "hired": false,
+    "violation": false,
+    "bid": 4400.0
+   }
+  },
+  {
+   "persona": "ai_engineer",
+   "job_id": "dev-ai-01519",
+   "evidence_first": {
+    "p_reply": 0.7754,
+    "replied": true,
+    "hired": false,
+    "violation": false,
+    "bid": 3300.0
+   },
+   "question_first": {
+    "p_reply": 0.7754,
+    "replied": true,
+    "hired": false,
+    "violation": false,
+    "bid": 3300.0
+   },
+   "generic": {
+    "p_reply": 0.065,
+    "replied": false,
+    "hired": false,
+    "violation": false,
+    "bid": 3300.0
+   }
+  },
+  {
+   "persona": "ai_engineer",
+   "job_id": "dev-ai-01526",
+   "evidence_first": {
+    "p_reply": 0.5341,
+    "replied": false,
+    "hired": false,
+    "violation": false,
+    "bid": 2840.0
+   },
+   "question_first": {
+    "p_reply": 0.5341,
+    "replied": false,
+    "hired": false,
+    "violation": false,
+    "bid": 2840.0
+   },
+   "generic": {
+    "p_reply": 0.1221,
+    "replied": false,
+    "hired": false,
+    "violation": false,
+    "bid": 2840.0
+   }
+  },
+  {
+   "persona": "ai_engineer",
+   "job_id": "dev-ai-01534",
+   "evidence_first": {
+    "p_reply": 0.5029,
+    "replied": true,
+    "hired": false,
+    "violation": false,
+    "bid": 55.0
+   },
+   "question_first": {
+    "p_reply": 0.5029,
+    "replied": true,
+    "hired": false,
+    "violation": false,
+    "bid": 55.0
+   },
+   "generic": {
+    "p_reply": 0.0916,
+    "replied": false,
+    "hired": false,
+    "violation": false,
+    "bid": 55.0
+   }
+  },
+  {
+   "persona": "ai_engineer",
+   "job_id": "dev-ai-01548",
+   "evidence_first": {
+    "p_reply": 0.7589,
+    "replied": false,
+    "hired": false,
+    "violation": false,
+    "bid": 6600.0
+   },
+   "question_first": {
+    "p_reply": 0.7589,
+    "replied": false,
+    "hired": false,
+    "violation": false,
+    "bid": 6600.0
+   },
+   "generic": {
+    "p_reply": 0.1421,
+    "replied": false,
+    "hired": false,
+    "violation": false,
+    "bid": 6600.0
+   }
+  },
+  {
+   "persona": "ai_engineer",
+   "job_id": "dev-ai-01557",
+   "evidence_first": {
+    "p_reply": 0.7754,
+    "replied": false,
+    "hired": false,
+    "violation": false,
+    "bid": 500.0
+   },
+   "question_first": {
+    "p_reply": 0.7754,
+    "replied": false,
+    "hired": false,
+    "violation": false,
+    "bid": 500.0
+   },
+   "generic": {
+    "p_reply": 0.1026,
+    "replied": false,
+    "hired": false,
+    "violation": false,
+    "bid": 500.0
+   }
+  },
+  {
+   "persona": "ai_engineer",
+   "job_id": "dev-ai-01514",
+   "evidence_first": {
+    "p_reply": 0.3173,
+    "replied": false,
+    "hired": false,
+    "violation": false,
+    "bid": 55.0
+   },
+   "question_first": {
+    "p_reply": 0.3173,
+    "replied": false,
+    "hired": false,
+    "violation": false,
+    "bid": 55.0
+   },
+   "generic": {
+    "p_reply": 0.1135,
+    "replied": false,
+    "hired": false,
+    "violation": false,
+    "bid": 55.0
+   }
+  },
+  {
+   "persona": "ai_engineer",
+   "job_id": "dev-ai-01597",
+   "evidence_first": {
+    "p_reply": 0.5774,
+    "replied": false,
+    "hired": false,
+    "violation": false,
+    "bid": 3660.0
+   },
+   "question_first": {
+    "p_reply": 0.5774,
+    "replied": false,
+    "hired": false,
+    "violation": false,
+    "bid": 3660.0
+   },
+   "generic": {
+    "p_reply": 0.1081,
+    "replied": false,
+    "hired": false,
+    "violation": false,
+    "bid": 3660.0
+   }
+  },
+  {
+   "persona": "ai_engineer",
+   "job_id": "dev-ai-01549",
+   "evidence_first": {
+    "p_reply": 0.3053,
+    "replied": false,
+    "hired": false,
+    "violation": false,
+    "bid": 940.0
+   },
+   "question_first": {
+    "p_reply": 0.3053,
+    "replied": false,
+    "hired": false,
+    "violation": false,
+    "bid": 940.0
+   },
+   "generic": {
+    "p_reply": 0.1092,
+    "replied": false,
+    "hired": false,
+    "violation": false,
+    "bid": 940.0
+   }
+  },
+  {
+   "persona": "ai_engineer",
+   "job_id": "dev-ai-01543",
+   "evidence_first": {
+    "p_reply": 0.4966,
+    "replied": true,
+    "hired": true,
+    "violation": false,
+    "bid": 55.0
+   },
+   "question_first": {
+    "p_reply": 0.4966,
+    "replied": true,
+    "hired": true,
+    "violation": false,
+    "bid": 55.0
+   },
+   "generic": {
+    "p_reply": 0.0366,
+    "replied": false,
+    "hired": false,
+    "violation": false,
+    "bid": 55.0
+   }
+  },
+  {
+   "persona": "ai_engineer",
+   "job_id": "dev-ai-01540",
+   "evidence_first": {
+    "p_reply": 0.4251,
+    "replied": false,
+    "hired": false,
+    "violation": false,
+    "bid": 55.0
+   },
+   "question_first": {
+    "p_reply": 0.4251,
+    "replied": false,
+    "hired": false,
+    "violation": false,
+    "bid": 55.0
+   },
+   "generic": {
+    "p_reply": 0.0775,
+    "replied": false,
+    "hired": false,
+    "violation": false,
+    "bid": 55.0
+   }
+  },
+  {
+   "persona": "ai_engineer",
+   "job_id": "dev-ai-01596",
+   "evidence_first": {
+    "p_reply": 0.3353,
+    "replied": true,
+    "hired": false,
+    "violation": false,
+    "bid": 2200.0
+   },
+   "question_first": {
+    "p_reply": 0.3353,
+    "replied": true,
+    "hired": false,
+    "violation": false,
+    "bid": 2200.0
+   },
+   "generic": {
+    "p_reply": 0.0611,
+    "replied": false,
+    "hired": false,
+    "violation": false,
+    "bid": 2200.0
+   }
+  },
+  {
+   "persona": "ai_engineer",
+   "job_id": "dev-ai-01547",
+   "evidence_first": {
+    "p_reply": 0.461,
+    "replied": false,
+    "hired": false,
+    "violation": false,
+    "bid": 55.0
+   },
+   "question_first": {
+    "p_reply": 0.461,
+    "replied": false,
+    "hired": false,
+    "violation": false,
+    "bid": 55.0
+   },
+   "generic": {
+    "p_reply": 0.2387,
+    "replied": false,
+    "hired": false,
+    "violation": false,
+    "bid": 55.0
+   }
+  },
+  {
+   "persona": "ai_engineer",
+   "job_id": "dev-ai-01528",
+   "evidence_first": {
+    "p_reply": 0.5716,
+    "replied": true,
+    "hired": false,
+    "violation": false,
+    "bid": 55.0
+   },
+   "question_first": {
+    "p_reply": 0.5716,
+    "replied": true,
+    "hired": false,
+    "violation": false,
+    "bid": 55.0
+   },
+   "generic": {
+    "p_reply": 0.0422,
+    "replied": false,
+    "hired": false,
+    "violation": false,
+    "bid": 55.0
+   }
+  },
+  {
+   "persona": "ai_engineer",
+   "job_id": "dev-ai-01508",
+   "evidence_first": {
+    "p_reply": 0.5328,
+    "replied": true,
+    "hired": false,
+    "violation": false,
+    "bid": 490.0
+   },
+   "question_first": {
+    "p_reply": 0.5328,
+    "replied": true,
+    "hired": false,
+    "violation": false,
+    "bid": 490.0
+   },
+   "generic": {
+    "p_reply": 0.0971,
+    "replied": false,
+    "hired": false,
+    "violation": false,
+    "bid": 490.0
+   }
+  },
+  {
+   "persona": "ai_engineer",
+   "job_id": "dev-ai-01509",
+   "evidence_first": {
+    "p_reply": 0.5927,
+    "replied": false,
+    "hired": false,
+    "violation": false,
+    "bid": 55.0
+   },
+   "question_first": {
+    "p_reply": 0.5927,
+    "replied": false,
+    "hired": false,
+    "violation": false,
+    "bid": 55.0
+   },
+   "generic": {
+    "p_reply": 0.0684,
+    "replied": false,
+    "hired": false,
+    "violation": false,
+    "bid": 55.0
+   }
+  },
+  {
+   "persona": "ai_engineer",
+   "job_id": "dev-ai-01593",
+   "evidence_first": {
+    "p_reply": 0.5328,
+    "replied": true,
+    "hired": false,
+    "violation": false,
+    "bid": 55.0
+   },
+   "question_first": {
+    "p_reply": 0.5328,
+    "replied": true,
+    "hired": false,
+    "violation": false,
+    "bid": 55.0
+   },
+   "generic": {
+    "p_reply": 0.1375,
+    "replied": false,
+    "hired": false,
+    "violation": false,
+    "bid": 55.0
+   }
+  },
+  {
+   "persona": "ai_engineer",
+   "job_id": "dev-ai-01536",
+   "evidence_first": {
+    "p_reply": 0.3891,
+    "replied": true,
+    "hired": false,
+    "violation": false,
+    "bid": 55.0
+   },
+   "question_first": {
+    "p_reply": 0.3891,
+    "replied": true,
+    "hired": false,
+    "violation": false,
+    "bid": 55.0
+   },
+   "generic": {
+    "p_reply": 0.0648,
+    "replied": false,
+    "hired": false,
+    "violation": false,
+    "bid": 55.0
+   }
+  },
+  {
+   "persona": "fullstack_dev",
+   "job_id": "dev-fu-01729",
+   "evidence_first": {
+    "p_reply": 0.5857,
+    "replied": false,
+    "hired": false,
+    "violation": false,
+    "bid": 48.0
+   },
+   "question_first": {
+    "p_reply": 0.5857,
+    "replied": false,
+    "hired": false,
+    "violation": false,
+    "bid": 48.0
+   },
+   "generic": {
+    "p_reply": 0.0708,
+    "replied": false,
+    "hired": false,
+    "violation": false,
+    "bid": 48.0
+   }
+  },
+  {
+   "persona": "fullstack_dev",
+   "job_id": "dev-fu-01752",
+   "evidence_first": {
+    "p_reply": 0.5528,
+    "replied": true,
+    "hired": false,
+    "violation": false,
+    "bid": 430.0
+   },
+   "question_first": {
+    "p_reply": 0.5528,
+    "replied": true,
+    "hired": false,
+    "violation": false,
+    "bid": 430.0
+   },
+   "generic": {
+    "p_reply": 0.0589,
+    "replied": false,
+    "hired": false,
+    "violation": false,
+    "bid": 430.0
+   }
+  },
+  {
+   "persona": "fullstack_dev",
+   "job_id": "dev-fu-01793",
+   "evidence_first": {
+    "p_reply": 0.6934,
+    "replied": true,
+    "hired": false,
+    "violation": false,
+    "bid": 48.0
+   },
+   "question_first": {
+    "p_reply": 0.6934,
+    "replied": true,
+    "hired": false,
+    "violation": false,
+    "bid": 48.0
+   },
+   "generic": {
+    "p_reply": 0.0512,
+    "replied": false,
+    "hired": false,
+    "violation": false,
+    "bid": 48.0
+   }
+  },
+  {
+   "persona": "fullstack_dev",
+   "job_id": "dev-fu-01718",
+   "evidence_first": {
+    "p_reply": 0.7215,
+    "replied": true,
+    "hired": true,
+    "violation": false,
+    "bid": 1700.0
+   },
+   "question_first": {
+    "p_reply": 0.7215,
+    "replied": true,
+    "hired": true,
+    "violation": false,
+    "bid": 1700.0
+   },
+   "generic": {
+    "p_reply": 0.0532,
+    "replied": false,
+    "hired": false,
+    "violation": false,
+    "bid": 1700.0
+   }
+  },
+  {
+   "persona": "fullstack_dev",
+   "job_id": "dev-fu-01790",
+   "evidence_first": {
+    "p_reply": 0.2708,
+    "replied": false,
+    "hired": false,
+    "violation": false,
+    "bid": 1920.0
+   },
+   "question_first": {
+    "p_reply": 0.2708,
+    "replied": false,
+    "hired": false,
+    "violation": false,
+    "bid": 1920.0
+   },
+   "generic": {
+    "p_reply": 0.0569,
+    "replied": false,
+    "hired": false,
+    "violation": false,
+    "bid": 1920.0
+   }
+  },
+  {
+   "persona": "fullstack_dev",
+   "job_id": "dev-fu-01771",
+   "evidence_first": {
+    "p_reply": 0.5279,
+    "replied": false,
+    "hired": false,
+    "violation": false,
+    "bid": 480.0
+   },
+   "question_first": {
+    "p_reply": 0.5279,
+    "replied": false,
+    "hired": false,
+    "violation": false,
+    "bid": 480.0
+   },
+   "generic": {
+    "p_reply": 0.0638,
+    "replied": false,
+    "hired": false,
+    "violation": false,
+    "bid": 480.0
+   }
+  },
+  {
+   "persona": "fullstack_dev",
+   "job_id": "dev-fu-01707",
+   "evidence_first": {
+    "p_reply": 0.5247,
+    "replied": false,
+    "hired": false,
+    "violation": false,
+    "bid": 870.0
+   },
+   "question_first": {
+    "p_reply": 0.5247,
+    "replied": false,
+    "hired": false,
+    "violation": false,
+    "bid": 870.0
+   },
+   "generic": {
+    "p_reply": 0.3285,
+    "replied": false,
+    "hired": false,
+    "violation": false,
+    "bid": 870.0
+   }
+  },
+  {
+   "persona": "fullstack_dev",
+   "job_id": "dev-fu-01779",
+   "evidence_first": {
+    "p_reply": 0.3712,
+    "replied": false,
+    "hired": false,
+    "violation": false,
+    "bid": 48.0
+   },
+   "question_first": {
+    "p_reply": 0.3712,
+    "replied": false,
+    "hired": false,
+    "violation": false,
+    "bid": 48.0
+   },
+   "generic": {
+    "p_reply": 0.0618,
+    "replied": false,
+    "hired": false,
+    "violation": false,
+    "bid": 48.0
+   }
+  },
+  {
+   "persona": "fullstack_dev",
+   "job_id": "dev-fu-01741",
+   "evidence_first": {
+    "p_reply": 0.6847,
+    "replied": true,
+    "hired": false,
+    "violation": false,
+    "bid": 880.0
+   },
+   "question_first": {
+    "p_reply": 0.6847,
+    "replied": true,
+    "hired": false,
+    "violation": false,
+    "bid": 880.0
+   },
+   "generic": {
+    "p_reply": 0.2178,
+    "replied": false,
+    "hired": false,
+    "violation": false,
+    "bid": 880.0
+   }
+  },
+  {
+   "persona": "fullstack_dev",
+   "job_id": "dev-fu-01711",
+   "evidence_first": {
+    "p_reply": 0.5987,
+    "replied": true,
+    "hired": false,
+    "violation": false,
+    "bid": 4800.0
+   },
+   "question_first": {
+    "p_reply": 0.5987,
+    "replied": true,
+    "hired": false,
+    "violation": false,
+    "bid": 4800.0
+   },
+   "generic": {
+    "p_reply": 0.0998,
+    "replied": false,
+    "hired": false,
+    "violation": false,
+    "bid": 4800.0
+   }
+  },
+  {
+   "persona": "fullstack_dev",
+   "job_id": "dev-fu-01823",
+   "evidence_first": {
+    "p_reply": 0.5247,
+    "replied": false,
+    "hired": false,
+    "violation": false,
+    "bid": 48.0
+   },
+   "question_first": {
+    "p_reply": 0.5247,
+    "replied": false,
+    "hired": false,
+    "violation": false,
+    "bid": 48.0
+   },
+   "generic": {
+    "p_reply": 0.0559,
+    "replied": false,
+    "hired": false,
+    "violation": false,
+    "bid": 48.0
+   }
+  },
+  {
+   "persona": "fullstack_dev",
+   "job_id": "dev-fu-01794",
+   "evidence_first": {
+    "p_reply": 0.759,
+    "replied": true,
+    "hired": false,
+    "violation": false,
+    "bid": 910.0
+   },
+   "question_first": {
+    "p_reply": 0.759,
+    "replied": true,
+    "hired": false,
+    "violation": false,
+    "bid": 910.0
+   },
+   "generic": {
+    "p_reply": 0.3747,
+    "replied": false,
+    "hired": false,
+    "violation": false,
+    "bid": 910.0
+   }
+  },
+  {
+   "persona": "fullstack_dev",
+   "job_id": "dev-fu-01791",
+   "evidence_first": {
+    "p_reply": 0.684,
+    "replied": true,
+    "hired": false,
+    "violation": false,
+    "bid": 5700.0
+   },
+   "question_first": {
+    "p_reply": 0.684,
+    "replied": true,
+    "hired": false,
+    "violation": false,
+    "bid": 5700.0
+   },
+   "generic": {
+    "p_reply": 0.0505,
+    "replied": false,
+    "hired": false,
+    "violation": false,
+    "bid": 5700.0
+   }
+  },
+  {
+   "persona": "fullstack_dev",
+   "job_id": "dev-fu-01704",
+   "evidence_first": {
+    "p_reply": 0.3891,
+    "replied": false,
+    "hired": false,
+    "violation": false,
+    "bid": 3650.0
+   },
+   "question_first": {
+    "p_reply": 0.3891,
+    "replied": false,
+    "hired": false,
+    "violation": false,
+    "bid": 3650.0
+   },
+   "generic": {
+    "p_reply": 0.3412,
+    "replied": false,
+    "hired": false,
+    "violation": false,
+    "bid": 3650.0
+   }
+  },
+  {
+   "persona": "fullstack_dev",
+   "job_id": "dev-fu-01728",
+   "evidence_first": {
+    "p_reply": 0.3053,
+    "replied": false,
+    "hired": false,
+    "violation": false,
+    "bid": 5240.0
+   },
+   "question_first": {
+    "p_reply": 0.3053,
+    "replied": false,
+    "hired": false,
+    "violation": false,
+    "bid": 5240.0
+   },
+   "generic": {
+    "p_reply": 0.2047,
+    "replied": false,
+    "hired": false,
+    "violation": false,
+    "bid": 5240.0
+   }
+  },
+  {
+   "persona": "fullstack_dev",
+   "job_id": "dev-fu-01748",
+   "evidence_first": {
+    "p_reply": 0.4966,
+    "replied": true,
+    "hired": false,
+    "violation": false,
+    "bid": 48.0
+   },
+   "question_first": {
+    "p_reply": 0.4966,
+    "replied": true,
+    "hired": false,
+    "violation": false,
+    "bid": 48.0
+   },
+   "generic": {
+    "p_reply": 0.4333,
+    "replied": true,
+    "hired": false,
+    "violation": false,
+    "bid": 48.0
+   }
+  },
+  {
+   "persona": "fullstack_dev",
+   "job_id": "dev-fu-01755",
+   "evidence_first": {
+    "p_reply": 0.4873,
+    "replied": false,
+    "hired": false,
+    "violation": false,
+    "bid": 960.0
+   },
+   "question_first": {
+    "p_reply": 0.4873,
+    "replied": false,
+    "hired": false,
+    "violation": false,
+    "bid": 960.0
+   },
+   "generic": {
+    "p_reply": 0.3196,
+    "replied": false,
+    "hired": false,
+    "violation": false,
+    "bid": 960.0
+   }
+  },
+  {
+   "persona": "fullstack_dev",
+   "job_id": "dev-fu-01750",
+   "evidence_first": {
+    "p_reply": 0.5939,
+    "replied": true,
+    "hired": false,
+    "violation": false,
+    "bid": 1440.0
+   },
+   "question_first": {
+    "p_reply": 0.5939,
+    "replied": true,
+    "hired": false,
+    "violation": false,
+    "bid": 1440.0
+   },
+   "generic": {
+    "p_reply": 0.0498,
+    "replied": false,
+    "hired": false,
+    "violation": false,
+    "bid": 1440.0
+   }
+  },
+  {
+   "persona": "fullstack_dev",
+   "job_id": "dev-fu-01786",
+   "evidence_first": {
+    "p_reply": 0.6372,
+    "replied": false,
+    "hired": false,
+    "violation": false,
+    "bid": 48.0
+   },
+   "question_first": {
+    "p_reply": 0.6372,
+    "replied": false,
+    "hired": false,
+    "violation": false,
+    "bid": 48.0
+   },
+   "generic": {
+    "p_reply": 0.131,
+    "replied": false,
+    "hired": false,
+    "violation": false,
+    "bid": 48.0
+   }
+  },
+  {
+   "persona": "fullstack_dev",
+   "job_id": "dev-fu-01800",
+   "evidence_first": {
+    "p_reply": 0.3891,
+    "replied": false,
+    "hired": false,
+    "violation": false,
+    "bid": 1440.0
+   },
+   "question_first": {
+    "p_reply": 0.3891,
+    "replied": false,
+    "hired": false,
+    "violation": false,
+    "bid": 1440.0
+   },
+   "generic": {
+    "p_reply": 0.2015,
+    "replied": false,
+    "hired": false,
+    "violation": false,
+    "bid": 1440.0
+   }
+  },
+  {
+   "persona": "fullstack_dev",
+   "job_id": "dev-fu-01726",
+   "evidence_first": {
+    "p_reply": 0.8058,
+    "replied": true,
+    "hired": true,
+    "violation": false,
+    "bid": 48.0
+   },
+   "question_first": {
+    "p_reply": 0.8058,
+    "replied": true,
+    "hired": true,
+    "violation": false,
+    "bid": 48.0
+   },
+   "generic": {
+    "p_reply": 0.1087,
+    "replied": false,
+    "hired": false,
+    "violation": false,
+    "bid": 48.0
+   }
+  },
+  {
+   "persona": "fullstack_dev",
+   "job_id": "dev-fu-01739",
+   "evidence_first": {
+    "p_reply": 0.7837,
+    "replied": true,
+    "hired": true,
+    "violation": false,
+    "bid": 5290.0
+   },
+   "question_first": {
+    "p_reply": 0.7837,
+    "replied": true,
+    "hired": true,
+    "violation": false,
+    "bid": 5290.0
+   },
+   "generic": {
+    "p_reply": 0.3812,
+    "replied": true,
+    "hired": false,
+    "violation": false,
+    "bid": 5290.0
+   }
+  },
+  {
+   "persona": "fullstack_dev",
+   "job_id": "dev-fu-01763",
+   "evidence_first": {
+    "p_reply": 0.5997,
+    "replied": false,
+    "hired": false,
+    "violation": false,
+    "bid": 48.0
+   },
+   "question_first": {
+    "p_reply": 0.5997,
+    "replied": false,
+    "hired": false,
+    "violation": false,
+    "bid": 48.0
+   },
+   "generic": {
+    "p_reply": 0.0442,
+    "replied": false,
+    "hired": false,
+    "violation": false,
+    "bid": 48.0
+   }
+  },
+  {
+   "persona": "fullstack_dev",
+   "job_id": "dev-fu-01789",
+   "evidence_first": {
+    "p_reply": 0.4873,
+    "replied": false,
+    "hired": false,
+    "violation": false,
+    "bid": 1440.0
+   },
+   "question_first": {
+    "p_reply": 0.4873,
+    "replied": false,
+    "hired": false,
+    "violation": false,
+    "bid": 1440.0
+   },
+   "generic": {
+    "p_reply": 0.1923,
+    "replied": false,
+    "hired": false,
+    "violation": false,
+    "bid": 1440.0
+   }
+  },
+  {
+   "persona": "fullstack_dev",
+   "job_id": "dev-fu-01778",
+   "evidence_first": {
+    "p_reply": 0.5997,
+    "replied": true,
+    "hired": false,
+    "violation": false,
+    "bid": 1180.0
+   },
+   "question_first": {
+    "p_reply": 0.5997,
+    "replied": true,
+    "hired": false,
+    "violation": false,
+    "bid": 1180.0
+   },
+   "generic": {
+    "p_reply": 0.0989,
+    "replied": false,
+    "hired": false,
+    "violation": false,
+    "bid": 1180.0
+   }
+  },
+  {
+   "persona": "data_analyst",
+   "job_id": "dev-da-01908",
+   "evidence_first": {
+    "p_reply": 0.4071,
+    "replied": false,
+    "hired": false,
+    "violation": false,
+    "bid": 300.0
+   },
+   "question_first": {
+    "p_reply": 0.4071,
+    "replied": false,
+    "hired": false,
+    "violation": false,
+    "bid": 300.0
+   },
+   "generic": {
+    "p_reply": 0.0742,
+    "replied": false,
+    "hired": false,
+    "violation": false,
+    "bid": 300.0
+   }
+  },
+  {
+   "persona": "data_analyst",
+   "job_id": "dev-da-01999",
+   "evidence_first": null,
+   "question_first": null,
+   "generic": {
+    "p_reply": 0.0678,
+    "replied": false,
+    "hired": false,
+    "violation": false,
+    "bid": 1040.0
+   }
+  },
+  {
+   "persona": "data_analyst",
+   "job_id": "dev-da-01992",
+   "evidence_first": {
+    "p_reply": 0.6251,
+    "replied": false,
+    "hired": false,
+    "violation": false,
+    "bid": 640.0
+   },
+   "question_first": {
+    "p_reply": 0.6251,
+    "replied": false,
+    "hired": false,
+    "violation": false,
+    "bid": 640.0
+   },
+   "generic": {
+    "p_reply": 0.1456,
+    "replied": false,
+    "hired": false,
+    "violation": false,
+    "bid": 640.0
+   }
+  },
+  {
+   "persona": "data_analyst",
+   "job_id": "dev-da-01910",
+   "evidence_first": {
+    "p_reply": 0.3712,
+    "replied": false,
+    "hired": false,
+    "violation": false,
+    "bid": 1010.0
+   },
+   "question_first": {
+    "p_reply": 0.3712,
+    "replied": false,
+    "hired": false,
+    "violation": false,
+    "bid": 1010.0
+   },
+   "generic": {
+    "p_reply": 0.0958,
+    "replied": false,
+    "hired": false,
+    "violation": false,
+    "bid": 1010.0
+   }
+  },
+  {
+   "persona": "data_analyst",
+   "job_id": "dev-da-01978",
+   "evidence_first": {
+    "p_reply": 0.3053,
+    "replied": false,
+    "hired": false,
+    "violation": false,
+    "bid": 40.0
+   },
+   "question_first": {
+    "p_reply": 0.3053,
+    "replied": false,
+    "hired": false,
+    "violation": false,
+    "bid": 40.0
+   },
+   "generic": {
+    "p_reply": 0.0509,
+    "replied": false,
+    "hired": false,
+    "violation": false,
+    "bid": 40.0
+   }
+  },
+  {
+   "persona": "data_analyst",
+   "job_id": "dev-da-01915",
+   "evidence_first": {
+    "p_reply": 0.57,
+    "replied": true,
+    "hired": false,
+    "violation": false,
+    "bid": 40.0
+   },
+   "question_first": {
+    "p_reply": 0.57,
+    "replied": true,
+    "hired": false,
+    "violation": false,
+    "bid": 40.0
+   },
+   "generic": {
+    "p_reply": 0.0676,
+    "replied": false,
+    "hired": false,
+    "violation": false,
+    "bid": 40.0
+   }
+  },
+  {
+   "persona": "data_analyst",
+   "job_id": "dev-da-01989",
+   "evidence_first": {
+    "p_reply": 0.5688,
+    "replied": true,
+    "hired": false,
+    "violation": false,
+    "bid": 520.0
+   },
+   "question_first": {
+    "p_reply": 0.5688,
+    "replied": true,
+    "hired": false,
+    "violation": false,
+    "bid": 520.0
+   },
+   "generic": {
+    "p_reply": 0.0657,
+    "replied": false,
+    "hired": false,
+    "violation": false,
+    "bid": 520.0
+   }
+  },
+  {
+   "persona": "data_analyst",
+   "job_id": "dev-da-01991",
+   "evidence_first": {
+    "p_reply": 0.5089,
+    "replied": false,
+    "hired": false,
+    "violation": false,
+    "bid": 1090.0
+   },
+   "question_first": {
+    "p_reply": 0.5089,
+    "replied": false,
+    "hired": false,
+    "violation": false,
+    "bid": 1090.0
+   },
+   "generic": {
+    "p_reply": 0.1313,
+    "replied": false,
+    "hired": false,
+    "violation": false,
+    "bid": 1090.0
+   }
+  },
+  {
+   "persona": "data_analyst",
+   "job_id": "dev-da-02003",
+   "evidence_first": {
+    "p_reply": 0.834,
+    "replied": true,
+    "hired": true,
+    "violation": false,
+    "bid": 1600.0
+   },
+   "question_first": {
+    "p_reply": 0.834,
+    "replied": true,
+    "hired": true,
+    "violation": false,
+    "bid": 1600.0
+   },
+   "generic": {
+    "p_reply": 0.1375,
+    "replied": false,
+    "hired": false,
+    "violation": false,
+    "bid": 1600.0
+   }
+  },
+  {
+   "persona": "data_analyst",
+   "job_id": "dev-da-01947",
+   "evidence_first": {
+    "p_reply": 0.5792,
+    "replied": true,
+    "hired": true,
+    "violation": false,
+    "bid": 40.0
+   },
+   "question_first": {
+    "p_reply": 0.5792,
+    "replied": true,
+    "hired": true,
+    "violation": false,
+    "bid": 40.0
+   },
+   "generic": {
+    "p_reply": 0.0973,
+    "replied": false,
+    "hired": false,
+    "violation": false,
+    "bid": 40.0
+   }
+  },
+  {
+   "persona": "data_analyst",
+   "job_id": "dev-da-01954",
+   "evidence_first": {
+    "p_reply": 0.8152,
+    "replied": true,
+    "hired": true,
+    "violation": false,
+    "bid": 3630.0
+   },
+   "question_first": {
+    "p_reply": 0.8152,
+    "replied": true,
+    "hired": true,
+    "violation": false,
+    "bid": 3630.0
+   },
+   "generic": {
+    "p_reply": 0.1344,
+    "replied": true,
+    "hired": false,
+    "violation": false,
+    "bid": 3630.0
+   }
+  },
+  {
+   "persona": "data_analyst",
+   "job_id": "dev-da-01962",
+   "evidence_first": {
+    "p_reply": 0.2344,
+    "replied": true,
+    "hired": true,
+    "violation": false,
+    "bid": 630.0
+   },
+   "question_first": {
+    "p_reply": 0.2344,
+    "replied": true,
+    "hired": true,
+    "violation": false,
+    "bid": 630.0
+   },
+   "generic": {
+    "p_reply": 0.0393,
+    "replied": true,
+    "hired": false,
+    "violation": false,
+    "bid": 630.0
+   }
+  },
+  {
+   "persona": "data_analyst",
+   "job_id": "dev-da-01958",
+   "evidence_first": {
+    "p_reply": 0.4,
+    "replied": false,
+    "hired": false,
+    "violation": false,
+    "bid": 40.0
+   },
+   "question_first": {
+    "p_reply": 0.4,
+    "replied": false,
+    "hired": false,
+    "violation": false,
+    "bid": 40.0
+   },
+   "generic": {
+    "p_reply": 0.0818,
+    "replied": false,
+    "hired": false,
+    "violation": false,
+    "bid": 40.0
+   }
+  },
+  {
+   "persona": "data_analyst",
+   "job_id": "dev-da-01961",
+   "evidence_first": {
+    "p_reply": 0.6187,
+    "replied": true,
+    "hired": false,
+    "violation": false,
+    "bid": 800.0
+   },
+   "question_first": {
+    "p_reply": 0.6187,
+    "replied": true,
+    "hired": false,
+    "violation": false,
+    "bid": 800.0
+   },
+   "generic": {
+    "p_reply": 0.301,
+    "replied": false,
+    "hired": false,
+    "violation": false,
+    "bid": 800.0
+   }
+  },
+  {
+   "persona": "data_analyst",
+   "job_id": "dev-da-01939",
+   "evidence_first": {
+    "p_reply": 0.455,
+    "replied": false,
+    "hired": false,
+    "violation": false,
+    "bid": 40.0
+   },
+   "question_first": {
+    "p_reply": 0.455,
+    "replied": false,
+    "hired": false,
+    "violation": false,
+    "bid": 40.0
+   },
+   "generic": {
+    "p_reply": 0.0758,
+    "replied": false,
+    "hired": false,
+    "violation": false,
+    "bid": 40.0
+   }
+  },
+  {
+   "persona": "data_analyst",
+   "job_id": "dev-da-01927",
+   "evidence_first": {
+    "p_reply": 0.5435,
+    "replied": false,
+    "hired": false,
+    "violation": false,
+    "bid": 760.0
+   },
+   "question_first": {
+    "p_reply": 0.5435,
+    "replied": false,
+    "hired": false,
+    "violation": false,
+    "bid": 760.0
+   },
+   "generic": {
+    "p_reply": 0.0401,
+    "replied": false,
+    "hired": false,
+    "violation": false,
+    "bid": 760.0
+   }
+  },
+  {
+   "persona": "data_analyst",
+   "job_id": "dev-da-01986",
+   "evidence_first": {
+    "p_reply": 0.506,
+    "replied": true,
+    "hired": false,
+    "violation": false,
+    "bid": 760.0
+   },
+   "question_first": {
+    "p_reply": 0.506,
+    "replied": true,
+    "hired": false,
+    "violation": false,
+    "bid": 760.0
+   },
+   "generic": {
+    "p_reply": 0.0373,
+    "replied": false,
+    "hired": false,
+    "violation": false,
+    "bid": 760.0
+   }
+  },
+  {
+   "persona": "data_analyst",
+   "job_id": "dev-da-01972",
+   "evidence_first": {
+    "p_reply": 0.5149,
+    "replied": false,
+    "hired": false,
+    "violation": false,
+    "bid": 40.0
+   },
+   "question_first": {
+    "p_reply": 0.5149,
+    "replied": false,
+    "hired": false,
+    "violation": false,
+    "bid": 40.0
+   },
+   "generic": {
+    "p_reply": 0.2666,
+    "replied": false,
+    "hired": false,
+    "violation": false,
+    "bid": 40.0
+   }
+  },
+  {
+   "persona": "data_analyst",
+   "job_id": "dev-da-01949",
+   "evidence_first": {
+    "p_reply": 0.3293,
+    "replied": true,
+    "hired": false,
+    "violation": false,
+    "bid": 40.0
+   },
+   "question_first": {
+    "p_reply": 0.3293,
+    "replied": true,
+    "hired": false,
+    "violation": false,
+    "bid": 40.0
+   },
+   "generic": {
+    "p_reply": 0.038,
+    "replied": false,
+    "hired": false,
+    "violation": false,
+    "bid": 40.0
+   }
+  },
+  {
+   "persona": "data_analyst",
+   "job_id": "dev-da-01974",
+   "evidence_first": {
+    "p_reply": 0.8058,
+    "replied": true,
+    "hired": true,
+    "violation": false,
+    "bid": 1270.0
+   },
+   "question_first": {
+    "p_reply": 0.8058,
+    "replied": true,
+    "hired": true,
+    "violation": false,
+    "bid": 1270.0
+   },
+   "generic": {
+    "p_reply": 0.0858,
+    "replied": false,
+    "hired": false,
+    "violation": false,
+    "bid": 1270.0
+   }
+  },
+  {
+   "persona": "data_analyst",
+   "job_id": "dev-da-01987",
+   "evidence_first": {
+    "p_reply": 0.5694,
+    "replied": false,
+    "hired": false,
+    "violation": false,
+    "bid": 1450.0
+   },
+   "question_first": {
+    "p_reply": 0.6526,
+    "replied": false,
+    "hired": false,
+    "violation": false,
+    "bid": 1450.0
+   },
+   "generic": {
+    "p_reply": 0.1914,
+    "replied": false,
+    "hired": false,
+    "violation": false,
+    "bid": 1450.0
+   }
+  },
+  {
+   "persona": "data_analyst",
+   "job_id": "dev-da-01931",
+   "evidence_first": {
+    "p_reply": 0.5997,
+    "replied": true,
+    "hired": true,
+    "violation": false,
+    "bid": 1200.0
+   },
+   "question_first": {
+    "p_reply": 0.5997,
+    "replied": true,
+    "hired": true,
+    "violation": false,
+    "bid": 1200.0
+   },
+   "generic": {
+    "p_reply": 0.0442,
+    "replied": false,
+    "hired": false,
+    "violation": false,
+    "bid": 1200.0
+   }
+  },
+  {
+   "persona": "data_analyst",
+   "job_id": "dev-da-01997",
+   "evidence_first": {
+    "p_reply": 0.6251,
+    "replied": true,
+    "hired": true,
+    "violation": false,
+    "bid": 360.0
+   },
+   "question_first": {
+    "p_reply": 0.6251,
+    "replied": true,
+    "hired": true,
+    "violation": false,
+    "bid": 360.0
+   },
+   "generic": {
+    "p_reply": 0.047,
+    "replied": false,
+    "hired": false,
+    "violation": false,
+    "bid": 360.0
+   }
+  },
+  {
+   "persona": "data_analyst",
+   "job_id": "dev-da-01944",
+   "evidence_first": {
+    "p_reply": 0.6278,
+    "replied": true,
+    "hired": false,
+    "violation": false,
+    "bid": 760.0
+   },
+   "question_first": {
+    "p_reply": 0.6278,
+    "replied": true,
+    "hired": false,
+    "violation": false,
+    "bid": 760.0
+   },
+   "generic": {
+    "p_reply": 0.0731,
+    "replied": false,
+    "hired": false,
+    "violation": false,
+    "bid": 760.0
+   }
+  },
+  {
+   "persona": "data_analyst",
+   "job_id": "dev-da-01919",
+   "evidence_first": {
+    "p_reply": 0.5435,
+    "replied": false,
+    "hired": false,
+    "violation": false,
+    "bid": 40.0
+   },
+   "question_first": {
+    "p_reply": 0.5435,
+    "replied": false,
+    "hired": false,
+    "violation": false,
+    "bid": 40.0
+   },
+   "generic": {
+    "p_reply": 0.0401,
+    "replied": false,
+    "hired": false,
+    "violation": false,
+    "bid": 40.0
+   }
+  }
+ ]
+}

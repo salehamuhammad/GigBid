@@ -1,0 +1,11 @@
+{
+  "dataset": "Upwork Job Postings Dataset 2024 (50K Records)",
+  "publisher": "Asaniczka",
+  "version": 1,
+  "source": "https://www.kaggle.com/datasets/asaniczka/upwork-job-postings-dataset-2024-50k-records",
+  "license": "ODC Attribution License (ODC-By)",
+  "csv": "upwork-jobs.csv",
+  "sha256": "e8b3a7cb1c763d7b20451d8008799b2064c0787e2bd183a52896c98a7933410a",
+  "official_download_matches_local_file": true,
+  "use": "Historical pricing statistics"
+}

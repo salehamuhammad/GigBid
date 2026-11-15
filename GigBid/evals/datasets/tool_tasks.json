@@ -1,0 +1,310 @@
+[
+ {
+  "persona": "fullstack_dev",
+  "ask": "Is client cl-0134 trustworthy? Check their history.",
+  "tool": "get_client_history",
+  "args": {
+   "client_id": "cl-0134"
+  }
+ },
+ {
+  "persona": "data_analyst",
+  "ask": "Do I have portfolio proof of Data cleaning?",
+  "tool": "search_evidence",
+  "args_contains": {
+   "requirement": "Data cleaning"
+  }
+ },
+ {
+  "persona": "fullstack_dev",
+  "ask": "Show me the full post for job dev-fu-01795.",
+  "tool": "get_job",
+  "args": {
+   "job_id": "dev-fu-01795"
+  }
+ },
+ {
+  "persona": "ai_engineer",
+  "ask": "What do computer vision jobs usually pay?",
+  "tool": "get_market_stats",
+  "args": {
+   "category": "computer_vision"
+  }
+ },
+ {
+  "persona": "ai_engineer",
+  "ask": "Is client cl-0014 trustworthy? Check their history.",
+  "tool": "get_client_history",
+  "args": {
+   "client_id": "cl-0014"
+  }
+ },
+ {
+  "persona": "ai_engineer",
+  "ask": "Do I have portfolio proof of NLP?",
+  "tool": "search_evidence",
+  "args_contains": {
+   "requirement": "NLP"
+  }
+ },
+ {
+  "persona": "data_analyst",
+  "ask": "What do computer vision jobs usually pay?",
+  "tool": "get_market_stats",
+  "args": {
+   "category": "computer_vision"
+  }
+ },
+ {
+  "persona": "ai_engineer",
+  "ask": "What do wordpress jobs usually pay?",
+  "tool": "get_market_stats",
+  "args": {
+   "category": "wordpress"
+  }
+ },
+ {
+  "persona": "fullstack_dev",
+  "ask": "Show me the full post for job dev-fu-01739.",
+  "tool": "get_job",
+  "args": {
+   "job_id": "dev-fu-01739"
+  }
+ },
+ {
+  "persona": "fullstack_dev",
+  "ask": "Is client cl-0198 trustworthy? Check their history.",
+  "tool": "get_client_history",
+  "args": {
+   "client_id": "cl-0198"
+  }
+ },
+ {
+  "persona": "data_analyst",
+  "ask": "Show me the full post for job dev-da-01961.",
+  "tool": "get_job",
+  "args": {
+   "job_id": "dev-da-01961"
+  }
+ },
+ {
+  "persona": "ai_engineer",
+  "ask": "Do I have portfolio proof of AWS?",
+  "tool": "search_evidence",
+  "args_contains": {
+   "requirement": "AWS"
+  }
+ },
+ {
+  "persona": "fullstack_dev",
+  "ask": "Show me the full post for job dev-fu-01726.",
+  "tool": "get_job",
+  "args": {
+   "job_id": "dev-fu-01726"
+  }
+ },
+ {
+  "persona": "fullstack_dev",
+  "ask": "Do I have portfolio proof of Adobe Illustrator?",
+  "tool": "search_evidence",
+  "args_contains": {
+   "requirement": "Adobe Illustrator"
+  }
+ },
+ {
+  "persona": "data_analyst",
+  "ask": "Do I have portfolio proof of Data visualization?",
+  "tool": "search_evidence",
+  "args_contains": {
+   "requirement": "Data visualization"
+  }
+ },
+ {
+  "persona": "data_analyst",
+  "ask": "Is client cl-0062 trustworthy? Check their history.",
+  "tool": "get_client_history",
+  "args": {
+   "client_id": "cl-0062"
+  }
+ },
+ {
+  "persona": "ai_engineer",
+  "ask": "Show me the full post for job dev-ai-01549.",
+  "tool": "get_job",
+  "args": {
+   "job_id": "dev-ai-01549"
+  }
+ },
+ {
+  "persona": "data_analyst",
+  "ask": "Is client cl-0227 trustworthy? Check their history.",
+  "tool": "get_client_history",
+  "args": {
+   "client_id": "cl-0227"
+  }
+ },
+ {
+  "persona": "fullstack_dev",
+  "ask": "Do I have portfolio proof of Elasticsearch?",
+  "tool": "search_evidence",
+  "args_contains": {
+   "requirement": "Elasticsearch"
+  }
+ },
+ {
+  "persona": "ai_engineer",
+  "ask": "Show me the full post for job dev-ai-01603.",
+  "tool": "get_job",
+  "args": {
+   "job_id": "dev-ai-01603"
+  }
+ },
+ {
+  "persona": "data_analyst",
+  "ask": "How many Connects do I have left?",
+  "tool": "get_connects_balance",
+  "args": {}
+ },
+ {
+  "persona": "fullstack_dev",
+  "ask": "Show me the full post for job dev-fu-01717.",
+  "tool": "get_job",
+  "args": {
+   "job_id": "dev-fu-01717"
+  }
+ },
+ {
+  "persona": "data_analyst",
+  "ask": "Show me the full post for job dev-da-02043.",
+  "tool": "get_job",
+  "args": {
+   "job_id": "dev-da-02043"
+  }
+ },
+ {
+  "persona": "fullstack_dev",
+  "ask": "How many Connects do I have left?",
+  "tool": "get_connects_balance",
+  "args": {}
+ },
+ {
+  "persona": "ai_engineer",
+  "ask": "Is client cl-0246 trustworthy? Check their history.",
+  "tool": "get_client_history",
+  "args": {
+   "client_id": "cl-0246"
+  }
+ },
+ {
+  "persona": "ai_engineer",
+  "ask": "Is client cl-0092 trustworthy? Check their history.",
+  "tool": "get_client_history",
+  "args": {
+   "client_id": "cl-0092"
+  }
+ },
+ {
+  "persona": "ai_engineer",
+  "ask": "What do ml modeling jobs usually pay?",
+  "tool": "get_market_stats",
+  "args": {
+   "category": "ml_modeling"
+  }
+ },
+ {
+  "persona": "ai_engineer",
+  "ask": "Show me the full post for job dev-ai-01598.",
+  "tool": "get_job",
+  "args": {
+   "job_id": "dev-ai-01598"
+  }
+ },
+ {
+  "persona": "ai_engineer",
+  "ask": "Show me the full post for job dev-ai-01636.",
+  "tool": "get_job",
+  "args": {
+   "job_id": "dev-ai-01636"
+  }
+ },
+ {
+  "persona": "fullstack_dev",
+  "ask": "Is client cl-0207 trustworthy? Check their history.",
+  "tool": "get_client_history",
+  "args": {
+   "client_id": "cl-0207"
+  }
+ },
+ {
+  "persona": "data_analyst",
+  "ask": "How many Connects do I have left?",
+  "tool": "get_connects_balance",
+  "args": {}
+ },
+ {
+  "persona": "ai_engineer",
+  "ask": "Show me the full post for job dev-ai-01627.",
+  "tool": "get_job",
+  "args": {
+   "job_id": "dev-ai-01627"
+  }
+ },
+ {
+  "persona": "data_analyst",
+  "ask": "How many Connects do I have left?",
+  "tool": "get_connects_balance",
+  "args": {}
+ },
+ {
+  "persona": "data_analyst",
+  "ask": "Show me the full post for job dev-da-01975.",
+  "tool": "get_job",
+  "args": {
+   "job_id": "dev-da-01975"
+  }
+ },
+ {
+  "persona": "fullstack_dev",
+  "ask": "How many Connects do I have left?",
+  "tool": "get_connects_balance",
+  "args": {}
+ },
+ {
+  "persona": "data_analyst",
+  "ask": "Do I have portfolio proof of Elementor?",
+  "tool": "search_evidence",
+  "args_contains": {
+   "requirement": "Elementor"
+  }
+ },
+ {
+  "persona": "data_analyst",
+  "ask": "How many Connects do I have left?",
+  "tool": "get_connects_balance",
+  "args": {}
+ },
+ {
+  "persona": "ai_engineer",
+  "ask": "Is client cl-0112 trustworthy? Check their history.",
+  "tool": "get_client_history",
+  "args": {
+   "client_id": "cl-0112"
+  }
+ },
+ {
+  "persona": "fullstack_dev",
+  "ask": "Do I have portfolio proof of Celery?",
+  "tool": "search_evidence",
+  "args_contains": {
+   "requirement": "Celery"
+  }
+ },
+ {
+  "persona": "ai_engineer",
+  "ask": "Show me the full post for job dev-ai-01630.",
+  "tool": "get_job",
+  "args": {
+   "job_id": "dev-ai-01630"
+  }
+ }
+]

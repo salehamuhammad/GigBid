@@ -1,0 +1,197 @@
+
+# GigBid - Full Docker Compose Stack
+# Frontend: http://localhost:3000
+# API docs: http://localhost:8000/docs
+# GigSim docs: http://localhost:8081/docs
+
+x-py: &py
+  build:
+    context: ..
+    dockerfile: infra/docker/api.Dockerfile
+  env_file:
+    - path: ../.env
+      required: false
+  environment: &env
+    DATABASE_URL: postgresql+psycopg://gigbid:gigbid@postgres:5432/gigbid
+    REDIS_URL: redis://redis:6379/0
+    QDRANT_URL: http://qdrant:6333
+    GIGSIM_BASE_URL: http://gigsim:8081
+    MCP_TRANSPORT: http
+    MCP_PORTFOLIO_URL: http://mcp-portfolio:8101/mcp
+    MCP_MARKETPLACE_URL: http://mcp-marketplace:8102/mcp
+    MCP_WORKSPACE_URL: http://mcp-workspace:8103/mcp
+    GIGBID_DATA_DIR: /app/data
+    FASTEMBED_CACHE_PATH: /app/data/processed/model-cache
+    MODEL_PROFILE: ${MODEL_PROFILE:-open}
+    OLLAMA_BASE_URL: http://ollama:11434
+  volumes:
+    - gigbid-data:/app/data/processed
+  restart: unless-stopped
+
+services:
+
+  postgres:
+    image: postgres:16-alpine
+    platform: linux/amd64
+    environment:
+      POSTGRES_USER: gigbid
+      POSTGRES_PASSWORD: gigbid
+      POSTGRES_DB: gigbid
+    volumes:
+      - pg:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U gigbid -d gigbid"]
+      interval: 5s
+      timeout: 5s
+      retries: 20
+      start_period: 15s
+    restart: unless-stopped
+
+  redis:
+    image: redis:7-alpine
+    platform: linux/amd64
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 5s
+      timeout: 5s
+      retries: 20
+    restart: unless-stopped
+
+  qdrant:
+    image: qdrant/qdrant:v1.15.4
+    platform: linux/amd64
+    volumes:
+      - qdrant:/qdrant/storage
+    restart: unless-stopped
+
+  gigsim:
+    <<: *py
+    command: uvicorn gigsim.app:app --host 0.0.0.0 --port 8081
+    environment:
+      <<: *env
+      GIGSIM_STATE: /app/data/processed/gigsim_state.json
+    ports:
+      - "8081:8081"
+    healthcheck:
+      test:
+        - CMD
+        - python
+        - -c
+        - "import urllib.request; urllib.request.urlopen('http://127.0.0.1:8081/openapi.json', timeout=3)"
+      interval: 20s
+      timeout: 5s
+      retries: 5
+      start_period: 30s
+
+  mcp-portfolio:
+    <<: *py
+    command: python -m mcp_servers.portfolio.server --transport http --port 8101
+    depends_on:
+      postgres:
+        condition: service_healthy
+    healthcheck:
+      test:
+        - CMD
+        - python
+        - -c
+        - "import socket; socket.create_connection(('127.0.0.1', 8101), 3).close()"
+      interval: 20s
+      timeout: 5s
+      retries: 5
+      start_period: 30s
+
+  mcp-marketplace:
+    <<: *py
+    command: python -m mcp_servers.marketplace.server --transport http --port 8102
+    depends_on:
+      gigsim:
+        condition: service_healthy
+    healthcheck:
+      test:
+        - CMD
+        - python
+        - -c
+        - "import socket; socket.create_connection(('127.0.0.1', 8102), 3).close()"
+      interval: 20s
+      timeout: 5s
+      retries: 5
+      start_period: 30s
+
+  mcp-workspace:
+    <<: *py
+    command: python -m mcp_servers.workspace.server --transport http --port 8103
+    healthcheck:
+      test:
+        - CMD
+        - python
+        - -c
+        - "import socket; socket.create_connection(('127.0.0.1', 8103), 3).close()"
+      interval: 20s
+      timeout: 5s
+      retries: 5
+      start_period: 30s
+
+  api:
+    <<: *py
+    ports:
+      - "8000:8000"
+    depends_on:
+      postgres:
+        condition: service_healthy
+      redis:
+        condition: service_healthy
+      qdrant:
+        condition: service_started
+      mcp-portfolio:
+        condition: service_healthy
+      mcp-marketplace:
+        condition: service_healthy
+      mcp-workspace:
+        condition: service_healthy
+    healthcheck:
+      test:
+        - CMD
+        - python
+        - -c
+        - "import urllib.request; urllib.request.urlopen('http://127.0.0.1:8000/openapi.json', timeout=3)"
+      interval: 20s
+      timeout: 5s
+      retries: 10
+      start_period: 120s
+
+  worker:
+    <<: *py
+    command: arq worker.main.WorkerSettings
+    depends_on:
+      api:
+        condition: service_healthy
+    healthcheck:
+      disable: true
+
+  web:
+    build:
+      context: ..
+      dockerfile: infra/docker/web.Dockerfile
+    environment:
+      API_URL: http://api:8000
+    ports:
+      - "3000:3000"
+    depends_on:
+      api:
+        condition: service_healthy
+    restart: unless-stopped
+
+  ollama:
+    image: ollama/ollama:latest
+    profiles:
+      - ollama
+    volumes:
+      - ollama:/root/.ollama
+    ports:
+      - "11434:11434"
+
+volumes:
+  pg: {}
+  qdrant: {}
+  gigbid-data: {}
+  ollama: {}

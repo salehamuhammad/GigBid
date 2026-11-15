@@ -1,0 +1,14 @@
+name: eval
+on: {workflow_dispatch: {inputs: {profile: {default: open, description: "MODEL_PROFILE"}}}}
+jobs:
+  eval:
+    runs-on: ubuntu-latest
+    env: {MODEL_PROFILE: "${{ inputs.profile }}", GROQ_API_KEY: "${{ secrets.GROQ_API_KEY }}"}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: "3.12", cache: pip}
+      - run: pip install -e ".[dev,models]" && python -m scripts.generate_data
+      - run: make eval
+      - uses: actions/upload-artifact@v4
+        with: {name: eval-results, path: evals/results/}

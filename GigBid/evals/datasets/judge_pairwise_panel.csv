@@ -1,0 +1,201 @@
+pair_id,job_post,proposal_a,proposal_b,choice,reason
+PAIR01,"Detect objects in Accounting camera footage
+We are a accounting company and need help with the following: detect objects in accounting camera footage.
+
+What we need:
+- You will be responsible for work like this: scripted in the usual data-science language.
+- You will be responsible for work like this: a real-time detector that draws boxes around objects.
+- You will be responsible for work like this: packaged every service into reproducible images.
+- You will be responsible for work like this: frame-level preprocessing of camera feeds.
+
+Estimated effort: about 60 hours over 4 weeks. Please include relevant past work.","Your project, detect objects in accounting camera footage, is close to work I delivered for a manufacturing client: a camera-based inspector for weld seams on a production line. That project caught 94% of defects at 30 frames per second on an edge box.
+
+I have not used WebSockets on a client project yet, so I would not claim it; I would plan extra time for that part.
+
+For your project I would begin with a short, fixed-scope first milestone so you can judge the approach before committing to the rest. Could you share a sample of the data or the current setup so I can confirm the scope?","In a recent weld‑defect detection project for a manufacturing line, I built a YOLO‑based real‑time detector that achieved 94 % defect capture at 30 fps on an edge device. All code was written in Python, the standard data‑science language used for model development and pipeline orchestration. Each component, from the preprocessing step to the inference service, was packaged into reproducible Docker images, enabling consistent deployment across environments. How many simultaneous camera feeds do you expect the solution to handle? I will provide comprehensive documentation and example scripts to help your team integrate and maintain the system.",,
+PAIR02,"Cross-platform mobile app for Travel
+We are a travel company and need help with the following: cross-platform mobile app for travel.
+
+What we need:
+- Experience with TypeScript is essential.
+- You will be responsible for work like this: one codebase shipped to both app stores.
+- Experience with NoSQL is essential.
+- Please show past work using Node.js.
+
+Estimated effort: about 40 hours over 2 weeks. Looking for clear communication.","For a travel client I built a typed GraphQL gateway in Node.js that cut front‑end API calls per page by 50 %. I also delivered a React Native mobile app with a single TypeScript codebase that was shipped to both iOS and Android stores, earning a 4.7‑star rating from over 2,100 users. That project used MongoDB as the NoSQL backend, satisfying the data‑store requirement. My work routinely includes end‑to‑end Playwright test suites written in TypeScript, which previously reduced production bugs from nine per month to two. I don’t have a specific public example of my Git workflow to reference. Across multiple projects I have leveraged Node.js to build scalable back‑ends, as demonstrated in the GraphQL gateway for a travel client. My TypeScript expertise is evident in both the GraphQL gateway and the mobile app codebases. Using MongoDB in the mobile app and the event ticketing site shows my ability to work with NoSQL databases at scale. The CI/CD pipeline I set up for the end‑to‑end test suite ensured every push was automatically validated.","Hello,
+
+I’m excited to build your travel app. In my recent mobile‑fitness project (case study ID fullstack_dev-case-006) I delivered a React Native app written entirely in TypeScript, sharing a single codebase that was published to both iOS and Android stores. The backend was built with Node.js and used MongoDB, giving me solid experience with NoSQL databases. The app was shipped on schedule and earned a 4.7‑star rating from over 2,100 users, demonstrating clear communication and reliable delivery. I can apply the same cross‑platform approach to your travel solution, ensuring a consistent experience across platforms while keeping development efficient. My rate aligns with your budget, and I’m ready to start immediately.
+
+Thank you for considering my proposal.
+
+Best regards,
+[Your Name]",,
+PAIR03,"Back-end API for Media platform
+We are a media company and need help with the following: back-end api for media platform.
+
+What we need:
+- You will be responsible for work like this: moved slow work to background workers.
+- Must have hands-on experience with Docker.
+- Please show past work using PostgreSQL.
+- You will be responsible for work like this: a JavaScript back end with middleware routing.
+- We need someone strong in Apollo.
+
+Estimated effort: about 30 hours over 2 weeks. Please include relevant past work.","Hi, I’m excited to build the back‑end API for your media platform. In a recent cloud‑migration project (case study fullstack_dev-case-019) I used Docker to containerize services and set up CI/CD pipelines, delivering zero‑downtime deployments. I also designed a PostgreSQL‑backed clinic booking system (fullstack_dev-case-003), demonstrating robust schema design and performance tuning. For JavaScript back‑ends, I created a live‑support chat widget (fullstack_dev-case-004) that employed Node.js middleware routing to handle real‑time requests efficiently. Additionally, I built a GraphQL gateway (fullstack_dev-case-009) that unified multiple REST services, showcasing deep GraphQL expertise that translates directly to Apollo implementations. I can start by setting up Docker containers, migrating slow tasks to background workers, and integrating PostgreSQL with your Apollo GraphQL layer. Let me know what access you need for the first week, and I’ll hit the ground running.","Your project, back-end api for media platform, is close to work I delivered for an insurance client: moved a monolith from a single VPS to autoscaled containers. That project hosting cost down 30% and zero-downtime deploys.
+
+I built it with Docker, PostgreSQL, which you also list. For PostgreSQL, Docker, a second reference is Clinic booking platform, which cut no-shows by 27% through automated reminders. For PostgreSQL, a second reference is Subscription billing portal, which cut billing support tickets by 44%.
+
+For your project I would begin with a short, fixed-scope first milestone so you can judge the approach before committing to the rest. Could you share a sample of the data or the current setup so I can confirm the scope?",,
+PAIR04,"Analyse Insurance customer data
+We are a insurance company and need help with the following: analyse insurance customer data.
+
+What we need:
+- Python is required.
+- Data visualization is required.
+- We need someone strong in Cohort analysis.
+- Experience with SQL is essential.
+
+Estimated effort: about 40 hours over 2 weeks. Long-term collaboration possible.","Your project, analyse insurance customer data, is close to work I delivered for a telecom client: regression analysis of what predicts cancellation. That project two contract terms explained 38% of churn variance.
+
+I built it with Python, SQL, which you also list. For Data visualization, a second reference is Customer survey analysis, which pinpointed check-in wait as the top satisfaction driver. For SQL, a second reference is Inventory turnover reporting, which freed $240k of working capital in slow stock.
+
+For your project I would begin with a short, fixed-scope first milestone so you can judge the approach before committing to the rest. Could you share a sample of the data or the current setup so I can confirm the scope?","In a recent churn driver analysis for a telecom client, I used Python and SQL to build regression models that explained 38% of the variance in churn. I also created an executive revenue dashboard that replaced a six‑hour manual report and is now accessed daily by 40 managers, demonstrating my data‑visualization capabilities. My open‑source cohort‑analysis repository shows how I combine SQL and Python to segment users and visualize retention trends over time. Additionally, I developed a quarterly sales forecast in Python that reduced forecast error from 21% to 9%, highlighting my quantitative modeling skills. While I have not yet worked directly in the insurance sector, my experience with customer‑behavior analytics equips me to quickly understand insurance data nuances. I am committed to adhering to data‑privacy best practices and can ensure compliance with relevant regulations throughout the project. I am open to a two‑week engagement and interested in building a long‑term partnership for ongoing analytics needs.",,
+PAIR05,"Computer vision system for Energy
+We are a energy company and need help with the following: computer vision system for energy.
+
+What we need:
+- Experience with Docker is essential.
+- You will be responsible for work like this: a custom training loop with automatic differentiation.
+- You will be responsible for work like this: a real-time detector that draws boxes around objects.
+
+Estimated effort: about 30 hours over 2 weeks. Looking for clear communication.","Hi, I’m an AI engineer with proven experience building Docker‑based computer‑vision pipelines for industrial inspection. In my weld‑defect detection project (case study ai_engineer-case-004) I containerized the entire solution with Docker, ensuring reproducible deployment on edge hardware. I also designed a custom training loop using PyTorch’s automatic differentiation, which let us fine‑tune the detector on proprietary data. The final system runs in real time, drawing bounding boxes around defects at 30 fps, meeting the same performance expectations you described. I’m comfortable delivering a 30‑hour solution within two weeks and will keep communication clear and frequent. I look forward to discussing how we can adapt this expertise to your energy‑focused use case.","For a recent manufacturing client I built a weld‑defect inspection system that achieved 94 % detection accuracy while running at 30 frames per second on an edge device, using Docker containers and a custom training loop with automatic differentiation. The solution leveraged PyTorch and YOLO within a containerized workflow, ensuring reproducible builds and easy deployment to the production line. My prior work demonstrates that I can deliver similar performance for your energy‑sector use case. Do you have an annotated image dataset and the target hardware specifications ready for integration?",,
+PAIR06,"Accounting KPI dashboard
+We are a accounting company and need help with the following: accounting kpi dashboard.
+
+What we need:
+- You will be responsible for work like this: free Google dashboards the marketing team could edit.
+- Please show past work using Data visualization.
+- We need someone strong in PowerBI.
+
+Estimated effort: about 40 hours over 2 weeks. Start as soon as possible.","Your project, accounting kpi dashboard, is close to work I delivered for a saas client: a weekly revenue and pipeline dashboard for the leadership team. That project replaced a 6-hour manual report and is opened by 40 managers weekly.
+
+I built it with Power BI, Data visualization, which you also list. For Data visualization, a second reference is SEO performance dashboard, which content team doubled output on pages that convert. For Data visualization, a second reference is Subscriber retention study, which identified a channel with 2x churn, saving $180k in ad spend.
+
+For your project I would begin with a short, fixed-scope first milestone so you can judge the approach before committing to the rest. Could you share a sample of the data or the current setup so I can confirm the scope?","That project required end‑to‑end data modeling, SQL joins and window functions, and clear visual design, demonstrating my ability to build robust accounting‑style KPI dashboards. Those dashboards were built with Google Data Studio and integrated GA4 data, showing I can deliver the free Google dashboards you need. During the first week I would focus on data extraction and modeling, set up the Power BI data model, and prototype the core visualizations for your review.",,
+PAIR07,"CI/CD and cloud setup for Logistics product
+We are a logistics company and need help with the following: ci/cd and cloud setup for logistics product.
+
+What we need:
+- You will be responsible for work like this: every push ran tests and shipped automatically.
+- You will be responsible for work like this: deployed on Amazon's cloud.
+- You will be responsible for work like this: typed the whole front end end-to-end.
+
+Estimated effort: about 30 hours over 2 weeks. Please include relevant past work.","Your project, ci/cd and cloud setup for logistics product, is close to work I delivered for a hr tech client: 120 browser tests covering signup to payroll. That project escaped production bugs down from 9 a month to 2.
+
+I built it with CI/CD, which you also list. For CI/CD, a second reference is Cloud migration, which hosting cost down 30% and zero-downtime deploys.
+
+For your project I would begin with a short, fixed-scope first milestone so you can judge the approach before committing to the rest. Could you share a sample of the data or the current setup so I can confirm the scope?","Hi,
+
+I’m excited to help set up a robust CI/CD pipeline for your logistics product. In a recent project (case‑020) I built an end‑to‑end test suite where every push automatically ran tests and shipped the build, cutting production bugs dramatically. I also migrated a monolithic app to AWS (case‑019), delivering zero‑downtime deployments and autoscaled containers that reduced hosting costs by 30%. Finally, I typed the entire front‑end using TypeScript (case‑018), creating a fully typed Next.js portal that lowered support queries by 35%. With 30 hours estimated, my rate of $48/h totals $1,440, comfortably within your budget. I look forward to delivering a reliable, automated workflow for your team.
+
+Best regards,
+[Your Name]",,
+PAIR08,"Deploy and monitor ML models on AWS
+We are a marketing company and need help with the following: deploy and monitor ml models on aws.
+
+What we need:
+- GitHub Actions is required.
+- Must have hands-on experience with Python REST API.
+- We need someone strong in AWS.
+- You will be responsible for work like this: packaged every service into reproducible images.
+- Please show past work using SageMaker.
+- Must have hands-on experience with experiment tracking.
+
+Estimated effort: about 20 hours over 1 weeks. Long-term collaboration possible.","Your project, deploy and monitor ml models on aws, is close to work I delivered for an insurance client: moved on-prem training jobs to managed spot instances. That project cut training cost by 58% with no accuracy loss.
+
+I built it with SageMaker, AWS, which you also list. For FastAPI, Python, a second reference is Support knowledge assistant, which cut median first-response time from 11 minutes to 4 and deflected 31% of tickets. For Python, a second reference is Sensor anomaly detection, which flagged 7 of 8 failures at least 36 hours early.
+
+For your project I would begin with a short, fixed-scope first milestone so you can judge the approach before committing to the rest. Could you share a sample of the data or the current setup so I can confirm the scope?","I’m excited to help your marketing team deploy and monitor ML models on AWS. In my case study “Training migration to managed cloud” (ai_engineer-case-016) I moved on‑prem training jobs to SageMaker, set up automated monitoring, and cut costs by 58%. I built the CI/CD pipeline using GitHub Actions (ai_engineer-case-015), ensuring every push triggers tests, builds reproducible Docker images, and deploys safely. My Python REST API work with FastAPI (ai_engineer-case-001) demonstrates the hands‑on experience you need for robust service endpoints. Across multiple projects (ai_engineer-case-010) I leveraged AWS services, packaged each component into reproducible containers, and used MLflow for experiment tracking, delivering end‑to‑end MLOps solutions. I can start immediately, deliver the 20‑hour scope within a week, and aim for a long‑term partnership. Looking forward to discussing details.",,
+PAIR09,"CI/CD and cloud setup for Accounting product
+We are a accounting company and need help with the following: ci/cd and cloud setup for accounting product.
+
+What we need:
+- You will be responsible for work like this: typed the whole front end end-to-end.
+- Experience with CI/CD is essential.
+- You will be responsible for work like this: browser-driven regression tests.
+- Must have hands-on experience with containerization.
+- AWS is required.
+
+Estimated effort: about 120 hours over 8 weeks. Looking for clear communication.","In a fintech project, I overhauled the monorepo CI, packaging services into reproducible Docker images, adding Playwright browser regression tests, and reduced pipeline time from 38 minutes to 9 minutes. How does your current accounting product handle transaction reconciliation across multiple ledgers? I have built AWS‑hosted back‑ends with FastAPI, PostgreSQL, and Docker, achieving 85 ms p95 latency at 400 requests per second. I have containerized applications using Docker, as demonstrated in a marketplace API project where each service was packaged into reproducible images. My front‑end work in a travel client’s GraphQL gateway cut API calls per page in half, and in a developer portal I reduced support questions by 35 % through typed, end‑to‑end TypeScript code.","Hi, I’m excited to help modernize your accounting product’s delivery pipeline. In a recent fintech project (case‑011) I designed a full CI/CD pipeline using GitHub Actions, integrated Playwright browser‑driven regression tests, and cut pipeline runtime from 38 minutes to 9 minutes. For containerization, I migrated a monolithic insurance app to Docker‑based services on AWS (case‑019), achieving zero‑downtime deployments and a 30 % reduction in hosting costs. I also built a fully typed front‑end with TypeScript and Next.js for a developer docs portal (case‑018), delivering a robust UI with end‑to‑end type safety. My experience aligns perfectly with your needs for CI/CD, containerization, automated regression testing, typed front‑end work, and AWS cloud setup. I’m a clear communicator and can deliver the 120 hours over the 8‑week timeline you outlined. I look forward to discussing how we can ensure a smooth, reliable release process for your product.",,
+PAIR10,"Forecasting model for our Consulting business
+We are a consulting company and need help with the following: forecasting model for our consulting business.
+
+What we need:
+- You will be responsible for work like this: scripted in the usual data-science language.
+- Must have hands-on experience with pandas.
+- You will be responsible for work like this: predicted next quarter's demand from seasonal history.
+
+Estimated effort: about 80 hours over 5 weeks. Long-term collaboration possible.","In a recent project, I reduced stock‑outs by 18% and cut forecast error from 27% to 14% by building a demand‑forecasting model for a retail client using pandas and Python. How do you currently capture and analyze seasonal demand patterns for your consulting projects? I can replicate that success by developing a Python script that forecasts next quarter’s demand from your seasonal history, leveraging pandas and standard forecasting techniques. The script will be fully documented, version‑controlled, and ready for integration into your existing data pipeline. I’m also prepared for long‑term collaboration, ensuring continuous improvement and model monitoring.","I recently delivered a store demand‑forecasting project (case study ai_engineer-case-006) where I built a time‑series model with Prophet and pandas to predict next quarter’s demand from seasonal history, cutting stock‑outs by 18%. The same repository (ai_engineer-repo-006) demonstrates the full Python pipeline I used for data manipulation, cleaning, and feature engineering with pandas. All work was scripted in Python, the standard data‑science language you require. I can apply this proven approach to your consulting business, delivering a robust forecasting model within the 80‑hour, 5‑week timeline you outlined. My proposed fixed price of $3,000 fits comfortably within your budget while reflecting the quality and experience I bring.",,
+PAIR11,"dbt models for Hospitality analytics
+We are a hospitality company and need help with the following: dbt models for hospitality analytics.
+
+What we need:
+- You will be responsible for work like this: scheduled pipelines as dependency graphs.
+- Experience with data build tool is essential.
+- Please show past work using queries.
+- Must have hands-on experience with PostgreSQL.
+- We need someone strong in Snowflake.
+- You will be responsible for work like this: scripted in the usual data-science language.
+
+Estimated effort: about 20 hours over 1 weeks. Start as soon as possible.","Hi, I’m excited to help you build robust dbt models for your hospitality analytics. In a recent Snowflake cost‑audit project (case‑study 015) I used dbt to refactor models, delivering a 35% reduction in warehouse spend, which proves my expertise with both dbt and Snowflake. I also designed and scheduled end‑to‑end ETL pipelines as dependency graphs for a retail client (case‑study 010), writing complex PostgreSQL queries and scripting the workflow in Python—exactly the data‑science language you mentioned. These projects showcase my ability to deliver clean, query‑driven analytics on PostgreSQL and Snowflake within tight timelines. I can start immediately and complete the 20‑hour scope within one week, ensuring reliable pipelines and clear documentation. Looking forward to discussing how we can tailor the solution to your hospitality data needs.","In a fintech analytics warehouse rebuild, I built dbt models and scheduled pipelines as dependency graphs, delivering a report refresh time that dropped from four hours to twelve minutes. A recent daily sales data pipeline I delivered used PostgreSQL, SQL queries, and Python scripting, with scheduled dependency‑graph pipelines that made the data available by 6 am instead of noon. My work routinely involves scripting in Python—the usual data‑science language—to transform and validate data before loading it into the warehouse. While I have not yet worked directly with Snowflake, my extensive experience with PostgreSQL and dbt positions me to adopt Snowflake quickly. I can start immediately and deliver the required models and documentation within the one‑week timeline.",,
+PAIR12,"Forecasting model for our Pharma business
+We are a pharma company and need help with the following: forecasting model for our pharma business.
+
+What we need:
+- You will be responsible for work like this: gradient-boosted decision trees.
+- Python is required.
+- Please show past work using Model evaluation.
+- You will be responsible for work like this: predicted next quarter's demand from seasonal history.
+
+Estimated effort: about 80 hours over 5 weeks. Long-term collaboration possible.","For a retail client I built a weekly demand forecasting pipeline that predicted next quarter’s demand from seasonal history, using Python and pandas, and reduced stock‑outs by 18% while cutting forecast MAPE from 27% to 14%. In an edtech project I created a repeatable model‑evaluation harness in Python that caught 14 regressions before release, demonstrating rigorous validation of predictive models. I can implement the requested model in Python, applying the time‑series forecasting approach I used for store demand and the rigorous evaluation framework I built for the edtech client. By the end of week one I will deliver a cleaned dataset, a baseline forecast, and a plan for model development and validation to keep the project on schedule.","Your project, forecasting model for our pharma business, is close to work I delivered for a retail client: weekly demand forecasts for 320 products across 18 stores. That project reduced stock-outs by 18% and forecast error (MAPE) from 27% to 14%.
+
+I built it with Python, which you also list. For Model evaluation, a second reference is LLM evaluation harness, which caught 14 prompt regressions before release in the first month. For Python, a second reference is Multi-agent market research, which turned a two-day analyst task into a 25-minute reviewed draft.
+
+For your project I would begin with a short, fixed-scope first milestone so you can judge the approach before committing to the rest. Could you share a sample of the data or the current setup so I can confirm the scope?",,
+PAIR13,"Real-time features for Fintech app
+We are a fintech company and need help with the following: real-time features for fintech app.
+
+What we need:
+- Must have hands-on experience with WebSockets.
+- Experience with Node.js is essential.
+- Please show past work using Celery.
+
+Estimated effort: about 20 hours over 1 weeks. Please include relevant past work.","In a recent live support chat widget project, the system handled 3,000 concurrent sessions in load tests. That experience demonstrates my ability to deliver high‑throughput WebSocket solutions with Node.js. I also built a restaurant ordering app using WebSockets and Node.js, where average order placement time dropped below 40 seconds. For asynchronous background processing, I integrated Celery into a clinic booking platform, cutting no‑shows by 27% through automated reminders. These projects align closely with the real‑time, low‑latency requirements of a fintech application. My approach includes thorough testing and performance monitoring to ensure reliability under peak loads. I will also provide clear documentation of the integration points for your backend services. Do you have existing authentication mechanisms that the real‑time layer should integrate with?","Hello,
+
+I’m excited to add real‑time capabilities to your fintech app. In a recent restaurant‑ordering project (fullstack_dev-case-017) I built a Node.js backend that used WebSockets to push live courier locations, delivering sub‑40‑second order times. A similar live‑chat widget (fullstack_dev-case-004) also leveraged Node.js and WebSockets for instant messaging and typing indicators. For background processing, I implemented Celery in a clinic‑booking platform (fullstack_dev-case-003) to send automated appointment reminders, cutting no‑shows by 27%, and in a warehouse inventory system (fullstack_dev-case-015) to run nightly reconciliations. These experiences give me the exact skill set you need: real‑time communication, robust Node.js services, and reliable Celery task queues. I can start immediately, set up the WebSocket endpoints, integrate Celery workers, and ensure secure, scalable deployment within the one‑week timeline. Looking forward to discussing details.
+
+Best regards,
+[Your Name]",,
+PAIR14,"Real-time features for Healthcare app
+We are a healthcare company and need help with the following: real-time features for healthcare app.
+
+What we need:
+- You will be responsible for work like this: moved slow work to background workers.
+- Must have hands-on experience with Postgres.
+- containerization is required.
+- You will be responsible for work like this: a single typed query endpoint for the front end.
+- Please show past work using Redis.
+
+Estimated effort: about 60 hours over 4 weeks. Long-term collaboration possible.","Hi, I’m an AI‑engineer with solid backend experience that matches your needs. In my WhatsApp‑free order‑assistant project (case‑017) I built a FastAPI service backed by PostgreSQL for reliable data storage and used Redis for real‑time caching, all packaged in Docker containers – exactly the stack you described. For moving heavy processing to the background, I delivered a sales‑call summariser (case‑005) where Celery workers handled transcription and summarisation, freeing the API to stay responsive. My training‑migration work (case‑016) demonstrates end‑to‑end containerisation using Docker, ensuring reproducible deployments. Together, these projects show I can create typed query endpoints, shift slow tasks to background workers, and maintain high‑throughput real‑time features in a healthcare‑grade environment. I’m ready to start immediately and can commit to the 60‑hour timeline while keeping communication clear and progress transparent. Looking forward to collaborating long‑term.","Your project, real-time features for healthcare app, is close to work I delivered for a food delivery client: an in-app ordering assistant with tool calls to the menu and cart APIs. That project handled 46% of orders without a human agent.
+
+I built it with Redis, PostgreSQL, which you also list. For Docker, a second reference is Weld defect detection, which caught 94% of defects at 30 frames per second on an edge box. For Redis, a second reference is Sales call summariser, which saved each rep about 5 hours a week across a 40-person team. I have not used WebSockets on a client project yet, so I would not claim it; I would plan extra time for that part.
+
+For your project I would begin with a short, fixed-scope first milestone so you can judge the approach before committing to the rest. Could you share a sample of the data or the current setup so I can confirm the scope?",,
+PAIR15,"Cross-platform mobile app for Pharma
+We are a pharma company and need help with the following: cross-platform mobile app for pharma.
+
+What we need:
+- TypeScript is required.
+- Must have hands-on experience with React Native.
+- We need someone strong in Express.
+
+Estimated effort: about 30 hours over 2 weeks. Please include relevant past work.","For a recent food‑delivery client I built a React Native restaurant ordering app that achieved an average order placement time of under 40 seconds. In a separate HR‑tech project I delivered a full TypeScript test suite that cut production bugs from nine per month to two. My solid Node.js background, demonstrated in the same React Native app, equips me to handle the server‑side logic efficiently. I am aware of the strict regulatory environment in pharma and will apply secure coding practices and thorough validation to meet compliance. I can share relevant work samples, including the TypeScript test suite and the React Native app, to illustrate my capabilities. I look forward to discussing how I can deliver your cross‑platform solution within the two‑week schedule. My experience with TypeScript and React Native aligns directly with your core technology stack, ensuring a smooth development process. Given the modest effort estimate, I can allocate focused time each day to stay on track and provide regular updates.","I delivered a restaurant ordering app that reduced average order placement time to under 40 seconds. The app was built with React Native and Node.js, ensuring a smooth cross‑platform experience. I have used TypeScript in production, as demonstrated in an end‑to‑end test suite that cut production bugs from nine to two per month. What specific regulatory compliance requirements does your pharma app need to meet?",,

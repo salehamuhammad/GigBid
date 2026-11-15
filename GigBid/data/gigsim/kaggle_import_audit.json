@@ -1,0 +1,58 @@
+{
+  "sources_sha256": {
+    "upwork-jobs.csv": "e8b3a7cb1c763d7b20451d8008799b2064c0787e2bd183a52896c98a7933410a"
+  },
+  "seed": 7,
+  "max_per_category": 400,
+  "counts": {
+    "rows_read": 53058,
+    "eligible": 8269,
+    "invalid_or_ambiguous_price": 12613,
+    "out_of_domain": 32174,
+    "duplicate": 2
+  },
+  "eligible_by_category": {
+    "analytics": 873,
+    "api_backend": 240,
+    "computer_vision": 73,
+    "dashboards": 2387,
+    "data_engineering": 90,
+    "devops": 14,
+    "ecommerce": 808,
+    "experimentation": 213,
+    "llm_apps": 132,
+    "ml_modeling": 25,
+    "mlops": 313,
+    "mobile": 1838,
+    "nlp": 152,
+    "reporting": 86,
+    "web_app": 1025
+  },
+  "selected_by_category": {
+    "analytics": 400,
+    "api_backend": 240,
+    "computer_vision": 73,
+    "dashboards": 400,
+    "data_engineering": 90,
+    "devops": 14,
+    "ecommerce": 400,
+    "experimentation": 213,
+    "llm_apps": 132,
+    "ml_modeling": 25,
+    "mlops": 313,
+    "mobile": 400,
+    "nlp": 152,
+    "reporting": 86,
+    "web_app": 400
+  },
+  "selected_total": 3338,
+  "pricing_currency": "USD",
+  "uses": "historical pricing statistics only; no gold labels or live stream",
+  "caveats": [
+    "Skills-based inclusion and per-category sampling are not representative of Upwork.",
+    "USD is assumed because the CSV does not declare a currency field.",
+    "No conversion of international currencies; verify the source documentation.",
+    "Not deduplicated against synthetic historical jobs.",
+    "URL and exact-normalized-text dedup may miss near-duplicate rewritten postings."
+  ]
+}

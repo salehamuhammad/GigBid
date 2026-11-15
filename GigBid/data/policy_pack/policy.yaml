@@ -1,0 +1,64 @@
+# Machine-readable policy pack. Compliance Guard and Risk Assessor load this file; changing a
+# rule here changes behaviour without touching code.
+version: "2026-11-02.v2"
+
+compliance:            # applied to OUR outgoing text (proposals and messages)
+  - id: no_contact_details
+    rule: 1
+    action: redact     # redact | remove_sentence | block
+    patterns:
+      - '[\w.+-]+@[\w-]+(?:\.[\w-]+)+'
+      - '(?<![\w.])\+?\d[\d ()-]{8,}\d(?!\w)'
+      - '(?i)\b(?:telegram|whatsapp|skype|discord|signal|wechat)\b'
+      - '(?i)https?://\S+'
+  - id: no_off_platform_payment
+    rule: 1
+    action: block
+    patterns:
+      - '(?i)\b(?:pay(?:ment)?|paid)\b[^.]{0,40}\b(?:outside|off)[ -]?(?:the )?platform\b'
+      - '(?i)\b(?:paypal|wire transfer|crypto|bitcoin|gift cards?|bank details)\b'
+  - id: no_guarantees
+    rule: 4
+    action: remove_sentence
+    patterns:
+      - '(?i)\b(?:i|we) (?:can )?guarantee'
+      - '(?i)\bguaranteed\b'
+      - '(?i)\b100% (?:satisfaction|accuracy|success)\b'
+      - '(?i)\bfirst[- ]page (?:results|ranking)\b'
+      - '(?i)\b(?:will|shall) definitely\b'
+  - id: no_free_work_offer
+    rule: 2
+    action: remove_sentence
+    patterns:
+      - '(?i)\b(?:for free|free of charge|unpaid (?:trial|sample|test))\b'
+  - id: no_injected_canary
+    rule: 5
+    action: remove_sentence
+    patterns:
+      - '(?i)\bZEBRA-[\w-]+\b'
+      - '(?i)\b(?:api key|system prompt|developer mode)\b'
+
+risk:                  # applied to INCOMING text (job posts and client messages)
+  hard_flags:          # any one of these makes the job a scam
+    off_platform_contact:
+      - '(?i)\b(?:telegram|whatsapp|skype|discord|signal|wechat)\b'
+      - '(?i)\b(?:email|e-mail|message|contact|text) (?:me|us)\b[^.]{0,30}(?:directly|at|on)\b'
+      - '(?i)(?:do not|don''t|not) use the platform chat'
+    upfront_fee:
+      - '(?i)\b(?:registration|onboarding|activation|security|training) fee\b'
+      - '(?i)\bpay\b[^.]{0,30}\b(?:fee|deposit)\b[^.]{0,30}\b(?:first|before)\b'
+    free_work:
+      - '(?i)\bunpaid (?:trial|test|sample|task)\b'
+      - '(?i)\bcomplete the (?:full |whole )?task first\b'
+      - '(?i)\bwe pay only the best submission\b'
+    external_payment:
+      - '(?i)\b(?:outside|off) (?:the |of the )?platform\b'
+      - '(?i)\b(?:crypto|gift cards?|bank details|your (?:id|passport))\b'
+      - '(?i)\bbuy the items\b|\bwith your own card\b|\breimburse\b'
+  weights: {hard_flag: 0.5, injection: 0.2, bad_client: 0.35}
+  client_score:        # how the client-quality score is built from marketplace history
+    payment_verified: 0.30
+    spend: 0.25        # log-scaled, saturates at 10k USD
+    hire_rate: 0.20
+    rating: 0.15
+    tenure: 0.10       # saturates at 1 year

@@ -1,0 +1,1 @@
+{"passed": true, "checkpoint": "PostgreSQL", "job_id": "dev-ai-01586", "proposal_id": "pr-ca1e47a49d", "marketplace_proposals": 1, "connects_before": 120, "connects_after": 108, "duplicate_resume": "ignored", "injected_worker_exits": [91, 92]}

@@ -1,0 +1,4210 @@
+{
+ "env": {
+  "model_profile": "open",
+  "embeddings": {
+   "provider": "fastembed",
+   "model": "BAAI/bge-small-en-v1.5"
+  },
+  "reranker": {
+   "provider": "fastembed",
+   "model": "BAAI/bge-reranker-base"
+  },
+  "deployed_variant": "best",
+  "at": "2026-11-15 09:42:42"
+ },
+ "rows": [
+  {
+   "persona": "ai_engineer",
+   "variant": "v0_naive",
+   "n_pos": 5,
+   "n_neg": 2,
+   "recall@5": 0.4817,
+   "mrr": 1.0,
+   "ndcg@10": 0.7772,
+   "refusal_accuracy": 0.0,
+   "p50_ms": 86.0,
+   "p95_ms": 12468.6,
+   "positives": [
+    {
+     "job_id": "dev-ai-01562",
+     "category": "nlp",
+     "retrieved": [
+      "ai_engineer-case-007",
+      "ai_engineer-case-019",
+      "ai_engineer-repo-007",
+      "ai_engineer-case-015",
+      "ai_engineer-case-005",
+      "ai_engineer-case-002",
+      "ai_engineer-repo-002",
+      "ai_engineer-case-008",
+      "ai_engineer-case-010",
+      "ai_engineer-review-019"
+     ],
+     "gold": {
+      "ai_engineer-case-002": 3,
+      "ai_engineer-repo-002": 3,
+      "ai_engineer-case-007": 3,
+      "ai_engineer-repo-007": 3,
+      "ai_engineer-case-012": 2,
+      "ai_engineer-repo-012": 2,
+      "ai_engineer-case-015": 2,
+      "ai_engineer-case-019": 3
+     },
+     "latency_ms": 12468.63,
+     "recall@5": 0.5,
+     "mrr": 1.0,
+     "ndcg@10": 0.8588144254654868
+    },
+    {
+     "job_id": "dev-ai-01603",
+     "category": "ml_modeling",
+     "retrieved": [
+      "ai_engineer-case-003",
+      "ai_engineer-case-010",
+      "ai_engineer-case-014",
+      "ai_engineer-case-009",
+      "ai_engineer-case-006",
+      "ai_engineer-case-015",
+      "ai_engineer-case-018",
+      "ai_engineer-case-001",
+      "ai_engineer-case-013",
+      "ai_engineer-case-012"
+     ],
+     "gold": {
+      "ai_engineer-case-003": 4,
+      "ai_engineer-case-006": 2,
+      "ai_engineer-repo-006": 2,
+      "ai_engineer-case-009": 2,
+      "ai_engineer-case-014": 3,
+      "ai_engineer-case-018": 2
+     },
+     "latency_ms": 53.55,
+     "recall@5": 0.6666666666666666,
+     "mrr": 1.0,
+     "ndcg@10": 0.8443186014254798
+    },
+    {
+     "job_id": "dev-ai-01689",
+     "category": "llm_apps",
+     "retrieved": [
+      "ai_engineer-repo-001",
+      "ai_engineer-case-001",
+      "ai_engineer-case-015",
+      "ai_engineer-case-005",
+      "ai_engineer-case-002",
+      "ai_engineer-case-008",
+      "ai_engineer-case-003",
+      "ai_engineer-case-011",
+      "ai_engineer-case-020",
+      "ai_engineer-case-009"
+     ],
+     "gold": {
+      "ai_engineer-case-001": 2,
+      "ai_engineer-repo-001": 2,
+      "ai_engineer-case-008": 3,
+      "ai_engineer-case-012": 2,
+      "ai_engineer-repo-012": 2,
+      "ai_engineer-case-015": 2,
+      "ai_engineer-case-017": 2,
+      "ai_engineer-repo-017": 2
+     },
+     "latency_ms": 81.33,
+     "recall@5": 0.375,
+     "mrr": 1.0,
+     "ndcg@10": 0.5984645267957871
+    },
+    {
+     "job_id": "dev-ai-01668",
+     "category": "ml_modeling",
+     "retrieved": [
+      "ai_engineer-case-003",
+      "ai_engineer-case-009",
+      "ai_engineer-case-012",
+      "ai_engineer-case-010",
+      "ai_engineer-case-005",
+      "ai_engineer-case-008",
+      "ai_engineer-case-015",
+      "ai_engineer-case-006",
+      "ai_engineer-repo-012",
+      "ai_engineer-case-014"
+     ],
+     "gold": {
+      "ai_engineer-case-003": 4,
+      "ai_engineer-case-006": 2,
+      "ai_engineer-repo-006": 2,
+      "ai_engineer-case-014": 2,
+      "ai_engineer-case-018": 2
+     },
+     "latency_ms": 100.14,
+     "recall@5": 0.2,
+     "mrr": 1.0,
+     "ndcg@10": 0.6596319284781668
+    },
+    {
+     "job_id": "dev-ai-01579",
+     "category": "ml_modeling",
+     "retrieved": [
+      "ai_engineer-case-003",
+      "ai_engineer-case-006",
+      "ai_engineer-case-015",
+      "ai_engineer-case-009",
+      "ai_engineer-repo-006",
+      "ai_engineer-case-008",
+      "ai_engineer-case-010",
+      "ai_engineer-case-018",
+      "ai_engineer-case-014",
+      "ai_engineer-case-002"
+     ],
+     "gold": {
+      "ai_engineer-case-003": 4,
+      "ai_engineer-case-006": 3,
+      "ai_engineer-repo-006": 3,
+      "ai_engineer-case-009": 2,
+      "ai_engineer-case-014": 3,
+      "ai_engineer-case-018": 3
+     },
+     "latency_ms": 86.01,
+     "recall@5": 0.6666666666666666,
+     "mrr": 1.0,
+     "ndcg@10": 0.9248321680166257
+    }
+   ],
+   "negatives": [
+    {
+     "job_id": "dev-ai-01635",
+     "category": "design",
+     "refused": false
+    },
+    {
+     "job_id": "dev-ai-01637",
+     "category": "wordpress",
+     "refused": false
+    }
+   ]
+  },
+  {
+   "persona": "ai_engineer",
+   "variant": "v1_decompose",
+   "n_pos": 5,
+   "n_neg": 2,
+   "recall@5": 0.3567,
+   "mrr": 0.7,
+   "ndcg@10": 0.6257,
+   "refusal_accuracy": 0.0,
+   "p50_ms": 491.9,
+   "p95_ms": 580.6,
+   "positives": [
+    {
+     "job_id": "dev-ai-01562",
+     "category": "nlp",
+     "retrieved": [
+      "ai_engineer-review-014",
+      "ai_engineer-case-007",
+      "ai_engineer-case-015",
+      "ai_engineer-case-005",
+      "ai_engineer-case-019",
+      "ai_engineer-repo-007",
+      "ai_engineer-review-011",
+      "ai_engineer-case-003",
+      "ai_engineer-case-011",
+      "ai_engineer-case-008"
+     ],
+     "gold": {
+      "ai_engineer-case-002": 3,
+      "ai_engineer-repo-002": 3,
+      "ai_engineer-case-007": 3,
+      "ai_engineer-repo-007": 3,
+      "ai_engineer-case-012": 2,
+      "ai_engineer-repo-012": 2,
+      "ai_engineer-case-015": 2,
+      "ai_engineer-case-019": 3
+     },
+     "latency_ms": 580.58,
+     "recall@5": 0.375,
+     "mrr": 0.5,
+     "ndcg@10": 0.4718365822070264
+    },
+    {
+     "job_id": "dev-ai-01603",
+     "category": "ml_modeling",
+     "retrieved": [
+      "ai_engineer-case-015",
+      "ai_engineer-case-003",
+      "ai_engineer-case-001",
+      "ai_engineer-case-014",
+      "ai_engineer-case-007",
+      "ai_engineer-case-018",
+      "ai_engineer-case-012",
+      "ai_engineer-case-009",
+      "ai_engineer-case-006",
+      "ai_engineer-review-011"
+     ],
+     "gold": {
+      "ai_engineer-case-003": 4,
+      "ai_engineer-case-006": 2,
+      "ai_engineer-repo-006": 2,
+      "ai_engineer-case-009": 2,
+      "ai_engineer-case-014": 3,
+      "ai_engineer-case-018": 2
+     },
+     "latency_ms": 140.89,
+     "recall@5": 0.3333333333333333,
+     "mrr": 0.5,
+     "ndcg@10": 0.6234836825740795
+    },
+    {
+     "job_id": "dev-ai-01689",
+     "category": "llm_apps",
+     "retrieved": [
+      "ai_engineer-repo-001",
+      "ai_engineer-case-002",
+      "ai_engineer-case-005",
+      "ai_engineer-repo-012",
+      "ai_engineer-case-001",
+      "ai_engineer-case-015",
+      "ai_engineer-case-008",
+      "ai_engineer-case-003",
+      "ai_engineer-case-020",
+      "ai_engineer-repo-017"
+     ],
+     "gold": {
+      "ai_engineer-case-001": 2,
+      "ai_engineer-repo-001": 2,
+      "ai_engineer-case-008": 3,
+      "ai_engineer-case-012": 2,
+      "ai_engineer-repo-012": 2,
+      "ai_engineer-case-015": 2,
+      "ai_engineer-case-017": 2,
+      "ai_engineer-repo-017": 2
+     },
+     "latency_ms": 491.91,
+     "recall@5": 0.375,
+     "mrr": 1.0,
+     "ndcg@10": 0.6652801134978232
+    },
+    {
+     "job_id": "dev-ai-01668",
+     "category": "ml_modeling",
+     "retrieved": [
+      "ai_engineer-case-003",
+      "ai_engineer-case-010",
+      "ai_engineer-case-008",
+      "ai_engineer-case-015",
+      "ai_engineer-case-005",
+      "ai_engineer-case-006",
+      "ai_engineer-case-018",
+      "ai_engineer-case-007",
+      "ai_engineer-review-011",
+      "ai_engineer-case-019"
+     ],
+     "gold": {
+      "ai_engineer-case-003": 4,
+      "ai_engineer-case-006": 2,
+      "ai_engineer-repo-006": 2,
+      "ai_engineer-case-014": 2,
+      "ai_engineer-case-018": 2
+     },
+     "latency_ms": 338.99,
+     "recall@5": 0.2,
+     "mrr": 1.0,
+     "ndcg@10": 0.681162053212462
+    },
+    {
+     "job_id": "dev-ai-01579",
+     "category": "ml_modeling",
+     "retrieved": [
+      "ai_engineer-case-015",
+      "ai_engineer-case-003",
+      "ai_engineer-case-006",
+      "ai_engineer-case-007",
+      "ai_engineer-case-014",
+      "ai_engineer-repo-006",
+      "ai_engineer-case-018",
+      "ai_engineer-case-002",
+      "ai_engineer-case-020",
+      "ai_engineer-case-008"
+     ],
+     "gold": {
+      "ai_engineer-case-003": 4,
+      "ai_engineer-case-006": 3,
+      "ai_engineer-repo-006": 3,
+      "ai_engineer-case-009": 2,
+      "ai_engineer-case-014": 3,
+      "ai_engineer-case-018": 3
+     },
+     "latency_ms": 545.22,
+     "recall@5": 0.5,
+     "mrr": 0.5,
+     "ndcg@10": 0.6869712135083665
+    }
+   ],
+   "negatives": [
+    {
+     "job_id": "dev-ai-01635",
+     "category": "design",
+     "refused": false
+    },
+    {
+     "job_id": "dev-ai-01637",
+     "category": "wordpress",
+     "refused": false
+    }
+   ]
+  },
+  {
+   "persona": "ai_engineer",
+   "variant": "v2_hybrid",
+   "n_pos": 5,
+   "n_neg": 2,
+   "recall@5": 0.5617,
+   "mrr": 0.9,
+   "ndcg@10": 0.789,
+   "refusal_accuracy": 0.0,
+   "p50_ms": 68.4,
+   "p95_ms": 287.5,
+   "positives": [
+    {
+     "job_id": "dev-ai-01562",
+     "category": "nlp",
+     "retrieved": [
+      "ai_engineer-case-019",
+      "ai_engineer-case-007",
+      "ai_engineer-case-005",
+      "ai_engineer-case-015",
+      "ai_engineer-repo-007",
+      "ai_engineer-repo-002",
+      "ai_engineer-case-002",
+      "ai_engineer-case-010",
+      "ai_engineer-case-008",
+      "ai_engineer-case-014"
+     ],
+     "gold": {
+      "ai_engineer-case-002": 3,
+      "ai_engineer-repo-002": 3,
+      "ai_engineer-case-007": 3,
+      "ai_engineer-repo-007": 3,
+      "ai_engineer-case-012": 2,
+      "ai_engineer-repo-012": 2,
+      "ai_engineer-case-015": 2,
+      "ai_engineer-case-019": 3
+     },
+     "latency_ms": 73.15,
+     "recall@5": 0.5,
+     "mrr": 1.0,
+     "ndcg@10": 0.8275450158808818
+    },
+    {
+     "job_id": "dev-ai-01603",
+     "category": "ml_modeling",
+     "retrieved": [
+      "ai_engineer-case-003",
+      "ai_engineer-case-014",
+      "ai_engineer-case-015",
+      "ai_engineer-case-018",
+      "ai_engineer-case-001",
+      "ai_engineer-case-012",
+      "ai_engineer-case-010",
+      "ai_engineer-case-017",
+      "ai_engineer-case-009",
+      "ai_engineer-case-006"
+     ],
+     "gold": {
+      "ai_engineer-case-003": 4,
+      "ai_engineer-case-006": 2,
+      "ai_engineer-repo-006": 2,
+      "ai_engineer-case-009": 2,
+      "ai_engineer-case-014": 3,
+      "ai_engineer-case-018": 2
+     },
+     "latency_ms": 287.49,
+     "recall@5": 0.5,
+     "mrr": 1.0,
+     "ndcg@10": 0.8586695601208524
+    },
+    {
+     "job_id": "dev-ai-01689",
+     "category": "llm_apps",
+     "retrieved": [
+      "ai_engineer-case-005",
+      "ai_engineer-case-015",
+      "ai_engineer-case-001",
+      "ai_engineer-case-002",
+      "ai_engineer-case-008",
+      "ai_engineer-case-020",
+      "ai_engineer-case-009",
+      "ai_engineer-case-013",
+      "ai_engineer-repo-001",
+      "ai_engineer-case-017"
+     ],
+     "gold": {
+      "ai_engineer-case-001": 2,
+      "ai_engineer-repo-001": 2,
+      "ai_engineer-case-008": 3,
+      "ai_engineer-case-012": 2,
+      "ai_engineer-repo-012": 2,
+      "ai_engineer-case-015": 2,
+      "ai_engineer-case-017": 2,
+      "ai_engineer-repo-017": 2
+     },
+     "latency_ms": 68.44,
+     "recall@5": 0.375,
+     "mrr": 0.5,
+     "ndcg@10": 0.5167446104223362
+    },
+    {
+     "job_id": "dev-ai-01668",
+     "category": "ml_modeling",
+     "retrieved": [
+      "ai_engineer-case-003",
+      "ai_engineer-case-009",
+      "ai_engineer-case-014",
+      "ai_engineer-case-018",
+      "ai_engineer-case-010",
+      "ai_engineer-case-015",
+      "ai_engineer-case-012",
+      "ai_engineer-case-006",
+      "ai_engineer-case-005",
+      "ai_engineer-case-007"
+     ],
+     "gold": {
+      "ai_engineer-case-003": 4,
+      "ai_engineer-case-006": 2,
+      "ai_engineer-repo-006": 2,
+      "ai_engineer-case-014": 2,
+      "ai_engineer-case-018": 2
+     },
+     "latency_ms": 55.64,
+     "recall@5": 0.6,
+     "mrr": 1.0,
+     "ndcg@10": 0.82212866769668
+    },
+    {
+     "job_id": "dev-ai-01579",
+     "category": "ml_modeling",
+     "retrieved": [
+      "ai_engineer-case-006",
+      "ai_engineer-case-009",
+      "ai_engineer-case-018",
+      "ai_engineer-case-003",
+      "ai_engineer-case-014",
+      "ai_engineer-repo-006",
+      "ai_engineer-case-015",
+      "ai_engineer-case-010",
+      "ai_engineer-case-007",
+      "ai_engineer-case-008"
+     ],
+     "gold": {
+      "ai_engineer-case-003": 4,
+      "ai_engineer-case-006": 3,
+      "ai_engineer-repo-006": 3,
+      "ai_engineer-case-009": 2,
+      "ai_engineer-case-014": 3,
+      "ai_engineer-case-018": 3
+     },
+     "latency_ms": 62.88,
+     "recall@5": 0.8333333333333334,
+     "mrr": 1.0,
+     "ndcg@10": 0.9200546828440087
+    }
+   ],
+   "negatives": [
+    {
+     "job_id": "dev-ai-01635",
+     "category": "design",
+     "refused": false
+    },
+    {
+     "job_id": "dev-ai-01637",
+     "category": "wordpress",
+     "refused": false
+    }
+   ]
+  },
+  {
+   "persona": "ai_engineer",
+   "variant": "v3_rerank",
+   "n_pos": 5,
+   "n_neg": 2,
+   "recall@5": 0.4633,
+   "mrr": 1.0,
+   "ndcg@10": 0.69,
+   "refusal_accuracy": 0.0,
+   "p50_ms": 55719.0,
+   "p95_ms": 88900.5,
+   "positives": [
+    {
+     "job_id": "dev-ai-01562",
+     "category": "nlp",
+     "retrieved": [
+      "ai_engineer-repo-007",
+      "ai_engineer-repo-012",
+      "ai_engineer-case-019",
+      "ai_engineer-case-008",
+      "ai_engineer-repo-002",
+      "ai_engineer-case-007",
+      "ai_engineer-repo-011",
+      "ai_engineer-case-001",
+      "ai_engineer-case-005",
+      "ai_engineer-case-006"
+     ],
+     "gold": {
+      "ai_engineer-case-002": 3,
+      "ai_engineer-repo-002": 3,
+      "ai_engineer-case-007": 3,
+      "ai_engineer-repo-007": 3,
+      "ai_engineer-case-012": 2,
+      "ai_engineer-repo-012": 2,
+      "ai_engineer-case-015": 2,
+      "ai_engineer-case-019": 3
+     },
+     "latency_ms": 88900.53,
+     "recall@5": 0.5,
+     "mrr": 1.0,
+     "ndcg@10": 0.736135767689384
+    },
+    {
+     "job_id": "dev-ai-01603",
+     "category": "ml_modeling",
+     "retrieved": [
+      "ai_engineer-case-003",
+      "ai_engineer-repo-017",
+      "ai_engineer-case-017",
+      "ai_engineer-repo-006",
+      "ai_engineer-case-009",
+      "ai_engineer-case-007",
+      "ai_engineer-case-015",
+      "ai_engineer-case-001",
+      "ai_engineer-case-012",
+      "ai_engineer-case-006"
+     ],
+     "gold": {
+      "ai_engineer-case-003": 4,
+      "ai_engineer-case-006": 2,
+      "ai_engineer-repo-006": 2,
+      "ai_engineer-case-009": 2,
+      "ai_engineer-case-014": 3,
+      "ai_engineer-case-018": 2
+     },
+     "latency_ms": 53944.37,
+     "recall@5": 0.5,
+     "mrr": 1.0,
+     "ndcg@10": 0.6724038926014111
+    },
+    {
+     "job_id": "dev-ai-01689",
+     "category": "llm_apps",
+     "retrieved": [
+      "ai_engineer-repo-001",
+      "ai_engineer-repo-016",
+      "ai_engineer-repo-002",
+      "ai_engineer-case-008",
+      "ai_engineer-case-005",
+      "ai_engineer-case-009",
+      "ai_engineer-case-015",
+      "ai_engineer-case-020",
+      "ai_engineer-case-001",
+      "ai_engineer-case-006"
+     ],
+     "gold": {
+      "ai_engineer-case-001": 2,
+      "ai_engineer-repo-001": 2,
+      "ai_engineer-case-008": 3,
+      "ai_engineer-case-012": 2,
+      "ai_engineer-repo-012": 2,
+      "ai_engineer-case-015": 2,
+      "ai_engineer-case-017": 2,
+      "ai_engineer-repo-017": 2
+     },
+     "latency_ms": 45668.87,
+     "recall@5": 0.25,
+     "mrr": 1.0,
+     "ndcg@10": 0.5120458820004402
+    },
+    {
+     "job_id": "dev-ai-01668",
+     "category": "ml_modeling",
+     "retrieved": [
+      "ai_engineer-case-003",
+      "ai_engineer-case-009",
+      "ai_engineer-repo-012",
+      "ai_engineer-case-007",
+      "ai_engineer-repo-006",
+      "ai_engineer-case-012",
+      "ai_engineer-case-010",
+      "ai_engineer-case-005",
+      "ai_engineer-case-015",
+      "ai_engineer-case-006"
+     ],
+     "gold": {
+      "ai_engineer-case-003": 4,
+      "ai_engineer-case-006": 2,
+      "ai_engineer-repo-006": 2,
+      "ai_engineer-case-014": 2,
+      "ai_engineer-case-018": 2
+     },
+     "latency_ms": 55719.02,
+     "recall@5": 0.4,
+     "mrr": 1.0,
+     "ndcg@10": 0.6777118751863583
+    },
+    {
+     "job_id": "dev-ai-01579",
+     "category": "ml_modeling",
+     "retrieved": [
+      "ai_engineer-case-003",
+      "ai_engineer-case-009",
+      "ai_engineer-case-006",
+      "ai_engineer-case-010",
+      "ai_engineer-case-018",
+      "ai_engineer-repo-006",
+      "ai_engineer-case-007",
+      "ai_engineer-case-005",
+      "ai_engineer-case-008",
+      "ai_engineer-case-015"
+     ],
+     "gold": {
+      "ai_engineer-case-003": 4,
+      "ai_engineer-case-006": 3,
+      "ai_engineer-repo-006": 3,
+      "ai_engineer-case-009": 2,
+      "ai_engineer-case-014": 3,
+      "ai_engineer-case-018": 3
+     },
+     "latency_ms": 61481.17,
+     "recall@5": 0.6666666666666666,
+     "mrr": 1.0,
+     "ndcg@10": 0.8516022781444988
+    }
+   ],
+   "negatives": [
+    {
+     "job_id": "dev-ai-01635",
+     "category": "design",
+     "refused": false
+    },
+    {
+     "job_id": "dev-ai-01637",
+     "category": "wordpress",
+     "refused": false
+    }
+   ]
+  },
+  {
+   "persona": "ai_engineer",
+   "variant": "v9_skill_graph",
+   "n_pos": 5,
+   "n_neg": 2,
+   "recall@5": 0.5533,
+   "mrr": 1.0,
+   "ndcg@10": 0.8536,
+   "refusal_accuracy": 0.0,
+   "p50_ms": 186.2,
+   "p95_ms": 261.3,
+   "positives": [
+    {
+     "job_id": "dev-ai-01562",
+     "category": "nlp",
+     "retrieved": [
+      "ai_engineer-case-007",
+      "ai_engineer-repo-002",
+      "ai_engineer-repo-007",
+      "ai_engineer-case-015",
+      "ai_engineer-review-011",
+      "ai_engineer-case-019",
+      "ai_engineer-case-002",
+      "ai_engineer-review-014",
+      "ai_engineer-review-007",
+      "ai_engineer-case-011"
+     ],
+     "gold": {
+      "ai_engineer-case-002": 3,
+      "ai_engineer-repo-002": 3,
+      "ai_engineer-case-007": 3,
+      "ai_engineer-repo-007": 3,
+      "ai_engineer-case-012": 2,
+      "ai_engineer-repo-012": 2,
+      "ai_engineer-case-015": 2,
+      "ai_engineer-case-019": 3
+     },
+     "latency_ms": 261.29,
+     "recall@5": 0.5,
+     "mrr": 1.0,
+     "ndcg@10": 0.8588144254654868
+    },
+    {
+     "job_id": "dev-ai-01603",
+     "category": "ml_modeling",
+     "retrieved": [
+      "ai_engineer-case-003",
+      "ai_engineer-review-003",
+      "ai_engineer-case-014",
+      "ai_engineer-review-014",
+      "ai_engineer-case-009",
+      "ai_engineer-case-018",
+      "ai_engineer-review-009",
+      "ai_engineer-case-015",
+      "ai_engineer-case-001",
+      "ai_engineer-case-002"
+     ],
+     "gold": {
+      "ai_engineer-case-003": 4,
+      "ai_engineer-case-006": 2,
+      "ai_engineer-repo-006": 2,
+      "ai_engineer-case-009": 2,
+      "ai_engineer-case-014": 3,
+      "ai_engineer-case-018": 2
+     },
+     "latency_ms": 161.43,
+     "recall@5": 0.5,
+     "mrr": 1.0,
+     "ndcg@10": 0.7560521240970313
+    },
+    {
+     "job_id": "dev-ai-01689",
+     "category": "llm_apps",
+     "retrieved": [
+      "ai_engineer-case-008",
+      "ai_engineer-case-015",
+      "ai_engineer-repo-001",
+      "ai_engineer-case-017",
+      "ai_engineer-review-008",
+      "ai_engineer-repo-017",
+      "ai_engineer-review-017",
+      "ai_engineer-case-001",
+      "ai_engineer-case-002",
+      "ai_engineer-case-006"
+     ],
+     "gold": {
+      "ai_engineer-case-001": 2,
+      "ai_engineer-repo-001": 2,
+      "ai_engineer-case-008": 3,
+      "ai_engineer-case-012": 2,
+      "ai_engineer-repo-012": 2,
+      "ai_engineer-case-015": 2,
+      "ai_engineer-case-017": 2,
+      "ai_engineer-repo-017": 2
+     },
+     "latency_ms": 186.17,
+     "recall@5": 0.5,
+     "mrr": 1.0,
+     "ndcg@10": 0.8382863188954942
+    },
+    {
+     "job_id": "dev-ai-01668",
+     "category": "ml_modeling",
+     "retrieved": [
+      "ai_engineer-case-003",
+      "ai_engineer-case-006",
+      "ai_engineer-case-015",
+      "ai_engineer-repo-006",
+      "ai_engineer-case-002",
+      "ai_engineer-case-018",
+      "ai_engineer-case-014",
+      "ai_engineer-case-007",
+      "ai_engineer-review-006",
+      "ai_engineer-case-005"
+     ],
+     "gold": {
+      "ai_engineer-case-003": 4,
+      "ai_engineer-case-006": 2,
+      "ai_engineer-repo-006": 2,
+      "ai_engineer-case-014": 2,
+      "ai_engineer-case-018": 2
+     },
+     "latency_ms": 188.64,
+     "recall@5": 0.6,
+     "mrr": 1.0,
+     "ndcg@10": 0.9500280284403235
+    },
+    {
+     "job_id": "dev-ai-01579",
+     "category": "ml_modeling",
+     "retrieved": [
+      "ai_engineer-case-006",
+      "ai_engineer-case-003",
+      "ai_engineer-case-014",
+      "ai_engineer-case-015",
+      "ai_engineer-repo-006",
+      "ai_engineer-case-002",
+      "ai_engineer-case-020",
+      "ai_engineer-case-018",
+      "ai_engineer-case-008",
+      "ai_engineer-review-003"
+     ],
+     "gold": {
+      "ai_engineer-case-003": 4,
+      "ai_engineer-case-006": 3,
+      "ai_engineer-repo-006": 3,
+      "ai_engineer-case-009": 2,
+      "ai_engineer-case-014": 3,
+      "ai_engineer-case-018": 3
+     },
+     "latency_ms": 126.0,
+     "recall@5": 0.6666666666666666,
+     "mrr": 1.0,
+     "ndcg@10": 0.8648278256581868
+    }
+   ],
+   "negatives": [
+    {
+     "job_id": "dev-ai-01635",
+     "category": "design",
+     "refused": false
+    },
+    {
+     "job_id": "dev-ai-01637",
+     "category": "wordpress",
+     "refused": false
+    }
+   ]
+  },
+  {
+   "persona": "ai_engineer",
+   "variant": "best",
+   "n_pos": 5,
+   "n_neg": 2,
+   "recall@5": 0.255,
+   "mrr": 0.55,
+   "ndcg@10": 0.5132,
+   "refusal_accuracy": 0.0,
+   "p50_ms": 75902.5,
+   "p95_ms": 146754.5,
+   "positives": [
+    {
+     "job_id": "dev-ai-01562",
+     "category": "nlp",
+     "retrieved": [],
+     "gold": {
+      "ai_engineer-case-002": 3,
+      "ai_engineer-repo-002": 3,
+      "ai_engineer-case-007": 3,
+      "ai_engineer-repo-007": 3,
+      "ai_engineer-case-012": 2,
+      "ai_engineer-repo-012": 2,
+      "ai_engineer-case-015": 2,
+      "ai_engineer-case-019": 3
+     },
+     "latency_ms": 146754.46,
+     "recall@5": 0.0,
+     "mrr": 0.0,
+     "ndcg@10": 0.0
+    },
+    {
+     "job_id": "dev-ai-01603",
+     "category": "ml_modeling",
+     "retrieved": [
+      "ai_engineer-review-003",
+      "ai_engineer-case-001",
+      "ai_engineer-case-012",
+      "ai_engineer-case-014",
+      "ai_engineer-case-002",
+      "ai_engineer-case-003",
+      "ai_engineer-case-006",
+      "ai_engineer-case-015",
+      "ai_engineer-case-018",
+      "ai_engineer-review-014"
+     ],
+     "gold": {
+      "ai_engineer-case-003": 4,
+      "ai_engineer-case-006": 2,
+      "ai_engineer-repo-006": 2,
+      "ai_engineer-case-009": 2,
+      "ai_engineer-case-014": 3,
+      "ai_engineer-case-018": 2
+     },
+     "latency_ms": 75902.51,
+     "recall@5": 0.16666666666666666,
+     "mrr": 0.25,
+     "ndcg@10": 0.4313281293297204
+    },
+    {
+     "job_id": "dev-ai-01689",
+     "category": "llm_apps",
+     "retrieved": [
+      "ai_engineer-repo-001",
+      "ai_engineer-case-008",
+      "ai_engineer-case-005",
+      "ai_engineer-case-017",
+      "ai_engineer-case-011",
+      "ai_engineer-repo-017",
+      "ai_engineer-repo-002",
+      "ai_engineer-repo-016",
+      "ai_engineer-case-020",
+      "ai_engineer-case-006"
+     ],
+     "gold": {
+      "ai_engineer-case-001": 2,
+      "ai_engineer-repo-001": 2,
+      "ai_engineer-case-008": 3,
+      "ai_engineer-case-012": 2,
+      "ai_engineer-repo-012": 2,
+      "ai_engineer-case-015": 2,
+      "ai_engineer-case-017": 2,
+      "ai_engineer-repo-017": 2
+     },
+     "latency_ms": 57610.2,
+     "recall@5": 0.375,
+     "mrr": 1.0,
+     "ndcg@10": 0.6137420351399187
+    },
+    {
+     "job_id": "dev-ai-01668",
+     "category": "ml_modeling",
+     "retrieved": [
+      "ai_engineer-case-003",
+      "ai_engineer-case-015",
+      "ai_engineer-repo-006",
+      "ai_engineer-case-010",
+      "ai_engineer-case-005",
+      "ai_engineer-case-006",
+      "ai_engineer-case-014",
+      "ai_engineer-case-018",
+      "ai_engineer-case-019",
+      "ai_engineer-case-009"
+     ],
+     "gold": {
+      "ai_engineer-case-003": 4,
+      "ai_engineer-case-006": 2,
+      "ai_engineer-repo-006": 2,
+      "ai_engineer-case-014": 2,
+      "ai_engineer-case-018": 2
+     },
+     "latency_ms": 65267.69,
+     "recall@5": 0.4,
+     "mrr": 1.0,
+     "ndcg@10": 0.8876894230633027
+    },
+    {
+     "job_id": "dev-ai-01579",
+     "category": "ml_modeling",
+     "retrieved": [
+      "ai_engineer-case-020",
+      "ai_engineer-case-006",
+      "ai_engineer-case-018",
+      "ai_engineer-case-005",
+      "ai_engineer-case-008",
+      "ai_engineer-case-003",
+      "ai_engineer-repo-006",
+      "ai_engineer-repo-001",
+      "ai_engineer-repo-002",
+      "ai_engineer-case-014"
+     ],
+     "gold": {
+      "ai_engineer-case-003": 4,
+      "ai_engineer-case-006": 3,
+      "ai_engineer-repo-006": 3,
+      "ai_engineer-case-009": 2,
+      "ai_engineer-case-014": 3,
+      "ai_engineer-case-018": 3
+     },
+     "latency_ms": 85721.49,
+     "recall@5": 0.3333333333333333,
+     "mrr": 0.5,
+     "ndcg@10": 0.6331638905666557
+    }
+   ],
+   "negatives": [
+    {
+     "job_id": "dev-ai-01635",
+     "category": "design",
+     "refused": false
+    },
+    {
+     "job_id": "dev-ai-01637",
+     "category": "wordpress",
+     "refused": false
+    }
+   ]
+  },
+  {
+   "persona": "fullstack_dev",
+   "variant": "v0_naive",
+   "n_pos": 5,
+   "n_neg": 2,
+   "recall@5": 0.3567,
+   "mrr": 0.9,
+   "ndcg@10": 0.5454,
+   "refusal_accuracy": 0.0,
+   "p50_ms": 8.4,
+   "p95_ms": 24.5,
+   "positives": [
+    {
+     "job_id": "dev-fu-01862",
+     "category": "devops",
+     "retrieved": [
+      "fullstack_dev-case-011",
+      "fullstack_dev-case-019",
+      "fullstack_dev-review-011",
+      "fullstack_dev-case-016",
+      "fullstack_dev-repo-001",
+      "fullstack_dev-case-001",
+      "fullstack_dev-case-018",
+      "fullstack_dev-repo-016",
+      "fullstack_dev-case-005",
+      "fullstack_dev-case-008"
+     ],
+     "gold": {
+      "fullstack_dev-case-005": 2,
+      "fullstack_dev-case-011": 3,
+      "fullstack_dev-repo-011": 3,
+      "fullstack_dev-case-018": 2,
+      "fullstack_dev-case-019": 2,
+      "fullstack_dev-case-020": 3
+     },
+     "latency_ms": 24.54,
+     "recall@5": 0.3333333333333333,
+     "mrr": 1.0,
+     "ndcg@10": 0.6327711839565436
+    },
+    {
+     "job_id": "dev-fu-01724",
+     "category": "web_app",
+     "retrieved": [
+      "fullstack_dev-case-020",
+      "fullstack_dev-case-010",
+      "fullstack_dev-repo-007",
+      "fullstack_dev-review-011",
+      "fullstack_dev-case-018",
+      "fullstack_dev-case-004",
+      "fullstack_dev-repo-012",
+      "fullstack_dev-repo-002",
+      "fullstack_dev-repo-006",
+      "fullstack_dev-case-007"
+     ],
+     "gold": {
+      "fullstack_dev-case-001": 4,
+      "fullstack_dev-repo-001": 4,
+      "fullstack_dev-case-002": 2,
+      "fullstack_dev-repo-002": 2,
+      "fullstack_dev-case-003": 2,
+      "fullstack_dev-case-008": 2,
+      "fullstack_dev-case-010": 3,
+      "fullstack_dev-case-012": 4,
+      "fullstack_dev-repo-012": 4,
+      "fullstack_dev-case-015": 3,
+      "fullstack_dev-case-016": 2,
+      "fullstack_dev-repo-016": 2
+     },
+     "latency_ms": 8.41,
+     "recall@5": 0.08333333333333333,
+     "mrr": 0.5,
+     "ndcg@10": 0.25793830120770467
+    },
+    {
+     "job_id": "dev-fu-01735",
+     "category": "devops",
+     "retrieved": [
+      "fullstack_dev-case-011",
+      "fullstack_dev-review-011",
+      "fullstack_dev-case-020",
+      "fullstack_dev-case-019",
+      "fullstack_dev-case-005",
+      "fullstack_dev-case-015",
+      "fullstack_dev-repo-011",
+      "fullstack_dev-review-017",
+      "fullstack_dev-review-008",
+      "fullstack_dev-case-010"
+     ],
+     "gold": {
+      "fullstack_dev-case-005": 3,
+      "fullstack_dev-case-011": 4,
+      "fullstack_dev-repo-011": 4,
+      "fullstack_dev-case-018": 2,
+      "fullstack_dev-case-019": 3,
+      "fullstack_dev-case-020": 3
+     },
+     "latency_ms": 6.58,
+     "recall@5": 0.6666666666666666,
+     "mrr": 1.0,
+     "ndcg@10": 0.8299358816092459
+    },
+    {
+     "job_id": "dev-fu-01719",
+     "category": "devops",
+     "retrieved": [
+      "fullstack_dev-case-011",
+      "fullstack_dev-case-019",
+      "fullstack_dev-review-011",
+      "fullstack_dev-case-006",
+      "fullstack_dev-case-020",
+      "fullstack_dev-review-017",
+      "fullstack_dev-repo-006",
+      "fullstack_dev-review-006",
+      "fullstack_dev-case-005",
+      "fullstack_dev-case-015"
+     ],
+     "gold": {
+      "fullstack_dev-case-005": 3,
+      "fullstack_dev-case-011": 3,
+      "fullstack_dev-repo-011": 3,
+      "fullstack_dev-case-018": 2,
+      "fullstack_dev-case-019": 3,
+      "fullstack_dev-case-020": 2
+     },
+     "latency_ms": 9.2,
+     "recall@5": 0.5,
+     "mrr": 1.0,
+     "ndcg@10": 0.7163481206112371
+    },
+    {
+     "job_id": "dev-fu-01736",
+     "category": "api_backend",
+     "retrieved": [
+      "fullstack_dev-case-004",
+      "fullstack_dev-case-017",
+      "fullstack_dev-case-005",
+      "fullstack_dev-review-011",
+      "fullstack_dev-case-015",
+      "fullstack_dev-case-006",
+      "fullstack_dev-repo-017",
+      "fullstack_dev-case-012",
+      "fullstack_dev-review-017",
+      "fullstack_dev-case-010"
+     ],
+     "gold": {
+      "fullstack_dev-case-003": 2,
+      "fullstack_dev-case-004": 2,
+      "fullstack_dev-case-009": 3,
+      "fullstack_dev-case-016": 2,
+      "fullstack_dev-repo-016": 2
+     },
+     "latency_ms": 8.44,
+     "recall@5": 0.2,
+     "mrr": 1.0,
+     "ndcg@10": 0.2899845889212568
+    }
+   ],
+   "negatives": [
+    {
+     "job_id": "dev-fu-01834",
+     "category": "design",
+     "refused": false
+    },
+    {
+     "job_id": "dev-fu-01843",
+     "category": "blockchain",
+     "refused": false
+    }
+   ]
+  },
+  {
+   "persona": "fullstack_dev",
+   "variant": "v1_decompose",
+   "n_pos": 5,
+   "n_neg": 2,
+   "recall@5": 0.3733,
+   "mrr": 0.6667,
+   "ndcg@10": 0.5823,
+   "refusal_accuracy": 0.0,
+   "p50_ms": 46.5,
+   "p95_ms": 65.2,
+   "positives": [
+    {
+     "job_id": "dev-fu-01862",
+     "category": "devops",
+     "retrieved": [
+      "fullstack_dev-case-018",
+      "fullstack_dev-case-011",
+      "fullstack_dev-case-019",
+      "fullstack_dev-review-011",
+      "fullstack_dev-case-020",
+      "fullstack_dev-case-005",
+      "fullstack_dev-repo-011",
+      "fullstack_dev-case-007",
+      "fullstack_dev-repo-001",
+      "fullstack_dev-case-001"
+     ],
+     "gold": {
+      "fullstack_dev-case-005": 2,
+      "fullstack_dev-case-011": 3,
+      "fullstack_dev-repo-011": 3,
+      "fullstack_dev-case-018": 2,
+      "fullstack_dev-case-019": 2,
+      "fullstack_dev-case-020": 3
+     },
+     "latency_ms": 60.98,
+     "recall@5": 0.6666666666666666,
+     "mrr": 1.0,
+     "ndcg@10": 0.8885044557982974
+    },
+    {
+     "job_id": "dev-fu-01724",
+     "category": "web_app",
+     "retrieved": [
+      "fullstack_dev-review-011",
+      "fullstack_dev-case-001",
+      "fullstack_dev-repo-012",
+      "fullstack_dev-repo-001",
+      "fullstack_dev-case-010",
+      "fullstack_dev-case-018",
+      "fullstack_dev-repo-002",
+      "fullstack_dev-repo-007",
+      "fullstack_dev-case-015",
+      "fullstack_dev-review-014"
+     ],
+     "gold": {
+      "fullstack_dev-case-001": 4,
+      "fullstack_dev-repo-001": 4,
+      "fullstack_dev-case-002": 2,
+      "fullstack_dev-repo-002": 2,
+      "fullstack_dev-case-003": 2,
+      "fullstack_dev-case-008": 2,
+      "fullstack_dev-case-010": 3,
+      "fullstack_dev-case-012": 4,
+      "fullstack_dev-repo-012": 4,
+      "fullstack_dev-case-015": 3,
+      "fullstack_dev-case-016": 2,
+      "fullstack_dev-repo-016": 2
+     },
+     "latency_ms": 65.21,
+     "recall@5": 0.3333333333333333,
+     "mrr": 0.5,
+     "ndcg@10": 0.600314680834856
+    },
+    {
+     "job_id": "dev-fu-01735",
+     "category": "devops",
+     "retrieved": [
+      "fullstack_dev-case-018",
+      "fullstack_dev-case-019",
+      "fullstack_dev-case-015",
+      "fullstack_dev-review-011",
+      "fullstack_dev-case-005",
+      "fullstack_dev-case-010",
+      "fullstack_dev-case-011",
+      "fullstack_dev-case-020",
+      "fullstack_dev-case-001",
+      "fullstack_dev-repo-011"
+     ],
+     "gold": {
+      "fullstack_dev-case-005": 3,
+      "fullstack_dev-case-011": 4,
+      "fullstack_dev-repo-011": 4,
+      "fullstack_dev-case-018": 2,
+      "fullstack_dev-case-019": 3,
+      "fullstack_dev-case-020": 3
+     },
+     "latency_ms": 46.5,
+     "recall@5": 0.5,
+     "mrr": 1.0,
+     "ndcg@10": 0.7587403943513058
+    },
+    {
+     "job_id": "dev-fu-01719",
+     "category": "devops",
+     "retrieved": [
+      "fullstack_dev-review-011",
+      "fullstack_dev-case-018",
+      "fullstack_dev-case-010",
+      "fullstack_dev-review-017",
+      "fullstack_dev-review-003",
+      "fullstack_dev-case-015",
+      "fullstack_dev-case-019",
+      "fullstack_dev-case-011",
+      "fullstack_dev-case-020",
+      "fullstack_dev-case-006"
+     ],
+     "gold": {
+      "fullstack_dev-case-005": 3,
+      "fullstack_dev-case-011": 3,
+      "fullstack_dev-repo-011": 3,
+      "fullstack_dev-case-018": 2,
+      "fullstack_dev-case-019": 3,
+      "fullstack_dev-case-020": 2
+     },
+     "latency_ms": 26.5,
+     "recall@5": 0.16666666666666666,
+     "mrr": 0.5,
+     "ndcg@10": 0.41547699320236775
+    },
+    {
+     "job_id": "dev-fu-01736",
+     "category": "api_backend",
+     "retrieved": [
+      "fullstack_dev-case-015",
+      "fullstack_dev-review-011",
+      "fullstack_dev-case-004",
+      "fullstack_dev-review-017",
+      "fullstack_dev-case-012",
+      "fullstack_dev-case-003",
+      "fullstack_dev-review-003",
+      "fullstack_dev-case-013",
+      "fullstack_dev-case-005",
+      "fullstack_dev-case-006"
+     ],
+     "gold": {
+      "fullstack_dev-case-003": 2,
+      "fullstack_dev-case-004": 2,
+      "fullstack_dev-case-009": 3,
+      "fullstack_dev-case-016": 2,
+      "fullstack_dev-repo-016": 2
+     },
+     "latency_ms": 30.16,
+     "recall@5": 0.2,
+     "mrr": 0.3333333333333333,
+     "ndcg@10": 0.2482868891849454
+    }
+   ],
+   "negatives": [
+    {
+     "job_id": "dev-fu-01834",
+     "category": "design",
+     "refused": false
+    },
+    {
+     "job_id": "dev-fu-01843",
+     "category": "blockchain",
+     "refused": false
+    }
+   ]
+  },
+  {
+   "persona": "fullstack_dev",
+   "variant": "v2_hybrid",
+   "n_pos": 5,
+   "n_neg": 2,
+   "recall@5": 0.4733,
+   "mrr": 1.0,
+   "ndcg@10": 0.7468,
+   "refusal_accuracy": 0.0,
+   "p50_ms": 8.8,
+   "p95_ms": 20.2,
+   "positives": [
+    {
+     "job_id": "dev-fu-01862",
+     "category": "devops",
+     "retrieved": [
+      "fullstack_dev-case-011",
+      "fullstack_dev-case-019",
+      "fullstack_dev-repo-001",
+      "fullstack_dev-case-005",
+      "fullstack_dev-repo-016",
+      "fullstack_dev-case-016",
+      "fullstack_dev-case-001",
+      "fullstack_dev-repo-007",
+      "fullstack_dev-case-018",
+      "fullstack_dev-repo-011"
+     ],
+     "gold": {
+      "fullstack_dev-case-005": 2,
+      "fullstack_dev-case-011": 3,
+      "fullstack_dev-repo-011": 3,
+      "fullstack_dev-case-018": 2,
+      "fullstack_dev-case-019": 2,
+      "fullstack_dev-case-020": 3
+     },
+     "latency_ms": 20.23,
+     "recall@5": 0.5,
+     "mrr": 1.0,
+     "ndcg@10": 0.7542642105983604
+    },
+    {
+     "job_id": "dev-fu-01724",
+     "category": "web_app",
+     "retrieved": [
+      "fullstack_dev-case-010",
+      "fullstack_dev-case-020",
+      "fullstack_dev-case-001",
+      "fullstack_dev-case-002",
+      "fullstack_dev-case-012",
+      "fullstack_dev-repo-001",
+      "fullstack_dev-repo-007",
+      "fullstack_dev-case-018",
+      "fullstack_dev-repo-002",
+      "fullstack_dev-case-015"
+     ],
+     "gold": {
+      "fullstack_dev-case-001": 4,
+      "fullstack_dev-repo-001": 4,
+      "fullstack_dev-case-002": 2,
+      "fullstack_dev-repo-002": 2,
+      "fullstack_dev-case-003": 2,
+      "fullstack_dev-case-008": 2,
+      "fullstack_dev-case-010": 3,
+      "fullstack_dev-case-012": 4,
+      "fullstack_dev-repo-012": 4,
+      "fullstack_dev-case-015": 3,
+      "fullstack_dev-case-016": 2,
+      "fullstack_dev-repo-016": 2
+     },
+     "latency_ms": 8.84,
+     "recall@5": 0.3333333333333333,
+     "mrr": 1.0,
+     "ndcg@10": 0.688997389379109
+    },
+    {
+     "job_id": "dev-fu-01735",
+     "category": "devops",
+     "retrieved": [
+      "fullstack_dev-case-011",
+      "fullstack_dev-case-020",
+      "fullstack_dev-review-011",
+      "fullstack_dev-case-018",
+      "fullstack_dev-case-019",
+      "fullstack_dev-repo-011",
+      "fullstack_dev-case-005",
+      "fullstack_dev-case-009",
+      "fullstack_dev-case-016",
+      "fullstack_dev-case-007"
+     ],
+     "gold": {
+      "fullstack_dev-case-005": 3,
+      "fullstack_dev-case-011": 4,
+      "fullstack_dev-repo-011": 4,
+      "fullstack_dev-case-018": 2,
+      "fullstack_dev-case-019": 3,
+      "fullstack_dev-case-020": 3
+     },
+     "latency_ms": 7.51,
+     "recall@5": 0.6666666666666666,
+     "mrr": 1.0,
+     "ndcg@10": 0.9241028620999411
+    },
+    {
+     "job_id": "dev-fu-01719",
+     "category": "devops",
+     "retrieved": [
+      "fullstack_dev-case-011",
+      "fullstack_dev-case-006",
+      "fullstack_dev-case-020",
+      "fullstack_dev-case-018",
+      "fullstack_dev-case-005",
+      "fullstack_dev-repo-006",
+      "fullstack_dev-case-010",
+      "fullstack_dev-case-019",
+      "fullstack_dev-review-011",
+      "fullstack_dev-repo-011"
+     ],
+     "gold": {
+      "fullstack_dev-case-005": 3,
+      "fullstack_dev-case-011": 3,
+      "fullstack_dev-repo-011": 3,
+      "fullstack_dev-case-018": 2,
+      "fullstack_dev-case-019": 3,
+      "fullstack_dev-case-020": 2
+     },
+     "latency_ms": 10.03,
+     "recall@5": 0.6666666666666666,
+     "mrr": 1.0,
+     "ndcg@10": 0.8543836909633094
+    },
+    {
+     "job_id": "dev-fu-01736",
+     "category": "api_backend",
+     "retrieved": [
+      "fullstack_dev-case-004",
+      "fullstack_dev-case-006",
+      "fullstack_dev-case-017",
+      "fullstack_dev-case-013",
+      "fullstack_dev-repo-017",
+      "fullstack_dev-case-018",
+      "fullstack_dev-repo-006",
+      "fullstack_dev-case-016",
+      "fullstack_dev-case-009",
+      "fullstack_dev-case-014"
+     ],
+     "gold": {
+      "fullstack_dev-case-003": 2,
+      "fullstack_dev-case-004": 2,
+      "fullstack_dev-case-009": 3,
+      "fullstack_dev-case-016": 2,
+      "fullstack_dev-repo-016": 2
+     },
+     "latency_ms": 7.66,
+     "recall@5": 0.2,
+     "mrr": 1.0,
+     "ndcg@10": 0.5124056308534423
+    }
+   ],
+   "negatives": [
+    {
+     "job_id": "dev-fu-01834",
+     "category": "design",
+     "refused": false
+    },
+    {
+     "job_id": "dev-fu-01843",
+     "category": "blockchain",
+     "refused": false
+    }
+   ]
+  },
+  {
+   "persona": "fullstack_dev",
+   "variant": "v3_rerank",
+   "n_pos": 5,
+   "n_neg": 2,
+   "recall@5": 0.29,
+   "mrr": 0.7,
+   "ndcg@10": 0.5212,
+   "refusal_accuracy": 0.0,
+   "p50_ms": 13518.9,
+   "p95_ms": 20868.6,
+   "positives": [
+    {
+     "job_id": "dev-fu-01862",
+     "category": "devops",
+     "retrieved": [
+      "fullstack_dev-repo-001",
+      "fullstack_dev-repo-011",
+      "fullstack_dev-repo-016",
+      "fullstack_dev-repo-007",
+      "fullstack_dev-repo-002",
+      "fullstack_dev-case-001",
+      "fullstack_dev-repo-012",
+      "fullstack_dev-case-016",
+      "fullstack_dev-case-011",
+      "fullstack_dev-case-020"
+     ],
+     "gold": {
+      "fullstack_dev-case-005": 2,
+      "fullstack_dev-case-011": 3,
+      "fullstack_dev-repo-011": 3,
+      "fullstack_dev-case-018": 2,
+      "fullstack_dev-case-019": 2,
+      "fullstack_dev-case-020": 3
+     },
+     "latency_ms": 13179.11,
+     "recall@5": 0.16666666666666666,
+     "mrr": 0.5,
+     "ndcg@10": 0.41910340599152357
+    },
+    {
+     "job_id": "dev-fu-01724",
+     "category": "web_app",
+     "retrieved": [
+      "fullstack_dev-case-020",
+      "fullstack_dev-case-002",
+      "fullstack_dev-repo-011",
+      "fullstack_dev-case-005",
+      "fullstack_dev-repo-007",
+      "fullstack_dev-case-010",
+      "fullstack_dev-case-001",
+      "fullstack_dev-case-016",
+      "fullstack_dev-repo-012",
+      "fullstack_dev-repo-016"
+     ],
+     "gold": {
+      "fullstack_dev-case-001": 4,
+      "fullstack_dev-repo-001": 4,
+      "fullstack_dev-case-002": 2,
+      "fullstack_dev-repo-002": 2,
+      "fullstack_dev-case-003": 2,
+      "fullstack_dev-case-008": 2,
+      "fullstack_dev-case-010": 3,
+      "fullstack_dev-case-012": 4,
+      "fullstack_dev-repo-012": 4,
+      "fullstack_dev-case-015": 3,
+      "fullstack_dev-case-016": 2,
+      "fullstack_dev-repo-016": 2
+     },
+     "latency_ms": 14712.63,
+     "recall@5": 0.08333333333333333,
+     "mrr": 0.5,
+     "ndcg@10": 0.40639569120213465
+    },
+    {
+     "job_id": "dev-fu-01735",
+     "category": "devops",
+     "retrieved": [
+      "fullstack_dev-repo-011",
+      "fullstack_dev-repo-012",
+      "fullstack_dev-repo-007",
+      "fullstack_dev-case-020",
+      "fullstack_dev-case-011",
+      "fullstack_dev-repo-001",
+      "fullstack_dev-case-019",
+      "fullstack_dev-case-005",
+      "fullstack_dev-case-001",
+      "fullstack_dev-repo-017"
+     ],
+     "gold": {
+      "fullstack_dev-case-005": 3,
+      "fullstack_dev-case-011": 4,
+      "fullstack_dev-repo-011": 4,
+      "fullstack_dev-case-018": 2,
+      "fullstack_dev-case-019": 3,
+      "fullstack_dev-case-020": 3
+     },
+     "latency_ms": 20868.64,
+     "recall@5": 0.5,
+     "mrr": 1.0,
+     "ndcg@10": 0.7852403463385086
+    },
+    {
+     "job_id": "dev-fu-01719",
+     "category": "devops",
+     "retrieved": [
+      "fullstack_dev-repo-011",
+      "fullstack_dev-repo-007",
+      "fullstack_dev-case-011",
+      "fullstack_dev-case-005",
+      "fullstack_dev-repo-016",
+      "fullstack_dev-case-020",
+      "fullstack_dev-repo-006",
+      "fullstack_dev-case-019",
+      "fullstack_dev-repo-001",
+      "fullstack_dev-case-006"
+     ],
+     "gold": {
+      "fullstack_dev-case-005": 3,
+      "fullstack_dev-case-011": 3,
+      "fullstack_dev-repo-011": 3,
+      "fullstack_dev-case-018": 2,
+      "fullstack_dev-case-019": 3,
+      "fullstack_dev-case-020": 2
+     },
+     "latency_ms": 13073.02,
+     "recall@5": 0.5,
+     "mrr": 1.0,
+     "ndcg@10": 0.8124401155484565
+    },
+    {
+     "job_id": "dev-fu-01736",
+     "category": "api_backend",
+     "retrieved": [
+      "fullstack_dev-repo-012",
+      "fullstack_dev-case-004",
+      "fullstack_dev-case-001",
+      "fullstack_dev-case-020",
+      "fullstack_dev-repo-001",
+      "fullstack_dev-repo-017",
+      "fullstack_dev-repo-006",
+      "fullstack_dev-case-013",
+      "fullstack_dev-case-018",
+      "fullstack_dev-case-005"
+     ],
+     "gold": {
+      "fullstack_dev-case-003": 2,
+      "fullstack_dev-case-004": 2,
+      "fullstack_dev-case-009": 3,
+      "fullstack_dev-case-016": 2,
+      "fullstack_dev-repo-016": 2
+     },
+     "latency_ms": 13518.85,
+     "recall@5": 0.2,
+     "mrr": 0.5,
+     "ndcg@10": 0.18295990522760897
+    }
+   ],
+   "negatives": [
+    {
+     "job_id": "dev-fu-01834",
+     "category": "design",
+     "refused": false
+    },
+    {
+     "job_id": "dev-fu-01843",
+     "category": "blockchain",
+     "refused": false
+    }
+   ]
+  },
+  {
+   "persona": "fullstack_dev",
+   "variant": "v9_skill_graph",
+   "n_pos": 5,
+   "n_neg": 2,
+   "recall@5": 0.5633,
+   "mrr": 0.9,
+   "ndcg@10": 0.8083,
+   "refusal_accuracy": 0.0,
+   "p50_ms": 65.8,
+   "p95_ms": 120.0,
+   "positives": [
+    {
+     "job_id": "dev-fu-01862",
+     "category": "devops",
+     "retrieved": [
+      "fullstack_dev-case-011",
+      "fullstack_dev-case-020",
+      "fullstack_dev-review-011",
+      "fullstack_dev-case-019",
+      "fullstack_dev-case-005",
+      "fullstack_dev-repo-011",
+      "fullstack_dev-case-018",
+      "fullstack_dev-review-019",
+      "fullstack_dev-case-009",
+      "fullstack_dev-repo-001"
+     ],
+     "gold": {
+      "fullstack_dev-case-005": 2,
+      "fullstack_dev-case-011": 3,
+      "fullstack_dev-repo-011": 3,
+      "fullstack_dev-case-018": 2,
+      "fullstack_dev-case-019": 2,
+      "fullstack_dev-case-020": 3
+     },
+     "latency_ms": 120.04,
+     "recall@5": 0.6666666666666666,
+     "mrr": 1.0,
+     "ndcg@10": 0.9454105464721378
+    },
+    {
+     "job_id": "dev-fu-01724",
+     "category": "web_app",
+     "retrieved": [
+      "fullstack_dev-case-001",
+      "fullstack_dev-repo-001",
+      "fullstack_dev-case-012",
+      "fullstack_dev-case-015",
+      "fullstack_dev-case-010",
+      "fullstack_dev-repo-012",
+      "fullstack_dev-case-002",
+      "fullstack_dev-review-012",
+      "fullstack_dev-review-014",
+      "fullstack_dev-case-007"
+     ],
+     "gold": {
+      "fullstack_dev-case-001": 4,
+      "fullstack_dev-repo-001": 4,
+      "fullstack_dev-case-002": 2,
+      "fullstack_dev-repo-002": 2,
+      "fullstack_dev-case-003": 2,
+      "fullstack_dev-case-008": 2,
+      "fullstack_dev-case-010": 3,
+      "fullstack_dev-case-012": 4,
+      "fullstack_dev-repo-012": 4,
+      "fullstack_dev-case-015": 3,
+      "fullstack_dev-case-016": 2,
+      "fullstack_dev-repo-016": 2
+     },
+     "latency_ms": 74.72,
+     "recall@5": 0.4166666666666667,
+     "mrr": 1.0,
+     "ndcg@10": 0.8739022652820405
+    },
+    {
+     "job_id": "dev-fu-01735",
+     "category": "devops",
+     "retrieved": [
+      "fullstack_dev-review-011",
+      "fullstack_dev-case-019",
+      "fullstack_dev-case-005",
+      "fullstack_dev-case-020",
+      "fullstack_dev-case-018",
+      "fullstack_dev-review-019",
+      "fullstack_dev-case-010",
+      "fullstack_dev-case-011",
+      "fullstack_dev-repo-011",
+      "fullstack_dev-repo-016"
+     ],
+     "gold": {
+      "fullstack_dev-case-005": 3,
+      "fullstack_dev-case-011": 4,
+      "fullstack_dev-repo-011": 4,
+      "fullstack_dev-case-018": 2,
+      "fullstack_dev-case-019": 3,
+      "fullstack_dev-case-020": 3
+     },
+     "latency_ms": 50.27,
+     "recall@5": 0.6666666666666666,
+     "mrr": 0.5,
+     "ndcg@10": 0.7082582268432649
+    },
+    {
+     "job_id": "dev-fu-01719",
+     "category": "devops",
+     "retrieved": [
+      "fullstack_dev-case-018",
+      "fullstack_dev-case-020",
+      "fullstack_dev-case-011",
+      "fullstack_dev-case-005",
+      "fullstack_dev-review-011",
+      "fullstack_dev-case-010",
+      "fullstack_dev-case-006",
+      "fullstack_dev-case-019",
+      "fullstack_dev-review-019",
+      "fullstack_dev-repo-011"
+     ],
+     "gold": {
+      "fullstack_dev-case-005": 3,
+      "fullstack_dev-case-011": 3,
+      "fullstack_dev-repo-011": 3,
+      "fullstack_dev-case-018": 2,
+      "fullstack_dev-case-019": 3,
+      "fullstack_dev-case-020": 2
+     },
+     "latency_ms": 55.4,
+     "recall@5": 0.6666666666666666,
+     "mrr": 1.0,
+     "ndcg@10": 0.857870536070338
+    },
+    {
+     "job_id": "dev-fu-01736",
+     "category": "api_backend",
+     "retrieved": [
+      "fullstack_dev-case-004",
+      "fullstack_dev-case-009",
+      "fullstack_dev-case-013",
+      "fullstack_dev-review-017",
+      "fullstack_dev-review-011",
+      "fullstack_dev-case-001",
+      "fullstack_dev-case-015",
+      "fullstack_dev-case-003",
+      "fullstack_dev-case-012",
+      "fullstack_dev-review-003"
+     ],
+     "gold": {
+      "fullstack_dev-case-003": 2,
+      "fullstack_dev-case-004": 2,
+      "fullstack_dev-case-009": 3,
+      "fullstack_dev-case-016": 2,
+      "fullstack_dev-repo-016": 2
+     },
+     "latency_ms": 65.77,
+     "recall@5": 0.4,
+     "mrr": 1.0,
+     "ndcg@10": 0.6559043993764747
+    }
+   ],
+   "negatives": [
+    {
+     "job_id": "dev-fu-01834",
+     "category": "design",
+     "refused": false
+    },
+    {
+     "job_id": "dev-fu-01843",
+     "category": "blockchain",
+     "refused": false
+    }
+   ]
+  },
+  {
+   "persona": "fullstack_dev",
+   "variant": "best",
+   "n_pos": 5,
+   "n_neg": 2,
+   "recall@5": 0.43,
+   "mrr": 1.0,
+   "ndcg@10": 0.6997,
+   "refusal_accuracy": 0.0,
+   "p50_ms": 46091.7,
+   "p95_ms": 50756.6,
+   "positives": [
+    {
+     "job_id": "dev-fu-01862",
+     "category": "devops",
+     "retrieved": [
+      "fullstack_dev-case-011",
+      "fullstack_dev-case-020",
+      "fullstack_dev-case-013",
+      "fullstack_dev-case-005",
+      "fullstack_dev-case-016",
+      "fullstack_dev-case-019",
+      "fullstack_dev-case-018",
+      "fullstack_dev-repo-016",
+      "fullstack_dev-repo-007",
+      "fullstack_dev-repo-002"
+     ],
+     "gold": {
+      "fullstack_dev-case-005": 2,
+      "fullstack_dev-case-011": 3,
+      "fullstack_dev-repo-011": 3,
+      "fullstack_dev-case-018": 2,
+      "fullstack_dev-case-019": 2,
+      "fullstack_dev-case-020": 3
+     },
+     "latency_ms": 49895.18,
+     "recall@5": 0.5,
+     "mrr": 1.0,
+     "ndcg@10": 0.8161337863108904
+    },
+    {
+     "job_id": "dev-fu-01724",
+     "category": "web_app",
+     "retrieved": [
+      "fullstack_dev-case-001",
+      "fullstack_dev-case-012",
+      "fullstack_dev-case-004",
+      "fullstack_dev-case-013",
+      "fullstack_dev-case-010",
+      "fullstack_dev-case-018",
+      "fullstack_dev-case-005",
+      "fullstack_dev-repo-007",
+      "fullstack_dev-repo-001",
+      "fullstack_dev-case-015"
+     ],
+     "gold": {
+      "fullstack_dev-case-001": 4,
+      "fullstack_dev-repo-001": 4,
+      "fullstack_dev-case-002": 2,
+      "fullstack_dev-repo-002": 2,
+      "fullstack_dev-case-003": 2,
+      "fullstack_dev-case-008": 2,
+      "fullstack_dev-case-010": 3,
+      "fullstack_dev-case-012": 4,
+      "fullstack_dev-repo-012": 4,
+      "fullstack_dev-case-015": 3,
+      "fullstack_dev-case-016": 2,
+      "fullstack_dev-repo-016": 2
+     },
+     "latency_ms": 50756.63,
+     "recall@5": 0.25,
+     "mrr": 1.0,
+     "ndcg@10": 0.652399961046835
+    },
+    {
+     "job_id": "dev-fu-01735",
+     "category": "devops",
+     "retrieved": [
+      "fullstack_dev-case-019",
+      "fullstack_dev-case-020",
+      "fullstack_dev-case-016",
+      "fullstack_dev-case-018",
+      "fullstack_dev-case-013",
+      "fullstack_dev-case-004",
+      "fullstack_dev-case-011",
+      "fullstack_dev-case-005",
+      "fullstack_dev-review-011",
+      "fullstack_dev-repo-011"
+     ],
+     "gold": {
+      "fullstack_dev-case-005": 3,
+      "fullstack_dev-case-011": 4,
+      "fullstack_dev-repo-011": 4,
+      "fullstack_dev-case-018": 2,
+      "fullstack_dev-case-019": 3,
+      "fullstack_dev-case-020": 3
+     },
+     "latency_ms": 46091.72,
+     "recall@5": 0.5,
+     "mrr": 1.0,
+     "ndcg@10": 0.8213744223248008
+    },
+    {
+     "job_id": "dev-fu-01719",
+     "category": "devops",
+     "retrieved": [
+      "fullstack_dev-case-018",
+      "fullstack_dev-case-005",
+      "fullstack_dev-case-020",
+      "fullstack_dev-repo-016",
+      "fullstack_dev-case-006",
+      "fullstack_dev-repo-002",
+      "fullstack_dev-case-016",
+      "fullstack_dev-case-014",
+      "fullstack_dev-review-019",
+      "fullstack_dev-case-011"
+     ],
+     "gold": {
+      "fullstack_dev-case-005": 3,
+      "fullstack_dev-case-011": 3,
+      "fullstack_dev-repo-011": 3,
+      "fullstack_dev-case-018": 2,
+      "fullstack_dev-case-019": 3,
+      "fullstack_dev-case-020": 2
+     },
+     "latency_ms": 41990.79,
+     "recall@5": 0.5,
+     "mrr": 1.0,
+     "ndcg@10": 0.6280691418447073
+    },
+    {
+     "job_id": "dev-fu-01736",
+     "category": "api_backend",
+     "retrieved": [
+      "fullstack_dev-case-004",
+      "fullstack_dev-case-013",
+      "fullstack_dev-case-005",
+      "fullstack_dev-case-009",
+      "fullstack_dev-case-010",
+      "fullstack_dev-case-003",
+      "fullstack_dev-review-019",
+      "fullstack_dev-case-014",
+      "fullstack_dev-repo-012",
+      "fullstack_dev-case-020"
+     ],
+     "gold": {
+      "fullstack_dev-case-003": 2,
+      "fullstack_dev-case-004": 2,
+      "fullstack_dev-case-009": 3,
+      "fullstack_dev-case-016": 2,
+      "fullstack_dev-repo-016": 2
+     },
+     "latency_ms": 42623.34,
+     "recall@5": 0.4,
+     "mrr": 1.0,
+     "ndcg@10": 0.5806135306219757
+    }
+   ],
+   "negatives": [
+    {
+     "job_id": "dev-fu-01834",
+     "category": "design",
+     "refused": false
+    },
+    {
+     "job_id": "dev-fu-01843",
+     "category": "blockchain",
+     "refused": false
+    }
+   ]
+  },
+  {
+   "persona": "data_analyst",
+   "variant": "v0_naive",
+   "n_pos": 7,
+   "n_neg": 1,
+   "recall@5": 0.2666,
+   "mrr": 0.7619,
+   "ndcg@10": 0.5093,
+   "refusal_accuracy": 0.0,
+   "p50_ms": 7.6,
+   "p95_ms": 37.2,
+   "positives": [
+    {
+     "job_id": "dev-da-01943",
+     "category": "analytics",
+     "retrieved": [
+      "data_analyst-case-011",
+      "data_analyst-repo-011",
+      "data_analyst-case-007",
+      "data_analyst-case-002",
+      "data_analyst-case-014",
+      "data_analyst-case-020",
+      "data_analyst-repo-002",
+      "data_analyst-case-005",
+      "data_analyst-case-016",
+      "data_analyst-case-009"
+     ],
+     "gold": {
+      "data_analyst-case-002": 2,
+      "data_analyst-repo-002": 2,
+      "data_analyst-case-007": 2,
+      "data_analyst-repo-007": 2,
+      "data_analyst-case-013": 2,
+      "data_analyst-case-020": 3
+     },
+     "latency_ms": 37.25,
+     "recall@5": 0.3333333333333333,
+     "mrr": 0.3333333333333333,
+     "ndcg@10": 0.47266186504680774
+    },
+    {
+     "job_id": "dev-da-01940",
+     "category": "reporting",
+     "retrieved": [
+      "data_analyst-case-019",
+      "data_analyst-case-017",
+      "data_analyst-case-001",
+      "data_analyst-case-008",
+      "data_analyst-case-020",
+      "data_analyst-case-004",
+      "data_analyst-case-016",
+      "data_analyst-review-008",
+      "data_analyst-review-006",
+      "data_analyst-case-012"
+     ],
+     "gold": {
+      "data_analyst-case-001": 2,
+      "data_analyst-repo-001": 2,
+      "data_analyst-case-002": 2,
+      "data_analyst-repo-002": 2,
+      "data_analyst-case-007": 2,
+      "data_analyst-repo-007": 2,
+      "data_analyst-case-008": 3,
+      "data_analyst-case-010": 2,
+      "data_analyst-case-012": 3,
+      "data_analyst-repo-012": 3,
+      "data_analyst-case-013": 2,
+      "data_analyst-case-014": 2,
+      "data_analyst-case-017": 4,
+      "data_analyst-repo-017": 4,
+      "data_analyst-case-019": 3,
+      "data_analyst-case-020": 2
+     },
+     "latency_ms": 9.25,
+     "recall@5": 0.3125,
+     "mrr": 1.0,
+     "ndcg@10": 0.6743807429690757
+    },
+    {
+     "job_id": "dev-da-01971",
+     "category": "experimentation",
+     "retrieved": [
+      "data_analyst-case-016",
+      "data_analyst-case-014",
+      "data_analyst-repo-017",
+      "data_analyst-case-007",
+      "data_analyst-review-017",
+      "data_analyst-case-017",
+      "data_analyst-review-014",
+      "data_analyst-repo-016",
+      "data_analyst-case-003",
+      "data_analyst-review-009"
+     ],
+     "gold": {
+      "data_analyst-case-003": 3,
+      "data_analyst-case-005": 2,
+      "data_analyst-case-006": 2,
+      "data_analyst-repo-006": 2,
+      "data_analyst-case-013": 2,
+      "data_analyst-case-016": 3,
+      "data_analyst-repo-016": 3,
+      "data_analyst-case-020": 2
+     },
+     "latency_ms": 9.94,
+     "recall@5": 0.125,
+     "mrr": 1.0,
+     "ndcg@10": 0.4831194302331646
+    },
+    {
+     "job_id": "dev-da-02075",
+     "category": "reporting",
+     "retrieved": [
+      "data_analyst-case-004",
+      "data_analyst-case-008",
+      "data_analyst-case-019",
+      "data_analyst-review-008",
+      "data_analyst-case-016",
+      "data_analyst-case-011",
+      "data_analyst-review-018",
+      "data_analyst-case-001",
+      "data_analyst-case-014",
+      "data_analyst-review-006"
+     ],
+     "gold": {
+      "data_analyst-case-002": 2,
+      "data_analyst-repo-002": 2,
+      "data_analyst-case-010": 2,
+      "data_analyst-case-013": 2,
+      "data_analyst-case-020": 2
+     },
+     "latency_ms": 7.64,
+     "recall@5": 0.0,
+     "mrr": 0.0,
+     "ndcg@10": 0.0
+    },
+    {
+     "job_id": "dev-da-01903",
+     "category": "data_engineering",
+     "retrieved": [
+      "data_analyst-case-004",
+      "data_analyst-case-020",
+      "data_analyst-case-016",
+      "data_analyst-case-009",
+      "data_analyst-case-014",
+      "data_analyst-review-009",
+      "data_analyst-case-012",
+      "data_analyst-case-010",
+      "data_analyst-case-013",
+      "data_analyst-case-003"
+     ],
+     "gold": {
+      "data_analyst-case-002": 2,
+      "data_analyst-repo-002": 2,
+      "data_analyst-case-004": 2,
+      "data_analyst-case-010": 2,
+      "data_analyst-case-013": 2,
+      "data_analyst-case-015": 2,
+      "data_analyst-case-016": 2,
+      "data_analyst-repo-016": 2,
+      "data_analyst-case-020": 2
+     },
+     "latency_ms": 5.94,
+     "recall@5": 0.3333333333333333,
+     "mrr": 1.0,
+     "ndcg@10": 0.6457699306980325
+    },
+    {
+     "job_id": "dev-da-02051",
+     "category": "experimentation",
+     "retrieved": [
+      "data_analyst-case-016",
+      "data_analyst-case-011",
+      "data_analyst-case-003",
+      "data_analyst-repo-016",
+      "data_analyst-case-001",
+      "data_analyst-case-014",
+      "data_analyst-review-018",
+      "data_analyst-repo-011",
+      "data_analyst-review-009",
+      "data_analyst-case-020"
+     ],
+     "gold": {
+      "data_analyst-case-002": 2,
+      "data_analyst-repo-002": 2,
+      "data_analyst-case-003": 3,
+      "data_analyst-case-004": 2,
+      "data_analyst-case-005": 3,
+      "data_analyst-case-010": 2,
+      "data_analyst-case-011": 2,
+      "data_analyst-repo-011": 2,
+      "data_analyst-case-013": 2,
+      "data_analyst-case-016": 4,
+      "data_analyst-repo-016": 4,
+      "data_analyst-case-020": 2
+     },
+     "latency_ms": 6.15,
+     "recall@5": 0.3333333333333333,
+     "mrr": 1.0,
+     "ndcg@10": 0.7299606303338941
+    },
+    {
+     "job_id": "dev-da-01973",
+     "category": "reporting",
+     "retrieved": [
+      "data_analyst-case-008",
+      "data_analyst-case-001",
+      "data_analyst-review-008",
+      "data_analyst-case-017",
+      "data_analyst-review-014",
+      "data_analyst-case-014",
+      "data_analyst-case-004",
+      "data_analyst-case-012",
+      "data_analyst-review-006",
+      "data_analyst-case-016"
+     ],
+     "gold": {
+      "data_analyst-case-001": 2,
+      "data_analyst-repo-001": 2,
+      "data_analyst-case-008": 2,
+      "data_analyst-case-012": 3,
+      "data_analyst-repo-012": 3,
+      "data_analyst-case-017": 3,
+      "data_analyst-repo-017": 3
+     },
+     "latency_ms": 6.45,
+     "recall@5": 0.42857142857142855,
+     "mrr": 1.0,
+     "ndcg@10": 0.5591079822463367
+    }
+   ],
+   "negatives": [
+    {
+     "job_id": "dev-da-02029",
+     "category": "writing",
+     "refused": false
+    }
+   ]
+  },
+  {
+   "persona": "data_analyst",
+   "variant": "v1_decompose",
+   "n_pos": 7,
+   "n_neg": 1,
+   "recall@5": 0.2968,
+   "mrr": 0.6429,
+   "ndcg@10": 0.4702,
+   "refusal_accuracy": 0.0,
+   "p50_ms": 26.7,
+   "p95_ms": 38.5,
+   "positives": [
+    {
+     "job_id": "dev-da-01943",
+     "category": "analytics",
+     "retrieved": [
+      "data_analyst-repo-011",
+      "data_analyst-case-020",
+      "data_analyst-case-007",
+      "data_analyst-repo-007",
+      "data_analyst-case-019",
+      "data_analyst-case-016",
+      "data_analyst-case-013",
+      "data_analyst-case-018",
+      "data_analyst-review-018",
+      "data_analyst-review-014"
+     ],
+     "gold": {
+      "data_analyst-case-002": 2,
+      "data_analyst-repo-002": 2,
+      "data_analyst-case-007": 2,
+      "data_analyst-repo-007": 2,
+      "data_analyst-case-013": 2,
+      "data_analyst-case-020": 3
+     },
+     "latency_ms": 24.43,
+     "recall@5": 0.5,
+     "mrr": 0.5,
+     "ndcg@10": 0.5809719812445556
+    },
+    {
+     "job_id": "dev-da-01940",
+     "category": "reporting",
+     "retrieved": [
+      "data_analyst-case-019",
+      "data_analyst-case-001",
+      "data_analyst-case-020",
+      "data_analyst-review-006",
+      "data_analyst-repo-007",
+      "data_analyst-review-018",
+      "data_analyst-case-004",
+      "data_analyst-case-012",
+      "data_analyst-review-014",
+      "data_analyst-repo-002"
+     ],
+     "gold": {
+      "data_analyst-case-001": 2,
+      "data_analyst-repo-001": 2,
+      "data_analyst-case-002": 2,
+      "data_analyst-repo-002": 2,
+      "data_analyst-case-007": 2,
+      "data_analyst-repo-007": 2,
+      "data_analyst-case-008": 3,
+      "data_analyst-case-010": 2,
+      "data_analyst-case-012": 3,
+      "data_analyst-repo-012": 3,
+      "data_analyst-case-013": 2,
+      "data_analyst-case-014": 2,
+      "data_analyst-case-017": 4,
+      "data_analyst-repo-017": 4,
+      "data_analyst-case-019": 3,
+      "data_analyst-case-020": 2
+     },
+     "latency_ms": 38.48,
+     "recall@5": 0.25,
+     "mrr": 1.0,
+     "ndcg@10": 0.5391316551094623
+    },
+    {
+     "job_id": "dev-da-01971",
+     "category": "experimentation",
+     "retrieved": [
+      "data_analyst-review-018",
+      "data_analyst-case-016",
+      "data_analyst-repo-016",
+      "data_analyst-case-001",
+      "data_analyst-case-003",
+      "data_analyst-case-004",
+      "data_analyst-case-020",
+      "data_analyst-case-014",
+      "data_analyst-case-007",
+      "data_analyst-review-009"
+     ],
+     "gold": {
+      "data_analyst-case-003": 3,
+      "data_analyst-case-005": 2,
+      "data_analyst-case-006": 2,
+      "data_analyst-repo-006": 2,
+      "data_analyst-case-013": 2,
+      "data_analyst-case-016": 3,
+      "data_analyst-repo-016": 3,
+      "data_analyst-case-020": 2
+     },
+     "latency_ms": 26.68,
+     "recall@5": 0.375,
+     "mrr": 0.5,
+     "ndcg@10": 0.5200326544220004
+    },
+    {
+     "job_id": "dev-da-02075",
+     "category": "reporting",
+     "retrieved": [
+      "data_analyst-case-019",
+      "data_analyst-case-016",
+      "data_analyst-review-018",
+      "data_analyst-review-006",
+      "data_analyst-review-014",
+      "data_analyst-case-020",
+      "data_analyst-case-008",
+      "data_analyst-case-004",
+      "data_analyst-review-008",
+      "data_analyst-case-001"
+     ],
+     "gold": {
+      "data_analyst-case-002": 2,
+      "data_analyst-repo-002": 2,
+      "data_analyst-case-010": 2,
+      "data_analyst-case-013": 2,
+      "data_analyst-case-020": 2
+     },
+     "latency_ms": 21.0,
+     "recall@5": 0.0,
+     "mrr": 0.16666666666666666,
+     "ndcg@10": 0.1208113026994942
+    },
+    {
+     "job_id": "dev-da-01903",
+     "category": "data_engineering",
+     "retrieved": [
+      "data_analyst-case-020",
+      "data_analyst-case-004",
+      "data_analyst-case-009",
+      "data_analyst-case-010",
+      "data_analyst-case-019",
+      "data_analyst-case-016",
+      "data_analyst-case-014",
+      "data_analyst-review-009",
+      "data_analyst-repo-011",
+      "data_analyst-case-006"
+     ],
+     "gold": {
+      "data_analyst-case-002": 2,
+      "data_analyst-repo-002": 2,
+      "data_analyst-case-004": 2,
+      "data_analyst-case-010": 2,
+      "data_analyst-case-013": 2,
+      "data_analyst-case-015": 2,
+      "data_analyst-case-016": 2,
+      "data_analyst-repo-016": 2,
+      "data_analyst-case-020": 2
+     },
+     "latency_ms": 21.49,
+     "recall@5": 0.3333333333333333,
+     "mrr": 1.0,
+     "ndcg@10": 0.5682963021961281
+    },
+    {
+     "job_id": "dev-da-02051",
+     "category": "experimentation",
+     "retrieved": [
+      "data_analyst-case-016",
+      "data_analyst-review-018",
+      "data_analyst-case-020",
+      "data_analyst-case-011",
+      "data_analyst-case-003",
+      "data_analyst-case-001",
+      "data_analyst-repo-016",
+      "data_analyst-repo-011",
+      "data_analyst-review-006",
+      "data_analyst-case-009"
+     ],
+     "gold": {
+      "data_analyst-case-002": 2,
+      "data_analyst-repo-002": 2,
+      "data_analyst-case-003": 3,
+      "data_analyst-case-004": 2,
+      "data_analyst-case-005": 3,
+      "data_analyst-case-010": 2,
+      "data_analyst-case-011": 2,
+      "data_analyst-repo-011": 2,
+      "data_analyst-case-013": 2,
+      "data_analyst-case-016": 4,
+      "data_analyst-repo-016": 4,
+      "data_analyst-case-020": 2
+     },
+     "latency_ms": 30.6,
+     "recall@5": 0.3333333333333333,
+     "mrr": 1.0,
+     "ndcg@10": 0.6766873687419811
+    },
+    {
+     "job_id": "dev-da-01973",
+     "category": "reporting",
+     "retrieved": [
+      "data_analyst-review-009",
+      "data_analyst-case-019",
+      "data_analyst-repo-001",
+      "data_analyst-case-001",
+      "data_analyst-review-006",
+      "data_analyst-case-009",
+      "data_analyst-review-018",
+      "data_analyst-case-017",
+      "data_analyst-review-008",
+      "data_analyst-case-004"
+     ],
+     "gold": {
+      "data_analyst-case-001": 2,
+      "data_analyst-repo-001": 2,
+      "data_analyst-case-008": 2,
+      "data_analyst-case-012": 3,
+      "data_analyst-repo-012": 3,
+      "data_analyst-case-017": 3,
+      "data_analyst-repo-017": 3
+     },
+     "latency_ms": 29.19,
+     "recall@5": 0.2857142857142857,
+     "mrr": 0.3333333333333333,
+     "ndcg@10": 0.28540966810829893
+    }
+   ],
+   "negatives": [
+    {
+     "job_id": "dev-da-02029",
+     "category": "writing",
+     "refused": false
+    }
+   ]
+  },
+  {
+   "persona": "data_analyst",
+   "variant": "v2_hybrid",
+   "n_pos": 7,
+   "n_neg": 1,
+   "recall@5": 0.3092,
+   "mrr": 0.8061,
+   "ndcg@10": 0.5992,
+   "refusal_accuracy": 0.0,
+   "p50_ms": 6.0,
+   "p95_ms": 12.5,
+   "positives": [
+    {
+     "job_id": "dev-da-01943",
+     "category": "analytics",
+     "retrieved": [
+      "data_analyst-case-011",
+      "data_analyst-case-007",
+      "data_analyst-case-014",
+      "data_analyst-repo-011",
+      "data_analyst-case-020",
+      "data_analyst-case-013",
+      "data_analyst-case-002",
+      "data_analyst-case-005",
+      "data_analyst-case-018",
+      "data_analyst-case-003"
+     ],
+     "gold": {
+      "data_analyst-case-002": 2,
+      "data_analyst-repo-002": 2,
+      "data_analyst-case-007": 2,
+      "data_analyst-repo-007": 2,
+      "data_analyst-case-013": 2,
+      "data_analyst-case-020": 3
+     },
+     "latency_ms": 12.5,
+     "recall@5": 0.3333333333333333,
+     "mrr": 0.5,
+     "ndcg@10": 0.4995837563660736
+    },
+    {
+     "job_id": "dev-da-01940",
+     "category": "reporting",
+     "retrieved": [
+      "data_analyst-case-019",
+      "data_analyst-case-017",
+      "data_analyst-case-001",
+      "data_analyst-case-016",
+      "data_analyst-case-020",
+      "data_analyst-case-012",
+      "data_analyst-case-011",
+      "data_analyst-case-002",
+      "data_analyst-case-008",
+      "data_analyst-review-006"
+     ],
+     "gold": {
+      "data_analyst-case-001": 2,
+      "data_analyst-repo-001": 2,
+      "data_analyst-case-002": 2,
+      "data_analyst-repo-002": 2,
+      "data_analyst-case-007": 2,
+      "data_analyst-repo-007": 2,
+      "data_analyst-case-008": 3,
+      "data_analyst-case-010": 2,
+      "data_analyst-case-012": 3,
+      "data_analyst-repo-012": 3,
+      "data_analyst-case-013": 2,
+      "data_analyst-case-014": 2,
+      "data_analyst-case-017": 4,
+      "data_analyst-repo-017": 4,
+      "data_analyst-case-019": 3,
+      "data_analyst-case-020": 2
+     },
+     "latency_ms": 6.6,
+     "recall@5": 0.25,
+     "mrr": 1.0,
+     "ndcg@10": 0.7060020914076643
+    },
+    {
+     "job_id": "dev-da-01971",
+     "category": "experimentation",
+     "retrieved": [
+      "data_analyst-case-016",
+      "data_analyst-case-014",
+      "data_analyst-case-007",
+      "data_analyst-case-003",
+      "data_analyst-case-013",
+      "data_analyst-repo-017",
+      "data_analyst-case-020",
+      "data_analyst-case-011",
+      "data_analyst-case-017",
+      "data_analyst-case-018"
+     ],
+     "gold": {
+      "data_analyst-case-003": 3,
+      "data_analyst-case-005": 2,
+      "data_analyst-case-006": 2,
+      "data_analyst-repo-006": 2,
+      "data_analyst-case-013": 2,
+      "data_analyst-case-016": 3,
+      "data_analyst-repo-016": 3,
+      "data_analyst-case-020": 2
+     },
+     "latency_ms": 5.72,
+     "recall@5": 0.375,
+     "mrr": 1.0,
+     "ndcg@10": 0.571078162951858
+    },
+    {
+     "job_id": "dev-da-02075",
+     "category": "reporting",
+     "retrieved": [
+      "data_analyst-case-016",
+      "data_analyst-case-011",
+      "data_analyst-case-004",
+      "data_analyst-case-019",
+      "data_analyst-case-017",
+      "data_analyst-case-001",
+      "data_analyst-case-010",
+      "data_analyst-case-013",
+      "data_analyst-case-020",
+      "data_analyst-case-008"
+     ],
+     "gold": {
+      "data_analyst-case-002": 2,
+      "data_analyst-repo-002": 2,
+      "data_analyst-case-010": 2,
+      "data_analyst-case-013": 2,
+      "data_analyst-case-020": 2
+     },
+     "latency_ms": 5.78,
+     "recall@5": 0.0,
+     "mrr": 0.14285714285714285,
+     "ndcg@10": 0.32214392924804747
+    },
+    {
+     "job_id": "dev-da-01903",
+     "category": "data_engineering",
+     "retrieved": [
+      "data_analyst-case-004",
+      "data_analyst-case-010",
+      "data_analyst-case-013",
+      "data_analyst-case-016",
+      "data_analyst-case-012",
+      "data_analyst-case-014",
+      "data_analyst-case-003",
+      "data_analyst-repo-012",
+      "data_analyst-review-004",
+      "data_analyst-case-015"
+     ],
+     "gold": {
+      "data_analyst-case-002": 2,
+      "data_analyst-repo-002": 2,
+      "data_analyst-case-004": 2,
+      "data_analyst-case-010": 2,
+      "data_analyst-case-013": 2,
+      "data_analyst-case-015": 2,
+      "data_analyst-case-016": 2,
+      "data_analyst-repo-016": 2,
+      "data_analyst-case-020": 2
+     },
+     "latency_ms": 6.92,
+     "recall@5": 0.4444444444444444,
+     "mrr": 1.0,
+     "ndcg@10": 0.6700375638224682
+    },
+    {
+     "job_id": "dev-da-02051",
+     "category": "experimentation",
+     "retrieved": [
+      "data_analyst-case-016",
+      "data_analyst-case-011",
+      "data_analyst-case-003",
+      "data_analyst-case-001",
+      "data_analyst-case-020",
+      "data_analyst-case-014",
+      "data_analyst-case-005",
+      "data_analyst-case-009",
+      "data_analyst-case-004",
+      "data_analyst-repo-011"
+     ],
+     "gold": {
+      "data_analyst-case-002": 2,
+      "data_analyst-repo-002": 2,
+      "data_analyst-case-003": 3,
+      "data_analyst-case-004": 2,
+      "data_analyst-case-005": 3,
+      "data_analyst-case-010": 2,
+      "data_analyst-case-011": 2,
+      "data_analyst-repo-011": 2,
+      "data_analyst-case-013": 2,
+      "data_analyst-case-016": 4,
+      "data_analyst-repo-016": 4,
+      "data_analyst-case-020": 2
+     },
+     "latency_ms": 5.27,
+     "recall@5": 0.3333333333333333,
+     "mrr": 1.0,
+     "ndcg@10": 0.7316270607014728
+    },
+    {
+     "job_id": "dev-da-01973",
+     "category": "reporting",
+     "retrieved": [
+      "data_analyst-case-008",
+      "data_analyst-case-017",
+      "data_analyst-case-001",
+      "data_analyst-review-008",
+      "data_analyst-case-014",
+      "data_analyst-case-012",
+      "data_analyst-case-004",
+      "data_analyst-review-014",
+      "data_analyst-case-016",
+      "data_analyst-repo-017"
+     ],
+     "gold": {
+      "data_analyst-case-001": 2,
+      "data_analyst-repo-001": 2,
+      "data_analyst-case-008": 2,
+      "data_analyst-case-012": 3,
+      "data_analyst-repo-012": 3,
+      "data_analyst-case-017": 3,
+      "data_analyst-repo-017": 3
+     },
+     "latency_ms": 5.95,
+     "recall@5": 0.42857142857142855,
+     "mrr": 1.0,
+     "ndcg@10": 0.6941328597006033
+    }
+   ],
+   "negatives": [
+    {
+     "job_id": "dev-da-02029",
+     "category": "writing",
+     "refused": false
+    }
+   ]
+  },
+  {
+   "persona": "data_analyst",
+   "variant": "v3_rerank",
+   "n_pos": 7,
+   "n_neg": 1,
+   "recall@5": 0.39,
+   "mrr": 0.6905,
+   "ndcg@10": 0.5164,
+   "refusal_accuracy": 0.0,
+   "p50_ms": 9639.4,
+   "p95_ms": 11987.2,
+   "positives": [
+    {
+     "job_id": "dev-da-01943",
+     "category": "analytics",
+     "retrieved": [
+      "data_analyst-repo-011",
+      "data_analyst-repo-007",
+      "data_analyst-repo-002",
+      "data_analyst-case-007",
+      "data_analyst-case-013",
+      "data_analyst-case-010",
+      "data_analyst-case-005",
+      "data_analyst-case-011",
+      "data_analyst-case-018",
+      "data_analyst-case-014"
+     ],
+     "gold": {
+      "data_analyst-case-002": 2,
+      "data_analyst-repo-002": 2,
+      "data_analyst-case-007": 2,
+      "data_analyst-repo-007": 2,
+      "data_analyst-case-013": 2,
+      "data_analyst-case-020": 3
+     },
+     "latency_ms": 10224.71,
+     "recall@5": 0.6666666666666666,
+     "mrr": 0.5,
+     "ndcg@10": 0.5121235246868028
+    },
+    {
+     "job_id": "dev-da-01940",
+     "category": "reporting",
+     "retrieved": [
+      "data_analyst-case-001",
+      "data_analyst-repo-001",
+      "data_analyst-case-007",
+      "data_analyst-repo-012",
+      "data_analyst-repo-007",
+      "data_analyst-repo-011",
+      "data_analyst-repo-002",
+      "data_analyst-case-010",
+      "data_analyst-repo-017",
+      "data_analyst-case-009"
+     ],
+     "gold": {
+      "data_analyst-case-001": 2,
+      "data_analyst-repo-001": 2,
+      "data_analyst-case-002": 2,
+      "data_analyst-repo-002": 2,
+      "data_analyst-case-007": 2,
+      "data_analyst-repo-007": 2,
+      "data_analyst-case-008": 3,
+      "data_analyst-case-010": 2,
+      "data_analyst-case-012": 3,
+      "data_analyst-repo-012": 3,
+      "data_analyst-case-013": 2,
+      "data_analyst-case-014": 2,
+      "data_analyst-case-017": 4,
+      "data_analyst-repo-017": 4,
+      "data_analyst-case-019": 3,
+      "data_analyst-case-020": 2
+     },
+     "latency_ms": 11987.16,
+     "recall@5": 0.3125,
+     "mrr": 1.0,
+     "ndcg@10": 0.6296435009282163
+    },
+    {
+     "job_id": "dev-da-01971",
+     "category": "experimentation",
+     "retrieved": [
+      "data_analyst-repo-017",
+      "data_analyst-case-007",
+      "data_analyst-case-013",
+      "data_analyst-repo-007",
+      "data_analyst-case-003",
+      "data_analyst-repo-011",
+      "data_analyst-case-014",
+      "data_analyst-case-020",
+      "data_analyst-case-006",
+      "data_analyst-repo-001"
+     ],
+     "gold": {
+      "data_analyst-case-003": 3,
+      "data_analyst-case-005": 2,
+      "data_analyst-case-006": 2,
+      "data_analyst-repo-006": 2,
+      "data_analyst-case-013": 2,
+      "data_analyst-case-016": 3,
+      "data_analyst-repo-016": 3,
+      "data_analyst-case-020": 2
+     },
+     "latency_ms": 9639.42,
+     "recall@5": 0.25,
+     "mrr": 0.3333333333333333,
+     "ndcg@10": 0.338074906115334
+    },
+    {
+     "job_id": "dev-da-02075",
+     "category": "reporting",
+     "retrieved": [
+      "data_analyst-repo-011",
+      "data_analyst-case-010",
+      "data_analyst-case-011",
+      "data_analyst-case-013",
+      "data_analyst-case-020",
+      "data_analyst-case-009",
+      "data_analyst-case-004",
+      "data_analyst-case-012",
+      "data_analyst-case-008",
+      "data_analyst-case-001"
+     ],
+     "gold": {
+      "data_analyst-case-002": 2,
+      "data_analyst-repo-002": 2,
+      "data_analyst-case-010": 2,
+      "data_analyst-case-013": 2,
+      "data_analyst-case-020": 2
+     },
+     "latency_ms": 6926.31,
+     "recall@5": 0.6,
+     "mrr": 0.5,
+     "ndcg@10": 0.4912596920895758
+    },
+    {
+     "job_id": "dev-da-01903",
+     "category": "data_engineering",
+     "retrieved": [
+      "data_analyst-case-004",
+      "data_analyst-case-010",
+      "data_analyst-case-012",
+      "data_analyst-repo-012",
+      "data_analyst-case-003",
+      "data_analyst-case-005",
+      "data_analyst-case-009",
+      "data_analyst-case-020",
+      "data_analyst-review-004",
+      "data_analyst-case-006"
+     ],
+     "gold": {
+      "data_analyst-case-002": 2,
+      "data_analyst-repo-002": 2,
+      "data_analyst-case-004": 2,
+      "data_analyst-case-010": 2,
+      "data_analyst-case-013": 2,
+      "data_analyst-case-015": 2,
+      "data_analyst-case-016": 2,
+      "data_analyst-repo-016": 2,
+      "data_analyst-case-020": 2
+     },
+     "latency_ms": 4272.1,
+     "recall@5": 0.2222222222222222,
+     "mrr": 1.0,
+     "ndcg@10": 0.45749139526970906
+    },
+    {
+     "job_id": "dev-da-02051",
+     "category": "experimentation",
+     "retrieved": [
+      "data_analyst-repo-001",
+      "data_analyst-case-003",
+      "data_analyst-case-011",
+      "data_analyst-case-002",
+      "data_analyst-case-014",
+      "data_analyst-case-007",
+      "data_analyst-case-010",
+      "data_analyst-case-004",
+      "data_analyst-repo-011",
+      "data_analyst-case-020"
+     ],
+     "gold": {
+      "data_analyst-case-002": 2,
+      "data_analyst-repo-002": 2,
+      "data_analyst-case-003": 3,
+      "data_analyst-case-004": 2,
+      "data_analyst-case-005": 3,
+      "data_analyst-case-010": 2,
+      "data_analyst-case-011": 2,
+      "data_analyst-repo-011": 2,
+      "data_analyst-case-013": 2,
+      "data_analyst-case-016": 4,
+      "data_analyst-repo-016": 4,
+      "data_analyst-case-020": 2
+     },
+     "latency_ms": 10971.66,
+     "recall@5": 0.25,
+     "mrr": 0.5,
+     "ndcg@10": 0.4692839205855218
+    },
+    {
+     "job_id": "dev-da-01973",
+     "category": "reporting",
+     "retrieved": [
+      "data_analyst-repo-012",
+      "data_analyst-case-001",
+      "data_analyst-review-014",
+      "data_analyst-review-012",
+      "data_analyst-case-012",
+      "data_analyst-case-014",
+      "data_analyst-repo-017",
+      "data_analyst-case-008",
+      "data_analyst-review-009",
+      "data_analyst-case-004"
+     ],
+     "gold": {
+      "data_analyst-case-001": 2,
+      "data_analyst-repo-001": 2,
+      "data_analyst-case-008": 2,
+      "data_analyst-case-012": 3,
+      "data_analyst-repo-012": 3,
+      "data_analyst-case-017": 3,
+      "data_analyst-repo-017": 3
+     },
+     "latency_ms": 5804.02,
+     "recall@5": 0.42857142857142855,
+     "mrr": 1.0,
+     "ndcg@10": 0.716978091638729
+    }
+   ],
+   "negatives": [
+    {
+     "job_id": "dev-da-02029",
+     "category": "writing",
+     "refused": false
+    }
+   ]
+  },
+  {
+   "persona": "data_analyst",
+   "variant": "v9_skill_graph",
+   "n_pos": 7,
+   "n_neg": 1,
+   "recall@5": 0.3051,
+   "mrr": 0.6833,
+   "ndcg@10": 0.5873,
+   "refusal_accuracy": 0.0,
+   "p50_ms": 30.0,
+   "p95_ms": 47.0,
+   "positives": [
+    {
+     "job_id": "dev-da-01943",
+     "category": "analytics",
+     "retrieved": [
+      "data_analyst-case-009",
+      "data_analyst-case-011",
+      "data_analyst-case-018",
+      "data_analyst-repo-011",
+      "data_analyst-case-002",
+      "data_analyst-case-020",
+      "data_analyst-review-009",
+      "data_analyst-case-007",
+      "data_analyst-case-001",
+      "data_analyst-review-011"
+     ],
+     "gold": {
+      "data_analyst-case-002": 2,
+      "data_analyst-repo-002": 2,
+      "data_analyst-case-007": 2,
+      "data_analyst-repo-007": 2,
+      "data_analyst-case-013": 2,
+      "data_analyst-case-020": 3
+     },
+     "latency_ms": 37.85,
+     "recall@5": 0.16666666666666666,
+     "mrr": 0.2,
+     "ndcg@10": 0.32502941525679085
+    },
+    {
+     "job_id": "dev-da-01940",
+     "category": "reporting",
+     "retrieved": [
+      "data_analyst-case-019",
+      "data_analyst-case-017",
+      "data_analyst-case-002",
+      "data_analyst-case-020",
+      "data_analyst-case-008",
+      "data_analyst-case-012",
+      "data_analyst-case-001",
+      "data_analyst-case-007",
+      "data_analyst-review-006",
+      "data_analyst-repo-007"
+     ],
+     "gold": {
+      "data_analyst-case-001": 2,
+      "data_analyst-repo-001": 2,
+      "data_analyst-case-002": 2,
+      "data_analyst-repo-002": 2,
+      "data_analyst-case-007": 2,
+      "data_analyst-repo-007": 2,
+      "data_analyst-case-008": 3,
+      "data_analyst-case-010": 2,
+      "data_analyst-case-012": 3,
+      "data_analyst-repo-012": 3,
+      "data_analyst-case-013": 2,
+      "data_analyst-case-014": 2,
+      "data_analyst-case-017": 4,
+      "data_analyst-repo-017": 4,
+      "data_analyst-case-019": 3,
+      "data_analyst-case-020": 2
+     },
+     "latency_ms": 47.0,
+     "recall@5": 0.3125,
+     "mrr": 1.0,
+     "ndcg@10": 0.8193832936680288
+    },
+    {
+     "job_id": "dev-da-01971",
+     "category": "experimentation",
+     "retrieved": [
+      "data_analyst-case-011",
+      "data_analyst-case-018",
+      "data_analyst-repo-011",
+      "data_analyst-case-020",
+      "data_analyst-case-003",
+      "data_analyst-case-005",
+      "data_analyst-case-016",
+      "data_analyst-review-018",
+      "data_analyst-case-009",
+      "data_analyst-case-007"
+     ],
+     "gold": {
+      "data_analyst-case-003": 3,
+      "data_analyst-case-005": 2,
+      "data_analyst-case-006": 2,
+      "data_analyst-repo-006": 2,
+      "data_analyst-case-013": 2,
+      "data_analyst-case-016": 3,
+      "data_analyst-repo-016": 3,
+      "data_analyst-case-020": 2
+     },
+     "latency_ms": 30.04,
+     "recall@5": 0.25,
+     "mrr": 0.25,
+     "ndcg@10": 0.3720241529353848
+    },
+    {
+     "job_id": "dev-da-02075",
+     "category": "reporting",
+     "retrieved": [
+      "data_analyst-case-019",
+      "data_analyst-case-017",
+      "data_analyst-case-020",
+      "data_analyst-case-009",
+      "data_analyst-review-009",
+      "data_analyst-case-007",
+      "data_analyst-review-007",
+      "data_analyst-repo-007",
+      "data_analyst-case-016",
+      "data_analyst-case-011"
+     ],
+     "gold": {
+      "data_analyst-case-002": 2,
+      "data_analyst-repo-002": 2,
+      "data_analyst-case-010": 2,
+      "data_analyst-case-013": 2,
+      "data_analyst-case-020": 2
+     },
+     "latency_ms": 18.9,
+     "recall@5": 0.2,
+     "mrr": 0.3333333333333333,
+     "ndcg@10": 0.16958010263680806
+    },
+    {
+     "job_id": "dev-da-01903",
+     "category": "data_engineering",
+     "retrieved": [
+      "data_analyst-case-013",
+      "data_analyst-case-010",
+      "data_analyst-case-005",
+      "data_analyst-case-004",
+      "data_analyst-case-015",
+      "data_analyst-review-004",
+      "data_analyst-case-002",
+      "data_analyst-case-016",
+      "data_analyst-case-012",
+      "data_analyst-case-009"
+     ],
+     "gold": {
+      "data_analyst-case-002": 2,
+      "data_analyst-repo-002": 2,
+      "data_analyst-case-004": 2,
+      "data_analyst-case-010": 2,
+      "data_analyst-case-013": 2,
+      "data_analyst-case-015": 2,
+      "data_analyst-case-016": 2,
+      "data_analyst-repo-016": 2,
+      "data_analyst-case-020": 2
+     },
+     "latency_ms": 19.99,
+     "recall@5": 0.4444444444444444,
+     "mrr": 1.0,
+     "ndcg@10": 0.7279965505724832
+    },
+    {
+     "job_id": "dev-da-02051",
+     "category": "experimentation",
+     "retrieved": [
+      "data_analyst-case-016",
+      "data_analyst-case-011",
+      "data_analyst-case-003",
+      "data_analyst-case-020",
+      "data_analyst-case-001",
+      "data_analyst-case-005",
+      "data_analyst-case-004",
+      "data_analyst-repo-011",
+      "data_analyst-repo-016",
+      "data_analyst-case-015"
+     ],
+     "gold": {
+      "data_analyst-case-002": 2,
+      "data_analyst-repo-002": 2,
+      "data_analyst-case-003": 3,
+      "data_analyst-case-004": 2,
+      "data_analyst-case-005": 3,
+      "data_analyst-case-010": 2,
+      "data_analyst-case-011": 2,
+      "data_analyst-repo-011": 2,
+      "data_analyst-case-013": 2,
+      "data_analyst-case-016": 4,
+      "data_analyst-repo-016": 4,
+      "data_analyst-case-020": 2
+     },
+     "latency_ms": 32.57,
+     "recall@5": 0.3333333333333333,
+     "mrr": 1.0,
+     "ndcg@10": 0.84290975974076
+    },
+    {
+     "job_id": "dev-da-01973",
+     "category": "reporting",
+     "retrieved": [
+      "data_analyst-case-012",
+      "data_analyst-case-008",
+      "data_analyst-case-017",
+      "data_analyst-review-009",
+      "data_analyst-case-019",
+      "data_analyst-repo-012",
+      "data_analyst-case-001",
+      "data_analyst-review-008",
+      "data_analyst-repo-017",
+      "data_analyst-review-017"
+     ],
+     "gold": {
+      "data_analyst-case-001": 2,
+      "data_analyst-repo-001": 2,
+      "data_analyst-case-008": 2,
+      "data_analyst-case-012": 3,
+      "data_analyst-repo-012": 3,
+      "data_analyst-case-017": 3,
+      "data_analyst-repo-017": 3
+     },
+     "latency_ms": 27.75,
+     "recall@5": 0.42857142857142855,
+     "mrr": 1.0,
+     "ndcg@10": 0.8538904761967677
+    }
+   ],
+   "negatives": [
+    {
+     "job_id": "dev-da-02029",
+     "category": "writing",
+     "refused": false
+    }
+   ]
+  },
+  {
+   "persona": "data_analyst",
+   "variant": "best",
+   "n_pos": 7,
+   "n_neg": 1,
+   "recall@5": 0.4237,
+   "mrr": 0.9286,
+   "ndcg@10": 0.6861,
+   "refusal_accuracy": 0.0,
+   "p50_ms": 28818.8,
+   "p95_ms": 39707.8,
+   "positives": [
+    {
+     "job_id": "dev-da-01943",
+     "category": "analytics",
+     "retrieved": [
+      "data_analyst-case-007",
+      "data_analyst-case-013",
+      "data_analyst-repo-007",
+      "data_analyst-case-010",
+      "data_analyst-case-014",
+      "data_analyst-case-002",
+      "data_analyst-case-001",
+      "data_analyst-case-011",
+      "data_analyst-case-018",
+      "data_analyst-case-020"
+     ],
+     "gold": {
+      "data_analyst-case-002": 2,
+      "data_analyst-repo-002": 2,
+      "data_analyst-case-007": 2,
+      "data_analyst-repo-007": 2,
+      "data_analyst-case-013": 2,
+      "data_analyst-case-020": 3
+     },
+     "latency_ms": 28728.53,
+     "recall@5": 0.5,
+     "mrr": 1.0,
+     "ndcg@10": 0.767671576232571
+    },
+    {
+     "job_id": "dev-da-01940",
+     "category": "reporting",
+     "retrieved": [
+      "data_analyst-case-020",
+      "data_analyst-case-002",
+      "data_analyst-case-017",
+      "data_analyst-case-010",
+      "data_analyst-case-019",
+      "data_analyst-case-001",
+      "data_analyst-case-008",
+      "data_analyst-case-014",
+      "data_analyst-case-011",
+      "data_analyst-review-006"
+     ],
+     "gold": {
+      "data_analyst-case-001": 2,
+      "data_analyst-repo-001": 2,
+      "data_analyst-case-002": 2,
+      "data_analyst-repo-002": 2,
+      "data_analyst-case-007": 2,
+      "data_analyst-repo-007": 2,
+      "data_analyst-case-008": 3,
+      "data_analyst-case-010": 2,
+      "data_analyst-case-012": 3,
+      "data_analyst-repo-012": 3,
+      "data_analyst-case-013": 2,
+      "data_analyst-case-014": 2,
+      "data_analyst-case-017": 4,
+      "data_analyst-repo-017": 4,
+      "data_analyst-case-019": 3,
+      "data_analyst-case-020": 2
+     },
+     "latency_ms": 39707.84,
+     "recall@5": 0.3125,
+     "mrr": 1.0,
+     "ndcg@10": 0.6865371901381574
+    },
+    {
+     "job_id": "dev-da-01971",
+     "category": "experimentation",
+     "retrieved": [
+      "data_analyst-case-004",
+      "data_analyst-case-003",
+      "data_analyst-case-020",
+      "data_analyst-case-016",
+      "data_analyst-case-011",
+      "data_analyst-case-001",
+      "data_analyst-case-007",
+      "data_analyst-case-013",
+      "data_analyst-repo-007",
+      "data_analyst-case-014"
+     ],
+     "gold": {
+      "data_analyst-case-003": 3,
+      "data_analyst-case-005": 2,
+      "data_analyst-case-006": 2,
+      "data_analyst-repo-006": 2,
+      "data_analyst-case-013": 2,
+      "data_analyst-case-016": 3,
+      "data_analyst-repo-016": 3,
+      "data_analyst-case-020": 2
+     },
+     "latency_ms": 33377.97,
+     "recall@5": 0.375,
+     "mrr": 0.5,
+     "ndcg@10": 0.4797585611909643
+    },
+    {
+     "job_id": "dev-da-02075",
+     "category": "reporting",
+     "retrieved": [
+      "data_analyst-case-013",
+      "data_analyst-case-020",
+      "data_analyst-case-009",
+      "data_analyst-case-002",
+      "data_analyst-case-016",
+      "data_analyst-review-009",
+      "data_analyst-case-010",
+      "data_analyst-case-011",
+      "data_analyst-case-001",
+      "data_analyst-case-012"
+     ],
+     "gold": {
+      "data_analyst-case-002": 2,
+      "data_analyst-repo-002": 2,
+      "data_analyst-case-010": 2,
+      "data_analyst-case-013": 2,
+      "data_analyst-case-020": 2
+     },
+     "latency_ms": 23222.55,
+     "recall@5": 0.6,
+     "mrr": 1.0,
+     "ndcg@10": 0.8122682216087221
+    },
+    {
+     "job_id": "dev-da-01903",
+     "category": "data_engineering",
+     "retrieved": [
+      "data_analyst-case-004",
+      "data_analyst-case-010",
+      "data_analyst-review-004",
+      "data_analyst-case-013",
+      "data_analyst-case-012",
+      "data_analyst-case-003",
+      "data_analyst-repo-012",
+      "data_analyst-case-005",
+      "data_analyst-case-009",
+      "data_analyst-repo-016"
+     ],
+     "gold": {
+      "data_analyst-case-002": 2,
+      "data_analyst-repo-002": 2,
+      "data_analyst-case-004": 2,
+      "data_analyst-case-010": 2,
+      "data_analyst-case-013": 2,
+      "data_analyst-case-015": 2,
+      "data_analyst-case-016": 2,
+      "data_analyst-repo-016": 2,
+      "data_analyst-case-020": 2
+     },
+     "latency_ms": 19761.35,
+     "recall@5": 0.3333333333333333,
+     "mrr": 1.0,
+     "ndcg@10": 0.5525147891152254
+    },
+    {
+     "job_id": "dev-da-02051",
+     "category": "experimentation",
+     "retrieved": [
+      "data_analyst-case-016",
+      "data_analyst-case-011",
+      "data_analyst-repo-016",
+      "data_analyst-case-004",
+      "data_analyst-case-003",
+      "data_analyst-case-020",
+      "data_analyst-repo-011",
+      "data_analyst-case-001",
+      "data_analyst-case-017",
+      "data_analyst-repo-001"
+     ],
+     "gold": {
+      "data_analyst-case-002": 2,
+      "data_analyst-repo-002": 2,
+      "data_analyst-case-003": 3,
+      "data_analyst-case-004": 2,
+      "data_analyst-case-005": 3,
+      "data_analyst-case-010": 2,
+      "data_analyst-case-011": 2,
+      "data_analyst-repo-011": 2,
+      "data_analyst-case-013": 2,
+      "data_analyst-case-016": 4,
+      "data_analyst-repo-016": 4,
+      "data_analyst-case-020": 2
+     },
+     "latency_ms": 28818.79,
+     "recall@5": 0.4166666666666667,
+     "mrr": 1.0,
+     "ndcg@10": 0.8029464841913152
+    },
+    {
+     "job_id": "dev-da-01973",
+     "category": "reporting",
+     "retrieved": [
+      "data_analyst-repo-012",
+      "data_analyst-case-012",
+      "data_analyst-review-009",
+      "data_analyst-case-017",
+      "data_analyst-case-002",
+      "data_analyst-case-001",
+      "data_analyst-case-010",
+      "data_analyst-case-020",
+      "data_analyst-review-012",
+      "data_analyst-case-014"
+     ],
+     "gold": {
+      "data_analyst-case-001": 2,
+      "data_analyst-repo-001": 2,
+      "data_analyst-case-008": 2,
+      "data_analyst-case-012": 3,
+      "data_analyst-repo-012": 3,
+      "data_analyst-case-017": 3,
+      "data_analyst-repo-017": 3
+     },
+     "latency_ms": 30133.39,
+     "recall@5": 0.42857142857142855,
+     "mrr": 1.0,
+     "ndcg@10": 0.7011089482953988
+    }
+   ],
+   "negatives": [
+    {
+     "job_id": "dev-da-02029",
+     "category": "writing",
+     "refused": false
+    }
+   ]
+  }
+ ],
+ "summary": {
+  "v0_naive": {
+   "recall@5": 0.3683,
+   "mrr": 0.8873,
+   "ndcg@10": 0.6106,
+   "p95_ms": 12468.63,
+   "refusal_accuracy": 0.0,
+   "by_category": {
+    "analytics": {
+     "n_pos": 1,
+     "n_neg": 0,
+     "recall@5": 0.3333,
+     "mrr": 0.3333,
+     "ndcg@10": 0.4727,
+     "refusal_accuracy": null
+    },
+    "api_backend": {
+     "n_pos": 1,
+     "n_neg": 0,
+     "recall@5": 0.2,
+     "mrr": 1.0,
+     "ndcg@10": 0.29,
+     "refusal_accuracy": null
+    },
+    "blockchain": {
+     "n_pos": 0,
+     "n_neg": 1,
+     "recall@5": null,
+     "mrr": null,
+     "ndcg@10": null,
+     "refusal_accuracy": 0.0
+    },
+    "data_engineering": {
+     "n_pos": 1,
+     "n_neg": 0,
+     "recall@5": 0.3333,
+     "mrr": 1.0,
+     "ndcg@10": 0.6458,
+     "refusal_accuracy": null
+    },
+    "design": {
+     "n_pos": 0,
+     "n_neg": 2,
+     "recall@5": null,
+     "mrr": null,
+     "ndcg@10": null,
+     "refusal_accuracy": 0.0
+    },
+    "devops": {
+     "n_pos": 3,
+     "n_neg": 0,
+     "recall@5": 0.5,
+     "mrr": 1.0,
+     "ndcg@10": 0.7264,
+     "refusal_accuracy": null
+    },
+    "experimentation": {
+     "n_pos": 2,
+     "n_neg": 0,
+     "recall@5": 0.2292,
+     "mrr": 1.0,
+     "ndcg@10": 0.6065,
+     "refusal_accuracy": null
+    },
+    "llm_apps": {
+     "n_pos": 1,
+     "n_neg": 0,
+     "recall@5": 0.375,
+     "mrr": 1.0,
+     "ndcg@10": 0.5985,
+     "refusal_accuracy": null
+    },
+    "ml_modeling": {
+     "n_pos": 3,
+     "n_neg": 0,
+     "recall@5": 0.5111,
+     "mrr": 1.0,
+     "ndcg@10": 0.8096,
+     "refusal_accuracy": null
+    },
+    "nlp": {
+     "n_pos": 1,
+     "n_neg": 0,
+     "recall@5": 0.5,
+     "mrr": 1.0,
+     "ndcg@10": 0.8588,
+     "refusal_accuracy": null
+    },
+    "reporting": {
+     "n_pos": 3,
+     "n_neg": 0,
+     "recall@5": 0.247,
+     "mrr": 0.6667,
+     "ndcg@10": 0.4112,
+     "refusal_accuracy": null
+    },
+    "web_app": {
+     "n_pos": 1,
+     "n_neg": 0,
+     "recall@5": 0.0833,
+     "mrr": 0.5,
+     "ndcg@10": 0.2579,
+     "refusal_accuracy": null
+    },
+    "wordpress": {
+     "n_pos": 0,
+     "n_neg": 1,
+     "recall@5": null,
+     "mrr": null,
+     "ndcg@10": null,
+     "refusal_accuracy": 0.0
+    },
+    "writing": {
+     "n_pos": 0,
+     "n_neg": 1,
+     "recall@5": null,
+     "mrr": null,
+     "ndcg@10": null,
+     "refusal_accuracy": 0.0
+    }
+   }
+  },
+  "v1_decompose": {
+   "recall@5": 0.3423,
+   "mrr": 0.6699,
+   "ndcg@10": 0.5594,
+   "p95_ms": 580.58,
+   "refusal_accuracy": 0.0,
+   "by_category": {
+    "analytics": {
+     "n_pos": 1,
+     "n_neg": 0,
+     "recall@5": 0.5,
+     "mrr": 0.5,
+     "ndcg@10": 0.581,
+     "refusal_accuracy": null
+    },
+    "api_backend": {
+     "n_pos": 1,
+     "n_neg": 0,
+     "recall@5": 0.2,
+     "mrr": 0.3333,
+     "ndcg@10": 0.2483,
+     "refusal_accuracy": null
+    },
+    "blockchain": {
+     "n_pos": 0,
+     "n_neg": 1,
+     "recall@5": null,
+     "mrr": null,
+     "ndcg@10": null,
+     "refusal_accuracy": 0.0
+    },
+    "data_engineering": {
+     "n_pos": 1,
+     "n_neg": 0,
+     "recall@5": 0.3333,
+     "mrr": 1.0,
+     "ndcg@10": 0.5683,
+     "refusal_accuracy": null
+    },
+    "design": {
+     "n_pos": 0,
+     "n_neg": 2,
+     "recall@5": null,
+     "mrr": null,
+     "ndcg@10": null,
+     "refusal_accuracy": 0.0
+    },
+    "devops": {
+     "n_pos": 3,
+     "n_neg": 0,
+     "recall@5": 0.4444,
+     "mrr": 0.8333,
+     "ndcg@10": 0.6876,
+     "refusal_accuracy": null
+    },
+    "experimentation": {
+     "n_pos": 2,
+     "n_neg": 0,
+     "recall@5": 0.3542,
+     "mrr": 0.75,
+     "ndcg@10": 0.5984,
+     "refusal_accuracy": null
+    },
+    "llm_apps": {
+     "n_pos": 1,
+     "n_neg": 0,
+     "recall@5": 0.375,
+     "mrr": 1.0,
+     "ndcg@10": 0.6653,
+     "refusal_accuracy": null
+    },
+    "ml_modeling": {
+     "n_pos": 3,
+     "n_neg": 0,
+     "recall@5": 0.3444,
+     "mrr": 0.6667,
+     "ndcg@10": 0.6639,
+     "refusal_accuracy": null
+    },
+    "nlp": {
+     "n_pos": 1,
+     "n_neg": 0,
+     "recall@5": 0.375,
+     "mrr": 0.5,
+     "ndcg@10": 0.4718,
+     "refusal_accuracy": null
+    },
+    "reporting": {
+     "n_pos": 3,
+     "n_neg": 0,
+     "recall@5": 0.1786,
+     "mrr": 0.5,
+     "ndcg@10": 0.3151,
+     "refusal_accuracy": null
+    },
+    "web_app": {
+     "n_pos": 1,
+     "n_neg": 0,
+     "recall@5": 0.3333,
+     "mrr": 0.5,
+     "ndcg@10": 0.6003,
+     "refusal_accuracy": null
+    },
+    "wordpress": {
+     "n_pos": 0,
+     "n_neg": 1,
+     "recall@5": null,
+     "mrr": null,
+     "ndcg@10": null,
+     "refusal_accuracy": 0.0
+    },
+    "writing": {
+     "n_pos": 0,
+     "n_neg": 1,
+     "recall@5": null,
+     "mrr": null,
+     "ndcg@10": null,
+     "refusal_accuracy": 0.0
+    }
+   }
+  },
+  "v2_hybrid": {
+   "recall@5": 0.4481,
+   "mrr": 0.902,
+   "ndcg@10": 0.7117,
+   "p95_ms": 287.49,
+   "refusal_accuracy": 0.0,
+   "by_category": {
+    "analytics": {
+     "n_pos": 1,
+     "n_neg": 0,
+     "recall@5": 0.3333,
+     "mrr": 0.5,
+     "ndcg@10": 0.4996,
+     "refusal_accuracy": null
+    },
+    "api_backend": {
+     "n_pos": 1,
+     "n_neg": 0,
+     "recall@5": 0.2,
+     "mrr": 1.0,
+     "ndcg@10": 0.5124,
+     "refusal_accuracy": null
+    },
+    "blockchain": {
+     "n_pos": 0,
+     "n_neg": 1,
+     "recall@5": null,
+     "mrr": null,
+     "ndcg@10": null,
+     "refusal_accuracy": 0.0
+    },
+    "data_engineering": {
+     "n_pos": 1,
+     "n_neg": 0,
+     "recall@5": 0.4444,
+     "mrr": 1.0,
+     "ndcg@10": 0.67,
+     "refusal_accuracy": null
+    },
+    "design": {
+     "n_pos": 0,
+     "n_neg": 2,
+     "recall@5": null,
+     "mrr": null,
+     "ndcg@10": null,
+     "refusal_accuracy": 0.0
+    },
+    "devops": {
+     "n_pos": 3,
+     "n_neg": 0,
+     "recall@5": 0.6111,
+     "mrr": 1.0,
+     "ndcg@10": 0.8443,
+     "refusal_accuracy": null
+    },
+    "experimentation": {
+     "n_pos": 2,
+     "n_neg": 0,
+     "recall@5": 0.3542,
+     "mrr": 1.0,
+     "ndcg@10": 0.6514,
+     "refusal_accuracy": null
+    },
+    "llm_apps": {
+     "n_pos": 1,
+     "n_neg": 0,
+     "recall@5": 0.375,
+     "mrr": 0.5,
+     "ndcg@10": 0.5167,
+     "refusal_accuracy": null
+    },
+    "ml_modeling": {
+     "n_pos": 3,
+     "n_neg": 0,
+     "recall@5": 0.6444,
+     "mrr": 1.0,
+     "ndcg@10": 0.867,
+     "refusal_accuracy": null
+    },
+    "nlp": {
+     "n_pos": 1,
+     "n_neg": 0,
+     "recall@5": 0.5,
+     "mrr": 1.0,
+     "ndcg@10": 0.8275,
+     "refusal_accuracy": null
+    },
+    "reporting": {
+     "n_pos": 3,
+     "n_neg": 0,
+     "recall@5": 0.2262,
+     "mrr": 0.7143,
+     "ndcg@10": 0.5741,
+     "refusal_accuracy": null
+    },
+    "web_app": {
+     "n_pos": 1,
+     "n_neg": 0,
+     "recall@5": 0.3333,
+     "mrr": 1.0,
+     "ndcg@10": 0.689,
+     "refusal_accuracy": null
+    },
+    "wordpress": {
+     "n_pos": 0,
+     "n_neg": 1,
+     "recall@5": null,
+     "mrr": null,
+     "ndcg@10": null,
+     "refusal_accuracy": 0.0
+    },
+    "writing": {
+     "n_pos": 0,
+     "n_neg": 1,
+     "recall@5": null,
+     "mrr": null,
+     "ndcg@10": null,
+     "refusal_accuracy": 0.0
+    }
+   }
+  },
+  "v3_rerank": {
+   "recall@5": 0.3811,
+   "mrr": 0.7968,
+   "ndcg@10": 0.5759,
+   "p95_ms": 88900.53,
+   "refusal_accuracy": 0.0,
+   "by_category": {
+    "analytics": {
+     "n_pos": 1,
+     "n_neg": 0,
+     "recall@5": 0.6667,
+     "mrr": 0.5,
+     "ndcg@10": 0.5121,
+     "refusal_accuracy": null
+    },
+    "api_backend": {
+     "n_pos": 1,
+     "n_neg": 0,
+     "recall@5": 0.2,
+     "mrr": 0.5,
+     "ndcg@10": 0.183,
+     "refusal_accuracy": null
+    },
+    "blockchain": {
+     "n_pos": 0,
+     "n_neg": 1,
+     "recall@5": null,
+     "mrr": null,
+     "ndcg@10": null,
+     "refusal_accuracy": 0.0
+    },
+    "data_engineering": {
+     "n_pos": 1,
+     "n_neg": 0,
+     "recall@5": 0.2222,
+     "mrr": 1.0,
+     "ndcg@10": 0.4575,
+     "refusal_accuracy": null
+    },
+    "design": {
+     "n_pos": 0,
+     "n_neg": 2,
+     "recall@5": null,
+     "mrr": null,
+     "ndcg@10": null,
+     "refusal_accuracy": 0.0
+    },
+    "devops": {
+     "n_pos": 3,
+     "n_neg": 0,
+     "recall@5": 0.3889,
+     "mrr": 0.8333,
+     "ndcg@10": 0.6723,
+     "refusal_accuracy": null
+    },
+    "experimentation": {
+     "n_pos": 2,
+     "n_neg": 0,
+     "recall@5": 0.25,
+     "mrr": 0.4167,
+     "ndcg@10": 0.4037,
+     "refusal_accuracy": null
+    },
+    "llm_apps": {
+     "n_pos": 1,
+     "n_neg": 0,
+     "recall@5": 0.25,
+     "mrr": 1.0,
+     "ndcg@10": 0.512,
+     "refusal_accuracy": null
+    },
+    "ml_modeling": {
+     "n_pos": 3,
+     "n_neg": 0,
+     "recall@5": 0.5222,
+     "mrr": 1.0,
+     "ndcg@10": 0.7339,
+     "refusal_accuracy": null
+    },
+    "nlp": {
+     "n_pos": 1,
+     "n_neg": 0,
+     "recall@5": 0.5,
+     "mrr": 1.0,
+     "ndcg@10": 0.7361,
+     "refusal_accuracy": null
+    },
+    "reporting": {
+     "n_pos": 3,
+     "n_neg": 0,
+     "recall@5": 0.447,
+     "mrr": 0.8333,
+     "ndcg@10": 0.6126,
+     "refusal_accuracy": null
+    },
+    "web_app": {
+     "n_pos": 1,
+     "n_neg": 0,
+     "recall@5": 0.0833,
+     "mrr": 0.5,
+     "ndcg@10": 0.4064,
+     "refusal_accuracy": null
+    },
+    "wordpress": {
+     "n_pos": 0,
+     "n_neg": 1,
+     "recall@5": null,
+     "mrr": null,
+     "ndcg@10": null,
+     "refusal_accuracy": 0.0
+    },
+    "writing": {
+     "n_pos": 0,
+     "n_neg": 1,
+     "recall@5": null,
+     "mrr": null,
+     "ndcg@10": null,
+     "refusal_accuracy": 0.0
+    }
+   }
+  },
+  "v9_skill_graph": {
+   "recall@5": 0.4739,
+   "mrr": 0.8611,
+   "ndcg@10": 0.7497,
+   "p95_ms": 261.29,
+   "refusal_accuracy": 0.0,
+   "by_category": {
+    "analytics": {
+     "n_pos": 1,
+     "n_neg": 0,
+     "recall@5": 0.1667,
+     "mrr": 0.2,
+     "ndcg@10": 0.325,
+     "refusal_accuracy": null
+    },
+    "api_backend": {
+     "n_pos": 1,
+     "n_neg": 0,
+     "recall@5": 0.4,
+     "mrr": 1.0,
+     "ndcg@10": 0.6559,
+     "refusal_accuracy": null
+    },
+    "blockchain": {
+     "n_pos": 0,
+     "n_neg": 1,
+     "recall@5": null,
+     "mrr": null,
+     "ndcg@10": null,
+     "refusal_accuracy": 0.0
+    },
+    "data_engineering": {
+     "n_pos": 1,
+     "n_neg": 0,
+     "recall@5": 0.4444,
+     "mrr": 1.0,
+     "ndcg@10": 0.728,
+     "refusal_accuracy": null
+    },
+    "design": {
+     "n_pos": 0,
+     "n_neg": 2,
+     "recall@5": null,
+     "mrr": null,
+     "ndcg@10": null,
+     "refusal_accuracy": 0.0
+    },
+    "devops": {
+     "n_pos": 3,
+     "n_neg": 0,
+     "recall@5": 0.6667,
+     "mrr": 0.8333,
+     "ndcg@10": 0.8372,
+     "refusal_accuracy": null
+    },
+    "experimentation": {
+     "n_pos": 2,
+     "n_neg": 0,
+     "recall@5": 0.2917,
+     "mrr": 0.625,
+     "ndcg@10": 0.6075,
+     "refusal_accuracy": null
+    },
+    "llm_apps": {
+     "n_pos": 1,
+     "n_neg": 0,
+     "recall@5": 0.5,
+     "mrr": 1.0,
+     "ndcg@10": 0.8383,
+     "refusal_accuracy": null
+    },
+    "ml_modeling": {
+     "n_pos": 3,
+     "n_neg": 0,
+     "recall@5": 0.5889,
+     "mrr": 1.0,
+     "ndcg@10": 0.857,
+     "refusal_accuracy": null
+    },
+    "nlp": {
+     "n_pos": 1,
+     "n_neg": 0,
+     "recall@5": 0.5,
+     "mrr": 1.0,
+     "ndcg@10": 0.8588,
+     "refusal_accuracy": null
+    },
+    "reporting": {
+     "n_pos": 3,
+     "n_neg": 0,
+     "recall@5": 0.3137,
+     "mrr": 0.7778,
+     "ndcg@10": 0.6143,
+     "refusal_accuracy": null
+    },
+    "web_app": {
+     "n_pos": 1,
+     "n_neg": 0,
+     "recall@5": 0.4167,
+     "mrr": 1.0,
+     "ndcg@10": 0.8739,
+     "refusal_accuracy": null
+    },
+    "wordpress": {
+     "n_pos": 0,
+     "n_neg": 1,
+     "recall@5": null,
+     "mrr": null,
+     "ndcg@10": null,
+     "refusal_accuracy": 0.0
+    },
+    "writing": {
+     "n_pos": 0,
+     "n_neg": 1,
+     "recall@5": null,
+     "mrr": null,
+     "ndcg@10": null,
+     "refusal_accuracy": 0.0
+    }
+   }
+  },
+  "best": {
+   "recall@5": 0.3696,
+   "mrr": 0.8262,
+   "ndcg@10": 0.633,
+   "p95_ms": 146754.46,
+   "refusal_accuracy": 0.0,
+   "by_category": {
+    "analytics": {
+     "n_pos": 1,
+     "n_neg": 0,
+     "recall@5": 0.5,
+     "mrr": 1.0,
+     "ndcg@10": 0.7677,
+     "refusal_accuracy": null
+    },
+    "api_backend": {
+     "n_pos": 1,
+     "n_neg": 0,
+     "recall@5": 0.4,
+     "mrr": 1.0,
+     "ndcg@10": 0.5806,
+     "refusal_accuracy": null
+    },
+    "blockchain": {
+     "n_pos": 0,
+     "n_neg": 1,
+     "recall@5": null,
+     "mrr": null,
+     "ndcg@10": null,
+     "refusal_accuracy": 0.0
+    },
+    "data_engineering": {
+     "n_pos": 1,
+     "n_neg": 0,
+     "recall@5": 0.3333,
+     "mrr": 1.0,
+     "ndcg@10": 0.5525,
+     "refusal_accuracy": null
+    },
+    "design": {
+     "n_pos": 0,
+     "n_neg": 2,
+     "recall@5": null,
+     "mrr": null,
+     "ndcg@10": null,
+     "refusal_accuracy": 0.0
+    },
+    "devops": {
+     "n_pos": 3,
+     "n_neg": 0,
+     "recall@5": 0.5,
+     "mrr": 1.0,
+     "ndcg@10": 0.7552,
+     "refusal_accuracy": null
+    },
+    "experimentation": {
+     "n_pos": 2,
+     "n_neg": 0,
+     "recall@5": 0.3958,
+     "mrr": 0.75,
+     "ndcg@10": 0.6414,
+     "refusal_accuracy": null
+    },
+    "llm_apps": {
+     "n_pos": 1,
+     "n_neg": 0,
+     "recall@5": 0.375,
+     "mrr": 1.0,
+     "ndcg@10": 0.6137,
+     "refusal_accuracy": null
+    },
+    "ml_modeling": {
+     "n_pos": 3,
+     "n_neg": 0,
+     "recall@5": 0.3,
+     "mrr": 0.5833,
+     "ndcg@10": 0.6507,
+     "refusal_accuracy": null
+    },
+    "nlp": {
+     "n_pos": 1,
+     "n_neg": 0,
+     "recall@5": 0.0,
+     "mrr": 0.0,
+     "ndcg@10": 0.0,
+     "refusal_accuracy": null
+    },
+    "reporting": {
+     "n_pos": 3,
+     "n_neg": 0,
+     "recall@5": 0.447,
+     "mrr": 1.0,
+     "ndcg@10": 0.7333,
+     "refusal_accuracy": null
+    },
+    "web_app": {
+     "n_pos": 1,
+     "n_neg": 0,
+     "recall@5": 0.25,
+     "mrr": 1.0,
+     "ndcg@10": 0.6524,
+     "refusal_accuracy": null
+    },
+    "wordpress": {
+     "n_pos": 0,
+     "n_neg": 1,
+     "recall@5": null,
+     "mrr": null,
+     "ndcg@10": null,
+     "refusal_accuracy": 0.0
+    },
+    "writing": {
+     "n_pos": 0,
+     "n_neg": 1,
+     "recall@5": null,
+     "mrr": null,
+     "ndcg@10": null,
+     "refusal_accuracy": 0.0
+    }
+   }
+  }
+ },
+ "description": {
+  "v0_naive": "Naive dense: fixed chunks, top-k cosine on the whole post",
+  "v1_decompose": "Requirement decomposition",
+  "v2_hybrid": "Hybrid BM25 + dense with RRF",
+  "v3_rerank": "Hybrid + cross-encoder rerank",
+  "v9_skill_graph": "Skill graph (GraphRAG)",
+  "best": "Shipped composition (agent/config.yaml rag.best)"
+ }
+}

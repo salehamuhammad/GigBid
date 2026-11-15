@@ -1,0 +1,233 @@
+{
+ "env": {
+  "model_profile": "open",
+  "embeddings": {
+   "provider": "fastembed",
+   "model": "BAAI/bge-small-en-v1.5"
+  },
+  "reranker": "lexical",
+  "deployed_variant": "best",
+  "at": "2026-11-15 09:19:34"
+ },
+ "planned_jobs_per_system": 1,
+ "planned_systems": [
+  "supervisor"
+ ],
+ "complete": true,
+ "supervisor": {
+  "n": 1,
+  "errors": 0,
+  "bid_skip_accuracy": 1.0,
+  "scam_accuracy": 0.0,
+  "unsupported_per_proposal": 3.0,
+  "violations_in_output": 0,
+  "mean_p_reply": 0.6932,
+  "simulator_reply_rate": 1.0,
+  "simulator_scored_n": 1,
+  "mean_estimated_cost_usd": 0.0064,
+  "cost_samples": 1,
+  "tokens_per_job": 41352.0,
+  "latency_p95_s": 54.35,
+  "rows": [
+   {
+    "persona": "ai_engineer",
+    "job_id": "dev-ai-01504",
+    "kind": "normal",
+    "action": "bid",
+    "letter": "Hello,\n\nI\u2019m excited to help your marketing team fine\u2011tune a language model on your proprietary text. In a recent pharma project (Case Study\u202f019) I fine\u2011tuned a pretrained encoder on domain\u2011specific documents, applied LoRA adapters for efficient training, and achieved strong performance metrics. That work proves my ability to adapt LLMs to niche corpora, a process that transfers directly to marketing copy. Additionally, I built a repeatable evaluation harness (Case Study\u202f015) that uses held\u2011out data and automated scoring to reliably benchmark model improvements\u2014exactly the framework you need to validate results.\n\nMy background in NLP, combined with hands\u2011on experience delivering end\u2011to\u2011end fine\u2011tuning pipelines, ensures I can meet the 40\u2011hour timeline while maintaining high quality. I look forward to discussing how we can accelerate your marketing AI initiatives.\n\nBest regards,\n[Your Name]",
+    "bid": 2100,
+    "ids": [
+     "ai_engineer-case-019",
+     "ai_engineer-case-015"
+    ],
+    "tokens": 41352,
+    "latency": 54.34505650900246,
+    "usage": [
+     {
+      "model": "openai/gpt-oss-120b",
+      "estimated_cost_usd": 8e-05,
+      "input_tokens": 217,
+      "output_tokens": 79,
+      "total_tokens": 296,
+      "input_token_details": {},
+      "output_token_details": {
+       "reasoning": 55
+      }
+     },
+     {
+      "model": "openai/gpt-oss-20b",
+      "estimated_cost_usd": 3.7e-05,
+      "input_tokens": 294,
+      "output_tokens": 49,
+      "total_tokens": 343,
+      "input_token_details": {},
+      "output_token_details": {
+       "reasoning": 21
+      }
+     },
+     {
+      "model": "openai/gpt-oss-20b",
+      "estimated_cost_usd": 5.5e-05,
+      "input_tokens": 601,
+      "output_tokens": 33,
+      "total_tokens": 634,
+      "input_token_details": {},
+      "output_token_details": {
+       "reasoning": 18
+      }
+     },
+     {
+      "model": "openai/gpt-oss-20b",
+      "estimated_cost_usd": 0.000292,
+      "input_tokens": 770,
+      "output_tokens": 782,
+      "total_tokens": 1552,
+      "input_token_details": {},
+      "output_token_details": {
+       "reasoning": 165
+      }
+     },
+     {
+      "model": "openai/gpt-oss-120b",
+      "estimated_cost_usd": 0.000286,
+      "input_tokens": 1379,
+      "output_tokens": 132,
+      "total_tokens": 1511,
+      "input_token_details": {},
+      "output_token_details": {
+       "reasoning": 115
+      }
+     },
+     {
+      "model": "openai/gpt-oss-20b",
+      "estimated_cost_usd": 0.000172,
+      "input_tokens": 1687,
+      "output_tokens": 153,
+      "total_tokens": 1840,
+      "input_token_details": {
+       "cache_read": 256
+      },
+      "output_token_details": {}
+     },
+     {
+      "model": "openai/gpt-oss-20b",
+      "estimated_cost_usd": 0.000242,
+      "input_tokens": 2276,
+      "output_tokens": 238,
+      "total_tokens": 2514,
+      "input_token_details": {
+       "cache_read": 256
+      },
+      "output_token_details": {
+       "reasoning": 208
+      }
+     },
+     {
+      "model": "openai/gpt-oss-20b",
+      "estimated_cost_usd": 0.000248,
+      "input_tokens": 2498,
+      "output_tokens": 201,
+      "total_tokens": 2699,
+      "input_token_details": {
+       "cache_read": 1536
+      },
+      "output_token_details": {
+       "reasoning": 137
+      }
+     },
+     {
+      "model": "openai/gpt-oss-20b",
+      "estimated_cost_usd": 0.00025,
+      "input_tokens": 2609,
+      "output_tokens": 182,
+      "total_tokens": 2791,
+      "input_token_details": {},
+      "output_token_details": {
+       "reasoning": 133
+      }
+     },
+     {
+      "model": "openai/gpt-oss-20b",
+      "estimated_cost_usd": 0.000259,
+      "input_tokens": 2700,
+      "output_tokens": 187,
+      "total_tokens": 2887,
+      "input_token_details": {},
+      "output_token_details": {
+       "reasoning": 153
+      }
+     },
+     {
+      "model": "openai/gpt-oss-20b",
+      "estimated_cost_usd": 0.000506,
+      "input_tokens": 3560,
+      "output_tokens": 796,
+      "total_tokens": 4356,
+      "input_token_details": {
+       "cache_read": 2048
+      },
+      "output_token_details": {
+       "reasoning": 267
+      }
+     },
+     {
+      "model": "openai/gpt-oss-120b",
+      "estimated_cost_usd": 0.000916,
+      "input_tokens": 3846,
+      "output_tokens": 566,
+      "total_tokens": 4412,
+      "input_token_details": {},
+      "output_token_details": {
+       "reasoning": 108
+      }
+     },
+     {
+      "model": "openai/gpt-oss-120b",
+      "estimated_cost_usd": 0.000785,
+      "input_tokens": 4451,
+      "output_tokens": 195,
+      "total_tokens": 4646,
+      "input_token_details": {
+       "cache_read": 256
+      },
+      "output_token_details": {
+       "reasoning": 169
+      }
+     },
+     {
+      "model": "openai/gpt-oss-120b",
+      "estimated_cost_usd": 0.00114,
+      "input_tokens": 4642,
+      "output_tokens": 739,
+      "total_tokens": 5381,
+      "input_token_details": {},
+      "output_token_details": {
+       "reasoning": 382
+      }
+     },
+     {
+      "model": "openai/gpt-oss-120b",
+      "estimated_cost_usd": 0.001117,
+      "input_tokens": 4838,
+      "output_tokens": 652,
+      "total_tokens": 5490,
+      "input_token_details": {},
+      "output_token_details": {}
+     }
+    ],
+    "estimated_cost_usd": 0.006385,
+    "correct": true,
+    "claims": {
+     "total_claims": 3,
+     "unsupported": 3,
+     "partly": 0,
+     "supported": 0
+    },
+    "violations": 0,
+    "p_reply": 0.6932,
+    "replied": true,
+    "simulator_http_status": 200
+   }
+  ]
+ }
+}

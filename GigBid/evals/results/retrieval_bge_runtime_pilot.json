@@ -1,0 +1,777 @@
+{
+ "env": {
+  "model_profile": "open",
+  "embeddings": {
+   "provider": "fastembed",
+   "model": "BAAI/bge-small-en-v1.5"
+  },
+  "reranker": {
+   "provider": "fastembed",
+   "model": "BAAI/bge-reranker-base"
+  },
+  "provider": "openai_compatible",
+  "deployed_variant": "best",
+  "vector_store": "qdrant",
+  "at": "2026-11-15T12:01:59.885162+00:00",
+  "dataset_sha256": {
+   "dev_ai_engineer.json": "2be36bf0dc427448c4607bcc0fe016ceb845f50b0fe298d715a98834b9e86fb6",
+   "dev_data_analyst.json": "e4217b93442ffdaa1fa36143f6f2629e915b81f2170c9019ebd52accbce6aeac",
+   "dev_fullstack_dev.json": "a1cff12d20e65eec7ea656173673c87d6af273deb8074e86c62ad1bad7225ede",
+   "tool_tasks.json": "d295a9d0be26d7efbd3d57c2ceafe65a00e3c05f25d0c48a1682516a67b575b6"
+  },
+  "packages": {
+   "langgraph": "1.2.21",
+   "fastembed": "0.9.1",
+   "qdrant-client": "1.15.1"
+  }
+ },
+ "protocol": {
+  "dataset_sha256": {
+   "dev_ai_engineer.json": "2be36bf0dc427448c4607bcc0fe016ceb845f50b0fe298d715a98834b9e86fb6",
+   "dev_data_analyst.json": "e4217b93442ffdaa1fa36143f6f2629e915b81f2170c9019ebd52accbce6aeac",
+   "dev_fullstack_dev.json": "a1cff12d20e65eec7ea656173673c87d6af273deb8074e86c62ad1bad7225ede",
+   "tool_tasks.json": "d295a9d0be26d7efbd3d57c2ceafe65a00e3c05f25d0c48a1682516a67b575b6"
+  },
+  "embeddings": {
+   "provider": "fastembed",
+   "model": "BAAI/bge-small-en-v1.5"
+  },
+  "model_profile": "open",
+  "reranker": {
+   "provider": "fastembed",
+   "model": "BAAI/bge-reranker-base"
+  },
+  "vector_store": "qdrant",
+  "plan": [
+   [
+    "ai_engineer",
+    "dev-ai-01537",
+    "v0_naive"
+   ],
+   [
+    "ai_engineer",
+    "dev-ai-01537",
+    "best"
+   ],
+   [
+    "ai_engineer",
+    "dev-ai-01537",
+    "v9_skill_graph"
+   ],
+   [
+    "ai_engineer",
+    "dev-ai-01567",
+    "best"
+   ],
+   [
+    "ai_engineer",
+    "dev-ai-01567",
+    "v9_skill_graph"
+   ],
+   [
+    "ai_engineer",
+    "dev-ai-01567",
+    "v0_naive"
+   ],
+   [
+    "ai_engineer",
+    "dev-ai-01528",
+    "v9_skill_graph"
+   ],
+   [
+    "ai_engineer",
+    "dev-ai-01528",
+    "v0_naive"
+   ],
+   [
+    "ai_engineer",
+    "dev-ai-01528",
+    "best"
+   ],
+   [
+    "ai_engineer",
+    "dev-ai-01590",
+    "v0_naive"
+   ],
+   [
+    "ai_engineer",
+    "dev-ai-01590",
+    "best"
+   ],
+   [
+    "ai_engineer",
+    "dev-ai-01590",
+    "v9_skill_graph"
+   ],
+   [
+    "ai_engineer",
+    "dev-ai-01614",
+    "best"
+   ],
+   [
+    "ai_engineer",
+    "dev-ai-01614",
+    "v9_skill_graph"
+   ],
+   [
+    "ai_engineer",
+    "dev-ai-01614",
+    "v0_naive"
+   ],
+   [
+    "fullstack_dev",
+    "dev-fu-01803",
+    "v9_skill_graph"
+   ],
+   [
+    "fullstack_dev",
+    "dev-fu-01803",
+    "v0_naive"
+   ],
+   [
+    "fullstack_dev",
+    "dev-fu-01803",
+    "best"
+   ],
+   [
+    "fullstack_dev",
+    "dev-fu-01784",
+    "v0_naive"
+   ],
+   [
+    "fullstack_dev",
+    "dev-fu-01784",
+    "best"
+   ],
+   [
+    "fullstack_dev",
+    "dev-fu-01784",
+    "v9_skill_graph"
+   ],
+   [
+    "fullstack_dev",
+    "dev-fu-01726",
+    "best"
+   ],
+   [
+    "fullstack_dev",
+    "dev-fu-01726",
+    "v9_skill_graph"
+   ],
+   [
+    "fullstack_dev",
+    "dev-fu-01726",
+    "v0_naive"
+   ],
+   [
+    "fullstack_dev",
+    "dev-fu-01719",
+    "v9_skill_graph"
+   ],
+   [
+    "fullstack_dev",
+    "dev-fu-01719",
+    "v0_naive"
+   ],
+   [
+    "fullstack_dev",
+    "dev-fu-01719",
+    "best"
+   ],
+   [
+    "fullstack_dev",
+    "dev-fu-01824",
+    "v0_naive"
+   ],
+   [
+    "fullstack_dev",
+    "dev-fu-01824",
+    "best"
+   ],
+   [
+    "fullstack_dev",
+    "dev-fu-01824",
+    "v9_skill_graph"
+   ],
+   [
+    "data_analyst",
+    "dev-da-01922",
+    "best"
+   ],
+   [
+    "data_analyst",
+    "dev-da-01922",
+    "v9_skill_graph"
+   ],
+   [
+    "data_analyst",
+    "dev-da-01922",
+    "v0_naive"
+   ],
+   [
+    "data_analyst",
+    "dev-da-01984",
+    "v9_skill_graph"
+   ],
+   [
+    "data_analyst",
+    "dev-da-01984",
+    "v0_naive"
+   ],
+   [
+    "data_analyst",
+    "dev-da-01984",
+    "best"
+   ],
+   [
+    "data_analyst",
+    "dev-da-01987",
+    "v0_naive"
+   ],
+   [
+    "data_analyst",
+    "dev-da-01987",
+    "best"
+   ],
+   [
+    "data_analyst",
+    "dev-da-01987",
+    "v9_skill_graph"
+   ],
+   [
+    "data_analyst",
+    "dev-da-01996",
+    "best"
+   ],
+   [
+    "data_analyst",
+    "dev-da-01996",
+    "v9_skill_graph"
+   ],
+   [
+    "data_analyst",
+    "dev-da-01996",
+    "v0_naive"
+   ],
+   [
+    "data_analyst",
+    "dev-da-02025",
+    "v9_skill_graph"
+   ],
+   [
+    "data_analyst",
+    "dev-da-02025",
+    "v0_naive"
+   ],
+   [
+    "data_analyst",
+    "dev-da-02025",
+    "best"
+   ]
+  ],
+  "seed": 4016,
+  "judge": "openai/gpt-oss-120b"
+ },
+ "complete": false,
+ "summary": {
+  "v0_naive": {
+   "jobs": 1,
+   "drafts": 0,
+   "simulator_scored": 0,
+   "judge_scored": 0,
+   "graph_errors": 0,
+   "heuristic_fallbacks": 0,
+   "recall@5": 0.5,
+   "mrr": 1.0,
+   "ndcg@10": 0.7815,
+   "negative_refusal_rate": null,
+   "unsupported_per_proposal": null,
+   "judge_overall": null,
+   "reply_rate_per_scored_proposal": null,
+   "hire_rate_per_scored_proposal": null,
+   "replies_per_assigned_job": 0.0,
+   "p50_job_s": 34.474,
+   "p95_job_s": 34.474,
+   "p50_proposal_s": null,
+   "p95_proposal_s": null,
+   "cost_per_job_usd": 0.008837,
+   "cost_per_proposal_usd": null,
+   "tokens_per_job": 30736.0,
+   "tokens_per_proposal": null
+  },
+  "best": {
+   "jobs": 1,
+   "drafts": 0,
+   "simulator_scored": 0,
+   "judge_scored": 0,
+   "graph_errors": 1,
+   "heuristic_fallbacks": 0,
+   "recall@5": 0.5,
+   "mrr": 1.0,
+   "ndcg@10": 0.8436,
+   "negative_refusal_rate": null,
+   "unsupported_per_proposal": null,
+   "judge_overall": null,
+   "reply_rate_per_scored_proposal": null,
+   "hire_rate_per_scored_proposal": null,
+   "replies_per_assigned_job": 0.0,
+   "p50_job_s": 182.627,
+   "p95_job_s": 182.627,
+   "p50_proposal_s": null,
+   "p95_proposal_s": null,
+   "cost_per_job_usd": null,
+   "cost_per_proposal_usd": null,
+   "tokens_per_job": null,
+   "tokens_per_proposal": null
+  },
+  "v9_skill_graph": {
+   "jobs": 1,
+   "drafts": 0,
+   "simulator_scored": 0,
+   "judge_scored": 0,
+   "graph_errors": 0,
+   "heuristic_fallbacks": 1,
+   "recall@5": 0.5,
+   "mrr": 0.5,
+   "ndcg@10": 0.6634,
+   "negative_refusal_rate": null,
+   "unsupported_per_proposal": null,
+   "judge_overall": null,
+   "reply_rate_per_scored_proposal": null,
+   "hire_rate_per_scored_proposal": null,
+   "replies_per_assigned_job": 0.0,
+   "p50_job_s": 53.063,
+   "p95_job_s": 53.063,
+   "p50_proposal_s": null,
+   "p95_proposal_s": null,
+   "cost_per_job_usd": 0.008996,
+   "cost_per_proposal_usd": null,
+   "tokens_per_job": 30800.0,
+   "tokens_per_proposal": null
+  }
+ },
+ "by_persona": {
+  "v0_naive": {
+   "ai_engineer": {
+    "jobs": 1,
+    "drafts": 0,
+    "simulator_scored": 0,
+    "judge_scored": 0,
+    "graph_errors": 0,
+    "heuristic_fallbacks": 0,
+    "recall@5": 0.5,
+    "mrr": 1.0,
+    "ndcg@10": 0.7815,
+    "negative_refusal_rate": null,
+    "unsupported_per_proposal": null,
+    "judge_overall": null,
+    "reply_rate_per_scored_proposal": null,
+    "hire_rate_per_scored_proposal": null,
+    "replies_per_assigned_job": 0.0,
+    "p50_job_s": 34.474,
+    "p95_job_s": 34.474,
+    "p50_proposal_s": null,
+    "p95_proposal_s": null,
+    "cost_per_job_usd": 0.008837,
+    "cost_per_proposal_usd": null,
+    "tokens_per_job": 30736.0,
+    "tokens_per_proposal": null
+   },
+   "fullstack_dev": {
+    "jobs": 0,
+    "drafts": 0,
+    "simulator_scored": 0,
+    "judge_scored": 0,
+    "graph_errors": 0,
+    "heuristic_fallbacks": 0,
+    "recall@5": null,
+    "mrr": null,
+    "ndcg@10": null,
+    "negative_refusal_rate": null,
+    "unsupported_per_proposal": null,
+    "judge_overall": null,
+    "reply_rate_per_scored_proposal": null,
+    "hire_rate_per_scored_proposal": null,
+    "replies_per_assigned_job": null,
+    "p50_job_s": null,
+    "p95_job_s": null,
+    "p50_proposal_s": null,
+    "p95_proposal_s": null,
+    "cost_per_job_usd": null,
+    "cost_per_proposal_usd": null,
+    "tokens_per_job": null,
+    "tokens_per_proposal": null
+   },
+   "data_analyst": {
+    "jobs": 0,
+    "drafts": 0,
+    "simulator_scored": 0,
+    "judge_scored": 0,
+    "graph_errors": 0,
+    "heuristic_fallbacks": 0,
+    "recall@5": null,
+    "mrr": null,
+    "ndcg@10": null,
+    "negative_refusal_rate": null,
+    "unsupported_per_proposal": null,
+    "judge_overall": null,
+    "reply_rate_per_scored_proposal": null,
+    "hire_rate_per_scored_proposal": null,
+    "replies_per_assigned_job": null,
+    "p50_job_s": null,
+    "p95_job_s": null,
+    "p50_proposal_s": null,
+    "p95_proposal_s": null,
+    "cost_per_job_usd": null,
+    "cost_per_proposal_usd": null,
+    "tokens_per_job": null,
+    "tokens_per_proposal": null
+   }
+  },
+  "best": {
+   "ai_engineer": {
+    "jobs": 1,
+    "drafts": 0,
+    "simulator_scored": 0,
+    "judge_scored": 0,
+    "graph_errors": 1,
+    "heuristic_fallbacks": 0,
+    "recall@5": 0.5,
+    "mrr": 1.0,
+    "ndcg@10": 0.8436,
+    "negative_refusal_rate": null,
+    "unsupported_per_proposal": null,
+    "judge_overall": null,
+    "reply_rate_per_scored_proposal": null,
+    "hire_rate_per_scored_proposal": null,
+    "replies_per_assigned_job": 0.0,
+    "p50_job_s": 182.627,
+    "p95_job_s": 182.627,
+    "p50_proposal_s": null,
+    "p95_proposal_s": null,
+    "cost_per_job_usd": null,
+    "cost_per_proposal_usd": null,
+    "tokens_per_job": null,
+    "tokens_per_proposal": null
+   },
+   "fullstack_dev": {
+    "jobs": 0,
+    "drafts": 0,
+    "simulator_scored": 0,
+    "judge_scored": 0,
+    "graph_errors": 0,
+    "heuristic_fallbacks": 0,
+    "recall@5": null,
+    "mrr": null,
+    "ndcg@10": null,
+    "negative_refusal_rate": null,
+    "unsupported_per_proposal": null,
+    "judge_overall": null,
+    "reply_rate_per_scored_proposal": null,
+    "hire_rate_per_scored_proposal": null,
+    "replies_per_assigned_job": null,
+    "p50_job_s": null,
+    "p95_job_s": null,
+    "p50_proposal_s": null,
+    "p95_proposal_s": null,
+    "cost_per_job_usd": null,
+    "cost_per_proposal_usd": null,
+    "tokens_per_job": null,
+    "tokens_per_proposal": null
+   },
+   "data_analyst": {
+    "jobs": 0,
+    "drafts": 0,
+    "simulator_scored": 0,
+    "judge_scored": 0,
+    "graph_errors": 0,
+    "heuristic_fallbacks": 0,
+    "recall@5": null,
+    "mrr": null,
+    "ndcg@10": null,
+    "negative_refusal_rate": null,
+    "unsupported_per_proposal": null,
+    "judge_overall": null,
+    "reply_rate_per_scored_proposal": null,
+    "hire_rate_per_scored_proposal": null,
+    "replies_per_assigned_job": null,
+    "p50_job_s": null,
+    "p95_job_s": null,
+    "p50_proposal_s": null,
+    "p95_proposal_s": null,
+    "cost_per_job_usd": null,
+    "cost_per_proposal_usd": null,
+    "tokens_per_job": null,
+    "tokens_per_proposal": null
+   }
+  },
+  "v9_skill_graph": {
+   "ai_engineer": {
+    "jobs": 1,
+    "drafts": 0,
+    "simulator_scored": 0,
+    "judge_scored": 0,
+    "graph_errors": 0,
+    "heuristic_fallbacks": 1,
+    "recall@5": 0.5,
+    "mrr": 0.5,
+    "ndcg@10": 0.6634,
+    "negative_refusal_rate": null,
+    "unsupported_per_proposal": null,
+    "judge_overall": null,
+    "reply_rate_per_scored_proposal": null,
+    "hire_rate_per_scored_proposal": null,
+    "replies_per_assigned_job": 0.0,
+    "p50_job_s": 53.063,
+    "p95_job_s": 53.063,
+    "p50_proposal_s": null,
+    "p95_proposal_s": null,
+    "cost_per_job_usd": 0.008996,
+    "cost_per_proposal_usd": null,
+    "tokens_per_job": 30800.0,
+    "tokens_per_proposal": null
+   },
+   "fullstack_dev": {
+    "jobs": 0,
+    "drafts": 0,
+    "simulator_scored": 0,
+    "judge_scored": 0,
+    "graph_errors": 0,
+    "heuristic_fallbacks": 0,
+    "recall@5": null,
+    "mrr": null,
+    "ndcg@10": null,
+    "negative_refusal_rate": null,
+    "unsupported_per_proposal": null,
+    "judge_overall": null,
+    "reply_rate_per_scored_proposal": null,
+    "hire_rate_per_scored_proposal": null,
+    "replies_per_assigned_job": null,
+    "p50_job_s": null,
+    "p95_job_s": null,
+    "p50_proposal_s": null,
+    "p95_proposal_s": null,
+    "cost_per_job_usd": null,
+    "cost_per_proposal_usd": null,
+    "tokens_per_job": null,
+    "tokens_per_proposal": null
+   },
+   "data_analyst": {
+    "jobs": 0,
+    "drafts": 0,
+    "simulator_scored": 0,
+    "judge_scored": 0,
+    "graph_errors": 0,
+    "heuristic_fallbacks": 0,
+    "recall@5": null,
+    "mrr": null,
+    "ndcg@10": null,
+    "negative_refusal_rate": null,
+    "unsupported_per_proposal": null,
+    "judge_overall": null,
+    "reply_rate_per_scored_proposal": null,
+    "hire_rate_per_scored_proposal": null,
+    "replies_per_assigned_job": null,
+    "p50_job_s": null,
+    "p95_job_s": null,
+    "p50_proposal_s": null,
+    "p95_proposal_s": null,
+    "cost_per_job_usd": null,
+    "cost_per_proposal_usd": null,
+    "tokens_per_job": null,
+    "tokens_per_proposal": null
+   }
+  }
+ },
+ "by_job_type": {
+  "v0_naive": {
+   "normal": {
+    "jobs": 1,
+    "drafts": 0,
+    "simulator_scored": 0,
+    "judge_scored": 0,
+    "graph_errors": 0,
+    "heuristic_fallbacks": 0,
+    "recall@5": 0.5,
+    "mrr": 1.0,
+    "ndcg@10": 0.7815,
+    "negative_refusal_rate": null,
+    "unsupported_per_proposal": null,
+    "judge_overall": null,
+    "reply_rate_per_scored_proposal": null,
+    "hire_rate_per_scored_proposal": null,
+    "replies_per_assigned_job": 0.0,
+    "p50_job_s": 34.474,
+    "p95_job_s": 34.474,
+    "p50_proposal_s": null,
+    "p95_proposal_s": null,
+    "cost_per_job_usd": 0.008837,
+    "cost_per_proposal_usd": null,
+    "tokens_per_job": 30736.0,
+    "tokens_per_proposal": null
+   }
+  },
+  "best": {
+   "normal": {
+    "jobs": 1,
+    "drafts": 0,
+    "simulator_scored": 0,
+    "judge_scored": 0,
+    "graph_errors": 1,
+    "heuristic_fallbacks": 0,
+    "recall@5": 0.5,
+    "mrr": 1.0,
+    "ndcg@10": 0.8436,
+    "negative_refusal_rate": null,
+    "unsupported_per_proposal": null,
+    "judge_overall": null,
+    "reply_rate_per_scored_proposal": null,
+    "hire_rate_per_scored_proposal": null,
+    "replies_per_assigned_job": 0.0,
+    "p50_job_s": 182.627,
+    "p95_job_s": 182.627,
+    "p50_proposal_s": null,
+    "p95_proposal_s": null,
+    "cost_per_job_usd": null,
+    "cost_per_proposal_usd": null,
+    "tokens_per_job": null,
+    "tokens_per_proposal": null
+   }
+  },
+  "v9_skill_graph": {
+   "normal": {
+    "jobs": 1,
+    "drafts": 0,
+    "simulator_scored": 0,
+    "judge_scored": 0,
+    "graph_errors": 0,
+    "heuristic_fallbacks": 1,
+    "recall@5": 0.5,
+    "mrr": 0.5,
+    "ndcg@10": 0.6634,
+    "negative_refusal_rate": null,
+    "unsupported_per_proposal": null,
+    "judge_overall": null,
+    "reply_rate_per_scored_proposal": null,
+    "hire_rate_per_scored_proposal": null,
+    "replies_per_assigned_job": 0.0,
+    "p50_job_s": 53.063,
+    "p95_job_s": 53.063,
+    "p50_proposal_s": null,
+    "p95_proposal_s": null,
+    "cost_per_job_usd": 0.008996,
+    "cost_per_proposal_usd": null,
+    "tokens_per_job": 30800.0,
+    "tokens_per_proposal": null
+   }
+  }
+ },
+ "paired_vs_v0": {
+  "best": {
+   "assigned_pairs": 1,
+   "both_proposals_scored": 0,
+   "replies_per_job_delta": 0.0,
+   "paired_bootstrap_95ci": [
+    0.0,
+    0.0
+   ],
+   "paired_reply_p": 1.0
+  },
+  "v9_skill_graph": {
+   "assigned_pairs": 1,
+   "both_proposals_scored": 0,
+   "replies_per_job_delta": 0.0,
+   "paired_bootstrap_95ci": [
+    0.0,
+    0.0
+   ],
+   "paired_reply_p": 1.0
+  }
+ },
+ "rows": [
+  {
+   "persona": "ai_engineer",
+   "job_id": "dev-ai-01537",
+   "kind": "normal",
+   "category": "mlops",
+   "gold_count": 4,
+   "arm": "v0_naive",
+   "retrieved": [
+    "ai_engineer-case-010",
+    "ai_engineer-case-015",
+    "ai_engineer-case-016",
+    "ai_engineer-case-001",
+    "ai_engineer-case-018",
+    "ai_engineer-repo-016",
+    "ai_engineer-case-003",
+    "ai_engineer-case-008",
+    "ai_engineer-case-005",
+    "ai_engineer-repo-006"
+   ],
+   "refused": false,
+   "recall@5": 0.5,
+   "mrr": 1.0,
+   "ndcg@10": 0.7814933466668073,
+   "decision": "bid",
+   "latency_s": 34.47435392400075,
+   "tokens": 30736,
+   "cost_usd": 0.008837,
+   "heuristic_fallbacks": 0
+  },
+  {
+   "persona": "ai_engineer",
+   "job_id": "dev-ai-01537",
+   "kind": "normal",
+   "category": "mlops",
+   "gold_count": 4,
+   "arm": "best",
+   "retrieved": [
+    "ai_engineer-case-009",
+    "ai_engineer-case-010",
+    "ai_engineer-case-001",
+    "ai_engineer-case-005",
+    "ai_engineer-repo-001",
+    "ai_engineer-repo-016",
+    "ai_engineer-case-008",
+    "ai_engineer-case-016",
+    "ai_engineer-case-018",
+    "ai_engineer-case-006"
+   ],
+   "refused": false,
+   "recall@5": 0.5,
+   "mrr": 1.0,
+   "ndcg@10": 0.8435537116826594,
+   "graph_error": "NodeTimeoutError",
+   "latency_s": 182.62709287399775
+  },
+  {
+   "persona": "ai_engineer",
+   "job_id": "dev-ai-01537",
+   "kind": "normal",
+   "category": "mlops",
+   "gold_count": 4,
+   "arm": "v9_skill_graph",
+   "retrieved": [
+    "ai_engineer-case-018",
+    "ai_engineer-case-010",
+    "ai_engineer-case-009",
+    "ai_engineer-case-005",
+    "ai_engineer-case-006",
+    "ai_engineer-repo-006",
+    "ai_engineer-review-012",
+    "ai_engineer-repo-012",
+    "ai_engineer-case-016",
+    "ai_engineer-repo-016"
+   ],
+   "refused": false,
+   "recall@5": 0.5,
+   "mrr": 0.5,
+   "ndcg@10": 0.6634025144886525,
+   "decision": "bid",
+   "latency_s": 53.06260670799384,
+   "tokens": 30800,
+   "cost_usd": 0.008996,
+   "heuristic_fallbacks": 1
+  }
+ ]
+}
