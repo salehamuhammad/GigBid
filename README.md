@@ -7,6 +7,8 @@ replies. **It never submits, sends or spends without the human's approval.**
 
 ![GigBid demo showing the inbox, portfolio evidence, the dry-run preview and a submitted GigSim proposal](docs/images/demo.gif)
 
+Technical write-up: [Building GigBid: What Better Retrieval Actually Changed](https://medium.com/@salehamuhammad77/building-gigbid-what-better-retrieval-actually-changed-54f1a159619b).
+
 > Live URL: _add after deploying_ · Reviewer login: in the private GCR comment ·
 > Public traces: _add three LangSmith links (skipped scam, approved proposal, critic loop) after a run with `LANGSMITH_TRACING=true`_
 
